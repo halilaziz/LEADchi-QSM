@@ -142,7 +142,9 @@ The script checks:
 - E-mail drafts, internal working notes, coordinator, statistician and time-evidence packages, AI session transcripts.
 - Simulated test-run outputs and superseded or checker folders.
 - Per-session merged ROI tables and files larger than 5 MB (for example the human-QC extrapolation draws).
-- The server-side scripts of the post hoc engine-2 run (`e2_qsmjl.jl`, `e2_io.py`, `e2_chain.sh`) and of the recovery injection (`inject_sn.py`, `run_rec.sh`). They live only on the compute server; their hashes are given in `results/posthoc/engine2/README.md` and `results/posthoc/recovery/README.md`.
+
+## Server-side post hoc scripts
+The compute-server scripts of the engine-2 run (`code/posthoc/engine2/server_scripts/`: `e2_qsmjl.jl`, `e2_io.py`, `e2_chain.sh`) and of the recovery injection (`code/posthoc/recovery/server_scripts/`: `inject_sn.py`, `run_rec.sh`) are included. Their original SHA-256 values (`4a013bf7…`, `30bcc527…`, `fb952f1f…`, `c6c389fd…`, `5216e7a3…`) match the hashes recorded in `results/posthoc/*/README.md`; in the copies here, only the absolute server project path was replaced by `/path/to/Penn_LEAD` (see `SANITIZE_LOG.md`).
 
 ## Licences
 - **Code:** MIT (`LICENSE`).

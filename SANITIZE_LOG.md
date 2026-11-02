@@ -161,3 +161,6 @@ Total: 227 replacements in 107 files.
 
 - `results/qc_grades/session_code_map.csv` is not a copy. It was derived from the unlocked blinding key (`mirror/unlocked/key_plain.csv` in the working tree) by keeping only the columns `code`, `ses_order`, `participant_id` and `session_id`, so that the coded QC grades can be linked to public OpenNeuro ds007116 subject and session IDs. The per-session blinding offsets and B0-cluster columns were dropped.
 - Files were moved into the repository layout (see the path map in `README.md`). Apart from the substitutions above, their contents are unchanged.
+
+## Added 2026-11-02: server-side post hoc scripts
+Copied read-only from the compute server (original SHA-256 matched the recorded hashes). In `e2_chain.sh`, `e2_io.py` and `run_rec.sh`, the absolute server project root was replaced by `/path/to/Penn_LEAD` (3 replacements). No logic changed.
