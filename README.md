@@ -1,5 +1,7 @@
 # LEAD-χ: midbrain susceptibility in psychosis-spectrum youth (QSM, OpenNeuro ds007116)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23885869.svg)](https://doi.org/10.5281/zenodo.23885869)
+
 Analysis code, the internally time-stamped protocol, compact results and the visual-QC grades of the study
 
 > Velioglu HA, Altunc AT, Celik MC, Aslan D, Cicek Y, Sakiroglu MA. *Midbrain susceptibility in psychosis-spectrum youth: a procedurally blinded quantitative susceptibility mapping study with ADHD modeled factorially.* (submitted)
@@ -156,7 +158,7 @@ If you use this code, cite the article (`CITATION.cff`):
 
 Velioglu HA, Altunc AT, Celik MC, Aslan D, Cicek Y, Sakiroglu MA. Midbrain susceptibility in psychosis-spectrum youth: a procedurally blinded quantitative susceptibility mapping study with ADHD modeled factorially. (submitted) *[journal, year, DOI to be added]*
 
-Code archive DOI: *[Zenodo DOI to be added]*
+Code archive DOI: [10.5281/zenodo.23885869](https://doi.org/10.5281/zenodo.23885869) (v1.0.0; all versions: [10.5281/zenodo.23885868](https://doi.org/10.5281/zenodo.23885868))
 
 ## AI assistance
 The code in this repository was written with Claude Code (Anthropic) under the first author's direction. The first author specified the analyses, reviewed the code and outputs, and takes responsibility for them. The registered AI visual-QC rater (`code/qc_ai/`) is part of the registered protocol (amendment 1c) and is described there.
