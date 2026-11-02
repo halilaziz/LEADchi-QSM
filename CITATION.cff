@@ -1,5 +1,5 @@
-cff-doi: 10.5281/zenodo.23885868
-version: 1.2.0
+cff-version: 1.2.0
+doi: 10.5281/zenodo.23885868
 message: "If you use this code, please cite the article below and the archived software."
 title: "LEAD-chi: analysis code, protocol and QC grades for a procedurally blinded QSM study of midbrain susceptibility in psychosis-spectrum youth"
 type: software
