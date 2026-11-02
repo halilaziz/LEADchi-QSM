@@ -1,0 +1,5 @@
+"cell","n","adjusted_mean_ppb","se_hc3","lo95","hi95","raw_mean_ppb","raw_sd","note"
+"TD",22,49.7123967665663,2.80195715187804,44.121178322796,55.3036152103366,50.0824753154545,12.619682583165,"M1 (first-usable, n = 80), HC3; covariates at their sample means (ns(age) basis, sex_e, race3, scaled roi_vol and Q_phase)"
+"ADHD-only",16,51.6354372586491,4.08228779253649,43.4893587994872,59.781515717811,50.86165005,13.767905104605,"M1 (first-usable, n = 80), HC3; covariates at their sample means (ns(age) basis, sex_e, race3, scaled roi_vol and Q_phase)"
+"PS-only",17,57.8698182522306,2.80632391134438,52.2698860756142,63.4697504288469,56.8420046635294,9.98086618807991,"M1 (first-usable, n = 80), HC3; covariates at their sample means (ns(age) basis, sex_e, race3, scaled roi_vol and Q_phase)"
+"PS+ADHD",25,53.4036188611694,2.24819270733232,48.9174201618206,57.8898175605182,54.272086792,10.8315640084614,"M1 (first-usable, n = 80), HC3; covariates at their sample means (ns(age) basis, sex_e, race3, scaled roi_vol and Q_phase)"

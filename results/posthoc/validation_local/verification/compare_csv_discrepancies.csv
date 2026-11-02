@@ -1,0 +1,175 @@
+file,key,column,theirs,mine,rel
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | + sex",slope_per_y,1.99253837168073,1.9925338387548321,2.2749503659120597e-06
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | + sex + cell",slope_per_y,1.85174484105466,1.851740386074185,2.4058284792783507e-06
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | age only",slope_per_y,1.91421070650695,1.9142064871735156,2.2042157741966407e-06
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex",slope_per_y,1.83049272016047,1.8304864538174248,3.42330945985708e-06
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex + cell",slope_per_y,1.77462305430058,1.7746168117668182,3.5176674543842892e-06
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | age only",slope_per_y,1.77292085313505,1.772914702534688,3.4691906020696364e-06
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex",slope_per_y,1.99253837168073,1.9925338387548321,2.2749503659120597e-06
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex + cell",slope_per_y,1.85174484105466,1.851740386074185,2.4058284792783507e-06
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | age only",slope_per_y,1.91421070650695,1.9142064871735156,2.2042157741966407e-06
+D_age_slopes,"chi_GP_unref | all usable sessions (lme REML, random intercept) | + sex",slope_per_y,2.00912639617424,2.0091217422722116,2.3163809091640064e-06
+D_age_slopes,"chi_GP_unref | all usable sessions (lme REML, random intercept) | age only",slope_per_y,1.92605295207917,1.9260486775876549,2.2193011415256846e-06
+D_age_slopes,"r2s_GP | all usable sessions (lme REML, random intercept) | + sex",slope_per_y,0.603284473734755,0.6032837428250897,1.2115505987126528e-06
+D_age_slopes,"r2s_GP | all usable sessions (lme REML, random intercept) | + sex + cell",slope_per_y,0.6120644601144,0.6120636893804076,1.2592366370392172e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable (lme REML), BETWEEN-person mean age | + sex + cell",slope_per_y,-0.0618504529624807,-0.06185005870118557,6.374428581328449e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex",slope_per_y,0.168225396644965,0.16822684418015962,8.604736404226485e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex + cell",slope_per_y,0.0985536685187198,0.09855540726927947,1.764267719106601e-05
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | age only",slope_per_y,0.152387167271755,0.15238866276076504,9.813746372606239e-06
+D_age_slopes,"chi_GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell",se,0.65540961433399,0.6554108217703679,1.8422622303279889e-06
+D_age_slopes,"chi_GP | all usable (lme REML), WITHIN-person age | + sex + cell",se,1.0511660317153,1.0511606158351972,5.152259433264685e-06
+D_age_slopes,"chi_GP_csfref | all usable (lme REML), BETWEEN-person mean age | + sex + cell",se,0.686173728557216,0.6861750338507737,1.9022785387451921e-06
+D_age_slopes,"chi_GP_csfref | all usable (lme REML), WITHIN-person age | + sex + cell",se,1.07289183125847,1.072886110783382,5.3318283552936434e-06
+D_age_slopes,"chi_GP_raw | all usable (lme REML), BETWEEN-person mean age | + sex + cell",se,0.65540961433399,0.6554108217703679,1.8422622303279889e-06
+D_age_slopes,"chi_GP_raw | all usable (lme REML), WITHIN-person age | + sex + cell",se,1.0511660317153,1.0511606158351972,5.152259433264685e-06
+D_age_slopes,"chi_para_GP | all usable (lme REML), WITHIN-person age | + sex + cell",se,0.666258985799896,0.6662578208555501,1.7484857550980872e-06
+D_age_slopes,"r2s_GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell",se,0.130379986082292,0.1303801826483674,1.5076399476281905e-06
+D_age_slopes,"r2s_GP | all usable (lme REML), WITHIN-person age | + sex + cell",se,0.191330233875703,0.19132942173715975,4.2446952935662694e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable (lme REML), BETWEEN-person mean age | + sex + cell",se,0.316505226792784,0.3165058313244527,1.9100211230318586e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable (lme REML), WITHIN-person age | + sex + cell",se,0.437336004491035,0.4373336451974719,5.394693185199296e-06
+D_age_slopes,"chi_GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell",ci_lo,0.936786042238993,0.9367831605103945,3.076186523485576e-06
+D_age_slopes,"chi_GP | all usable (lme REML), WITHIN-person age | + sex + cell",ci_lo,-1.31754557305581,-1.3175344405548235,8.449423848611554e-06
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | + sex",ci_lo,0.87630273438885,0.8762982683918934,5.096408788107419e-06
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | + sex + cell",ci_lo,0.706962574043508,0.7069582144933422,6.166592583440418e-06
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | age only",ci_lo,0.788760592640578,0.7887564745241495,5.220996671034758e-06
+D_age_slopes,"chi_GP_csfref | all usable (lme REML), BETWEEN-person mean age | + sex + cell",ci_lo,0.943406185968784,0.943402596099161,3.8052216281837707e-06
+D_age_slopes,"chi_GP_csfref | all usable (lme REML), WITHIN-person age | + sex + cell",ci_lo,-1.76358919955549,-1.7635774409505407,6.667428532817875e-06
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex",ci_lo,0.656682427234977,0.656676347519157,9.258228281828343e-06
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex + cell",ci_lo,0.579460324508976,0.5794542517353327,1.0480050810088052e-05
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | age only",ci_lo,0.598292129537152,0.598286190558917,9.926552501503972e-06
+D_age_slopes,"chi_GP_raw | all usable (lme REML), BETWEEN-person mean age | + sex + cell",ci_lo,0.936786042238993,0.9367831605103945,3.076186523485576e-06
+D_age_slopes,"chi_GP_raw | all usable (lme REML), WITHIN-person age | + sex + cell",ci_lo,-1.31754557305581,-1.3175344405548235,8.449423848611554e-06
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex",ci_lo,0.87630273438885,0.8762982683918934,5.096408788107419e-06
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex + cell",ci_lo,0.706962574043508,0.7069582144933422,6.166592583440418e-06
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | age only",ci_lo,0.788760592640578,0.7887564745241495,5.220996671034758e-06
+D_age_slopes,"chi_GP_unref | all usable sessions (lme REML, random intercept) | + sex",ci_lo,0.853681280838141,0.8536765721637847,5.515728717502144e-06
+D_age_slopes,"chi_GP_unref | all usable sessions (lme REML, random intercept) | age only",ci_lo,0.761158490900172,0.7611541876500978,5.653553268620449e-06
+D_age_slopes,"chi_SNVTA | all usable sessions (lme REML, random intercept) | + sex + cell",ci_lo,0.0097385921872235,0.009738563123462995,2.9843903456907695e-06
+D_age_slopes,"chi_para_GP | all usable (lme REML), WITHIN-person age | + sex + cell",ci_lo,-0.137847251243508,-0.13784485666610347,1.737123796759441e-05
+D_age_slopes,"chi_para_GP | all usable sessions (lme REML, random intercept) | + sex + cell",ci_lo,1.10504506251879,1.1050437606735577,1.1780924384339533e-06
+D_age_slopes,"r2s_GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell",ci_lo,0.430658615402231,0.43065805705696886,1.2964915647038934e-06
+D_age_slopes,"r2s_GP | all usable (lme REML), WITHIN-person age | + sex + cell",ci_lo,0.0506439165461255,0.0506455859208112,3.2962985478710206e-05
+D_age_slopes,"r2s_GP | all usable sessions (lme REML, random intercept) | + sex",ci_lo,0.382746021754382,0.3827453720116833,1.6975818474124025e-06
+D_age_slopes,"r2s_GP | all usable sessions (lme REML, random intercept) | + sex + cell",ci_lo,0.390469018820611,0.39046831770731655,1.7955670249957953e-06
+D_age_slopes,"r2s_GP | all usable sessions (lme REML, random intercept) | age only",ci_lo,0.366090214434807,0.36608976978438823,1.2145924726483518e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable (lme REML), BETWEEN-person mean age | + sex + cell",ci_lo,-0.692500883799209,-0.6925016940935571,1.1700986482764163e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable (lme REML), WITHIN-person age | + sex + cell",ci_lo,-0.49757142584914,-0.4975665762517641,9.746535118297416e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex",ci_lo,-0.355253418432907,-0.3552516310376863,5.0313244797176e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex + cell",ci_lo,-0.427597661444932,-0.4275956210683316,4.771720671959832e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | age only",ci_lo,-0.369870352891691,-0.36986853940540676,4.903032292461964e-06
+D_age_slopes,"chi_GP | all usable (lme REML), WITHIN-person age | + sex + cell",ci_hi,3.00385987312859,3.003848740627611,3.7060653457473392e-06
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | + sex",ci_hi,3.10877400897262,3.108769409117771,1.4796362925522123e-06
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | + sex + cell",ci_hi,2.99652710806581,2.9965225576550276,1.5185615274935177e-06
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | age only",ci_hi,3.03966082037332,3.0396564998228817,1.4213922847410035e-06
+D_age_slopes,"chi_GP_csfref | all usable (lme REML), WITHIN-person age | + sex + cell",ci_hi,2.647132287707,2.6471205291020556,4.442016365788154e-06
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex",ci_hi,3.00430301308597,3.0042965601156926,2.1479092651873305e-06
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex + cell",ci_hi,2.96978578409218,2.9697793717983036,2.159177241224321e-06
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | age only",ci_hi,2.94754957673294,2.947543214510459,2.1584785311400716e-06
+D_age_slopes,"chi_GP_raw | all usable (lme REML), WITHIN-person age | + sex + cell",ci_hi,3.00385987312859,3.003848740627611,3.7060653457473392e-06
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex",ci_hi,3.10877400897262,3.108769409117771,1.4796362925522123e-06
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex + cell",ci_hi,2.99652710806581,2.9965225576550276,1.5185615274935177e-06
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | age only",ci_hi,3.03966082037332,3.0396564998228817,1.4213922847410035e-06
+D_age_slopes,"chi_GP_unref | all usable sessions (lme REML, random intercept) | + sex",ci_hi,3.16457151151034,3.1645669123806384,1.4533183038503422e-06
+D_age_slopes,"chi_GP_unref | all usable sessions (lme REML, random intercept) | age only",ci_hi,3.09094741325816,3.0909431675252117,1.3736024527999194e-06
+D_age_slopes,"r2s_GP | all usable (lme REML), WITHIN-person age | + sex + cell",ci_hi,0.837213773013991,0.8372121036393094,1.993964666385274e-06
+D_age_slopes,"r2s_GP | all usable sessions (lme REML, random intercept) | + sex + cell",ci_hi,0.833659901408188,0.8336590610534986,1.0080305985347554e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable (lme REML), BETWEEN-person mean age | + sex + cell",ci_hi,0.568799977874248,0.568801576691186,2.810859705092617e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable (lme REML), WITHIN-person age | + sex + cell",ci_hi,1.30034263777041,1.3003377881730358,3.729476549687556e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex",ci_hi,0.691704211722838,0.6917053193980056,1.6013711479792674e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex + cell",ci_hi,0.624704998482371,0.6247064356068905,2.3004850657352307e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | age only",ci_hi,0.674644687435201,0.6746458649269368,1.7453509346654032e-06
+D_age_slopes,"chi_GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell",p_two,0.0010161762728712,0.0010161989250713765,2.2291605089918767e-05
+D_age_slopes,"chi_GP | all usable (lme REML), WITHIN-person age | + sex + cell",p_two,0.429756720900624,0.4297543729780233,5.463376106732503e-06
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | + sex",p_two,0.0011008708079106,0.001100893782984575,2.0869909357156768e-05
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | + sex + cell",p_two,0.0026386625639049,0.0026387136365383502,1.9355500073680704e-05
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | age only",p_two,0.0017129812737494,0.0017130134317983115,1.8773146796343593e-05
+D_age_slopes,"chi_GP_csfref | all usable (lme REML), BETWEEN-person mean age | + sex + cell",p_two,0.0012066151789229,0.0012066449121107203,2.4641814838437985e-05
+D_age_slopes,"chi_GP_csfref | all usable (lme REML), WITHIN-person age | + sex + cell",p_two,0.683891833502651,0.6838902443074181,2.3237523174179094e-06
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex",p_two,0.0035540811962095,0.003554173426752133,2.595060088420056e-05
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex + cell",p_two,0.0051839083470662,0.005184038765165363,2.5158257135629052e-05
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | age only",p_two,0.0045823717708605,0.004582486562989851,2.5050811041021813e-05
+D_age_slopes,"chi_GP_raw | all usable (lme REML), BETWEEN-person mean age | + sex + cell",p_two,0.0010161762728712,0.0010161989250713765,2.2291605089918767e-05
+D_age_slopes,"chi_GP_raw | all usable (lme REML), WITHIN-person age | + sex + cell",p_two,0.429756720900624,0.4297543729780233,5.463376106732503e-06
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex",p_two,0.0011008708079106,0.001100893782984575,2.0869909357156768e-05
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex + cell",p_two,0.0026386625639049,0.0026387136365383502,1.9355500073680704e-05
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | age only",p_two,0.0017129812737494,0.0017130134317983115,1.8773146796343593e-05
+D_age_slopes,"chi_GP_unref | all usable sessions (lme REML, random intercept) | + sex",p_two,0.0014040570391147,0.0014040873249479837,2.1570230012041408e-05
+D_age_slopes,"chi_GP_unref | all usable sessions (lme REML, random intercept) | age only",p_two,0.0021922872768421,0.00219232943504143,1.9230234912967107e-05
+D_age_slopes,"chi_para_GP | all usable (lme REML), WITHIN-person age | + sex + cell",p_two,0.0759146591669467,0.07591417693985163,6.3522263073653064e-06
+D_age_slopes,"r2s_GP | all usable (lme REML), WITHIN-person age | + sex + cell",p_two,0.0284419152972663,0.028441301785799875,2.1570680455677283e-05
+D_age_slopes,"ref2_minus_wb_ppb | all usable (lme REML), BETWEEN-person mean age | + sex + cell",p_two,0.845602213733034,0.8456034764195558,1.4932393757715288e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable (lme REML), WITHIN-person age | + sex + cell",p_two,0.367161186102025,0.3671586419527483,6.929243539343979e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex",p_two,0.514701299463799,0.5146974408666101,7.496769860299422e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex + cell",p_two,0.703352675285282,0.7033475423138187,7.297862997728035e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | age only",p_two,0.55384869522694,0.5538445916063618,7.409280934663084e-06
+D_age_slopes,"chi_GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell",p_one_sided_pos,0.0005080881364356,0.0005080994625356883,2.2291605089918767e-05
+D_age_slopes,"chi_GP | all usable (lme REML), WITHIN-person age | + sex + cell",p_one_sided_pos,0.214878360450312,0.21487718648901166,5.463376106732503e-06
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | + sex",p_one_sided_pos,0.0005504354039553,0.0005504468914922876,2.0869909357156768e-05
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | + sex + cell",p_one_sided_pos,0.0013193312819524,0.0013193568182691751,1.935550011164775e-05
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | age only",p_one_sided_pos,0.0008564906368747,0.0008565067158991558,1.8773146796343593e-05
+D_age_slopes,"chi_GP_csfref | all usable (lme REML), BETWEEN-person mean age | + sex + cell",p_one_sided_pos,0.0006033075894614,0.0006033224560553601,2.464181492128619e-05
+D_age_slopes,"chi_GP_csfref | all usable (lme REML), WITHIN-person age | + sex + cell",p_one_sided_pos,0.341945916751326,0.34194512215370904,2.323752318878957e-06
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex",p_one_sided_pos,0.0017770405981047,0.0017770867133760665,2.5950600912388683e-05
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex + cell",p_one_sided_pos,0.0025919541735331,0.0025920193825826813,2.5158257135629052e-05
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | age only",p_one_sided_pos,0.0022911858854302,0.0022912432814949256,2.5050811062789818e-05
+D_age_slopes,"chi_GP_raw | all usable (lme REML), BETWEEN-person mean age | + sex + cell",p_one_sided_pos,0.0005080881364356,0.0005080994625356883,2.2291605089918767e-05
+D_age_slopes,"chi_GP_raw | all usable (lme REML), WITHIN-person age | + sex + cell",p_one_sided_pos,0.214878360450312,0.21487718648901166,5.463376106732503e-06
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex",p_one_sided_pos,0.0005504354039553,0.0005504468914922876,2.0869909357156768e-05
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex + cell",p_one_sided_pos,0.0013193312819524,0.0013193568182691751,1.935550011164775e-05
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | age only",p_one_sided_pos,0.0008564906368747,0.0008565067158991558,1.8773146796343593e-05
+D_age_slopes,"chi_GP_unref | all usable sessions (lme REML, random intercept) | + sex",p_one_sided_pos,0.0007020285195573,0.0007020436624739919,2.1570230083239084e-05
+D_age_slopes,"chi_GP_unref | all usable sessions (lme REML, random intercept) | age only",p_one_sided_pos,0.001096143638421,0.001096164717520715,1.9230234958466854e-05
+D_age_slopes,"chi_para_GP | all usable (lme REML), WITHIN-person age | + sex + cell",p_one_sided_pos,0.0379573295834733,0.037957088469925813,6.35222630608566e-06
+D_age_slopes,"r2s_GP | all usable (lme REML), WITHIN-person age | + sex + cell",p_one_sided_pos,0.0142209576486331,0.014220650892899938,2.1570680452139836e-05
+D_age_slopes,"ref2_minus_wb_ppb | all usable (lme REML), BETWEEN-person mean age | + sex + cell",p_one_sided_pos,0.577198893133483,0.5771982617902222,1.0938053908340825e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable (lme REML), WITHIN-person age | + sex + cell",p_one_sided_pos,0.183580593051012,0.18357932097637414,6.929243536622575e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex",p_one_sided_pos,0.257350649731899,0.25734872043330503,7.496769858358116e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex + cell",p_one_sided_pos,0.351676337642641,0.35167377115690934,7.297862997728035e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | age only",p_one_sided_pos,0.27692434761347,0.2769222958031809,7.409280934663084e-06
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | + sex",slope_per_y_in_SD,0.155421270765386,0.1554209171897091,2.2749503665895468e-06
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | + sex + cell",slope_per_y_in_SD,0.144439143767756,0.14443879627195008,2.40582848141721e-06
+D_age_slopes,"chi_GP | all usable sessions (lme REML, random intercept) | age only",slope_per_y_in_SD,0.149311584030909,0.14931125491595992,2.2042157760731155e-06
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex",slope_per_y_in_SD,0.138557939009391,0.13855746468268715,3.4233094635347463e-06
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex + cell",slope_per_y_in_SD,0.134328921505289,0.13432844898081328,3.5176674570086162e-06
+D_age_slopes,"chi_GP_csfref | all usable sessions (lme REML, random intercept) | age only",slope_per_y_in_SD,0.134200074510882,0.1341996089452451,3.4691905991879592e-06
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex",slope_per_y_in_SD,0.155421270765386,0.1554209171897091,2.2749503665895468e-06
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex + cell",slope_per_y_in_SD,0.144439143767756,0.14443879627195008,2.40582848141721e-06
+D_age_slopes,"chi_GP_raw | all usable sessions (lme REML, random intercept) | age only",slope_per_y_in_SD,0.149311584030909,0.14931125491595992,2.2042157760731155e-06
+D_age_slopes,"chi_GP_unref | all usable sessions (lme REML, random intercept) | + sex",slope_per_y_in_SD,0.153569707661047,0.15356935193510748,2.3163809121492347e-06
+D_age_slopes,"chi_GP_unref | all usable sessions (lme REML, random intercept) | age only",slope_per_y_in_SD,0.147219900825414,0.14721957410012046,2.219301138708439e-06
+D_age_slopes,"r2s_GP | all usable sessions (lme REML, random intercept) | + sex",slope_per_y_in_SD,0.206505866972903,0.2065056167805959,1.2115506002884642e-06
+D_age_slopes,"r2s_GP | all usable sessions (lme REML, random intercept) | + sex + cell",slope_per_y_in_SD,0.209511279474428,0.2095110156501495,1.2592366346144788e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable (lme REML), BETWEEN-person mean age | + sex + cell",slope_per_y_in_SD,-0.0101111568248748,-0.010111092372027747,6.374428581106487e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex",slope_per_y_in_SD,0.0275010656500096,0.02750130228943029,8.604736401936659e-06
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex + cell",slope_per_y_in_SD,0.0161113063903346,0.016111590636912334,1.764267718874431e-05
+D_age_slopes,"ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | age only",slope_per_y_in_SD,0.0249118716611149,0.024912116139905058,9.813746372914014e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | + sex",slope_per_y_r2s,0.603284473734755,0.6032837428250897,1.2115505987126528e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | + sex + cell",slope_per_y_r2s,0.6120644601144,0.6120636893804076,1.2592366370392172e-06
+D_implied_chi_slope_from_R2s,"GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell",ci_lo_r2s,0.430658615402231,0.43065805705696886,1.2964915647038934e-06
+D_implied_chi_slope_from_R2s,"GP | all usable (lme REML), WITHIN-person age | + sex + cell",ci_lo_r2s,0.0506439165461255,0.0506455859208112,3.2962985478710206e-05
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | + sex",ci_lo_r2s,0.382746021754382,0.3827453720116833,1.6975818474124025e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | + sex + cell",ci_lo_r2s,0.390469018820611,0.39046831770731655,1.7955670249957953e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | age only",ci_lo_r2s,0.366090214434807,0.36608976978438823,1.2145924726483518e-06
+D_implied_chi_slope_from_R2s,"GP | all usable (lme REML), WITHIN-person age | + sex + cell",ci_hi_r2s,0.837213773013991,0.8372121036393094,1.993964666385274e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | + sex + cell",ci_hi_r2s,0.833659901408188,0.8336590610534986,1.0080305985347554e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | + sex",slope_per_y_chi,1.99253837168073,1.9925338387548321,2.2749503659120597e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | + sex + cell",slope_per_y_chi,1.85174484105466,1.851740386074185,2.4058284792783507e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | age only",slope_per_y_chi,1.91421070650695,1.9142064871735156,2.2042157741966407e-06
+D_implied_chi_slope_from_R2s,"GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell",ci_lo_chi,0.936786042238993,0.9367831605103945,3.076186523485576e-06
+D_implied_chi_slope_from_R2s,"GP | all usable (lme REML), WITHIN-person age | + sex + cell",ci_lo_chi,-1.31754557305581,-1.3175344405548235,8.449423848611554e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | + sex",ci_lo_chi,0.87630273438885,0.8762982683918934,5.096408788107419e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | + sex + cell",ci_lo_chi,0.706962574043508,0.7069582144933422,6.166592583440418e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | age only",ci_lo_chi,0.788760592640578,0.7887564745241495,5.220996671034758e-06
+D_implied_chi_slope_from_R2s,"GP | all usable (lme REML), WITHIN-person age | + sex + cell",ci_hi_chi,3.00385987312859,3.003848740627611,3.7060653457473392e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | + sex",ci_hi_chi,3.10877400897262,3.108769409117771,1.4796362925522123e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | + sex + cell",ci_hi_chi,2.99652710806581,2.9965225576550276,1.5185615274935177e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | age only",ci_hi_chi,3.03966082037332,3.0396564998228817,1.4213922847410035e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | + sex",implied_chi_slope_ppb_per_y,2.20176815231662,2.201765484763101,1.2115505968046344e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | + sex + cell",implied_chi_slope_ppb_per_y,2.23381189822774,2.2338090853299546,1.2592366383205538e-06
+D_implied_chi_slope_from_R2s,"GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell",implied_lo,1.57174677154099,1.5717447337845578,1.2964915654081928e-06
+D_implied_chi_slope_from_R2s,"GP | all usable (lme REML), WITHIN-person age | + sex + cell",implied_lo,0.184831812212137,0.18483790482047882,3.2962985478072255e-05
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | + sex",implied_lo,1.39688329107439,1.3968809197506689,1.6975818497607876e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | + sex + cell",implied_lo,1.42506941175406,1.4250668529464108,1.7955670286773018e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | age only",implied_lo,1.33609567311973,1.3360940503079863,1.2145924699104798e-06
+D_implied_chi_slope_from_R2s,"GP | all usable (lme REML), WITHIN-person age | + sex + cell",implied_hi,3.05552471902916,3.0555186264208376,1.993964664841705e-06
+D_implied_chi_slope_from_R2s,"GP | all usable sessions (lme REML, random intercept) | + sex + cell",implied_hi,3.04255438470142,3.0425513177134986,1.0080305998238838e-06

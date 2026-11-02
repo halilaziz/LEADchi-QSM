@@ -1,0 +1,13 @@
+file,rows_theirs,rows_mine,unmatched_rows,cells_compared,cells_outside_tol,max_rel_diff,their_cols_not_recomputed
+A_X2_chisep_group_effects,48,48,0,1500,0,0.0,tB_fixed_bound;pB_fixed_bound;note
+A_X2_component_descriptives,12,12,0,132,0,0.0,
+B_nuisance_models,6,6,0,144,0,0.0,block;note
+B_joint_model_coefficients,6,6,0,36,0,0.0,
+B_r2s_models,3,3,0,65,0,0.0,block;tB_fixed_bound;pB_fixed_bound;note
+B_dice_tertile_cells,3,3,0,18,0,0.0,
+B_dice_tertile_models,10,10,0,230,0,0.0,block;note
+C_low_TD_tail_sessions,4,4,0,148,0,0.0,
+C_low_TD_tail_qc_comparison,10,10,0,109,0,0.0,
+C_low_TD_tail_refits,3,3,0,72,0,0.0,block;note
+D_age_slopes,144,144,0,1632,144,3.2962985478710206e-05,role
+D_implied_chi_slope_from_R2s,16,16,0,144,30,3.2962985478710206e-05,

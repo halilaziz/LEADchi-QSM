@@ -1,0 +1,71 @@
+MEGRE sessions complete: 181; partial: 0
+{
+  "n_sessions": 181,
+  "f0_MHz_counts": {
+    "123.166": 17,
+    "123.167": 5,
+    "123.192": 34,
+    "123.193": 10,
+    "123.261": 55,
+    "123.262": 60
+  },
+  "f0_cluster_counts": {
+    "3": 115,
+    "2": 44,
+    "1": 22
+  },
+  "B0_T_qsmxt_counts": {
+    "2.8929": 22,
+    "2.8935": 44,
+    "2.8951": 115
+  },
+  "SoftwareVersions_counts": {
+    "syngo MR E11": 181
+  },
+  "obliquity_worst_axis_deg_min_median_max": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "slice_normal_vs_world_z_deg_min_median_max": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "n_sessions_obliquity_gt_0p5deg": 0,
+  "visible_channel_uniqueness": {
+    "channels": "sessions per subject x f0 cluster x software class x epoch",
+    "n_sessions_unique": 0,
+    "n_distinct_combinations": 12
+  },
+  "sidecar_field_counts": {
+    "CoilCombinationMethod=Adaptive Combine": 181,
+    "InPlanePhaseEncodingDirectionDICOM=ROW": 181,
+    "MRAcquisitionType=3D": 181,
+    "ParallelReductionFactorInPlane=2": 181,
+    "PartialFourier=1": 181,
+    "PercentPhaseFOV=75": 181,
+    "PercentSampling=100": 181,
+    "PhaseEncodingDirection=i": 181,
+    "PixelBandwidth=200": 181,
+    "ProtocolName=QSM_SWI_1.5mm": 16,
+    "ProtocolName=qsm_acq-1.5mm_GRE": 165,
+    "ReceiveCoilName=Head_32": 181,
+    "SequenceName=*fl3d4r": 181,
+    "SequenceVariant=SP": 181
+  },
+  "nifti_header_counts": {
+    "part | mag | descrip_has_Time | True": 724,
+    "part | mag | dtype | int16": 724,
+    "part | mag | n_extensions | 0": 724,
+    "part | mag | qform_code | 1 | sform_code | 1": 724,
+    "part | mag | scl_slope | None | scl_inter | None": 724,
+    "part | mag | shape | (120, 160, 96) | zooms | (1.5, 1.5, 1.5)": 724,
+    "part | phase | descrip_has_Time | True": 724,
+    "part | phase | dtype | int16": 724,
+    "part | phase | n_extensions | 0": 724,
+    "part | phase | qform_code | 1 | sform_code | 1": 724,
+    "part | phase | scl_slope | None | scl_inter | None": 724,
+    "part | phase | shape | (120, 160, 96) | zooms | (1.5, 1.5, 1.5)": 724
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "mask_mode": "custom3",
+  "mask_source": "custom_mask3",
+  "pdf_tol": 1e-05,
+  "lbv_tol": 1e-06,
+  "tolerance_source": "section-scoped keys [bg_removal.pdf] tol and [bg_removal.lbv] tol of qsmxt init (technical deviation: wrapper regex expected flat keys; amendment 1)",
+  "qsmxt_tag": "v9.22.0",
+  "qsm_primary_toml_sha256": "b4339262dd9b5ffdfda41ff07a10e433774c930c6ca010a074ed407b40842c53",
+  "reference": "two-step whole-brain reference on the support S (qsm_plausibility.py, extract_rois.py)",
+  "variants": [
+    "primary",
+    "split13",
+    "split24",
+    "mv_vsharp_ilsqr",
+    "mv_vsharp_rts",
+    "mv_pdf_medi",
+    "mv_pdf_ilsqr",
+    "mv_pdf_rts",
+    "mv_lbv_medi",
+    "mv_lbv_ilsqr",
+    "mv_lbv_rts"
+  ],
+  "fallback_variant": "mv_pdf_ilsqr"
+}

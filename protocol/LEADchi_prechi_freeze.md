@@ -1,0 +1,47 @@
+# LEAD-χ pre-χ freeze (internal; replaces the OSF posting under amendment 0)
+
+Frozen 2026-09-29T13:43:04Z. At this moment no χ map, local-field map, R2* map or ROI value of the LEAD-χ pipeline exists. The coded MEGRE copy exists; the labels and the code key are encrypted to the user's key.
+
+## Files covered (SHA-256)
+```
+139a99fbc92e63771b48dfd1f5a36196db03c0058207d64b4b70100017baa1ac  LEADchi_prereg_v1.0_FINAL.md
+01206e9e4d294a8ac9ea213f9226364ce7a782f6e620248dd230f1c9ca3c2831  LEADchi_amendment_0_route.md
+2f5ffb001b2d66c5b8c09dd63eb7095569800109f1d40444b30912f7c4c71b10  amendment1_log.md
+528a4b28959cc3ec43a5211ab7668a69f145773c5c6ee08621e9294dd8e625fe  code/pipeline/audit_run.py
+6e292e915413964e3a49a32c2fc668fdc4a35add3345d2e5a2f14f8c4913820a  code/pipeline/blind_setup.py
+47a17cd6bf9c5a1c9359141fb4c09c6c7d53eb1819c1213d96fff07f13ded5b1  code/pipeline/build_usable.py
+d5ab6b43afc43a8f070fedc771f8ceeab5b4d37fa01d410eb4036a8d2a0eabc8  code/pipeline/dwi_geometry.py
+1e15f70cd7738ad492ddc22fedb5cee2480a8bb6b9eb6546f1e41a3262057f61  code/pipeline/dwiqc.py
+f4edb6bf3240fbc14a9aff20ccc5982ed8404c50879e362fb19c40828e3d536b  code/pipeline/extract_rois.py
+4fbf220cbdcce0009a4c9d37e9b956e37da74cb7a1ba7e5471700297a785beb3  code/pipeline/gates_preunlock.py
+46fcd22f8f2ed5d527f1f7ffefb1be8a0b5992ef53e248b8f47f550ab9357de5  code/pipeline/lock_labels.py
+ebad4364ee9ae071b2d929b12aa40eb4177c16d9bf16e6bd25fdbef326147689  code/pipeline/lx_common.py
+b795b10f4d3403928da07b1c6c1691f6e3287c5c8814e86f4860e5a694df82d4  code/pipeline/pc5_dwi.py
+bd11f9112094829e156270cbed5cdf5a3d1d77863d925bd0eaf2a6c9b6db2b84  code/pipeline/pilot_checks.py
+bf6fb6b3c57e4dba11b47b77d4b420b0a44504a2c8d039df9adccee164e27450  code/pipeline/qc_montage.py
+6aab9b7f4cd11acaa55e4517d5191bd410389e3256067170409d67a70e299654  code/pipeline/qsm_plausibility.py
+7453913955e5474c8529d8e8f372b8bcf81cb5cd8a3446a801b0d05d0d667d76  code/pipeline/unlock_and_merge.py
+ff8482b2d14b6b98201b6892287369515b7f8db1288e2f7bd0bc5d0dcf2f7809  code/pipeline/env.sh
+ebe8b6d128fbcb907d13c685f5e56930a52cc38656402caefa300fa252240be2  code/pipeline/register_rois.sh
+ef8144ed956e1aff15cc8bdd530d752775197b43373160776f81f064df34fa06  code/pipeline/run_qsmxt.sh
+599170dcab30f5423d23803f22b4aa8cf909dee6d28f8d0ed32ae8092db0abec  code/pipeline/atlas_config.json
+76923c530adb338a57d01e79d73d22e39703df4f13134caac382e17dfbf1cd6a  code/pipeline_deviations/blind_setup_v1.0_registered.py
+f1231bbc66689a74f759d048e535fcf25e32382ac35962b12830b2f93032bade  code/analysis/SHA256SUMS
+09b1530115e6f73be74d07a3c9390e9578e0a544fa19ea83d3f04255b91d8065  lock_pub.pem
+bd2b4907eb11ed08a01e10af621e04441dc0b234e59f84cec6ad5fa987eeb16a  server_capture/blind_coded_files.sha256
+ea536763df0cabfb06f001e53e48fa089180736ea1a03cee87b70fd176f2f49e  server_capture/blind_setup_manifest.json
+01e4da11ac68455561c6180156fe021dd6edaac5d0e167f89e3a97ca500e560d  server_capture/dwi_n_min.json
+c1ea00b7189a6e33e265c37769f4364604b0933bd3d127aa5479a90a4a4fc69b  server_capture/frozen.sha256
+fbca18644120446dca359f41918a59141e746e7995a58100594928f75c2c889c  server_capture/locked_labels_locked_manifest.json
+21cae25df24a213d58cef29f00ed6bac79c26e899242957f8ca751b1596562f3  server_capture/prereg_frozen.sha256
+093ab49656016a8e9e1c5647763d81373957866f881b310b6ac3e89636036d5c  server_capture/prereg_header_audit.json
+571ebdf807b135fa8a62647c28b12aba869e3d0ad6957bd5049442d7fe71d75e  server_capture/prereg_pipeline_choices.json
+88aeab676a7e9e7218e42b74df1aaa86b74f345f182b34f93cc08cde8bd5dd39  server_capture/prereg_rois_sha256.txt
+5fa926378bd38995d9c0bea8ef97df382755bb33b67a6e5d558cd164ce1a7819  server_capture/qsmxt_quality_map_help.txt
+dda4463afd39198991863d69241e13bf0a3c40d2a620e4f2c8c961e0ed482051  server_capture/qsmxt_run_help.txt
+9553c9ffe75fe772887fa8554cbe30122ad0a03f629d73259c51bcecf8e8cec7  server_capture/qsmxt_v9.22.0_defaults.toml
+```
+
+## Decisions recorded before any χ (see amendment1_log.md)
+- Technical: auto12 phase encoding (6 unsigned-12-bit sessions); section-scoped PDF/LBV tolerances; flag and quality-map verification by Claude; lock_labels run by Claude.
+- Registered-rule outcome: n_min has no solution (6–9 of 108 candidates at n = 10/8/6) → **S3 exploratory; Holm = {S1, S2}**.

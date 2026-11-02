@@ -1,0 +1,18 @@
+2026-10-07T17:56:33Z  validation_local start; input /path/to/Penn_LEAD/LEADchi/mirror/unlocked/merged_qsmxt_primary_SNVTA.csv
+2026-10-07T17:56:33Z  first-usable 22 / 16 / 17 / 25 (total 80); usable sessions 107 from 80 subjects
+2026-10-07T17:56:33Z  check M1 beta_PS                               got 4.9628 frozen 4.9628 OK
+2026-10-07T17:56:33Z  check M1 SE_HC3                                got 3.1251 frozen 3.1251 OK
+2026-10-07T17:56:33Z  check outcome-B bound (ppb)                    got -6.1318 frozen -6.1318 OK
+2026-10-07T17:56:33Z  check M1 t_B                                   got 3.5502 frozen 3.5500 OK
+2026-10-07T17:56:34Z  X2 identity max |beta - (beta_chi +/- 1000 beta_R2*/Dr)/2| = 3.42e-14
+2026-10-07T17:56:34Z  X2 R2-cancellation: max range of beta_PS over R2 = 1.11e-14; of SE = 3.55e-15
+2026-10-07T17:56:34Z  X2 BH family sensitivity: smallest q  X2-only 6 = 0.0965; X2 + registered X (11) = 0.1768; ext 18 = 0.1370; ext 18 + registered X (23) = 0.1750
+2026-10-07T17:56:34Z  check M1 + Dice beta (frozen 3.749)            got 3.7494 frozen 3.7490 OK
+2026-10-07T17:56:34Z  check M1 + motion beta (frozen 4.227)          got 4.2268 frozen 4.2270 OK
+2026-10-07T17:56:34Z  check M1 + ICV beta (frozen 5.337)             got 5.3368 frozen 5.3370 OK
+2026-10-07T17:56:34Z  check M1 + Dice frozen-style pB (0.0019)       got 0.0019 frozen 0.0019 OK
+2026-10-07T17:56:34Z  check M1 + motion frozen-style pB (0.0004)     got 0.0004 frozen 0.0004 OK
+2026-10-07T17:56:34Z  check M1 + ICV frozen-style pB (0.0003)        got 0.0003 frozen 0.0003 OK
+2026-10-07T17:56:34Z  check K2 R2* beta (frozen 1.098)               got 1.0982 frozen 1.0980 OK
+2026-10-07T17:56:35Z  check PC2x chi_PUT slope (frozen 0.382)        got 0.3822 frozen 0.3820 OK
+2026-10-07T17:56:35Z  check PC2x chi_GP slope (frozen 2.397)         got 2.3966 frozen 2.3970 OK

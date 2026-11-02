@@ -1,0 +1,292 @@
+{
+ "SIMULATED": false,
+ "label": "POST HOC: complete human visual QC (kit 1 + kit 2); not confirmatory",
+ "meta": {
+  "simulated": false,
+  "utc": "2026-10-28T20:11:01Z",
+  "kit1_ratings": "/path/to/Penn_LEAD/LEADchi/human_qc_kit/returned/LEADchi_humanQC_rater_20261028T1724Z.csv",
+  "kit1_ratings_sha256": "1975118e501066fd87cb7e18a096f537a034caf3b38897590a927649cc2118c3",
+  "kit2_ratings": "/path/to/Penn_LEAD/LEADchi/human_qc_kit/kit2_2026-10-28/returned/LEADchi_humanQC_rater_20261028T2010Z.csv",
+  "kit2_ratings_sha256": "fd7090286906413024a67a8fcd2dff5f691d71f9853f12669315192503afb767",
+  "key1_sha256": "a4bb713258897af408097bfc4523d8d7deadbf68c081b51e9bb15c5e8ea1d97b",
+  "key2_sha256": "96d6b6342afe79451483f58c8a6437f4595858cfb5b739410b41aac47994631a",
+  "plan_sha256": "ec4f2f3a5291e97235fb9aa1e9021d23a54bc8d7b7ce75954403593c809ee099",
+  "script_sha256": "0e0ca93435c8cf5f93b0468a69d11652c6caf5904146bb2cd110f050686e255a",
+  "kit1_module_sha256": "dd571364efb2abb6d623a83a275431ff5e1877b60ef9c08824c9df383085b081",
+  "refit_R_sha256": "7c182ae202cbb8963f594a4460c8c6cfdbeead48ae4a26582512a5d5ef27e0e5",
+  "rscript_returncode": 0,
+  "issues_kit1": {
+   "file_encoding": "utf-8-sig",
+   "file_delimiter": "comma",
+   "unknown_kit_ids": 0,
+   "duplicated_rows": 0,
+   "invalid_failure_codes": 0,
+   "missing_or_invalid_grade": 0,
+   "missing_or_invalid_placement": 0
+  },
+  "issues_kit2": {
+   "file_encoding": "utf-8-sig",
+   "file_delimiter": "comma",
+   "unknown_kit_ids": 0,
+   "duplicated_rows": 0,
+   "invalid_failure_codes": 0,
+   "missing_or_invalid_grade": 0,
+   "missing_or_invalid_placement": 0
+  }
+ },
+ "coverage": {
+  "AI_graded_sessions": 180,
+  "sessions_with_human_grade": 180,
+  "sessions_with_human_placement": 180,
+  "kit1_sessions": 101,
+  "kit2_new_sessions": 79,
+  "kit2_new_without_grade": 0,
+  "kit2_new_without_placement": 0,
+  "kit1_sessions_without_grade": 0,
+  "complete_human_qc": true
+ },
+ "checks": {
+  "frozen_reconstruction": {
+   "usable_equal": true,
+   "first_usable_equal": true,
+   "fail_reason_equal": true
+  },
+  "AI_frozen_reproduces_confirmatory": true,
+  "kit1_ratings_are_real_returned_csv": true,
+  "K1_H_replace_reproduces_n89_run": true
+ },
+ "m1": {
+  "AI_frozen": {
+   "n": 80,
+   "beta_PS_ppb": 4.96280154409223,
+   "se_hc3": 3.12508040430837,
+   "ci95_ppb": [
+    -1.27319931092534,
+    11.1988023991098
+   ],
+   "p_two": 0.116913053059836,
+   "pB_fixed_bound": 0.00035191843098177,
+   "bound_fixed_ppb": -6.13180464348368,
+   "pB_rederived_bound": 0.000351918430981771,
+   "A_beta_negative_p05": false,
+   "label_descriptive": "B",
+   "cells": {
+    "TD": 22,
+    "ADHD-only": 16,
+    "PS-only": 17,
+    "PS+ADHD": 25,
+    "total": 80
+   }
+  },
+  "K1_H_replace": {
+   "n": 89,
+   "beta_PS_ppb": 6.29013622956428,
+   "se_hc3": 3.07073918362878,
+   "ci95_ppb": [
+    0.175513333072132,
+    12.4047591260564
+   ],
+   "p_two": 0.0439280350191711,
+   "pB_fixed_bound": 6.15839712316753e-05,
+   "bound_fixed_ppb": -6.13180464348368,
+   "pB_rederived_bound": 2.9718735859493e-05,
+   "A_beta_negative_p05": false,
+   "label_descriptive": "B",
+   "cells": {
+    "TD": 25,
+    "ADHD-only": 18,
+    "PS-only": 19,
+    "PS+ADHD": 27,
+    "total": 89
+   }
+  },
+  "H_all180": {
+   "n": 85,
+   "beta_PS_ppb": 6.28085215875773,
+   "se_hc3": 3.26467138960875,
+   "ci95_ppb": [
+    -0.225628537707346,
+    12.7873328552228
+   ],
+   "p_two": 0.0582679220180689,
+   "pB_fixed_bound": 0.000147586883265154,
+   "bound_fixed_ppb": -6.13180464348368,
+   "pB_rederived_bound": 7.4874914133294e-05,
+   "A_beta_negative_p05": false,
+   "label_descriptive": "B",
+   "cells": {
+    "TD": 23,
+    "ADHD-only": 18,
+    "PS-only": 17,
+    "PS+ADHD": 27,
+    "total": 85
+   }
+  }
+ },
+ "sample_changes": {
+  "AI_frozen": {
+   "n_usable_sessions": 107,
+   "n_first_usable": 80,
+   "posthoc_plausibility_recheck_excluded": []
+  },
+  "K1_H_replace": {
+   "n_usable_sessions": 126,
+   "n_first_usable": 89,
+   "posthoc_plausibility_recheck_excluded": []
+  },
+  "H_all180": {
+   "n_usable_sessions": 120,
+   "n_first_usable": 85,
+   "posthoc_plausibility_recheck_excluded": [],
+   "vs_AI_frozen": {
+    "youths_added": [
+     "sub-20860",
+     "sub-21141",
+     "sub-21493",
+     "sub-21568",
+     "sub-21580",
+     "sub-21713",
+     "sub-21827",
+     "sub-21855",
+     "sub-22045"
+    ],
+    "youths_removed": [
+     "sub-20141",
+     "sub-20953",
+     "sub-21023",
+     "sub-22744"
+    ],
+    "youths_with_changed_first_session": [
+     "sub-20253",
+     "sub-20976"
+    ]
+   },
+   "vs_K1_H_replace": {
+    "youths_added": [],
+    "youths_removed": [
+     "sub-20141",
+     "sub-20953",
+     "sub-21023",
+     "sub-22744"
+    ],
+    "youths_with_changed_first_session": []
+   }
+  }
+ },
+ "test_retest": {
+  "n_repeats": 21,
+  "n_both_graded": 21,
+  "all": {
+   "n": 21,
+   "exact_agreement": 0.8571428571428571,
+   "exact_wilson95": [
+    0.653639395331373,
+    0.9501898753920957
+   ],
+   "kappa_linear": 0.7142857142857142,
+   "kappa_quadratic": 0.75390625,
+   "table_rows_first_cols_second": [
+    [
+     14,
+     1,
+     0
+    ],
+    [
+     1,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     3
+    ]
+   ]
+  },
+  "table_note": "rows = kit-2 grade, columns = kit-1 grade",
+  "by_stratum_counts": {
+   "repeat_of_kit1_AI_fail": {
+    "n": 11,
+    "identical": 8
+   },
+   "repeat_of_kit1_AI_pass": {
+    "n": 10,
+    "identical": 10
+   }
+  },
+  "placement_agreement": {
+   "n": 21,
+   "identical": 20
+  },
+  "example_montage_session_among_repeats": false
+ },
+ "secondary": {
+  "census_with_example_session": {
+   "n": 180,
+   "exact_agreement": 0.13333333333333333,
+   "exact_wilson95": [
+    0.09126281026173685,
+    0.1907272217841323
+   ],
+   "kappa_linear": 0.06690050033527606,
+   "kappa_quadratic": 0.09627329192546574,
+   "table_rows_first_cols_second": [
+    [
+     7,
+     104,
+     45
+    ],
+    [
+     0,
+     7,
+     6
+    ],
+    [
+     0,
+     1,
+     10
+    ]
+   ]
+  },
+  "census_primary_without_example_session": {
+   "n": 179,
+   "exact_agreement": 0.1340782122905028,
+   "exact_wilson95": [
+    0.09178249111126136,
+    0.19174980620513893
+   ],
+   "kappa_linear": 0.0679278854959835,
+   "kappa_quadratic": 0.09826051850941708,
+   "table_rows_first_cols_second": [
+    [
+     7,
+     104,
+     44
+    ],
+    [
+     0,
+     7,
+     6
+    ],
+    [
+     0,
+     1,
+     10
+    ]
+   ]
+  },
+  "table_note": "rows = human grade, columns = AI grade",
+  "human_fail_rate_among_AI_pass": {
+   "n": 119,
+   "human_grade_2": 1,
+   "rate": 0.008403361344537815,
+   "wilson95": [
+    0.0014849430236823467,
+    0.04606788591935969
+   ]
+  }
+ },
+ "interpretation": "the result is robust to replacing the AI visual-QC grade with a first-author human grade for all 180 sessions",
+ "nominally_significant_positive_beta": false,
+ "nominal_note": "a nominally significant positive beta is NOT interpreted as a finding (plan section 5)"
+}

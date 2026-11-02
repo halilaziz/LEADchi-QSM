@@ -1,0 +1,216 @@
+{
+  "_about": "LEAD-chi frozen ROI/atlas configuration (task P5b, 2026-09-25; revised 2026-09-26 for the final registration). Read by register_rois.sh and lx_common.py. Relative paths are relative to $LX (/path/to/Penn_LEAD/LEADchi); ${VAR} is expanded from the environment. Items marked VERIFY must be confirmed header-only after the approved A3 downloads / A5 copies, before the OSF registration is posted, and any change is logged in the registration.",
+  "templates": {
+    "MNI152NLin2009cAsym": {
+      "t1w": "rois/templates/tpl-MNI152NLin2009cAsym_res-01_T1w.nii.gz",
+      "brain_mask": "rois/templates/tpl-MNI152NLin2009cAsym_res-01_desc-brain_mask.nii.gz",
+      "source": "TemplateFlow cache already on server (~/.cache/templateflow; copied into the tree under A5). If the brain mask is absent or a 0-byte placeholder, register_rois.sh builds it with SynthStrip (label-free, once)."
+    },
+    "MNI152NLin6Asym": {
+      "t1w": "rois/templates/tpl-MNI152NLin6Asym_res-01_T1w.nii.gz",
+      "brain_mask": "rois/templates/tpl-MNI152NLin6Asym_res-01_desc-brain_mask.nii.gz",
+      "source": "as above; needed only because SUIT and JHU are distributed in FSL MNI152 (= MNI152NLin6Asym) space"
+    }
+  },
+  "template_to_template": {
+    "moving": "MNI152NLin6Asym",
+    "fixed": "MNI152NLin2009cAsym",
+    "prefix": "rois/xfm/nlin6_to_2009c_",
+    "method": "antsRegistrationSyN.sh -t s between the two TemplateFlow 1 mm T1w brains (E3 finding A11 option b; label-free, no download)"
+  },
+  "cit168": {
+    "file": "rois/CIT168/CIT168toMNI152-2009c_prob.nii.gz",
+    "space": "MNI152NLin2009cAsym",
+    "version": "CIT168_Reinf_Learn v1.1.0 (Pauli, Nili & Tyszka 2018, doi:10.1038/sdata.2018.63), CC BY 4.0",
+    "sha256": "7a91c36701f36d9d908479b862e65a879d15f54badcec6878e61d857ab570f66",
+    "n_volumes": 16,
+    "volume_index_0based": {
+      "SNc": 6,
+      "RN": 7,
+      "SNr": 8,
+      "PBP": 9,
+      "VTA": 10,
+      "STH": 15
+    },
+    "subset_order": [
+      "SNc",
+      "RN",
+      "SNr",
+      "PBP",
+      "VTA",
+      "STH"
+    ],
+    "subset_file": "rois/CIT168/cit168_subset6_2009c.nii.gz"
+  },
+  "dentate": {
+    "atlas": "SUIT",
+    "_decision": "D8: He et al. 2017 if its licence permits before posting, otherwise SUIT (E3 row 4.1: no public He 2017 release found). To switch, replace this block with the He 2017 file and indices and log it in the registration.",
+    "file": "rois/SUIT/atl-Anatom_space-MNI_probseg.nii",
+    "space": "MNI152NLin6Asym",
+    "version": "DiedrichsenLab/cerebellar_atlases Diedrichsen_2009 atl-Anatom (Diedrichsen et al. 2009; nuclei Diedrichsen et al. 2011, doi:10.1016/j.neuroimage.2010.10.035), CC BY",
+    "sha256": null,
+    "kind": "probseg_4d",
+    "label_1based": {
+      "DN_L": 29,
+      "DN_R": 30,
+      "IP_R": 32
+    },
+    "volume_index_0based": {
+      "DN_L": 28,
+      "DN_R": 29,
+      "IP_R": 31
+    },
+    "VERIFY": "probseg layout assumed 4D with one volume per label in label order (volume = label - 1); confirm from atl-Anatom.tsv and the header before posting (E3 row 4.2)",
+    "subset_order": [
+      "DN_L",
+      "DN_R",
+      "IP_R"
+    ],
+    "subset_file": "rois/SUIT/suit_subset3_nlin6.nii.gz",
+    "dseg_fallback": {
+      "file": "/path/to/apptainers/atlases/atl-Anatom_space-MNI_dseg.nii.gz",
+      "sha256_prefix": "419c4bf8",
+      "use": "only if the probseg download (A3-2) is declined: binary label maps, so the p >= 0.5 rule degenerates to the deterministic label; declared as a deviation"
+    }
+  },
+  "plic": {
+    "file": "${FSLDIR}/data/atlases/JHU/JHU-ICBM-labels-1mm.nii.gz",
+    "space": "MNI152NLin6Asym",
+    "version": "JHU-ICBM-DTI-81 white-matter labels, as distributed with FSL 6.0.7.11 (read-only)",
+    "labels": {
+      "PLIC_R": 19,
+      "PLIC_L": 20
+    },
+    "VERIFY": "label values from $FSLDIR/data/atlases/JHU-labels.xml (index = value - 1); confirm before posting",
+    "subset_file": "rois/JHU/jhu_plic_nlin6.nii.gz",
+    "_use": "descriptive only (not a reference level)"
+  },
+  "synthseg": {
+    "_about": "FreeSurfer/SynthSeg label values (QSIPrep desc-aseg_dseg and mri_synthseg output). SynthSeg has no choroid-plexus labels 31/63 (E3 row 5.2), so the R2*-based choroid rule applies.",
+    "L_WM": 2,
+    "L_LV": 4,
+    "L_ILV": 5,
+    "L_CWM": 7,
+    "L_CCTX": 8,
+    "L_THAL": 10,
+    "L_CAU": 11,
+    "L_PUT": 12,
+    "L_GP": 13,
+    "V3": 14,
+    "V4": 15,
+    "BS": 16,
+    "L_HIPP": 17,
+    "L_AMY": 18,
+    "CSF": 24,
+    "L_ACC": 26,
+    "L_VDC": 28,
+    "R_WM": 41,
+    "R_LV": 43,
+    "R_ILV": 44,
+    "R_CWM": 46,
+    "R_CCTX": 47,
+    "R_THAL": 49,
+    "R_CAU": 50,
+    "R_PUT": 51,
+    "R_GP": 52,
+    "R_HIPP": 53,
+    "R_AMY": 54,
+    "R_ACC": 58,
+    "R_VDC": 60,
+    "csf_labels": [
+      4,
+      5,
+      14,
+      15,
+      24,
+      43,
+      44
+    ]
+  },
+  "envelopes_ppb": {
+    "_source": "v1.2 delta section 5.1 (literature ranges re-verified against the PDFs before posting, item S4); composites follow P5 constants.R",
+    "SNVTA": [
+      -50,
+      300
+    ],
+    "SNonly": [
+      -50,
+      300
+    ],
+    "GP": [
+      -50,
+      300
+    ],
+    "PUT": [
+      -80,
+      200
+    ],
+    "PUT_R": [
+      -80,
+      200
+    ],
+    "CAU": [
+      -80,
+      200
+    ],
+    "RN": [
+      -50,
+      300
+    ],
+    "DN_R": [
+      -50,
+      300
+    ],
+    "DNIP_R": [
+      -50,
+      300
+    ],
+    "THAL": [
+      -100,
+      100
+    ],
+    "STR": [
+      -80,
+      200
+    ],
+    "DGM": [
+      -80,
+      300
+    ]
+  },
+  "r2s_envelope_s-1": [
+    5,
+    100
+  ],
+  "r2s_voxel_clip_s-1": [
+    0,
+    200
+  ],
+  "implausible_voxel_abs_ppm": 1.0,
+  "roi_fail_fimp": 0.05,
+  "roi_fail_inmask": {
+    "default": 0.95,
+    "DN_R": 0.9,
+    "DN_L": 0.9,
+    "DNIP_R": 0.9
+  },
+  "csf_ref": {
+    "erode_primary": 2,
+    "erode_fallback": 1,
+    "min_voxels": 200,
+    "choroid_r2s_sd": 2.0,
+    "max_abs_csf_minus_wb_ppb": 50,
+    "_note": "CSF-only secondary reference; a session without a valid CSF reference is missing for dref, K3 and the CSF level of the specification curve (no PLIC fallback)"
+  },
+  "session_auto_fail_fimp": 0.01,
+  "session_review_iqr_k": 3.0,
+  "robust_z_flag": 5.0,
+  "g5_dice_min": 0.8,
+  "pe_axis": 0,
+  "_pe_axis": "voxel axis of the phase-encode direction (R-L, 75 % phase FOV) for the ghost-to-signal index; VERIFY from InPlanePhaseEncodingDirectionDICOM / PhaseEncodingDirection counts in the header audit before posting",
+  "slab": {
+    "n_partitions": 96,
+    "edge_trim_each_side": 2,
+    "_note": "partition axis = the unique voxel axis of length 96 (matrix 120 x 160 x 96)"
+  }
+}

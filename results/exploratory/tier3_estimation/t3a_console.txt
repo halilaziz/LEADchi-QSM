@@ -1,0 +1,24 @@
+2026-10-05T13:04:32Z  T3a start; input /path/to/Penn_LEAD/LEADchi/mirror/unlocked/merged_qsmxt_primary_SNVTA.csv
+2026-10-05T13:04:32Z  samples: usable 31 / 19 / 22 / 35 (total 107); first-usable 22 / 16 / 17 / 25 (total 80)
+2026-10-05T13:04:33Z  E-dev SNVTA
+2026-10-05T13:04:33Z    random slope singular: full_ML FALSE, null_ML FALSE, full_REML FALSE -> slope kept
+2026-10-05T13:05:32Z  E-dev STR
+2026-10-05T13:05:32Z    random slope singular: full_ML FALSE, null_ML FALSE, full_REML FALSE -> slope kept
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+2026-10-05T13:07:06Z  E-dev DN_R
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+2026-10-05T13:07:07Z    random slope singular: full_ML TRUE, null_ML TRUE, full_REML TRUE -> slope DROPPED from both models
+null device 
+          1 
+2026-10-05T13:07:43Z  E-z
+null device 
+          1 
+2026-10-05T13:07:43Z  E-int
+2026-10-05T13:07:43Z    M1 refit reproduces frozen beta_PS, interaction and its HC3 SE (max abs diff 5.33e-15)
+null device 
+          1 
+2026-10-05T13:07:43Z  done; runtime 3.19 min

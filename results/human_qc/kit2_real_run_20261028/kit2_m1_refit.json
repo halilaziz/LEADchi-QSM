@@ -1,0 +1,404 @@
+{
+  "label": "POST HOC sensitivity (human visual QC replaces/complements the AI grade); not confirmatory",
+  "R": "R version 4.4.1 (2024-06-14)",
+  "sandwich": "3.1.1",
+  "MASS": "7.3.61",
+  "rL_primary": 0.938278557806515,
+  "PC4": true,
+  "frozen_code_sha256": ["3ad9e18e3cc7b18094b941b887275ec31c5ce5bba821b93eba099574c3ec98e9", "722bfec5b078702b094792c2198a38d9e8687948c13054b8e73ee3005df38636", "c312c4f52c574a0f1675a040a77ad012f675dd3aebf2a4bf26321b9db89b63d6", "c2decfec7ee5b7be0e1f389b1a0d0b0672fec52fae931ae56e1dd2ad5f0ac6b4", "75173d15662564a8a8a12ebecd989cfd90100742f6ce5cb2ca2fa2046c78257d"],
+  "scenarios": {
+    "AI_frozen": {
+      "scenario": "AI_frozen",
+      "n": 80,
+      "df": 68,
+      "cells": {
+        "TD": 22,
+        "ADHD-only": 16,
+        "PS-only": 17,
+        "PS+ADHD": 25,
+        "total": 80
+      },
+      "n_usable_sessions": 107,
+      "first_usable_keys": ["sub-19861_ses-1", "sub-20139_ses-1", "sub-20141_ses-1", "sub-20149_ses-1", "sub-20188_ses-2", "sub-20212_ses-1", "sub-20214_ses-1", "sub-20236_ses-1", "sub-20238_ses-1", "sub-20252_ses-1", "sub-20253_ses-3", "sub-20258_ses-1", "sub-20259_ses-2", "sub-20302_ses-1", "sub-20303_ses-2", "sub-20310_ses-1", "sub-20350_ses-1", "sub-20352_ses-1", "sub-20399_ses-2", "sub-20402_ses-1", "sub-20403_ses-1", "sub-20427_ses-1", "sub-20463_ses-1", "sub-20494_ses-3", "sub-20533_ses-2", "sub-20572_ses-2", "sub-20626_ses-1", "sub-20712_ses-1", "sub-20721_ses-2", "sub-20794_ses-1", "sub-20818_ses-2", "sub-20823_ses-1", "sub-20836_ses-1", "sub-20846_ses-1", "sub-20855_ses-1", "sub-20866_ses-1", "sub-20902_ses-2", "sub-20916_ses-3", "sub-20919_ses-1", "sub-20923_ses-2", "sub-20953_ses-1", "sub-20966_ses-1", "sub-20968_ses-3", "sub-20976_ses-2", "sub-20983_ses-2", "sub-21023_ses-1", "sub-21035_ses-2", "sub-21038_ses-1", "sub-21104_ses-1", "sub-21112_ses-2", "sub-21116_ses-1", "sub-21118_ses-1", "sub-21131_ses-1", "sub-21139_ses-2", "sub-21146_ses-1", "sub-21150_ses-1", "sub-21154_ses-2", "sub-21161_ses-3", "sub-21193_ses-1", "sub-21345_ses-1", "sub-21432_ses-1", "sub-21514_ses-1", "sub-21516_ses-1", "sub-21560_ses-2", "sub-21567_ses-1", "sub-21623_ses-1", "sub-21712_ses-1", "sub-21797_ses-1", "sub-21856_ses-1", "sub-22064_ses-1", "sub-22473_ses-1", "sub-22510_ses-1", "sub-22617_ses-1", "sub-22653_ses-1", "sub-22654_ses-1", "sub-22670_ses-1", "sub-22744_ses-1", "sub-23303_ses-1", "sub-23676_ses-1", "sub-23698_ses-1"],
+      "beta_PS_ppb": 4.96280154409223,
+      "se_hc3": 3.12508040430837,
+      "t": 1.58805563442473,
+      "p_two": 0.116913053059836,
+      "ci95_ppb": [-1.27319931092534, 11.1988023991098],
+      "ci90_ppb": [-0.248495913393383, 10.1740990015778],
+      "sigma_resid": 11.2559034014286,
+      "sigma_rob": 10.5504543758571,
+      "huber_converged": true,
+      "sigma_B": 10.5504543758571,
+      "delta": 0.440906550731622,
+      "bound_fixed": {
+        "bound_ppb": -6.13180464348368,
+        "note": "registered bound frozen at the confirmatory run (-6.1318 ppb)",
+        "tB": 3.55018263603087,
+        "df": 68,
+        "pB_one_sided": 0.00035191843098177,
+        "reject_at_05": true
+      },
+      "bound_rederived": {
+        "delta_B": 0.581188679182884,
+        "bound_ppb": -6.13180464348368,
+        "tB": 3.55018263603087,
+        "pB": 0.000351918430981771,
+        "note": "delta_B = 0.6*sqrt(rL_primary) times sigma_B recomputed in this sample"
+      },
+      "A_beta_negative_p05": false,
+      "B_rederived": true,
+      "outcome_label_descriptive": "B",
+      "disconfirming": false,
+      "formula": "chi_SNVTA ~ PS_e * ADHD_e + ns(age, df = 3) + sex_e + race3 +      scale(roi_vol) + scale(Q_phase)",
+      "coefficients": [
+        {
+          "term": "(Intercept)",
+          "est": 43.1977847659845,
+          "se_hc3": 5.66897985868881,
+          "t": 7.62002791380102,
+          "p_two": 1.07286803737775e-10
+        },
+        {
+          "term": "PS_e",
+          "est": 4.96280154409223,
+          "se_hc3": 3.12508040430837,
+          "t": 1.58805563442473,
+          "p_two": 0.116913053059836
+        },
+        {
+          "term": "ADHD_e",
+          "est": -1.27157944948918,
+          "se_hc3": 3.10638546650445,
+          "t": -0.409343741528659,
+          "p_two": 0.683573960487499
+        },
+        {
+          "term": "ns(age, df = 3)1",
+          "est": -1.04481683406568,
+          "se_hc3": 6.01950240015798,
+          "t": -0.173571960705301,
+          "p_two": 0.862717536166033
+        },
+        {
+          "term": "ns(age, df = 3)2",
+          "est": 30.5378842940041,
+          "se_hc3": 15.0865298404933,
+          "t": 2.02418214240615,
+          "p_two": 0.0468821331477233
+        },
+        {
+          "term": "ns(age, df = 3)3",
+          "est": 14.6090325025517,
+          "se_hc3": 9.50201427899121,
+          "t": 1.53746690686963,
+          "p_two": 0.128819459388736
+        },
+        {
+          "term": "sex_e",
+          "est": 1.46630681893267,
+          "se_hc3": 2.98545827031948,
+          "t": 0.491149661514363,
+          "p_two": 0.624902070912955
+        },
+        {
+          "term": "race31",
+          "est": -0.87896055458524,
+          "se_hc3": 2.38550579337842,
+          "t": -0.3684587801149,
+          "p_two": 0.713675798484874
+        },
+        {
+          "term": "race32",
+          "est": 0.334705068223379,
+          "se_hc3": 2.51869750619226,
+          "t": 0.132888156438199,
+          "p_two": 0.894674299438406
+        },
+        {
+          "term": "scale(roi_vol)",
+          "est": 1.78099997866769,
+          "se_hc3": 1.44577687218569,
+          "t": 1.23186365263626,
+          "p_two": 0.222242911377641
+        },
+        {
+          "term": "scale(Q_phase)",
+          "est": -2.46387578711352,
+          "se_hc3": 1.6403999481603,
+          "t": -1.50199699157315,
+          "p_two": 0.137727647252349
+        },
+        {
+          "term": "PS_e:ADHD_e",
+          "est": -6.38923988314397,
+          "se_hc3": 6.19869616049867,
+          "t": -1.03073932286915,
+          "p_two": 0.306315335235147
+        }
+      ]
+    },
+    "K1_H_replace": {
+      "scenario": "K1_H_replace",
+      "n": 89,
+      "df": 77,
+      "cells": {
+        "TD": 25,
+        "ADHD-only": 18,
+        "PS-only": 19,
+        "PS+ADHD": 27,
+        "total": 89
+      },
+      "n_usable_sessions": 126,
+      "first_usable_keys": ["sub-19861_ses-1", "sub-20139_ses-1", "sub-20141_ses-1", "sub-20149_ses-1", "sub-20188_ses-2", "sub-20212_ses-1", "sub-20214_ses-1", "sub-20236_ses-1", "sub-20238_ses-1", "sub-20252_ses-1", "sub-20253_ses-2", "sub-20258_ses-1", "sub-20259_ses-2", "sub-20302_ses-1", "sub-20303_ses-2", "sub-20310_ses-1", "sub-20350_ses-1", "sub-20352_ses-1", "sub-20399_ses-2", "sub-20402_ses-1", "sub-20403_ses-1", "sub-20427_ses-1", "sub-20463_ses-1", "sub-20494_ses-3", "sub-20533_ses-2", "sub-20572_ses-2", "sub-20626_ses-1", "sub-20712_ses-1", "sub-20721_ses-2", "sub-20794_ses-1", "sub-20818_ses-2", "sub-20823_ses-1", "sub-20836_ses-1", "sub-20846_ses-1", "sub-20855_ses-1", "sub-20860_ses-1", "sub-20866_ses-1", "sub-20902_ses-2", "sub-20916_ses-3", "sub-20919_ses-1", "sub-20923_ses-2", "sub-20953_ses-1", "sub-20966_ses-1", "sub-20968_ses-3", "sub-20976_ses-1", "sub-20983_ses-2", "sub-21023_ses-1", "sub-21035_ses-2", "sub-21038_ses-1", "sub-21104_ses-1", "sub-21112_ses-2", "sub-21116_ses-1", "sub-21118_ses-1", "sub-21131_ses-1", "sub-21139_ses-2", "sub-21141_ses-2", "sub-21146_ses-1", "sub-21150_ses-1", "sub-21154_ses-2", "sub-21161_ses-3", "sub-21193_ses-1", "sub-21345_ses-1", "sub-21432_ses-1", "sub-21493_ses-1", "sub-21514_ses-1", "sub-21516_ses-1", "sub-21560_ses-2", "sub-21567_ses-1", "sub-21568_ses-1", "sub-21580_ses-2", "sub-21623_ses-1", "sub-21712_ses-1", "sub-21713_ses-1", "sub-21797_ses-1", "sub-21827_ses-1", "sub-21855_ses-2", "sub-21856_ses-1", "sub-22045_ses-1", "sub-22064_ses-1", "sub-22473_ses-1", "sub-22510_ses-1", "sub-22617_ses-1", "sub-22653_ses-1", "sub-22654_ses-1", "sub-22670_ses-1", "sub-22744_ses-1", "sub-23303_ses-1", "sub-23676_ses-1", "sub-23698_ses-1"],
+      "beta_PS_ppb": 6.29013622956428,
+      "se_hc3": 3.07073918362878,
+      "t": 2.0484111002,
+      "p_two": 0.0439280350191711,
+      "ci95_ppb": [0.175513333072132, 12.4047591260564],
+      "ci90_ppb": [1.17771004478784, 11.4025624143407],
+      "sigma_resid": 12.9539720822064,
+      "sigma_rob": 11.6302864618379,
+      "huber_converged": true,
+      "sigma_B": 11.6302864618379,
+      "delta": 0.485575867359204,
+      "bound_fixed": {
+        "bound_ppb": -6.13180464348368,
+        "note": "registered bound frozen at the confirmatory run (-6.1318 ppb)",
+        "tB": 4.04526080862674,
+        "df": 77,
+        "pB_one_sided": 6.15839712316753e-05,
+        "reject_at_05": true
+      },
+      "bound_rederived": {
+        "delta_B": 0.581188679182884,
+        "bound_ppb": -6.75939082727416,
+        "tB": 4.24963706667443,
+        "pB": 2.9718735859493e-05,
+        "note": "delta_B = 0.6*sqrt(rL_primary) times sigma_B recomputed in this sample"
+      },
+      "A_beta_negative_p05": false,
+      "B_rederived": true,
+      "outcome_label_descriptive": "B",
+      "disconfirming": true,
+      "formula": "chi_SNVTA ~ PS_e * ADHD_e + ns(age, df = 3) + sex_e + race3 +      scale(roi_vol) + scale(Q_phase)",
+      "coefficients": [
+        {
+          "term": "(Intercept)",
+          "est": 42.7154695605862,
+          "se_hc3": 7.2992671928483,
+          "t": 5.85202163888973,
+          "p_two": 1.1205670510233e-07
+        },
+        {
+          "term": "PS_e",
+          "est": 6.29013622956428,
+          "se_hc3": 3.07073918362878,
+          "t": 2.0484111002,
+          "p_two": 0.0439280350191711
+        },
+        {
+          "term": "ADHD_e",
+          "est": 2.16302074979744,
+          "se_hc3": 3.10466080609343,
+          "t": 0.696701148657573,
+          "p_two": 0.488087821499355
+        },
+        {
+          "term": "ns(age, df = 3)1",
+          "est": -2.03918729558654,
+          "se_hc3": 6.8218202960204,
+          "t": -0.298921285976433,
+          "p_two": 0.765805383269333
+        },
+        {
+          "term": "ns(age, df = 3)2",
+          "est": 27.9315019740056,
+          "se_hc3": 17.890200258822,
+          "t": 1.56127385774969,
+          "p_two": 0.122560026725922
+        },
+        {
+          "term": "ns(age, df = 3)3",
+          "est": 14.4673183955804,
+          "se_hc3": 9.86620347226868,
+          "t": 1.46635110822965,
+          "p_two": 0.146624858919042
+        },
+        {
+          "term": "sex_e",
+          "est": 5.21529302124237,
+          "se_hc3": 3.10534759883178,
+          "t": 1.67945547326307,
+          "p_two": 0.0971168553042261
+        },
+        {
+          "term": "race31",
+          "est": -0.712396216757944,
+          "se_hc3": 2.37631687152823,
+          "t": -0.299790076522831,
+          "p_two": 0.765145078436616
+        },
+        {
+          "term": "race32",
+          "est": 0.965160311116193,
+          "se_hc3": 2.86037079865961,
+          "t": 0.337424893153179,
+          "p_two": 0.736714720862921
+        },
+        {
+          "term": "scale(roi_vol)",
+          "est": 1.29196200842258,
+          "se_hc3": 1.4823536917457,
+          "t": 0.871561231045406,
+          "p_two": 0.386157220590464
+        },
+        {
+          "term": "scale(Q_phase)",
+          "est": -3.41213974254807,
+          "se_hc3": 1.69156865844204,
+          "t": -2.01714528436032,
+          "p_two": 0.0471658811804743
+        },
+        {
+          "term": "PS_e:ADHD_e",
+          "est": -8.96096061633872,
+          "se_hc3": 6.1890232134803,
+          "t": -1.44787962611303,
+          "p_two": 0.151710320088995
+        }
+      ]
+    },
+    "H_all180": {
+      "scenario": "H_all180",
+      "n": 85,
+      "df": 73,
+      "cells": {
+        "TD": 23,
+        "ADHD-only": 18,
+        "PS-only": 17,
+        "PS+ADHD": 27,
+        "total": 85
+      },
+      "n_usable_sessions": 120,
+      "first_usable_keys": ["sub-19861_ses-1", "sub-20139_ses-1", "sub-20149_ses-1", "sub-20188_ses-2", "sub-20212_ses-1", "sub-20214_ses-1", "sub-20236_ses-1", "sub-20238_ses-1", "sub-20252_ses-1", "sub-20253_ses-2", "sub-20258_ses-1", "sub-20259_ses-2", "sub-20302_ses-1", "sub-20303_ses-2", "sub-20310_ses-1", "sub-20350_ses-1", "sub-20352_ses-1", "sub-20399_ses-2", "sub-20402_ses-1", "sub-20403_ses-1", "sub-20427_ses-1", "sub-20463_ses-1", "sub-20494_ses-3", "sub-20533_ses-2", "sub-20572_ses-2", "sub-20626_ses-1", "sub-20712_ses-1", "sub-20721_ses-2", "sub-20794_ses-1", "sub-20818_ses-2", "sub-20823_ses-1", "sub-20836_ses-1", "sub-20846_ses-1", "sub-20855_ses-1", "sub-20860_ses-1", "sub-20866_ses-1", "sub-20902_ses-2", "sub-20916_ses-3", "sub-20919_ses-1", "sub-20923_ses-2", "sub-20966_ses-1", "sub-20968_ses-3", "sub-20976_ses-1", "sub-20983_ses-2", "sub-21035_ses-2", "sub-21038_ses-1", "sub-21104_ses-1", "sub-21112_ses-2", "sub-21116_ses-1", "sub-21118_ses-1", "sub-21131_ses-1", "sub-21139_ses-2", "sub-21141_ses-2", "sub-21146_ses-1", "sub-21150_ses-1", "sub-21154_ses-2", "sub-21161_ses-3", "sub-21193_ses-1", "sub-21345_ses-1", "sub-21432_ses-1", "sub-21493_ses-1", "sub-21514_ses-1", "sub-21516_ses-1", "sub-21560_ses-2", "sub-21567_ses-1", "sub-21568_ses-1", "sub-21580_ses-2", "sub-21623_ses-1", "sub-21712_ses-1", "sub-21713_ses-1", "sub-21797_ses-1", "sub-21827_ses-1", "sub-21855_ses-2", "sub-21856_ses-1", "sub-22045_ses-1", "sub-22064_ses-1", "sub-22473_ses-1", "sub-22510_ses-1", "sub-22617_ses-1", "sub-22653_ses-1", "sub-22654_ses-1", "sub-22670_ses-1", "sub-23303_ses-1", "sub-23676_ses-1", "sub-23698_ses-1"],
+      "beta_PS_ppb": 6.28085215875773,
+      "se_hc3": 3.26467138960875,
+      "t": 1.92388495171346,
+      "p_two": 0.0582679220180689,
+      "ci95_ppb": [-0.225628537707346, 12.7873328552228],
+      "ci90_ppb": [0.841921951814921, 11.7197823657005],
+      "sigma_resid": 13.0658243131698,
+      "sigma_rob": 11.6667979029718,
+      "huber_converged": true,
+      "sigma_B": 11.6667979029718,
+      "delta": 0.480708450398106,
+      "bound_fixed": {
+        "bound_ppb": -6.13180464348368,
+        "note": "registered bound frozen at the confirmatory run (-6.1318 ppb)",
+        "tB": 3.80211522720178,
+        "df": 73,
+        "pB_one_sided": 0.000147586883265154,
+        "reject_at_05": true
+      },
+      "bound_rederived": {
+        "delta_B": 0.581188679182884,
+        "bound_ppb": -6.78061086352181,
+        "tB": 4.00085076367973,
+        "pB": 7.4874914133294e-05,
+        "note": "delta_B = 0.6*sqrt(rL_primary) times sigma_B recomputed in this sample"
+      },
+      "A_beta_negative_p05": false,
+      "B_rederived": true,
+      "outcome_label_descriptive": "B",
+      "disconfirming": false,
+      "formula": "chi_SNVTA ~ PS_e * ADHD_e + ns(age, df = 3) + sex_e + race3 +      scale(roi_vol) + scale(Q_phase)",
+      "coefficients": [
+        {
+          "term": "(Intercept)",
+          "est": 43.5820367014266,
+          "se_hc3": 7.43947699698089,
+          "t": 5.85821244142743,
+          "p_two": 1.24863944299237e-07
+        },
+        {
+          "term": "PS_e",
+          "est": 6.28085215875773,
+          "se_hc3": 3.26467138960875,
+          "t": 1.92388495171346,
+          "p_two": 0.0582679220180689
+        },
+        {
+          "term": "ADHD_e",
+          "est": 1.20088667505236,
+          "se_hc3": 3.27774573974159,
+          "t": 0.366375787020939,
+          "p_two": 0.715144419409578
+        },
+        {
+          "term": "ns(age, df = 3)1",
+          "est": -2.35058205278667,
+          "se_hc3": 7.14174602989654,
+          "t": -0.329132685893161,
+          "p_two": 0.742997834587787
+        },
+        {
+          "term": "ns(age, df = 3)2",
+          "est": 26.3635257113219,
+          "se_hc3": 18.010687643873,
+          "t": 1.46377119145089,
+          "p_two": 0.147549424324534
+        },
+        {
+          "term": "ns(age, df = 3)3",
+          "est": 13.431681967456,
+          "se_hc3": 9.83624279670447,
+          "t": 1.36552972970087,
+          "p_two": 0.176279639229978
+        },
+        {
+          "term": "sex_e",
+          "est": 5.31845382005281,
+          "se_hc3": 3.20356699884541,
+          "t": 1.6601662527956,
+          "p_two": 0.101170978378735
+        },
+        {
+          "term": "race31",
+          "est": -0.559735239593095,
+          "se_hc3": 2.5900123284581,
+          "t": -0.216112963418333,
+          "p_two": 0.829502446471488
+        },
+        {
+          "term": "race32",
+          "est": 0.608193211859793,
+          "se_hc3": 3.03752399943647,
+          "t": 0.200226635895758,
+          "p_two": 0.841860094316549
+        },
+        {
+          "term": "scale(roi_vol)",
+          "est": 1.59966400853263,
+          "se_hc3": 1.54518521033997,
+          "t": 1.03525713152579,
+          "p_two": 0.303966192640086
+        },
+        {
+          "term": "scale(Q_phase)",
+          "est": -3.69756613202359,
+          "se_hc3": 1.78017082982447,
+          "t": -2.07708500222317,
+          "p_two": 0.0413129287750261
+        },
+        {
+          "term": "PS_e:ADHD_e",
+          "est": -8.96815967779953,
+          "se_hc3": 6.79581425387686,
+          "t": -1.31965932892933,
+          "p_two": 0.19107254155128
+        }
+      ]
+    }
+  }
+}

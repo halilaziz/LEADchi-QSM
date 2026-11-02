@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visual QC Rating</title>
+<style>
+:root {
+  --bg: #1d1f21; --panel: #26292c; --panel2: #2f3337; --line: #43484d; --text: #e8e8e6; --muted: #a3a8ad;
+  --accent: #6aa9ff; --ok: #4fb07a; --warn: #e0a53a; --bad: #e0605a; --chip: #3a3f44;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { background: var(--bg); color: var(--text); font: 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+header { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 8px 16px; background: var(--panel); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 5; }
+header h1 { font-size: 15px; margin: 0; font-weight: 600; }
+header .grow { flex: 1; }
+button, .btn { background: var(--chip); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 5px 10px; font: inherit; cursor: pointer; }
+button:hover, .btn:hover { border-color: var(--accent); }
+button.primary { background: #2c4a73; border-color: #3f6aa3; }
+input[type=text] { background: var(--panel2); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; font: inherit; width: 90px; }
+.progress { color: var(--muted); }
+.progress b { color: var(--text); }
+#kitcheck { font-size: 12px; color: var(--muted); }
+#kitcheck.bad { color: var(--bad); font-weight: 600; }
+main { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 12px; padding: 12px 16px; }
+@media (max-width: 1100px) { main { grid-template-columns: minmax(0, 1fr); } }
+.images { display: grid; grid-template-columns: minmax(0, 11fr) minmax(0, 9fr); gap: 12px; align-items: start; }
+@media (max-width: 1500px) { .images { grid-template-columns: minmax(0, 1fr); } }
+.pane { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.pane .bar { display: flex; gap: 6px; align-items: center; padding: 6px 8px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.pane .bar .t { font-weight: 600; margin-right: auto; }
+.pane .bar button { padding: 2px 8px; font-size: 12px; }
+.pane .bar button.on { border-color: var(--accent); color: var(--accent); }
+.viewport { overflow: auto; max-height: 78vh; background: #fff; cursor: grab; }
+.viewport img { display: block; image-rendering: auto; }
+.viewport.fit img { width: 100%; height: auto; }
+.imgerr { padding: 24px; color: #b00; background: #fff; font-weight: 600; }
+aside { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px; align-self: start; position: sticky; top: 60px; }
+aside h2 { font-size: 15px; margin: 0 0 4px; }
+.kid { font-family: ui-monospace, Menlo, Consolas, monospace; color: var(--accent); }
+.flag { margin: 8px 0; padding: 8px; border-radius: 6px; background: #4a3612; border: 1px solid var(--warn); color: #ffe2a8; font-size: 13px; }
+fieldset { border: 1px solid var(--line); border-radius: 6px; margin: 10px 0; padding: 8px 10px; }
+legend { color: var(--muted); font-size: 12px; padding: 0 4px; }
+.grades { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.grades label, .pl label { display: block; text-align: center; padding: 8px 4px; border: 1px solid var(--line); border-radius: 6px; cursor: pointer; background: var(--panel2); user-select: none; }
+.grades input, .pl input { display: none; }
+.grades label.sel[data-g="0"] { background: #1f5134; border-color: var(--ok); }
+.grades label.sel[data-g="1"] { background: #5a4513; border-color: var(--warn); }
+.grades label.sel[data-g="2"] { background: #5e2321; border-color: var(--bad); }
+.pl { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.pl label.sel[data-p="pass"] { background: #1f5134; border-color: var(--ok); }
+.pl label.sel[data-p="fail"] { background: #5e2321; border-color: var(--bad); }
+.grades small { display: block; color: var(--muted); font-size: 11px; }
+.codes { display: grid; grid-template-columns: 1fr; gap: 2px; }
+.codes label { display: flex; gap: 6px; align-items: baseline; cursor: pointer; font-size: 13px; padding: 2px 4px; border-radius: 4px; }
+.codes label:hover { background: var(--panel2); }
+.codes b { font-family: ui-monospace, Menlo, Consolas, monospace; width: 14px; display: inline-block; }
+.codes span { color: var(--muted); font-size: 12px; }
+textarea { width: 100%; min-height: 64px; background: var(--panel2); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 6px; font: inherit; resize: vertical; }
+.nav { display: flex; gap: 6px; margin-top: 8px; }
+.nav button { flex: 1; }
+.warnings { color: var(--warn); font-size: 12px; min-height: 16px; margin-top: 6px; }
+.strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(30px, 1fr)); gap: 3px; padding: 0 16px 16px; }
+.strip button { padding: 3px 0; font-size: 11px; border-radius: 4px; }
+.strip button.done { background: #1f5134; border-color: #2f7a4e; }
+.strip button.part { background: #5a4513; border-color: #8a6a1d; }
+.strip button.cur { outline: 2px solid var(--accent); }
+.hint { color: var(--muted); font-size: 12px; }
+kbd { background: var(--chip); border: 1px solid var(--line); border-radius: 3px; padding: 0 4px; font-size: 11px; font-family: ui-monospace, Menlo, monospace; }
+#overlay { position: fixed; inset: 0; background: rgba(10, 10, 10, .94); display: none; z-index: 20; flex-direction: column; }
+#overlay.open { display: flex; }
+#overlay .bar { display: flex; gap: 8px; padding: 8px 16px; align-items: center; color: var(--text); }
+#overlay .bar .t { margin-right: auto; font-weight: 600; }
+#ovp { flex: 1; overflow: auto; cursor: grab; background: #fff; }
+#ovp img { display: block; transform-origin: 0 0; }
+.modal { position: fixed; inset: 0; background: rgba(0, 0, 0, .7); display: none; z-index: 30; align-items: center; justify-content: center; padding: 16px; }
+.modal.open { display: flex; }
+.modal .box { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; max-width: 760px; width: 100%; max-height: 90vh; overflow: auto; }
+.modal textarea { min-height: 260px; font-family: ui-monospace, Menlo, monospace; font-size: 12px; }
+.modal h3 { margin-top: 0; }
+table.keys td { padding: 2px 10px 2px 0; vertical-align: top; }
+.rubric { max-width: 980px; font-size: 13px; }
+.rubric table { border-collapse: collapse; margin: 8px 0; }
+.rubric th, .rubric td { border: 1px solid var(--line); padding: 4px 8px; text-align: left; vertical-align: top; }
+.rubric h2 { font-size: 16px; margin: 16px 0 6px; }
+.rubric code { font-family: ui-monospace, Menlo, monospace; font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>LEAD-&chi; visual QC re-rating</h1>
+  <label>Rater initials <input type="text" id="rater" maxlength="8" autocomplete="off"></label>
+  <span class="progress" id="progress"></span>
+  <span id="kitcheck">checking images&hellip;</span>
+  <span class="grow"></span>
+  <button id="bNextUnrated" title="Jump to the next item without a grade and placement (key N)">Next unrated</button>
+  <button id="bRubric" title="The registered rubric, sections 2 and 3 (key R)">Rubric</button>
+  <button id="bHelp" title="Keyboard shortcuts (key ?)">Shortcuts</button>
+  <label class="btn" title="Restore ratings from a CSV exported earlier (or a filled rating_sheet_blank.csv)">Import CSV<input type="file" id="fImport" accept=".csv,text/csv" hidden></label>
+  <button class="primary" id="bExport" title="Save all ratings as a CSV file to return">Export CSV</button>
+</header>
+
+<main>
+  <section class="images">
+    <div class="pane" id="paneG">
+      <div class="bar"><span class="t">Gross montage</span>
+        <button data-z="fit" class="on">Fit</button><button data-z="1">100%</button><button data-z="1.5">150%</button><button data-z="2">200%</button><button data-z="3">300%</button>
+        <button data-big="gross" title="Full-screen view (key G)">Full screen</button></div>
+      <div class="viewport fit"><img id="imgG" alt="gross montage"></div>
+    </div>
+    <div class="pane" id="paneP">
+      <div class="bar"><span class="t">Placement montage</span>
+        <button data-z="fit" class="on">Fit</button><button data-z="1">100%</button><button data-z="1.5">150%</button><button data-z="2">200%</button><button data-z="3">300%</button>
+        <button data-big="placement" title="Full-screen view (key L)">Full screen</button></div>
+      <div class="viewport fit"><img id="imgP" alt="placement montage"></div>
+    </div>
+  </section>
+
+  <aside>
+    <h2>Item <span id="ord"></span> of <span id="tot"></span> &middot; <span class="kid" id="kid"></span></h2>
+    <div class="flag" id="flag" hidden>Forced review: inspect every panel at full size before grading. The flag itself does not change the grade.</div>
+    <fieldset><legend>Gross-failure grade (keys 0 / 1 / 2)</legend>
+      <div class="grades">
+        <label data-g="0"><input type="radio" name="g" value="0">0<small>pass</small></label>
+        <label data-g="1"><input type="radio" name="g" value="1">1<small>minor</small></label>
+        <label data-g="2"><input type="radio" name="g" value="2">2<small>fail</small></label>
+      </div>
+    </fieldset>
+    <fieldset><legend>Failure codes (letter keys toggle)</legend>
+      <div class="codes" id="codes"></div>
+    </fieldset>
+    <fieldset><legend>ROI placement, T1w and echo-1 magnitude only (key P)</legend>
+      <div class="pl">
+        <label data-p="pass"><input type="radio" name="p" value="pass">pass</label>
+        <label data-p="fail"><input type="radio" name="p" value="fail">fail</label>
+      </div>
+    </fieldset>
+    <label class="hint" for="note">Note (give the reason for a placement fail)</label>
+    <textarea id="note" placeholder="optional note"></textarea>
+    <div class="warnings" id="warn"></div>
+    <div class="nav"><button id="bPrev">&larr; Previous</button><button id="bNext">Next &rarr;</button></div>
+    <p class="hint">Progress is saved in this browser automatically. Export the CSV at the end (and at breaks, as a backup).</p>
+  </aside>
+</main>
+<div class="strip" id="strip"></div>
+
+<div id="overlay">
+  <div class="bar"><span class="t" id="ovt"></span>
+    <button data-oz="-">&minus;</button><span id="ovz">100%</span><button data-oz="+">+</button><button data-oz="fit">Fit</button>
+    <span class="hint">drag to pan, wheel to scroll, <kbd>+</kbd>/<kbd>&minus;</kbd> zoom</span>
+    <button id="ovClose">Close (Esc)</button></div>
+  <div id="ovp"><img id="ovimg" alt="full-size montage"></div>
+</div>
+
+<div class="modal" id="mHelp"><div class="box">
+  <h3>Keyboard shortcuts</h3>
+  <table class="keys">
+    <tr><td><kbd>0</kbd> <kbd>1</kbd> <kbd>2</kbd></td><td>gross-failure grade</td></tr>
+    <tr><td><kbd>M</kbd> <kbd>W</kbd> <kbd>S</kbd> <kbd>B</kbd> <kbd>K</kbd> <kbd>F</kbd> <kbd>A</kbd> <kbd>C</kbd> <kbd>D</kbd></td><td>toggle a failure code</td></tr>
+    <tr><td><kbd>P</kbd></td><td>placement: cycle pass / fail</td></tr>
+    <tr><td><kbd>&larr;</kbd> <kbd>&rarr;</kbd></td><td>previous / next item</td></tr>
+    <tr><td><kbd>N</kbd></td><td>next unrated item</td></tr>
+    <tr><td><kbd>G</kbd> / <kbd>L</kbd></td><td>full-screen gross / placement montage</td></tr>
+    <tr><td><kbd>+</kbd> <kbd>&minus;</kbd> <kbd>Esc</kbd></td><td>zoom / close the full-screen view</td></tr>
+    <tr><td><kbd>R</kbd></td><td>show the rubric (sections 2 and 3)</td></tr>
+    <tr><td><kbd>?</kbd></td><td>this help</td></tr>
+  </table>
+  <p class="hint">Shortcuts are inactive while the cursor is in the note box or the initials box (click elsewhere or press Esc), and while this help, the rubric or the CSV box is open.</p>
+  <button onclick="closeModal('mHelp')">Close</button>
+</div></div>
+
+<div class="modal" id="mRubric"><div class="box rubric">
+  <p><button onclick="closeModal('mRubric')">Close (Esc)</button></p>
+<h3>Registered rubric (qc_rubric.md), sections 2 and 3, verbatim</h3><p class="hint">Section 1 (blinding of the original procedure) is reproduced in README_rater.md.</p><h2>2. Gross-failure grade (montage <code>gross</code>; criterion (c))</h2>
+<p>Each gross montage shows three axial levels: dentate, midbrain (SN–VTA) and basal ganglia (GP). The panels are:</p>
+<ul><li>echo-1 and echo-4 magnitude;</li><li>total field and local field (when QSMxT writes them);</li><li>χ, shown in greyscale over −0.2 to +0.2 ppm, with the Mask-3 outline in yellow.</li></ul>
+<p>χ is used <b>only</b> to find gross failures, never to judge anatomy or ROI placement.</p>
+<table><tr><th>Grade</th><th>Meaning</th><th>Examples</th></tr><tr><td><b>0 pass</b></td><td>No visible artefact at the three levels</td><td>—</td></tr><tr><td><b>1 minor</b></td><td>An artefact is visible but spares the midbrain and dentate levels, or is faint</td><td>Mild ghosting; a small residual wrap in cortex; faint streaks outside the posterior fossa; minor air artefact at the frontal sinus</td></tr><tr><td><b>2 fail</b></td><td>Any failure code below, at the midbrain or dentate level or across the whole slice</td><td>See the failure codes</td></tr></table>
+<p><b>Failure codes.</b> Record them in <code>failure_codes</code>, separated by <code>;</code>.</p>
+<table><tr><th>Code</th><th>Failure (grade 2 when present at the midbrain or dentate level)</th></tr><tr><td>M</td><td>Motion ghosting or blurring across the brainstem or cerebellum on magnitude</td></tr><tr><td>W</td><td>Residual phase wraps or unwrapping discontinuities in the total or local field inside Mask 3</td></tr><tr><td>S</td><td>Streaking on χ that crosses the whole midbrain or dentate level</td></tr><tr><td>B</td><td>Background-field residue: a smooth large-scale gradient in the local field or χ, especially at the posterior fossa or skull base</td></tr><tr><td>K</td><td>Mask 3 excludes the midbrain or a dentate, or cuts through the brainstem</td></tr><tr><td>F</td><td>R–L phase wrap-around (75% phase FOV) that overlaps the brain</td></tr><tr><td>A</td><td>Air or susceptibility artefact inside the SN–VTA or dentate</td></tr><tr><td>C</td><td>Slab coverage: the midbrain or a dentate is not fully in the field of view</td></tr><tr><td>D</td><td>Dental or metal artefact (braces, retainers, implants): a signal void or distortion anywhere in the slab. <b>Record D for every session in which it is visible, whatever the grade.</b> It forces grade 2 when the void or distortion reaches the midbrain or posterior-fossa level, or when the residual-background index flags the session</td></tr></table>
+<p>Two further grading rules:</p>
+<ul><li><b>Forced review.</b> When the flag is 1, the rater must inspect every panel at full size before grading. The flag itself does not change the grade.</li><li><b>Automatic grade 2.</b> <code>qsm_plausibility.py</code> assigns grade 2 when f_imp &gt; 1% or when ≥ 2 iron-rich ROIs fail. The rater cannot override it.</li></ul>
+<h2>3. ROI placement (montage <code>placement</code>; criterion (d))</h2>
+<p>Placement is judged on <b>T1w (resampled to the MEGRE grid) and echo-1 magnitude only</b>, never on χ.</p>
+<p>The reason: lower SN χ, the hypothesised effect, makes the SN less conspicuous on χ, so χ-based judgements could differ by group.</p>
+<p>The montage shows the SN–VTA outline (CIT168, w ≥ 0.5) in axial, coronal and sagittal planes, plus the dentate outlines.</p>
+<p><b>Pass</b> requires all of the following:</p>
+<ol><li>The SN–VTA outline lies in the ventral midbrain, between the cerebral peduncle and the red-nucleus/tegmentum region.</li><li>It does not extend into the interpeduncular cistern or the third ventricle.</li><li>It is left–right symmetric within about one voxel.</li><li>The dentate outlines lie in the deep cerebellar white matter lateral to the fourth ventricle.</li></ol>
+<p><b>Fail</b> if any of the following holds:</p>
+<ul><li>the outline is displaced by more than about 2 voxels (3 mm) from these landmarks;</li><li>it is visibly misregistered, i.e. the brainstem outline on T1w and magnitude disagree;</li><li>it overlaps CSF over more than about a third of its extent in any plane.</li></ul>
+<p>Write <code>pass</code> or <code>fail</code>, and give the reason in <code>notes</code>.</p>
+  <p><button onclick="closeModal('mRubric')">Close (Esc)</button></p>
+</div></div>
+
+<div class="modal" id="mCsv"><div class="box">
+  <h3>Ratings CSV</h3>
+  <p class="hint" id="csvMsg"></p>
+  <textarea id="csvText" readonly></textarea>
+  <p><button id="bCopy">Copy to clipboard</button> <button onclick="closeModal('mCsv')">Close</button></p>
+</div></div>
+
+<script>
+"use strict";
+// ---- embedded item list (generated by analysis/make_html.py; no network access is ever made) ----
+var ITEMS = [{"order":1,"kit_id":"hd802d9","forced_review":0},{"order":2,"kit_id":"h0ce239","forced_review":0},{"order":3,"kit_id":"h25eb3e","forced_review":0},{"order":4,"kit_id":"ha08936","forced_review":1},{"order":5,"kit_id":"h91390b","forced_review":0},{"order":6,"kit_id":"h7d7f85","forced_review":1},{"order":7,"kit_id":"hd537d7","forced_review":1},{"order":8,"kit_id":"hfe5d45","forced_review":0},{"order":9,"kit_id":"hfca748","forced_review":0},{"order":10,"kit_id":"h56e560","forced_review":0},{"order":11,"kit_id":"hf9a6e1","forced_review":0},{"order":12,"kit_id":"h41b5ce","forced_review":0},{"order":13,"kit_id":"he6c83c","forced_review":0},{"order":14,"kit_id":"h1b2c6d","forced_review":1},{"order":15,"kit_id":"haf370c","forced_review":1},{"order":16,"kit_id":"hc8600c","forced_review":0},{"order":17,"kit_id":"hddacd8","forced_review":0},{"order":18,"kit_id":"h813d41","forced_review":0},{"order":19,"kit_id":"he38dd2","forced_review":0},{"order":20,"kit_id":"h16c751","forced_review":0},{"order":21,"kit_id":"h91a517","forced_review":0},{"order":22,"kit_id":"h289709","forced_review":0},{"order":23,"kit_id":"hc41e14","forced_review":0},{"order":24,"kit_id":"h8b59a7","forced_review":0},{"order":25,"kit_id":"h05af80","forced_review":1},{"order":26,"kit_id":"ha7e625","forced_review":0},{"order":27,"kit_id":"h904b4e","forced_review":0},{"order":28,"kit_id":"hce62bb","forced_review":0},{"order":29,"kit_id":"hefced3","forced_review":0},{"order":30,"kit_id":"h628616","forced_review":0},{"order":31,"kit_id":"h47b09e","forced_review":0},{"order":32,"kit_id":"hbe2fa7","forced_review":0},{"order":33,"kit_id":"he83c63","forced_review":0},{"order":34,"kit_id":"hfaec73","forced_review":1},{"order":35,"kit_id":"hf88e73","forced_review":0},{"order":36,"kit_id":"ha11c2f","forced_review":0},{"order":37,"kit_id":"hacba3c","forced_review":0},{"order":38,"kit_id":"ha47507","forced_review":0},{"order":39,"kit_id":"h83c344","forced_review":0},{"order":40,"kit_id":"hc8837c","forced_review":0},{"order":41,"kit_id":"h55e0cc","forced_review":0},{"order":42,"kit_id":"hffc0cd","forced_review":0},{"order":43,"kit_id":"he871e8","forced_review":0},{"order":44,"kit_id":"h31c5fc","forced_review":0},{"order":45,"kit_id":"h5be087","forced_review":1},{"order":46,"kit_id":"h8dcc07","forced_review":0},{"order":47,"kit_id":"h3ee0c8","forced_review":0},{"order":48,"kit_id":"h01f554","forced_review":1},{"order":49,"kit_id":"hd76e9b","forced_review":0},{"order":50,"kit_id":"h5851a8","forced_review":0},{"order":51,"kit_id":"h000948","forced_review":0},{"order":52,"kit_id":"h17a2bb","forced_review":1},{"order":53,"kit_id":"h02757b","forced_review":0},{"order":54,"kit_id":"h3234f1","forced_review":0},{"order":55,"kit_id":"hec3292","forced_review":1},{"order":56,"kit_id":"h4341ef","forced_review":0},{"order":57,"kit_id":"h8ce05f","forced_review":0},{"order":58,"kit_id":"h271126","forced_review":1},{"order":59,"kit_id":"hf0ef0c","forced_review":0},{"order":60,"kit_id":"ha79d66","forced_review":1},{"order":61,"kit_id":"hb65450","forced_review":0},{"order":62,"kit_id":"hefc810","forced_review":1},{"order":63,"kit_id":"h262b78","forced_review":1},{"order":64,"kit_id":"h5196c2","forced_review":0},{"order":65,"kit_id":"hd030e1","forced_review":0},{"order":66,"kit_id":"h08d5ce","forced_review":0},{"order":67,"kit_id":"hd432ca","forced_review":0},{"order":68,"kit_id":"h56624e","forced_review":0},{"order":69,"kit_id":"h93e2bb","forced_review":0},{"order":70,"kit_id":"hced076","forced_review":0},{"order":71,"kit_id":"h771707","forced_review":0},{"order":72,"kit_id":"hdc97be","forced_review":1},{"order":73,"kit_id":"h9d2d8e","forced_review":1},{"order":74,"kit_id":"h3d2201","forced_review":0},{"order":75,"kit_id":"h487c76","forced_review":0},{"order":76,"kit_id":"hd6f56a","forced_review":0},{"order":77,"kit_id":"hf4e33b","forced_review":1},{"order":78,"kit_id":"h0af772","forced_review":1},{"order":79,"kit_id":"hfecbea","forced_review":0},{"order":80,"kit_id":"hed3b00","forced_review":0},{"order":81,"kit_id":"h317070","forced_review":0},{"order":82,"kit_id":"h3cdcd5","forced_review":0},{"order":83,"kit_id":"hc24520","forced_review":1},{"order":84,"kit_id":"h82128e","forced_review":0},{"order":85,"kit_id":"hdbc9a7","forced_review":0},{"order":86,"kit_id":"hc5aa87","forced_review":0},{"order":87,"kit_id":"h257958","forced_review":0},{"order":88,"kit_id":"h4a0317","forced_review":0},{"order":89,"kit_id":"h0b5a0a","forced_review":0},{"order":90,"kit_id":"he1fe54","forced_review":0},{"order":91,"kit_id":"h303dc7","forced_review":0},{"order":92,"kit_id":"h7015ed","forced_review":0},{"order":93,"kit_id":"h5d8108","forced_review":0},{"order":94,"kit_id":"h95c49a","forced_review":1},{"order":95,"kit_id":"h67dcc7","forced_review":0},{"order":96,"kit_id":"h9cbd2e","forced_review":1},{"order":97,"kit_id":"hd60b08","forced_review":1},{"order":98,"kit_id":"h9b0ae6","forced_review":0},{"order":99,"kit_id":"h2ed232","forced_review":0},{"order":100,"kit_id":"h682d89","forced_review":0},{"order":101,"kit_id":"ha76793","forced_review":0},{"order":102,"kit_id":"h8bc0ee","forced_review":0},{"order":103,"kit_id":"hd34957","forced_review":0},{"order":104,"kit_id":"h595dfc","forced_review":0},{"order":105,"kit_id":"h42c322","forced_review":0},{"order":106,"kit_id":"hbdeb2a","forced_review":0},{"order":107,"kit_id":"h6f4d21","forced_review":0},{"order":108,"kit_id":"hdfec26","forced_review":0},{"order":109,"kit_id":"h721ca9","forced_review":0},{"order":110,"kit_id":"h3a1ca0","forced_review":0},{"order":111,"kit_id":"h64687a","forced_review":0}];
+var KIT_TAG = "23881efbec27";
+var CODES = [
+  ["M", "Motion ghosting/blurring across brainstem or cerebellum (magnitude)"],
+  ["W", "Residual phase wraps / unwrapping discontinuities in total or local field inside Mask 3"],
+  ["S", "Streaking on χ crossing the whole midbrain or dentate level"],
+  ["B", "Background-field residue: smooth large-scale gradient (local field or χ)"],
+  ["K", "Mask 3 excludes midbrain or a dentate, or cuts through the brainstem"],
+  ["F", "R–L phase wrap-around (75% phase FOV) overlapping the brain"],
+  ["A", "Air/susceptibility artefact inside SN–VTA or dentate"],
+  ["C", "Slab coverage: midbrain or a dentate not fully in the field of view"],
+  ["D", "Dental/metal artefact anywhere in the slab (record whatever the grade)"]
+];
+var STORE_KEY = "leadchi_humanqc_" + KIT_TAG;
+var state = { cur: 0, rater: "", r: {} };   // r[kit_id] = {grade, codes:[], placement, note, timestamp}
+
+function lsGet() { try { return window.localStorage.getItem(STORE_KEY); } catch (e) { return null; } }
+function lsSet(v) { try { window.localStorage.setItem(STORE_KEY, v); return true; } catch (e) { return false; } }
+var storageOK = true;
+function save() { storageOK = lsSet(JSON.stringify(state)); renderProgress(); }
+function load() {
+  var s = lsGet(); if (!s) return;
+  try { var o = JSON.parse(s); if (o && o.r) { state.r = o.r; state.rater = o.rater || ""; state.cur = Math.min(Math.max(0, o.cur | 0), ITEMS.length - 1); } } catch (e) {}
+}
+function rec(id) { if (!state.r[id]) state.r[id] = { grade: "", codes: [], placement: "", note: "", timestamp: "" }; return state.r[id]; }
+function touch(id) { rec(id).timestamp = new Date().toISOString(); }
+function status(id) { var r = state.r[id]; if (!r) return 0; var c = (r.grade !== "" ? 1 : 0) + (r.placement !== "" ? 1 : 0); return c === 2 ? 2 : (c || r.codes.length || r.note) ? 1 : 0; }
+
+var $ = function (id) { return document.getElementById(id); };
+var imgG = $("imgG"), imgP = $("imgP");
+
+function buildCodes() {
+  var box = $("codes");
+  CODES.forEach(function (c) {
+    var l = document.createElement("label");
+    l.innerHTML = '<input type="checkbox" value="' + c[0] + '"><b>' + c[0] + '</b><span>' + c[1] + '</span>';
+    l.querySelector("input").addEventListener("change", function (e) { setCode(c[0], e.target.checked); });
+    box.appendChild(l);
+  });
+}
+function buildStrip() {
+  var s = $("strip");
+  ITEMS.forEach(function (it, i) {
+    var b = document.createElement("button"); b.textContent = it.order; b.title = it.kit_id;
+    b.addEventListener("click", function () { go(i); }); s.appendChild(b);
+  });
+}
+function imgError(img) {
+  var vp = img.parentNode; if (vp.querySelector(".imgerr")) return;
+  var d = document.createElement("div"); d.className = "imgerr";
+  d.textContent = "Image not found: " + img.getAttribute("src") + " — keep rate.html next to the images/ folder (unzip the whole kit).";
+  vp.appendChild(d);
+}
+function clearErr(img) { var e = img.parentNode.querySelector(".imgerr"); if (e) e.remove(); }
+
+function render() {
+  var it = ITEMS[state.cur], r = rec(it.kit_id);
+  $("ord").textContent = it.order; $("tot").textContent = ITEMS.length; $("kid").textContent = it.kit_id;
+  $("flag").hidden = !(it.forced_review === 1);
+  [imgG, imgP].forEach(clearErr);
+  imgG.src = "images/gross/" + it.kit_id + ".png";
+  imgP.src = "images/placement/" + it.kit_id + ".png";
+  document.querySelectorAll(".grades label").forEach(function (l) { l.classList.toggle("sel", l.dataset.g === String(r.grade)); l.querySelector("input").checked = l.dataset.g === String(r.grade); });
+  document.querySelectorAll(".pl label").forEach(function (l) { l.classList.toggle("sel", l.dataset.p === r.placement); l.querySelector("input").checked = l.dataset.p === r.placement; });
+  document.querySelectorAll("#codes input").forEach(function (c) { c.checked = r.codes.indexOf(c.value) >= 0; });
+  $("note").value = r.note || "";
+  $("rater").value = state.rater || "";
+  renderWarn(); renderProgress();
+  if (state.cur + 1 < ITEMS.length) { var n = ITEMS[state.cur + 1].kit_id; (new Image()).src = "images/gross/" + n + ".png"; (new Image()).src = "images/placement/" + n + ".png"; }
+}
+function renderWarn() {
+  var r = rec(ITEMS[state.cur].kit_id), w = [];
+  var nonD = r.codes.filter(function (c) { return c !== "D"; });
+  if (r.grade === "2" && r.codes.length === 0) w.push("Grade 2 without a failure code: tick the code(s) that apply.");
+  if (r.grade === "0" && nonD.length) w.push("Grade 0 with failure code(s) " + nonD.join(";") + ": check the grade.");
+  if (r.placement === "fail" && !r.note.trim()) w.push("Placement fail: give the reason in the note.");
+  $("warn").textContent = w.join(" ");
+}
+function renderProgress() {
+  var done = 0, part = 0;
+  ITEMS.forEach(function (it) { var s = status(it.kit_id); if (s === 2) done++; else if (s === 1) part++; });
+  $("progress").innerHTML = "<b>" + done + "</b> / " + ITEMS.length + " complete" + (part ? " &middot; " + part + " incomplete" : "") +
+    (storageOK ? "" : ' &middot; <span style="color:var(--bad)">browser storage unavailable: export the CSV before closing</span>');
+  var bs = $("strip").children;
+  for (var i = 0; i < bs.length; i++) { var s = status(ITEMS[i].kit_id); bs[i].className = (s === 2 ? "done" : s === 1 ? "part" : "") + (i === state.cur ? " cur" : ""); }
+}
+function go(i) { state.cur = Math.min(Math.max(0, i), ITEMS.length - 1); save(); render(); window.scrollTo(0, 0); }
+function nextUnrated() {
+  for (var k = 1; k <= ITEMS.length; k++) { var i = (state.cur + k) % ITEMS.length; if (status(ITEMS[i].kit_id) !== 2) { go(i); return; } }
+  alert("All items have a grade and a placement rating. Please export the CSV.");
+}
+function setGrade(g) { var id = ITEMS[state.cur].kit_id; rec(id).grade = String(g); touch(id); save(); render(); }
+function setPlacement(p) { var id = ITEMS[state.cur].kit_id; rec(id).placement = p; touch(id); save(); render(); }
+function setCode(c, on) {
+  var id = ITEMS[state.cur].kit_id, r = rec(id), i = r.codes.indexOf(c);
+  if (on && i < 0) r.codes.push(c); if (!on && i >= 0) r.codes.splice(i, 1);
+  r.codes.sort(); touch(id); save(); render();
+}
+
+// ---- zoom in the side-by-side panes ----
+function setZoom(pane, z) {
+  var vp = pane.querySelector(".viewport"), img = vp.querySelector("img");
+  pane.querySelectorAll("[data-z]").forEach(function (b) { b.classList.toggle("on", b.dataset.z === z); });
+  if (z === "fit") { vp.classList.add("fit"); img.style.width = ""; }
+  else { vp.classList.remove("fit"); img.style.width = (img.naturalWidth * parseFloat(z)) + "px"; }
+  pane.dataset.zoom = z;
+}
+[["paneG", imgG], ["paneP", imgP]].forEach(function (pi) {
+  var pane = $(pi[0]);
+  pane.querySelectorAll("[data-z]").forEach(function (b) { b.addEventListener("click", function () { setZoom(pane, b.dataset.z); }); });
+  pi[1].addEventListener("load", function () { if (pane.dataset.zoom && pane.dataset.zoom !== "fit") setZoom(pane, pane.dataset.zoom); });
+  pi[1].addEventListener("error", function () { imgError(pi[1]); });
+  dragPan(pane.querySelector(".viewport"));
+});
+function dragPan(el) {
+  var sx, sy, sl, st, down = false;
+  el.addEventListener("mousedown", function (e) { down = true; sx = e.clientX; sy = e.clientY; sl = el.scrollLeft; st = el.scrollTop; el.style.cursor = "grabbing"; e.preventDefault(); });
+  window.addEventListener("mouseup", function () { down = false; el.style.cursor = ""; });
+  window.addEventListener("mousemove", function (e) { if (!down) return; el.scrollLeft = sl - (e.clientX - sx); el.scrollTop = st - (e.clientY - sy); });
+}
+
+// ---- full-screen viewer ----
+var ov = { z: 1, fit: true };
+function openBig(kind) {
+  var it = ITEMS[state.cur];
+  $("ovt").textContent = it.kit_id + " — " + kind + " (item " + it.order + ")";
+  var im = $("ovimg");
+  im.onload = function () { ovFit(); };
+  im.src = "images/" + kind + "/" + it.kit_id + ".png";
+  $("overlay").classList.add("open");
+}
+function ovApply() { var im = $("ovimg"); im.style.width = (im.naturalWidth * ov.z) + "px"; $("ovz").textContent = Math.round(ov.z * 100) + "%"; }
+function ovFit() { var im = $("ovimg"), p = $("ovp"); if (!im.naturalWidth) return; ov.z = Math.min(p.clientWidth / im.naturalWidth, p.clientHeight / im.naturalHeight); ovApply(); }
+function ovZoom(f) { ov.z = Math.min(8, Math.max(0.25, ov.z * f)); ovApply(); }
+function closeBig() { $("overlay").classList.remove("open"); }
+document.querySelectorAll("[data-big]").forEach(function (b) { b.addEventListener("click", function () { openBig(b.dataset.big); }); });
+document.querySelectorAll("[data-oz]").forEach(function (b) { b.addEventListener("click", function () { var v = b.dataset.oz; if (v === "fit") ovFit(); else ovZoom(v === "+" ? 1.25 : 0.8); }); });
+$("ovClose").addEventListener("click", closeBig);
+dragPan($("ovp"));
+
+// ---- CSV export / import ----
+function csvCell(v) { v = (v == null ? "" : String(v)).replace(/\r?\n/g, " "); return /[",]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }
+function buildCSV() {
+  var lines = ["kit_id,grade,failure_codes,placement,note,timestamp,rater"];
+  ITEMS.forEach(function (it) {
+    var r = state.r[it.kit_id] || { grade: "", codes: [], placement: "", note: "", timestamp: "" };
+    lines.push([it.kit_id, r.grade, r.codes.join(";"), r.placement, r.note, r.timestamp, state.rater || ""].map(csvCell).join(","));
+  });
+  return lines.join("\r\n") + "\r\n";
+}
+function exportCSV() {
+  var csv = buildCSV(), n = 0;
+  ITEMS.forEach(function (it) { if (status(it.kit_id) === 2) n++; });
+  var stamp = new Date().toISOString().replace(/[-:]/g, "").slice(0, 13);
+  var who = (state.rater || "rater").replace(/[^A-Za-z0-9_-]/g, "");
+  var name = "LEADchi_humanQC_" + who + "_" + stamp + "Z.csv";
+  var ok = false;
+  try {
+    var blob = new Blob([csv], { type: "text/csv" }), a = document.createElement("a");
+    a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1000); ok = true;
+  } catch (e) { ok = false; }
+  $("csvMsg").textContent = (ok ? "Saved as " + name + " (check your Downloads folder). " : "Automatic saving failed: copy the text below into a file named " + name + ". ") +
+    n + " of " + ITEMS.length + " items complete." + (n < ITEMS.length ? " Incomplete items are exported with empty fields." : "");
+  $("csvText").value = csv; openModal("mCsv");
+}
+function parseCSV(text) {
+  text = text.replace(/^\uFEFF/, "");
+  var head = text.split(/\r?\n/, 1)[0], sep = (head.indexOf(";") >= 0 && head.indexOf(",") < 0) ? ";" : ",";
+  var rows = [], row = [], cur = "", q = false;
+  for (var i = 0; i < text.length; i++) {
+    var ch = text[i];
+    if (q) { if (ch === '"') { if (text[i + 1] === '"') { cur += '"'; i++; } else q = false; } else cur += ch; }
+    else if (ch === '"') q = true;
+    else if (ch === sep) { row.push(cur); cur = ""; }
+    else if (ch === "\n" || ch === "\r") { if (ch === "\r" && text[i + 1] === "\n") i++; row.push(cur); rows.push(row); row = []; cur = ""; }
+    else cur += ch;
+  }
+  if (cur !== "" || row.length) { row.push(cur); rows.push(row); }
+  return rows.filter(function (r) { return r.length > 1 || (r[0] || "").trim() !== ""; });
+}
+function importCSV(text) {
+  var rows = parseCSV(text); if (!rows.length) { alert("Empty file."); return; }
+  var h = rows[0].map(function (x) { return x.trim().toLowerCase(); }), ix = function (n) { return h.indexOf(n); };
+  if (ix("kit_id") < 0) { alert("The file has no kit_id column."); return; }
+  var known = {}; ITEMS.forEach(function (it) { known[it.kit_id] = 1; });
+  var n = 0, skipped = 0;
+  rows.slice(1).forEach(function (r) {
+    var id = (r[ix("kit_id")] || "").trim(); if (!known[id]) { skipped++; return; }
+    var g = ix("grade") >= 0 ? (r[ix("grade")] || "").trim() : "", p = ix("placement") >= 0 ? (r[ix("placement")] || "").trim().toLowerCase() : "";
+    var c = ix("failure_codes") >= 0 ? (r[ix("failure_codes")] || "") : "", nt = ix("note") >= 0 ? (r[ix("note")] || "") : "";
+    var ts = ix("timestamp") >= 0 ? (r[ix("timestamp")] || "") : "";
+    if (!g && !p && !c.trim() && !nt.trim()) return;
+    var gn = g.replace(",", ".");
+    state.r[id] = { grade: /^[012](\.0*)?$/.test(gn) ? gn.charAt(0) : "", placement: (p === "pass" || p === "fail") ? p : "",
+      codes: c.toUpperCase().split(/[;, ]+/).filter(function (x) { return /^[MWSBKFACD]$/.test(x); }).filter(function (x, i, a) { return a.indexOf(x) === i; }).sort(),
+      note: nt, timestamp: ts || new Date().toISOString() };
+    n++;
+  });
+  save(); render(); alert("Imported " + n + " rated items" + (skipped ? "; " + skipped + " rows with unknown kit_id ignored" : "") + ".");
+}
+$("fImport").addEventListener("change", function (e) {
+  var f = e.target.files[0]; if (!f) return;
+  if (!confirm("Importing replaces the stored ratings of the items in the file. Continue?")) { e.target.value = ""; return; }
+  var rd = new FileReader(); rd.onload = function () { importCSV(String(rd.result)); e.target.value = ""; }; rd.readAsText(f);
+});
+$("bExport").addEventListener("click", exportCSV);
+$("bCopy").addEventListener("click", function () { var t = $("csvText"); t.select(); try { document.execCommand("copy"); } catch (e) {} });
+
+// ---- modals ----
+function openModal(id) { $(id).classList.add("open"); }
+function closeModal(id) { $(id).classList.remove("open"); }
+$("bHelp").addEventListener("click", function () { openModal("mHelp"); });
+$("bRubric").addEventListener("click", function () { openModal("mRubric"); });
+
+// ---- form wiring ----
+document.querySelectorAll(".grades label").forEach(function (l) { l.addEventListener("click", function (e) { e.preventDefault(); setGrade(l.dataset.g); }); });
+document.querySelectorAll(".pl label").forEach(function (l) { l.addEventListener("click", function (e) { e.preventDefault(); setPlacement(l.dataset.p); }); });
+$("note").addEventListener("input", function () { var id = ITEMS[state.cur].kit_id; rec(id).note = $("note").value; touch(id); save(); renderWarn(); });
+$("rater").addEventListener("input", function () { state.rater = $("rater").value.trim(); save(); });
+$("bPrev").addEventListener("click", function () { go(state.cur - 1); });
+$("bNext").addEventListener("click", function () { go(state.cur + 1); });
+$("bNextUnrated").addEventListener("click", nextUnrated);
+
+document.addEventListener("keydown", function (e) {
+  var t = e.target, typing = t && (t.tagName === "TEXTAREA" || (t.tagName === "INPUT" && t.type === "text"));
+  if (e.key === "Escape") { if (typing) { t.blur(); return; } closeBig(); closeModal("mHelp"); closeModal("mCsv"); closeModal("mRubric"); return; }
+  if (document.querySelector(".modal.open")) return;   // no grading keys while the rubric, help or CSV box is open
+  if (typing || e.metaKey || e.ctrlKey || e.altKey) return;
+  var bigOpen = $("overlay").classList.contains("open");
+  var k = e.key;
+  if (bigOpen && (k === "+" || k === "=")) { ovZoom(1.25); e.preventDefault(); return; }
+  if (bigOpen && (k === "-" || k === "_")) { ovZoom(0.8); e.preventDefault(); return; }
+  if (k === "0" || k === "1" || k === "2") { setGrade(k); e.preventDefault(); return; }
+  if (k === "ArrowRight") { closeBig(); go(state.cur + 1); e.preventDefault(); return; }
+  if (k === "ArrowLeft") { closeBig(); go(state.cur - 1); e.preventDefault(); return; }
+  if (k === "?") { openModal("mHelp"); return; }
+  var u = k.length === 1 ? k.toUpperCase() : "";
+  if ("MWSBKFACD".indexOf(u) >= 0 && u) { var r = rec(ITEMS[state.cur].kit_id); setCode(u, r.codes.indexOf(u) < 0); e.preventDefault(); return; }
+  if (u === "P") { var rp = rec(ITEMS[state.cur].kit_id).placement; setPlacement(rp === "pass" ? "fail" : "pass"); e.preventDefault(); return; }
+  if (u === "N") { nextUnrated(); e.preventDefault(); return; }
+  if (u === "G") { openBig("gross"); e.preventDefault(); return; }
+  if (u === "L") { openBig("placement"); e.preventDefault(); return; }
+  if (u === "R") { openModal("mRubric"); e.preventDefault(); return; }
+});
+
+// ---- kit self-check: every listed image must be present next to this file ----
+function kitCheck() {
+  var total = ITEMS.length * 2, okN = 0, bad = [], pending = total;
+  function done() {
+    pending--; if (pending > 0) return;
+    var el = $("kitcheck");
+    if (bad.length) { el.className = "bad"; el.textContent = "Kit check: " + bad.length + " image(s) missing, e.g. " + bad.slice(0, 3).join(", ") + ". Unzip the whole kit and keep its folder structure."; }
+    else el.textContent = "Kit check: all " + okN + " images found";
+    window.KIT_CHECK = { total: total, ok: okN, missing: bad };
+  }
+  ITEMS.forEach(function (it) {
+    ["gross", "placement"].forEach(function (k) {
+      var im = new Image(), src = "images/" + k + "/" + it.kit_id + ".png";
+      im.onload = function () { okN++; done(); }; im.onerror = function () { bad.push(src); done(); }; im.src = src;
+    });
+  });
+}
+
+buildCodes(); buildStrip(); load(); render(); kitCheck();
+</script>
+</body>
+</html>

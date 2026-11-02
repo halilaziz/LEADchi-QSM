@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "run_utc": "2026-10-07 19:48:08 UTC",
+    "label": "POST HOC engine-2 comparison"
+  },
+  "primary": {
+    "beta_ppb": 4.96280154,
+    "se_hc3": 3.1250804,
+    "p_two": 0.11691305,
+    "ci95_ppb": [-1.27319931, 11.1988024],
+    "sigma_resid": 11.2559034,
+    "sigma_B": 10.55045438,
+    "delta": 0.44090655,
+    "outcome": "B",
+    "huber_beta": 3.93550138,
+    "bound_ppb": -6.13180464,
+    "pB": 0.00035192,
+    "strata": {
+      "PSonly_minus_TD": {
+        "est": 8.15742149,
+        "se": 3.98036207,
+        "p_two": 0.04428148,
+        "ci95": [0.21473264, 16.10011033],
+        "lower95_one_sided": 1.51988003,
+        "pB": 0.00030976
+      },
+      "PSADHD_minus_ADHD": {
+        "est": 1.7681816,
+        "se": 4.78548742,
+        "p_two": 0.71291195,
+        "ci95": [-7.78110988, 11.31747308],
+        "lower95_one_sided": -6.21196458,
+        "pB": 0.05169327
+      }
+    },
+    "adult_k_scaled": {
+      "k": 0.47282578,
+      "expected_shift": -6.73303911,
+      "p_one_sided": 0.00018836
+    }
+  },
+  "e2_rts": {
+    "agreement": {
+      "n_first_usable": 80,
+      "n_finite_e2": 79,
+      "n_valid_e2": 63,
+      "n_fail_SNVTA_e2": 16,
+      "status_of_missing": {
+        "mask_mismatch": 1
+      },
+      "icc31": 0.67692751,
+      "pearson": 0.72903413,
+      "spearman": 0.70783836,
+      "mean_primary": 52.99346848,
+      "mean_e2": 27.08402342,
+      "sd_primary": 11.95534759,
+      "sd_e2": 8.0953339,
+      "bland_altman_mean_diff": -25.90944506,
+      "bland_altman_sd_diff": 8.20665772,
+      "gp_pearson": 0.89384564
+    },
+    "main": {
+      "label": "main: engine-2 plausibility failures missing (registered sec. 12.4 rule)",
+      "n": 63,
+      "M1": {
+        "beta_ppb": 2.53494414,
+        "se_hc3": 2.72882485,
+        "p_two": 0.35729063,
+        "ci95_ppb": [-2.94340035, 8.01328863],
+        "sigma_resid": 8.12287348,
+        "sigma_B": 7.37213426,
+        "delta": 0.3120748,
+        "outcome": "B",
+        "disconfirming": false
+      },
+      "bound_ppb_registered_deltaB": -4.28460097,
+      "pB": 0.00785665,
+      "huber_beta": 1.63013149,
+      "interaction": {
+        "est": 1.37075471,
+        "se": 4.82011452,
+        "p_two": 0.77726902,
+        "ci95": [-8.30602897, 11.04753839]
+      },
+      "strata": {
+        "PSonly_minus_TD": {
+          "est": 1.84956679,
+          "se": 3.39423697,
+          "p_two": 0.58818785,
+          "ci95": [-4.96464826, 8.66378184],
+          "lower95_one_sided": -3.83674732,
+          "pB": 0.0383133
+        },
+        "PSADHD_minus_ADHD": {
+          "est": 3.2203215,
+          "se": 3.87154718,
+          "p_two": 0.40940426,
+          "ci95": [-4.55213379, 10.99277679],
+          "lower95_one_sided": -3.26562323,
+          "pB": 0.02905432
+        }
+      },
+      "adult_k_scaled": {
+        "k": 0.36208462,
+        "expected_shift": -5.15608496,
+        "p_one_sided": 0.00342596
+      }
+    },
+    "sensitivity_failures_kept": {
+      "label": "sensitivity: engine-2 SN-VTA plausibility failures kept",
+      "n": 79,
+      "M1": {
+        "beta_ppb": 3.81489676,
+        "se_hc3": 2.16565481,
+        "p_two": 0.08270844,
+        "ci95_ppb": [-0.50776833, 8.13756185],
+        "sigma_resid": 7.6506521,
+        "sigma_B": 6.74764174,
+        "delta": 0.49863681,
+        "outcome": "B",
+        "disconfirming": false
+      },
+      "bound_ppb_registered_deltaB": -3.92165299,
+      "pB": 0.00033045,
+      "huber_beta": 2.96828037,
+      "interaction": {
+        "est": 0.50558272,
+        "se": 4.23623725,
+        "p_two": 0.90535749,
+        "ci95": [-7.94998223, 8.96114767]
+      },
+      "strata": {
+        "PSonly_minus_TD": {
+          "est": 3.5621054,
+          "se": 2.92716366,
+          "p_two": 0.22790633,
+          "ci95": [-2.28053773, 9.40474852],
+          "lower95_one_sided": -1.32015804,
+          "pB": 0.00642017
+        },
+        "PSADHD_minus_ADHD": {
+          "est": 4.06768812,
+          "se": 3.1280485,
+          "p_two": 0.19792217,
+          "ci95": [-2.17592282, 10.31129906],
+          "lower95_one_sided": -1.14963438,
+          "pB": 0.00646327
+        }
+      },
+      "adult_k_scaled": {
+        "k": 0.36208462,
+        "expected_shift": -5.15608496,
+        "p_one_sided": 0.00004923
+      }
+    },
+    "recovery_k_L14": {
+      "all": [177, 0.35378238, 0.05117079, 0.35687256],
+      "first_usable": [79, 0.36208462, 0.04462184, 0.3649145]
+    }
+  },
+  "e2_tv": {
+    "agreement": {
+      "n_first_usable": 80,
+      "n_finite_e2": 79,
+      "n_valid_e2": 63,
+      "n_fail_SNVTA_e2": 16,
+      "status_of_missing": {
+        "mask_mismatch": 1
+      },
+      "icc31": 0.6925026,
+      "pearson": 0.72686912,
+      "spearman": 0.71377799,
+      "mean_primary": 52.99346848,
+      "mean_e2": 24.01098012,
+      "sd_primary": 11.95534759,
+      "sd_e2": 8.73573933,
+      "bland_altman_mean_diff": -28.98248836,
+      "bland_altman_sd_diff": 8.21077338,
+      "gp_pearson": 0.89936967
+    },
+    "main": {
+      "label": "main: engine-2 plausibility failures missing (registered sec. 12.4 rule)",
+      "n": 63,
+      "M1": {
+        "beta_ppb": 3.33997466,
+        "se_hc3": 2.84519926,
+        "p_two": 0.24588861,
+        "ci95_ppb": [-2.3720012, 9.05195053],
+        "sigma_resid": 8.8136018,
+        "sigma_B": 8.10389013,
+        "delta": 0.37895684,
+        "outcome": "B",
+        "disconfirming": false
+      },
+      "bound_ppb_registered_deltaB": -4.7098892,
+      "pB": 0.00332746,
+      "huber_beta": 2.0710901,
+      "interaction": {
+        "est": 0.66966846,
+        "se": 5.13918052,
+        "p_two": 0.89683658,
+        "ci95": [-9.64766694, 10.98700387]
+      },
+      "strata": {
+        "PSonly_minus_TD": {
+          "est": 3.00514043,
+          "se": 3.52225677,
+          "p_two": 0.39754553,
+          "ci95": [-4.06608509, 10.07636595],
+          "lower95_one_sided": -2.89564332,
+          "pB": 0.01654744
+        },
+        "PSADHD_minus_ADHD": {
+          "est": 3.6748089,
+          "se": 4.12184584,
+          "p_two": 0.37682423,
+          "ci95": [-4.60014193, 11.94975972],
+          "lower95_one_sided": -3.23045742,
+          "pB": 0.02357348
+        }
+      },
+      "adult_k_scaled": {
+        "k": 0.24743985,
+        "expected_shift": -3.52354345,
+        "p_one_sided": 0.00974354
+      }
+    },
+    "sensitivity_failures_kept": {
+      "label": "sensitivity: engine-2 SN-VTA plausibility failures kept",
+      "n": 79,
+      "M1": {
+        "beta_ppb": 4.37128927,
+        "se_hc3": 2.31370942,
+        "p_two": 0.06318008,
+        "ci95_ppb": [-0.24689406, 8.9894726],
+        "sigma_resid": 8.23413084,
+        "sigma_B": 7.70120339,
+        "delta": 0.5308744,
+        "outcome": "B",
+        "disconfirming": false
+      },
+      "bound_ppb_registered_deltaB": -4.47585223,
+      "pB": 0.00014538,
+      "huber_beta": 3.33547249,
+      "interaction": {
+        "est": -0.29922358,
+        "se": 4.56900687,
+        "p_two": 0.94797901,
+        "ci95": [-9.41899947, 8.8205523]
+      },
+      "strata": {
+        "PSonly_minus_TD": {
+          "est": 4.52090106,
+          "se": 3.138419,
+          "p_two": 0.15438214,
+          "ci95": [-1.74340949, 10.78521161],
+          "lower95_one_sided": -0.71371857,
+          "pB": 0.0027696
+        },
+        "PSADHD_minus_ADHD": {
+          "est": 4.22167748,
+          "se": 3.36076489,
+          "p_two": 0.21341846,
+          "ci95": [-2.48643731, 10.92979227],
+          "lower95_one_sided": -1.38379643,
+          "pB": 0.00591401
+        }
+      },
+      "adult_k_scaled": {
+        "k": 0.24743985,
+        "expected_shift": -3.52354345,
+        "p_one_sided": 0.00054843
+      }
+    },
+    "recovery_k_L14": {
+      "all": [177, 0.24187828, 0.06419018, 0.24990794],
+      "first_usable": [79, 0.24743985, 0.0562766, 0.25426658]
+    }
+  }
+}

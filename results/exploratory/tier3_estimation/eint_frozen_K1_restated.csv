@@ -1,0 +1,6 @@
+"contrast","est_ppb","se_hc3","lo95","hi95","p_two","source"
+"PS main effect (beta_PS; H1 decision quantity, frozen)",4.96280154409223,3.12508040430837,-1.27319931092534,11.1988023991098,0.116913053059836,"frozen results.json (verbatim; not re-decided)"
+"ADHD main effect",-1.27157944948918,3.10638546650445,-7.47027513694402,4.92711623796566,0.683573960487499,"frozen results.json (verbatim; not re-decided)"
+"PS x ADHD interaction",-6.38923988314397,6.19869616049867,-18.7585454867925,5.98006572050457,0.306315335235147,"frozen results.json (verbatim; not re-decided)"
+"PS-only - TD (mandatory co-report)",8.15742148566421,3.98036207121492,0.214732636713093,16.1001103346153,0.0442814831318877,"frozen results.json (verbatim; not re-decided)"
+"PS+ADHD - ADHD-only",1.76818160252024,4.78548742490339,-7.78110987562267,11.3174730806632,0.712911945609071,"frozen results.json (verbatim; not re-decided)"

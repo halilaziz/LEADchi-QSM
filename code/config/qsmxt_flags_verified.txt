@@ -1,0 +1,8 @@
+QSMxT v9.22.0 (qsm-core v0.38.0) flag verification, 2026-09-29.
+Verified by Claude (AI assistant) on behalf of the user under the standing server approval of 2026-09-29 (amendment 0 item 3).
+- Every QSMxT flag used by run_qsmxt.sh build_args appears in prereg/qsmxt_run_help.txt (automated grep; the only non-matches
+  are the wrapper's own options --stage/--variant/--dry-run and the top-level --version).
+- [inversion.medi] smv = true is the single MEDI SMV key in qsmxt_v9.22.0_defaults.toml -> set to false by --stage config.
+- PDF tol ([bg_removal.pdf] tol = 1e-5) and LBV tol ([bg_removal.lbv] tol = 1e-6) keys exist.
+- quality-map: `qsmxt quality-map [--magnitude MAG] [--phase2 PHASE2] [--te1 s] [--te2 s] --output OUT PHASE1` (first-echo
+  phase; TE1 = 7.5 ms, TE2 = 15 ms from the header audit) -> prereg/qsmxt_quality_map_cmd.txt.

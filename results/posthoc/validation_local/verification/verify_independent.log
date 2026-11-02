@@ -1,0 +1,250 @@
+plausibility edits in usable rows: {'chi_GP': 0, 'chi_PUT': 0, 'r2s_SNVTA': 0}
+first-usable n = 80 cells [22, 16, 17, 25] ; usable sessions 107 subjects 80 ; subjects with >= 2 usable: 26
+repro beta         mine 4.96280154409 frozen 4.96280154409 rel 1.79e-16
+repro se           mine 3.12508040431 frozen 3.12508040431 rel 7.11e-16
+repro p            mine 0.11691305306 frozen 0.11691305306 rel 1.54e-15
+repro sigma_resid  mine 11.2559034014 frozen 11.2559034014 rel 2.05e-15
+repro sigma_rob    mine 10.5504543759 frozen 10.5504543759 rel 1.18e-15
+repro bound        mine -6.13180464348 frozen -6.13180464348 rel 7.24e-16
+repro tB           mine 3.55018263603 frozen 3.55018263603 rel 7.51e-16
+repro pB           mine 0.000351918430982 frozen 0.000351918430982 rel 6.16e-16
+repro huber_beta   mine 3.93550137897 frozen 3.93550137897 rel 5.87e-15
+A: identity max err 1.47e-14; R2 cancellation beta range 5.33e-15, SE range 1.69e-14; min q6 0.0965; min q18 0.1370; SN-VTA dia>0 at R2=10: 61/80
+B: joint beta 4.162109; het F 2.4444 p 0.0948; fisher cell 0.3206 PS 0.3612; spearman 0.3580 p 0.00111; VIF M1 1.1829 joint 1.2677
+C: tail n 4; refit beta [4.962801544092231, 3.327348886608367, 1.4512106721163442]
+D: corr {'r_chi_r2s_first': 0.20548920309085977, 'r_chi_r2s_first_age_partial': 0.16291401452463092, 'r_chi_r2s_GP_first': 0.6787682162251518, 'age_range_first': [8.8, 17.8], 'age_range_usable': [8.8, 19.5], 'n_subjects_with_2plus_usable': 26, 'raw_equal_PUT': True, 'raw_equal_GP': True}
+putamen shortfall (chi_dia_PUT age slope) by Dr:
+       Dr                                            sample    covariates     slope     ci_lo     ci_hi     p_two
+0   137.0                           first-usable (OLS, HC3)      age only -0.907240 -1.392124 -0.422355  0.000368
+1   137.0                           first-usable (OLS, HC3)         + sex -0.915473 -1.403084 -0.427862  0.000354
+2   137.0                           first-usable (OLS, HC3)  + sex + cell -0.941588 -1.418096 -0.465081  0.000185
+3   137.0  all usable sessions (lme REML, random intercept)      age only -1.032629 -1.469037 -0.596220  0.000048
+4   137.0  all usable sessions (lme REML, random intercept)         + sex -1.030403 -1.471541 -0.589264  0.000057
+5   137.0  all usable sessions (lme REML, random intercept)  + sex + cell -1.080172 -1.537449 -0.622895  0.000049
+6   274.0                           first-usable (OLS, HC3)      age only -0.358076 -0.714860 -0.001293  0.049196
+7   274.0                           first-usable (OLS, HC3)         + sex -0.351785 -0.705426  0.001856  0.051185
+8   274.0                           first-usable (OLS, HC3)  + sex + cell -0.345665 -0.699098  0.007768  0.055117
+9   274.0  all usable sessions (lme REML, random intercept)      age only -0.500522 -0.840137 -0.160907  0.005479
+10  274.0  all usable sessions (lme REML, random intercept)         + sex -0.481459 -0.823418 -0.139499  0.007600
+11  274.0  all usable sessions (lme REML, random intercept)  + sex + cell -0.514747 -0.869043 -0.160451  0.006083
+12  321.0                           first-usable (OLS, HC3)      age only -0.277669 -0.622009  0.066671  0.112451
+13  321.0                           first-usable (OLS, HC3)         + sex -0.269251 -0.609487  0.070985  0.119170
+14  321.0                           first-usable (OLS, HC3)  + sex + cell -0.258411 -0.601099  0.084276  0.137218
+15  321.0  all usable sessions (lme REML, random intercept)      age only -0.422494 -0.753534 -0.091454  0.014373
+16  321.0  all usable sessions (lme REML, random intercept)         + sex -0.400979 -0.733652 -0.068306  0.020047
+17  321.0  all usable sessions (lme REML, random intercept)  + sex + cell -0.431691 -0.776077 -0.087306  0.016005
+18  548.0                           first-usable (OLS, HC3)      age only -0.083494 -0.407437  0.240448  0.609310
+19  548.0                           first-usable (OLS, HC3)         + sex -0.069941 -0.387562  0.247680  0.662268
+20  548.0                           first-usable (OLS, HC3)  + sex + cell -0.047703 -0.375185  0.279779  0.772439
+21  548.0  all usable sessions (lme REML, random intercept)      age only -0.232788 -0.551016  0.085441  0.144725
+22  548.0  all usable sessions (lme REML, random intercept)         + sex -0.205904 -0.523620  0.111812  0.194374
+23  548.0  all usable sessions (lme REML, random intercept)  + sex + cell -0.229858 -0.557872  0.098156  0.161681
+statsmodels MixedLM (powell) vs own REML: max rel diff of the age estimate 4.96e-06 (statsmodels SEs use a different covariance route and are listed only, not compared)
+                            file  rows_theirs  rows_mine  unmatched_rows  cells_compared  cells_outside_tol  max_rel_diff                 their_cols_not_recomputed
+0      A_X2_chisep_group_effects           48         48               0            1500                  0      0.000000        tB_fixed_bound;pB_fixed_bound;note
+1    A_X2_component_descriptives           12         12               0             132                  0      0.000000                                          
+2              B_nuisance_models            6          6               0             144                  0      0.000000                                block;note
+3     B_joint_model_coefficients            6          6               0              36                  0      0.000000                                          
+4                   B_r2s_models            3          3               0              65                  0      0.000000  block;tB_fixed_bound;pB_fixed_bound;note
+5           B_dice_tertile_cells            3          3               0              18                  0      0.000000                                          
+6          B_dice_tertile_models           10         10               0             230                  0      0.000000                                block;note
+7         C_low_TD_tail_sessions            4          4               0             148                  0      0.000000                                          
+8    C_low_TD_tail_qc_comparison           10         10               0             109                  0      0.000000                                          
+9           C_low_TD_tail_refits            3          3               0              72                  0      0.000000                                block;note
+10                  D_age_slopes          144        144               0            1632                144      0.000033                                      role
+11  D_implied_chi_slope_from_R2s           16         16               0             144                 30      0.000033                                          
+                             file                                                                                  key                       column    theirs      mine       rel
+0                    D_age_slopes                    chi_GP | all usable sessions (lme REML, random intercept) | + sex                  slope_per_y  1.992538  1.992534  0.000002
+1                    D_age_slopes             chi_GP | all usable sessions (lme REML, random intercept) | + sex + cell                  slope_per_y  1.851745  1.851740  0.000002
+2                    D_age_slopes                 chi_GP | all usable sessions (lme REML, random intercept) | age only                  slope_per_y  1.914211  1.914206  0.000002
+3                    D_age_slopes             chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex                  slope_per_y  1.830493  1.830486  0.000003
+4                    D_age_slopes      chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex + cell                  slope_per_y  1.774623  1.774617  0.000004
+5                    D_age_slopes          chi_GP_csfref | all usable sessions (lme REML, random intercept) | age only                  slope_per_y  1.772921  1.772915  0.000003
+6                    D_age_slopes                chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex                  slope_per_y  1.992538  1.992534  0.000002
+7                    D_age_slopes         chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex + cell                  slope_per_y  1.851745  1.851740  0.000002
+8                    D_age_slopes             chi_GP_raw | all usable sessions (lme REML, random intercept) | age only                  slope_per_y  1.914211  1.914206  0.000002
+9                    D_age_slopes              chi_GP_unref | all usable sessions (lme REML, random intercept) | + sex                  slope_per_y  2.009126  2.009122  0.000002
+10                   D_age_slopes           chi_GP_unref | all usable sessions (lme REML, random intercept) | age only                  slope_per_y  1.926053  1.926049  0.000002
+11                   D_age_slopes                    r2s_GP | all usable sessions (lme REML, random intercept) | + sex                  slope_per_y  0.603284  0.603284  0.000001
+12                   D_age_slopes             r2s_GP | all usable sessions (lme REML, random intercept) | + sex + cell                  slope_per_y  0.612064  0.612064  0.000001
+13                   D_age_slopes    ref2_minus_wb_ppb | all usable (lme REML), BETWEEN-person mean age | + sex + cell                  slope_per_y -0.061850 -0.061850  0.000006
+14                   D_age_slopes         ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex                  slope_per_y  0.168225  0.168227  0.000009
+15                   D_age_slopes  ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex + cell                  slope_per_y  0.098554  0.098555  0.000018
+16                   D_age_slopes      ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | age only                  slope_per_y  0.152387  0.152389  0.000010
+17                   D_age_slopes               chi_GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell                           se  0.655410  0.655411  0.000002
+18                   D_age_slopes                     chi_GP | all usable (lme REML), WITHIN-person age | + sex + cell                           se  1.051166  1.051161  0.000005
+19                   D_age_slopes        chi_GP_csfref | all usable (lme REML), BETWEEN-person mean age | + sex + cell                           se  0.686174  0.686175  0.000002
+20                   D_age_slopes              chi_GP_csfref | all usable (lme REML), WITHIN-person age | + sex + cell                           se  1.072892  1.072886  0.000005
+21                   D_age_slopes           chi_GP_raw | all usable (lme REML), BETWEEN-person mean age | + sex + cell                           se  0.655410  0.655411  0.000002
+22                   D_age_slopes                 chi_GP_raw | all usable (lme REML), WITHIN-person age | + sex + cell                           se  1.051166  1.051161  0.000005
+23                   D_age_slopes                chi_para_GP | all usable (lme REML), WITHIN-person age | + sex + cell                           se  0.666259  0.666258  0.000002
+24                   D_age_slopes               r2s_GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell                           se  0.130380  0.130380  0.000002
+25                   D_age_slopes                     r2s_GP | all usable (lme REML), WITHIN-person age | + sex + cell                           se  0.191330  0.191329  0.000004
+26                   D_age_slopes    ref2_minus_wb_ppb | all usable (lme REML), BETWEEN-person mean age | + sex + cell                           se  0.316505  0.316506  0.000002
+27                   D_age_slopes          ref2_minus_wb_ppb | all usable (lme REML), WITHIN-person age | + sex + cell                           se  0.437336  0.437334  0.000005
+28                   D_age_slopes               chi_GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell                        ci_lo  0.936786  0.936783  0.000003
+29                   D_age_slopes                     chi_GP | all usable (lme REML), WITHIN-person age | + sex + cell                        ci_lo -1.317546 -1.317534  0.000008
+30                   D_age_slopes                    chi_GP | all usable sessions (lme REML, random intercept) | + sex                        ci_lo  0.876303  0.876298  0.000005
+31                   D_age_slopes             chi_GP | all usable sessions (lme REML, random intercept) | + sex + cell                        ci_lo  0.706963  0.706958  0.000006
+32                   D_age_slopes                 chi_GP | all usable sessions (lme REML, random intercept) | age only                        ci_lo  0.788761  0.788756  0.000005
+33                   D_age_slopes        chi_GP_csfref | all usable (lme REML), BETWEEN-person mean age | + sex + cell                        ci_lo  0.943406  0.943403  0.000004
+34                   D_age_slopes              chi_GP_csfref | all usable (lme REML), WITHIN-person age | + sex + cell                        ci_lo -1.763589 -1.763577  0.000007
+35                   D_age_slopes             chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex                        ci_lo  0.656682  0.656676  0.000009
+36                   D_age_slopes      chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex + cell                        ci_lo  0.579460  0.579454  0.000010
+37                   D_age_slopes          chi_GP_csfref | all usable sessions (lme REML, random intercept) | age only                        ci_lo  0.598292  0.598286  0.000010
+38                   D_age_slopes           chi_GP_raw | all usable (lme REML), BETWEEN-person mean age | + sex + cell                        ci_lo  0.936786  0.936783  0.000003
+39                   D_age_slopes                 chi_GP_raw | all usable (lme REML), WITHIN-person age | + sex + cell                        ci_lo -1.317546 -1.317534  0.000008
+40                   D_age_slopes                chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex                        ci_lo  0.876303  0.876298  0.000005
+41                   D_age_slopes         chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex + cell                        ci_lo  0.706963  0.706958  0.000006
+42                   D_age_slopes             chi_GP_raw | all usable sessions (lme REML, random intercept) | age only                        ci_lo  0.788761  0.788756  0.000005
+43                   D_age_slopes              chi_GP_unref | all usable sessions (lme REML, random intercept) | + sex                        ci_lo  0.853681  0.853677  0.000006
+44                   D_age_slopes           chi_GP_unref | all usable sessions (lme REML, random intercept) | age only                        ci_lo  0.761158  0.761154  0.000006
+45                   D_age_slopes          chi_SNVTA | all usable sessions (lme REML, random intercept) | + sex + cell                        ci_lo  0.009739  0.009739  0.000003
+46                   D_age_slopes                chi_para_GP | all usable (lme REML), WITHIN-person age | + sex + cell                        ci_lo -0.137847 -0.137845  0.000017
+47                   D_age_slopes        chi_para_GP | all usable sessions (lme REML, random intercept) | + sex + cell                        ci_lo  1.105045  1.105044  0.000001
+48                   D_age_slopes               r2s_GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell                        ci_lo  0.430659  0.430658  0.000001
+49                   D_age_slopes                     r2s_GP | all usable (lme REML), WITHIN-person age | + sex + cell                        ci_lo  0.050644  0.050646  0.000033
+50                   D_age_slopes                    r2s_GP | all usable sessions (lme REML, random intercept) | + sex                        ci_lo  0.382746  0.382745  0.000002
+51                   D_age_slopes             r2s_GP | all usable sessions (lme REML, random intercept) | + sex + cell                        ci_lo  0.390469  0.390468  0.000002
+52                   D_age_slopes                 r2s_GP | all usable sessions (lme REML, random intercept) | age only                        ci_lo  0.366090  0.366090  0.000001
+53                   D_age_slopes    ref2_minus_wb_ppb | all usable (lme REML), BETWEEN-person mean age | + sex + cell                        ci_lo -0.692501 -0.692502  0.000001
+54                   D_age_slopes          ref2_minus_wb_ppb | all usable (lme REML), WITHIN-person age | + sex + cell                        ci_lo -0.497571 -0.497567  0.000010
+55                   D_age_slopes         ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex                        ci_lo -0.355253 -0.355252  0.000005
+56                   D_age_slopes  ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex + cell                        ci_lo -0.427598 -0.427596  0.000005
+57                   D_age_slopes      ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | age only                        ci_lo -0.369870 -0.369869  0.000005
+58                   D_age_slopes                     chi_GP | all usable (lme REML), WITHIN-person age | + sex + cell                        ci_hi  3.003860  3.003849  0.000004
+59                   D_age_slopes                    chi_GP | all usable sessions (lme REML, random intercept) | + sex                        ci_hi  3.108774  3.108769  0.000001
+60                   D_age_slopes             chi_GP | all usable sessions (lme REML, random intercept) | + sex + cell                        ci_hi  2.996527  2.996523  0.000002
+61                   D_age_slopes                 chi_GP | all usable sessions (lme REML, random intercept) | age only                        ci_hi  3.039661  3.039656  0.000001
+62                   D_age_slopes              chi_GP_csfref | all usable (lme REML), WITHIN-person age | + sex + cell                        ci_hi  2.647132  2.647121  0.000004
+63                   D_age_slopes             chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex                        ci_hi  3.004303  3.004297  0.000002
+64                   D_age_slopes      chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex + cell                        ci_hi  2.969786  2.969779  0.000002
+65                   D_age_slopes          chi_GP_csfref | all usable sessions (lme REML, random intercept) | age only                        ci_hi  2.947550  2.947543  0.000002
+66                   D_age_slopes                 chi_GP_raw | all usable (lme REML), WITHIN-person age | + sex + cell                        ci_hi  3.003860  3.003849  0.000004
+67                   D_age_slopes                chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex                        ci_hi  3.108774  3.108769  0.000001
+68                   D_age_slopes         chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex + cell                        ci_hi  2.996527  2.996523  0.000002
+69                   D_age_slopes             chi_GP_raw | all usable sessions (lme REML, random intercept) | age only                        ci_hi  3.039661  3.039656  0.000001
+70                   D_age_slopes              chi_GP_unref | all usable sessions (lme REML, random intercept) | + sex                        ci_hi  3.164572  3.164567  0.000001
+71                   D_age_slopes           chi_GP_unref | all usable sessions (lme REML, random intercept) | age only                        ci_hi  3.090947  3.090943  0.000001
+72                   D_age_slopes                     r2s_GP | all usable (lme REML), WITHIN-person age | + sex + cell                        ci_hi  0.837214  0.837212  0.000002
+73                   D_age_slopes             r2s_GP | all usable sessions (lme REML, random intercept) | + sex + cell                        ci_hi  0.833660  0.833659  0.000001
+74                   D_age_slopes    ref2_minus_wb_ppb | all usable (lme REML), BETWEEN-person mean age | + sex + cell                        ci_hi  0.568800  0.568802  0.000003
+75                   D_age_slopes          ref2_minus_wb_ppb | all usable (lme REML), WITHIN-person age | + sex + cell                        ci_hi  1.300343  1.300338  0.000004
+76                   D_age_slopes         ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex                        ci_hi  0.691704  0.691705  0.000002
+77                   D_age_slopes  ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex + cell                        ci_hi  0.624705  0.624706  0.000002
+78                   D_age_slopes      ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | age only                        ci_hi  0.674645  0.674646  0.000002
+79                   D_age_slopes               chi_GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell                        p_two  0.001016  0.001016  0.000022
+80                   D_age_slopes                     chi_GP | all usable (lme REML), WITHIN-person age | + sex + cell                        p_two  0.429757  0.429754  0.000005
+81                   D_age_slopes                    chi_GP | all usable sessions (lme REML, random intercept) | + sex                        p_two  0.001101  0.001101  0.000021
+82                   D_age_slopes             chi_GP | all usable sessions (lme REML, random intercept) | + sex + cell                        p_two  0.002639  0.002639  0.000019
+83                   D_age_slopes                 chi_GP | all usable sessions (lme REML, random intercept) | age only                        p_two  0.001713  0.001713  0.000019
+84                   D_age_slopes        chi_GP_csfref | all usable (lme REML), BETWEEN-person mean age | + sex + cell                        p_two  0.001207  0.001207  0.000025
+85                   D_age_slopes              chi_GP_csfref | all usable (lme REML), WITHIN-person age | + sex + cell                        p_two  0.683892  0.683890  0.000002
+86                   D_age_slopes             chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex                        p_two  0.003554  0.003554  0.000026
+87                   D_age_slopes      chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex + cell                        p_two  0.005184  0.005184  0.000025
+88                   D_age_slopes          chi_GP_csfref | all usable sessions (lme REML, random intercept) | age only                        p_two  0.004582  0.004582  0.000025
+89                   D_age_slopes           chi_GP_raw | all usable (lme REML), BETWEEN-person mean age | + sex + cell                        p_two  0.001016  0.001016  0.000022
+90                   D_age_slopes                 chi_GP_raw | all usable (lme REML), WITHIN-person age | + sex + cell                        p_two  0.429757  0.429754  0.000005
+91                   D_age_slopes                chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex                        p_two  0.001101  0.001101  0.000021
+92                   D_age_slopes         chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex + cell                        p_two  0.002639  0.002639  0.000019
+93                   D_age_slopes             chi_GP_raw | all usable sessions (lme REML, random intercept) | age only                        p_two  0.001713  0.001713  0.000019
+94                   D_age_slopes              chi_GP_unref | all usable sessions (lme REML, random intercept) | + sex                        p_two  0.001404  0.001404  0.000022
+95                   D_age_slopes           chi_GP_unref | all usable sessions (lme REML, random intercept) | age only                        p_two  0.002192  0.002192  0.000019
+96                   D_age_slopes                chi_para_GP | all usable (lme REML), WITHIN-person age | + sex + cell                        p_two  0.075915  0.075914  0.000006
+97                   D_age_slopes                     r2s_GP | all usable (lme REML), WITHIN-person age | + sex + cell                        p_two  0.028442  0.028441  0.000022
+98                   D_age_slopes    ref2_minus_wb_ppb | all usable (lme REML), BETWEEN-person mean age | + sex + cell                        p_two  0.845602  0.845603  0.000001
+99                   D_age_slopes          ref2_minus_wb_ppb | all usable (lme REML), WITHIN-person age | + sex + cell                        p_two  0.367161  0.367159  0.000007
+100                  D_age_slopes         ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex                        p_two  0.514701  0.514697  0.000007
+101                  D_age_slopes  ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex + cell                        p_two  0.703353  0.703348  0.000007
+102                  D_age_slopes      ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | age only                        p_two  0.553849  0.553845  0.000007
+103                  D_age_slopes               chi_GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell              p_one_sided_pos  0.000508  0.000508  0.000022
+104                  D_age_slopes                     chi_GP | all usable (lme REML), WITHIN-person age | + sex + cell              p_one_sided_pos  0.214878  0.214877  0.000005
+105                  D_age_slopes                    chi_GP | all usable sessions (lme REML, random intercept) | + sex              p_one_sided_pos  0.000550  0.000550  0.000021
+106                  D_age_slopes             chi_GP | all usable sessions (lme REML, random intercept) | + sex + cell              p_one_sided_pos  0.001319  0.001319  0.000019
+107                  D_age_slopes                 chi_GP | all usable sessions (lme REML, random intercept) | age only              p_one_sided_pos  0.000856  0.000857  0.000019
+108                  D_age_slopes        chi_GP_csfref | all usable (lme REML), BETWEEN-person mean age | + sex + cell              p_one_sided_pos  0.000603  0.000603  0.000025
+109                  D_age_slopes              chi_GP_csfref | all usable (lme REML), WITHIN-person age | + sex + cell              p_one_sided_pos  0.341946  0.341945  0.000002
+110                  D_age_slopes             chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex              p_one_sided_pos  0.001777  0.001777  0.000026
+111                  D_age_slopes      chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex + cell              p_one_sided_pos  0.002592  0.002592  0.000025
+112                  D_age_slopes          chi_GP_csfref | all usable sessions (lme REML, random intercept) | age only              p_one_sided_pos  0.002291  0.002291  0.000025
+113                  D_age_slopes           chi_GP_raw | all usable (lme REML), BETWEEN-person mean age | + sex + cell              p_one_sided_pos  0.000508  0.000508  0.000022
+114                  D_age_slopes                 chi_GP_raw | all usable (lme REML), WITHIN-person age | + sex + cell              p_one_sided_pos  0.214878  0.214877  0.000005
+115                  D_age_slopes                chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex              p_one_sided_pos  0.000550  0.000550  0.000021
+116                  D_age_slopes         chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex + cell              p_one_sided_pos  0.001319  0.001319  0.000019
+117                  D_age_slopes             chi_GP_raw | all usable sessions (lme REML, random intercept) | age only              p_one_sided_pos  0.000856  0.000857  0.000019
+118                  D_age_slopes              chi_GP_unref | all usable sessions (lme REML, random intercept) | + sex              p_one_sided_pos  0.000702  0.000702  0.000022
+119                  D_age_slopes           chi_GP_unref | all usable sessions (lme REML, random intercept) | age only              p_one_sided_pos  0.001096  0.001096  0.000019
+120                  D_age_slopes                chi_para_GP | all usable (lme REML), WITHIN-person age | + sex + cell              p_one_sided_pos  0.037957  0.037957  0.000006
+121                  D_age_slopes                     r2s_GP | all usable (lme REML), WITHIN-person age | + sex + cell              p_one_sided_pos  0.014221  0.014221  0.000022
+122                  D_age_slopes    ref2_minus_wb_ppb | all usable (lme REML), BETWEEN-person mean age | + sex + cell              p_one_sided_pos  0.577199  0.577198  0.000001
+123                  D_age_slopes          ref2_minus_wb_ppb | all usable (lme REML), WITHIN-person age | + sex + cell              p_one_sided_pos  0.183581  0.183579  0.000007
+124                  D_age_slopes         ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex              p_one_sided_pos  0.257351  0.257349  0.000007
+125                  D_age_slopes  ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex + cell              p_one_sided_pos  0.351676  0.351674  0.000007
+126                  D_age_slopes      ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | age only              p_one_sided_pos  0.276924  0.276922  0.000007
+127                  D_age_slopes                    chi_GP | all usable sessions (lme REML, random intercept) | + sex            slope_per_y_in_SD  0.155421  0.155421  0.000002
+128                  D_age_slopes             chi_GP | all usable sessions (lme REML, random intercept) | + sex + cell            slope_per_y_in_SD  0.144439  0.144439  0.000002
+129                  D_age_slopes                 chi_GP | all usable sessions (lme REML, random intercept) | age only            slope_per_y_in_SD  0.149312  0.149311  0.000002
+130                  D_age_slopes             chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex            slope_per_y_in_SD  0.138558  0.138557  0.000003
+131                  D_age_slopes      chi_GP_csfref | all usable sessions (lme REML, random intercept) | + sex + cell            slope_per_y_in_SD  0.134329  0.134328  0.000004
+132                  D_age_slopes          chi_GP_csfref | all usable sessions (lme REML, random intercept) | age only            slope_per_y_in_SD  0.134200  0.134200  0.000003
+133                  D_age_slopes                chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex            slope_per_y_in_SD  0.155421  0.155421  0.000002
+134                  D_age_slopes         chi_GP_raw | all usable sessions (lme REML, random intercept) | + sex + cell            slope_per_y_in_SD  0.144439  0.144439  0.000002
+135                  D_age_slopes             chi_GP_raw | all usable sessions (lme REML, random intercept) | age only            slope_per_y_in_SD  0.149312  0.149311  0.000002
+136                  D_age_slopes              chi_GP_unref | all usable sessions (lme REML, random intercept) | + sex            slope_per_y_in_SD  0.153570  0.153569  0.000002
+137                  D_age_slopes           chi_GP_unref | all usable sessions (lme REML, random intercept) | age only            slope_per_y_in_SD  0.147220  0.147220  0.000002
+138                  D_age_slopes                    r2s_GP | all usable sessions (lme REML, random intercept) | + sex            slope_per_y_in_SD  0.206506  0.206506  0.000001
+139                  D_age_slopes             r2s_GP | all usable sessions (lme REML, random intercept) | + sex + cell            slope_per_y_in_SD  0.209511  0.209511  0.000001
+140                  D_age_slopes    ref2_minus_wb_ppb | all usable (lme REML), BETWEEN-person mean age | + sex + cell            slope_per_y_in_SD -0.010111 -0.010111  0.000006
+141                  D_age_slopes         ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex            slope_per_y_in_SD  0.027501  0.027501  0.000009
+142                  D_age_slopes  ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | + sex + cell            slope_per_y_in_SD  0.016111  0.016112  0.000018
+143                  D_age_slopes      ref2_minus_wb_ppb | all usable sessions (lme REML, random intercept) | age only            slope_per_y_in_SD  0.024912  0.024912  0.000010
+144  D_implied_chi_slope_from_R2s                        GP | all usable sessions (lme REML, random intercept) | + sex              slope_per_y_r2s  0.603284  0.603284  0.000001
+145  D_implied_chi_slope_from_R2s                 GP | all usable sessions (lme REML, random intercept) | + sex + cell              slope_per_y_r2s  0.612064  0.612064  0.000001
+146  D_implied_chi_slope_from_R2s                   GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell                    ci_lo_r2s  0.430659  0.430658  0.000001
+147  D_implied_chi_slope_from_R2s                         GP | all usable (lme REML), WITHIN-person age | + sex + cell                    ci_lo_r2s  0.050644  0.050646  0.000033
+148  D_implied_chi_slope_from_R2s                        GP | all usable sessions (lme REML, random intercept) | + sex                    ci_lo_r2s  0.382746  0.382745  0.000002
+149  D_implied_chi_slope_from_R2s                 GP | all usable sessions (lme REML, random intercept) | + sex + cell                    ci_lo_r2s  0.390469  0.390468  0.000002
+150  D_implied_chi_slope_from_R2s                     GP | all usable sessions (lme REML, random intercept) | age only                    ci_lo_r2s  0.366090  0.366090  0.000001
+151  D_implied_chi_slope_from_R2s                         GP | all usable (lme REML), WITHIN-person age | + sex + cell                    ci_hi_r2s  0.837214  0.837212  0.000002
+152  D_implied_chi_slope_from_R2s                 GP | all usable sessions (lme REML, random intercept) | + sex + cell                    ci_hi_r2s  0.833660  0.833659  0.000001
+153  D_implied_chi_slope_from_R2s                        GP | all usable sessions (lme REML, random intercept) | + sex              slope_per_y_chi  1.992538  1.992534  0.000002
+154  D_implied_chi_slope_from_R2s                 GP | all usable sessions (lme REML, random intercept) | + sex + cell              slope_per_y_chi  1.851745  1.851740  0.000002
+155  D_implied_chi_slope_from_R2s                     GP | all usable sessions (lme REML, random intercept) | age only              slope_per_y_chi  1.914211  1.914206  0.000002
+156  D_implied_chi_slope_from_R2s                   GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell                    ci_lo_chi  0.936786  0.936783  0.000003
+157  D_implied_chi_slope_from_R2s                         GP | all usable (lme REML), WITHIN-person age | + sex + cell                    ci_lo_chi -1.317546 -1.317534  0.000008
+158  D_implied_chi_slope_from_R2s                        GP | all usable sessions (lme REML, random intercept) | + sex                    ci_lo_chi  0.876303  0.876298  0.000005
+159  D_implied_chi_slope_from_R2s                 GP | all usable sessions (lme REML, random intercept) | + sex + cell                    ci_lo_chi  0.706963  0.706958  0.000006
+160  D_implied_chi_slope_from_R2s                     GP | all usable sessions (lme REML, random intercept) | age only                    ci_lo_chi  0.788761  0.788756  0.000005
+161  D_implied_chi_slope_from_R2s                         GP | all usable (lme REML), WITHIN-person age | + sex + cell                    ci_hi_chi  3.003860  3.003849  0.000004
+162  D_implied_chi_slope_from_R2s                        GP | all usable sessions (lme REML, random intercept) | + sex                    ci_hi_chi  3.108774  3.108769  0.000001
+163  D_implied_chi_slope_from_R2s                 GP | all usable sessions (lme REML, random intercept) | + sex + cell                    ci_hi_chi  2.996527  2.996523  0.000002
+164  D_implied_chi_slope_from_R2s                     GP | all usable sessions (lme REML, random intercept) | age only                    ci_hi_chi  3.039661  3.039656  0.000001
+165  D_implied_chi_slope_from_R2s                        GP | all usable sessions (lme REML, random intercept) | + sex  implied_chi_slope_ppb_per_y  2.201768  2.201765  0.000001
+166  D_implied_chi_slope_from_R2s                 GP | all usable sessions (lme REML, random intercept) | + sex + cell  implied_chi_slope_ppb_per_y  2.233812  2.233809  0.000001
+167  D_implied_chi_slope_from_R2s                   GP | all usable (lme REML), BETWEEN-person mean age | + sex + cell                   implied_lo  1.571747  1.571745  0.000001
+168  D_implied_chi_slope_from_R2s                         GP | all usable (lme REML), WITHIN-person age | + sex + cell                   implied_lo  0.184832  0.184838  0.000033
+169  D_implied_chi_slope_from_R2s                        GP | all usable sessions (lme REML, random intercept) | + sex                   implied_lo  1.396883  1.396881  0.000002
+170  D_implied_chi_slope_from_R2s                 GP | all usable sessions (lme REML, random intercept) | + sex + cell                   implied_lo  1.425069  1.425067  0.000002
+171  D_implied_chi_slope_from_R2s                     GP | all usable sessions (lme REML, random intercept) | age only                   implied_lo  1.336096  1.336094  0.000001
+172  D_implied_chi_slope_from_R2s                         GP | all usable (lme REML), WITHIN-person age | + sex + cell                   implied_hi  3.055525  3.055519  0.000002
+173  D_implied_chi_slope_from_R2s                 GP | all usable sessions (lme REML, random intercept) | + sex + cell                   implied_hi  3.042554  3.042551  0.000001
+                                   quantity        theirs          mine      abs_diff      rel_diff
+0                                 bound_ppb -6.131805e+00 -6.131805e+00  1.632383e-11  2.662158e-12
+1                              vif_PS_joint  1.267716e+00  1.267716e+00  4.836354e-11  3.815014e-11
+2                                 vif_PS_M1  1.182855e+00  1.182855e+00  5.707212e-12  4.824948e-12
+3                                dice_cut_1  8.054013e-01  8.054013e-01  3.333334e-12  4.138724e-12
+4                                dice_cut_2  8.233032e-01  8.233032e-01  0.000000e+00  0.000000e+00
+5                             fisher_p_cell  3.206155e-01  3.206155e-01  3.468836e-12  1.081930e-11
+6                               fisher_p_PS  3.612400e-01  3.612400e-01  1.280642e-13  3.545129e-13
+7                             het_wald_chi2  4.888762e+00  4.888762e+00  4.765077e-12  9.747002e-13
+8                                     het_F  2.444381e+00  2.444381e+00  2.382539e-12  9.747002e-13
+9                                   het_df2  6.400000e+01  6.400000e+01  0.000000e+00  0.000000e+00
+10                                  het_p_F  9.484426e-02  9.484426e-02  3.095441e-13  3.263709e-12
+11                             spearman_rho  3.580169e-01  3.580169e-01  2.869205e-12  8.014161e-12
+12                               spearman_p  1.111769e-03  1.111769e-03  2.644824e-14  2.378933e-11
+13                        D_r_chi_r2s_first  2.054892e-01  2.054892e-01  8.597845e-13  4.184086e-12
+14            D_r_chi_r2s_first_age_partial  1.629140e-01  1.629140e-01  4.630907e-12  2.842547e-11
+15                     D_r_chi_r2s_GP_first  6.787682e-01  6.787682e-01  4.848233e-12  7.142693e-12
+16           D_n_subjects_with_2plus_usable  2.600000e+01  2.600000e+01  0.000000e+00  0.000000e+00
+17  A_identity_max_abs_err(<1e-12 expected)  3.419487e-14  1.465494e-14  1.953993e-14  5.714286e-01
+18  A_R2_cancel_beta_range(<1e-12 expected)  1.110223e-14  5.329071e-15  5.773160e-15  5.200000e-01

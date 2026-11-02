@@ -1,0 +1,24 @@
+{
+ "pairs": {
+  "r1_r2": {
+   "kappa_linear": 0.75,
+   "kappa_quadratic": 0.7692307692307694,
+   "exact_agreement": 0.8666666666666667,
+   "placement_kappa": NaN
+  },
+  "r1_r3": {
+   "kappa_linear": 0.8780487804878048,
+   "kappa_quadratic": 0.8888888888888888,
+   "exact_agreement": 0.9333333333333333,
+   "placement_kappa": NaN
+  },
+  "r2_r3": {
+   "kappa_linear": 0.8571428571428571,
+   "kappa_quadratic": 0.8571428571428571,
+   "exact_agreement": 0.9333333333333333,
+   "placement_kappa": NaN
+  }
+ },
+ "mean_pairwise_linear_kappa": 0.828397212543554,
+ "n_sessions": 15
+}

@@ -1,0 +1,2376 @@
+{
+  "label": "POST HOC supplement (AI_frozen); not confirmatory; the registered outcome (n = 80) stays B",
+  "tag": "AI_frozen",
+  "merged": "/path/to/Penn_LEAD/LEADchi/mirror/unlocked/merged_qsmxt_primary_SNVTA.csv",
+  "merged_sha256": "f669bc6f41ab4e489abbd0a7c41949d3e5ccaba3e7f3c219d1bbebc3118df215",
+  "frozen_code_sha256": ["3ad9e18e3cc7b18094b941b887275ec31c5ce5bba821b93eba099574c3ec98e9", "722bfec5b078702b094792c2198a38d9e8687948c13054b8e73ee3005df38636", "c312c4f52c574a0f1675a040a77ad012f675dd3aebf2a4bf26321b9db89b63d6", "c2decfec7ee5b7be0e1f389b1a0d0b0672fec52fae931ae56e1dd2ad5f0ac6b4", "75173d15662564a8a8a12ebecd989cfd90100742f6ce5cb2ca2fa2046c78257d", "18bb7bf0764fd8be5d20ae03e12a3d057e1f79e31e13ca00ad3f171ab213c105"],
+  "r_version": "R version 4.4.1 (2024-06-14)",
+  "run_utc": "2026-10-28T20:23:57Z",
+  "H1_extras": {
+    "n": 80,
+    "df": 68,
+    "beta_PS": 4.96280154409223,
+    "se_hc3": 3.12508040430837,
+    "ci95": [-1.27319931092534, 11.1988023991098],
+    "p_two": 0.116913053059836,
+    "one_sided_95_lower_limit": -0.248495913393383,
+    "delta": 0.440906550731622,
+    "sigma_resid": 11.2559034014286,
+    "sigma_rob": 10.5504543758571,
+    "sigma_B": 10.5504543758571,
+    "huber": {
+      "est": 3.93550137897398,
+      "se": 2.66132991571003,
+      "scale": 10.5504543758571,
+      "converged": true
+    },
+    "bound_frozen": {
+      "bound_ppb": -6.13180464348368,
+      "tB": 3.55018263603087,
+      "pB": 0.00035191843098177
+    },
+    "bound_recomputed": {
+      "delta_B": 0.581188679182884,
+      "bound_ppb": -6.13180464348368,
+      "tB": 3.55018263603087,
+      "pB": 0.000351918430981771,
+      "note": "delta_B 0.581 x sigma_B of this sample"
+    },
+    "outcome_descriptive": "B",
+    "disconfirming": false,
+    "K1": {
+      "PSonly_minus_TD": {
+        "est": 8.15742148566421,
+        "se": 3.98036207121492,
+        "p_two": 0.0442814831318877,
+        "ci95": [0.214732636713093, 16.1001103346153],
+        "lower95_one_sided": 1.51988002817163,
+        "pB_frozen_bound": 0.00030975890828317,
+        "pB_recomputed_bound": 0.00030975890828317,
+        "p_holm_2": 0.0885629662637755
+      },
+      "PSADHD_minus_ADHDonly": {
+        "est": 1.76818160252024,
+        "se": 4.78548742490339,
+        "p_two": 0.712911945609071,
+        "ci95": [-7.78110987562267, 11.3174730806632],
+        "lower95_one_sided": -6.21196457734987,
+        "pB_frozen_bound": 0.0516932732799154,
+        "pB_recomputed_bound": 0.0516932732799154,
+        "p_holm_2": 0.712911945609071
+      },
+      "ADHD_main": {
+        "est": -1.27157944948918,
+        "se": 3.10638546650445,
+        "p_two": 0.683573960487499,
+        "ci95": [-7.47027513694402, 4.92711623796566]
+      },
+      "PSxADHD": {
+        "est": -6.38923988314397,
+        "se": 6.19869616049867,
+        "p_two": 0.306315335235147,
+        "ci95": [-18.7585454867925, 5.98006572050457]
+      },
+      "tost": {
+        "bound_sd": 0.5,
+        "scale": "sigma_B",
+        "bound_ppb": 5.27522718792856,
+        "t_lower": 1.28884447265477,
+        "t_upper": -2.10753195571209,
+        "p_lower": 0.100909838336555,
+        "p_upper": 0.019380664718769,
+        "success": false
+      },
+      "label": "none"
+    },
+    "K3_csf": {
+      "n": 80,
+      "df": 68,
+      "beta": 3.47685547898629,
+      "se": 3.69975844839301,
+      "ci95": [-3.90589755857705, 10.8596085165496],
+      "p_two": 0.350671067471243,
+      "pB_recomputed": 0.00208891600384703,
+      "pB_frozen_bound": 0.00575673482976176
+    }
+  },
+  "sensitivity": {
+    "battery_frozen_function": [
+      {
+        "sensitivity": "without the 6 threshold-psychosis youths",
+        "n": 77,
+        "beta_ppb": 5.17674231912139,
+        "se_hc3": 3.21028586644732,
+        "p_two": 0.111687824317349,
+        "pB": 0.000363906078100223,
+        "outcome": "B",
+        "note": "",
+        "df": 65,
+        "bound_recomputed_ppb": -6.21160982850491,
+        "pB_frozen_bound": 0.000393737126157042
+      },
+      {
+        "sensitivity": "without 4 TD youths (dx-coding gap / prescribed stimulants)",
+        "n": 76,
+        "beta_ppb": 4.72311963416809,
+        "se_hc3": 3.15393098499676,
+        "p_two": 0.139170348996389,
+        "pB": 0.000778411535468635,
+        "outcome": "B",
+        "note": "",
+        "df": 64,
+        "bound_recomputed_ppb": -5.70206464083259,
+        "pB_frozen_bound": 0.000511709409429661
+      },
+      {
+        "sensitivity": "without prescribed-stimulant endorsers (same session)",
+        "n": 75,
+        "beta_ppb": 3.03566001983771,
+        "se_hc3": 2.83153942086141,
+        "p_two": 0.287770154109177,
+        "pB": 0.00122090924358429,
+        "outcome": "B",
+        "note": "",
+        "df": 63,
+        "bound_recomputed_ppb": -5.90521576406052,
+        "pB_frozen_bound": 0.000962039125147877
+      },
+      {
+        "sensitivity": "without T1w 'artifact' sessions",
+        "n": 74,
+        "beta_ppb": 4.56869165314803,
+        "se_hc3": 3.37484419238792,
+        "p_two": 0.180731022440037,
+        "pB": 0.00106654737515526,
+        "outcome": "B",
+        "note": "",
+        "df": 62,
+        "bound_recomputed_ppb": -6.24887261505146,
+        "pB_frozen_bound": 0.00118211931201021
+      },
+      {
+        "sensitivity": "without sub-21568 (no T1-QC entry)",
+        "n": 80,
+        "beta_ppb": 4.96280154409223,
+        "se_hc3": 3.12508040430837,
+        "p_two": 0.116913053059836,
+        "pB": 0.000351918430981771,
+        "outcome": "B",
+        "note": "",
+        "df": 68,
+        "bound_recomputed_ppb": -6.13180464348368,
+        "pB_frozen_bound": 0.00035191843098177
+      },
+      {
+        "sensitivity": "without early-epoch sessions",
+        "n": 71,
+        "beta_ppb": 5.57997388979884,
+        "se_hc3": 2.98908512749526,
+        "p_two": 0.0669032790290283,
+        "pB": 0.000172903910845166,
+        "outcome": "B",
+        "note": "",
+        "df": 59,
+        "bound_recomputed_ppb": -5.77580549276417,
+        "pB_frozen_bound": 0.000117245304800967
+      },
+      {
+        "sensitivity": "baseline age >= 11 only",
+        "n": 62,
+        "beta_ppb": 6.22544913995122,
+        "se_hc3": 4.73805686288854,
+        "p_two": 0.194868250670655,
+        "pB": 0.00472920385953076,
+        "outcome": "B",
+        "note": "",
+        "df": 50,
+        "bound_recomputed_ppb": -6.56317841043505,
+        "pB_frozen_bound": 0.00598690080680483
+      },
+      {
+        "sensitivity": "exposure-sensitivity set (4 inspected sessions dropped; Q18)",
+        "n": 77,
+        "beta_ppb": 5.46905439255533,
+        "se_hc3": 3.09129842737505,
+        "p_two": 0.0815553315339391,
+        "pB": 0.000186978974267663,
+        "outcome": "B",
+        "note": "",
+        "df": 65,
+        "bound_recomputed_ppb": -6.13524489173605,
+        "pB_frozen_bound": 0.000187661800344904
+      },
+      {
+        "sensitivity": "without the (c') plausibility exclusions",
+        "n": 80,
+        "beta_ppb": 4.96280154409223,
+        "se_hc3": 3.12508040430837,
+        "p_two": 0.116913053059836,
+        "pB": 0.000351918430981771,
+        "outcome": "B",
+        "note": "",
+        "df": 68,
+        "bound_recomputed_ppb": -6.13180464348368,
+        "pB_frozen_bound": 0.00035191843098177
+      },
+      {
+        "sensitivity": "implausible voxels retained",
+        "n": 80,
+        "beta_ppb": 4.96280154409223,
+        "se_hc3": 3.12508040430837,
+        "p_two": 0.116913053059836,
+        "pB": 0.000351918430981771,
+        "outcome": "B",
+        "note": "",
+        "df": 68,
+        "bound_recomputed_ppb": -6.13180464348368,
+        "pB_frozen_bound": 0.00035191843098177
+      },
+      {
+        "sensitivity": "without rubric code D (dental/metal) sessions",
+        "n": 78,
+        "beta_ppb": 5.11069322050426,
+        "se_hc3": 3.11509099135378,
+        "p_two": 0.10563318859468,
+        "pB": 0.000280056256085881,
+        "outcome": "B",
+        "note": "",
+        "df": 66,
+        "bound_recomputed_ppb": -6.1863985552,
+        "pB_frozen_bound": 0.00029630833409022
+      },
+      {
+        "sensitivity": "strict QC (visual grade 0 only)",
+        "n": 4,
+        "beta_ppb": null,
+        "se_hc3": null,
+        "p_two": null,
+        "pB": null,
+        "outcome": "fit failed",
+        "note": "",
+        "df": null,
+        "bound_recomputed_ppb": null,
+        "pB_frozen_bound": null
+      },
+      {
+        "sensitivity": "automated exclusions only (no visual grade or placement rating)",
+        "n": 90,
+        "beta_ppb": 5.92761303356282,
+        "se_hc3": 3.09901753127382,
+        "p_two": 0.0594520665536854,
+        "pB": 3.14578455269976e-05,
+        "outcome": "B",
+        "note": "",
+        "df": 78,
+        "bound_recomputed_ppb": -7.18356416853642,
+        "pB_frozen_bound": 0.000104300035121958
+      },
+      {
+        "sensitivity": "without race",
+        "n": 80,
+        "beta_ppb": 4.89313310680763,
+        "se_hc3": 3.08266079093334,
+        "p_two": 0.116950013888128,
+        "pB": 0.000392700126564955,
+        "outcome": "B",
+        "note": "race3 removed",
+        "df": 70,
+        "bound_recomputed_ppb": -5.93048514258199,
+        "pB_frozen_bound": 0.000318407352132962
+      },
+      {
+        "sensitivity": "+ Hispanic ethnicity",
+        "n": 80,
+        "beta_ppb": 4.68893962415247,
+        "se_hc3": 3.10634655572161,
+        "p_two": 0.135880239998518,
+        "pB": 0.00042347964372936,
+        "outcome": "B",
+        "note": "",
+        "df": 67,
+        "bound_recomputed_ppb": -6.16611789037779,
+        "pB_frozen_bound": 0.00043852764837437
+      },
+      {
+        "sensitivity": "+ puberty (PDS), complete case",
+        "n": 57,
+        "beta_ppb": 6.91525387930053,
+        "se_hc3": 3.54395525741923,
+        "p_two": 0.0574084192231496,
+        "pB": 0.000242670467791786,
+        "outcome": "B",
+        "note": "",
+        "df": 44,
+        "bound_recomputed_ppb": -6.43960528395307,
+        "pB_frozen_bound": 0.000315104479697726
+      },
+      {
+        "sensitivity": "+ puberty (PDS), one stochastic regression imputation (mice fallback)",
+        "n": 69,
+        "beta_ppb": 6.23555051792311,
+        "se_hc3": 3.38923080816876,
+        "p_two": 0.0710980201566446,
+        "pB": 0.000197452163594037,
+        "outcome": "B",
+        "note": "observed 57, imputed 12",
+        "df": 56,
+        "bound_recomputed_ppb": -6.54213466883749,
+        "pB_frozen_bound": 0.000289655202909278
+      },
+      {
+        "sensitivity": "+ menarche (girls; 0 for boys)",
+        "n": 72,
+        "beta_ppb": 4.87085957239272,
+        "se_hc3": 3.24188483492185,
+        "p_two": 0.138307587885073,
+        "pB": 0.000464927294442183,
+        "outcome": "B",
+        "note": "",
+        "df": 59,
+        "bound_recomputed_ppb": -6.43279198327921,
+        "pB_frozen_bound": 0.000618395262044212
+      },
+      {
+        "sensitivity": "+ intracranial volume (SynthSeg, coded side)",
+        "n": 80,
+        "beta_ppb": 5.33681813062376,
+        "se_hc3": 3.25290329833165,
+        "p_two": 0.10556058287482,
+        "pB": 0.000331344535527426,
+        "outcome": "B",
+        "note": "",
+        "df": 67,
+        "bound_recomputed_ppb": -6.2810538059813,
+        "pB_frozen_bound": 0.000383600896645538
+      },
+      {
+        "sensitivity": "+ mood diagnosis (MDD or mood NOS)",
+        "n": 80,
+        "beta_ppb": 5.88791490546352,
+        "se_hc3": 3.61092699841732,
+        "p_two": 0.107670928868343,
+        "pB": 0.000612362515979952,
+        "outcome": "B",
+        "note": "",
+        "df": 67,
+        "bound_recomputed_ppb": -6.30530852345769,
+        "pB_frozen_bound": 0.000710338129358148
+      },
+      {
+        "sensitivity": "+ protocol epoch",
+        "n": 80,
+        "beta_ppb": 4.90921229738712,
+        "se_hc3": 3.07748208873442,
+        "p_two": 0.115373241981487,
+        "pB": 0.000319674204725046,
+        "outcome": "B",
+        "note": "",
+        "df": 67,
+        "bound_recomputed_ppb": -6.11655180663912,
+        "pB_frozen_bound": 0.000314627972561435
+      },
+      {
+        "sensitivity": "+ f0 cluster",
+        "n": 80,
+        "beta_ppb": 5.05924936849833,
+        "se_hc3": 3.26172562419058,
+        "p_two": 0.125661011687237,
+        "pB": 0.000457359325047923,
+        "outcome": "B",
+        "note": "",
+        "df": 66,
+        "bound_recomputed_ppb": -6.26723515329363,
+        "pB_frozen_bound": 0.00052092788104195
+      },
+      {
+        "sensitivity": "+ years since the diagnostic assessment",
+        "n": 80,
+        "beta_ppb": 5.22692632320145,
+        "se_hc3": 3.1935383439805,
+        "p_two": 0.106378223260168,
+        "pB": 0.00035274815490072,
+        "outcome": "B",
+        "note": "",
+        "df": 67,
+        "bound_recomputed_ppb": -6.11642243787311,
+        "pB_frozen_bound": 0.000347361642697585
+      },
+      {
+        "sensitivity": "+ |pitch|",
+        "n": 80,
+        "beta_ppb": 5.0759524408177,
+        "se_hc3": 3.12751662735402,
+        "p_two": 0.109286216159106,
+        "pB": 0.000288175357025599,
+        "outcome": "B",
+        "note": "",
+        "df": 67,
+        "bound_recomputed_ppb": -6.22991171451897,
+        "pB_frozen_bound": 0.000318778896054285
+      },
+      {
+        "sensitivity": "+ DWI FD",
+        "n": null,
+        "beta_ppb": null,
+        "se_hc3": null,
+        "p_two": null,
+        "pB": null,
+        "outcome": "not run",
+        "note": "dwi_FD absent",
+        "df": null,
+        "bound_recomputed_ppb": null,
+        "pB_frozen_bound": null
+      },
+      {
+        "sensitivity": "+ registration Dice (minimum of the G5 Dice values)",
+        "n": 80,
+        "beta_ppb": 3.74940407229867,
+        "se_hc3": 3.10600121716162,
+        "p_two": 0.23161956283294,
+        "pB": 0.00192749446783345,
+        "outcome": "B",
+        "note": "",
+        "df": 67,
+        "bound_recomputed_ppb": -5.54982329456551,
+        "pB_frozen_bound": 0.00111105479393591
+      },
+      {
+        "sensitivity": "+ magnitude ghost-to-signal motion index",
+        "n": 80,
+        "beta_ppb": 4.22681322095581,
+        "se_hc3": 2.97791608548905,
+        "p_two": 0.160422342110648,
+        "pB": 0.000435558081415862,
+        "outcome": "B",
+        "note": "",
+        "df": 67,
+        "bound_recomputed_ppb": -6.15295811294036,
+        "pB_frozen_bound": 0.000445437460466835
+      },
+      {
+        "sensitivity": "+ reference-domain WM and CSF fractions and brain-in-FOV fraction",
+        "n": 80,
+        "beta_ppb": 4.68310727300705,
+        "se_hc3": 3.24852300726359,
+        "p_two": 0.154212815114132,
+        "pB": 0.000584330730625253,
+        "outcome": "B",
+        "note": "",
+        "df": 65,
+        "bound_recomputed_ppb": -6.35051150357447,
+        "pB_frozen_bound": 0.000718996530837151
+      },
+      {
+        "sensitivity": "coverage-harmonised whole-brain reference",
+        "n": 80,
+        "beta_ppb": 4.96954346639806,
+        "se_hc3": 3.12610225152802,
+        "p_two": 0.116542916179669,
+        "pB": 0.000351143591708928,
+        "outcome": "B",
+        "note": "",
+        "df": 68,
+        "bound_recomputed_ppb": -6.13084355974417,
+        "pB_frozen_bound": 0.000350798247440745
+      },
+      {
+        "sensitivity": "SN-only complex (descriptive)",
+        "n": 80,
+        "beta_ppb": 5.87448053935798,
+        "se_hc3": 3.31027869336663,
+        "p_two": 0.0804368423692401,
+        "pB": 0.00013743040714242,
+        "outcome": "B",
+        "note": "",
+        "df": 68,
+        "bound_recomputed_ppb": -6.82887991455329,
+        "pB_frozen_bound": 0.000274832160067164
+      },
+      {
+        "sensitivity": "VTA + PBP only (descriptive)",
+        "n": 80,
+        "beta_ppb": 1.27750877072995,
+        "se_hc3": 2.96181132185727,
+        "p_two": 0.667595099908664,
+        "pB": 0.0341155606835996,
+        "outcome": "B",
+        "note": "",
+        "df": 68,
+        "bound_recomputed_ppb": -4.21053782901612,
+        "pB_frozen_bound": 0.00738745682966112
+      },
+      {
+        "sensitivity": "rank-based ANCOVA (ranks of chi_SNVTA)",
+        "n": 80,
+        "beta_ppb": null,
+        "se_hc3": null,
+        "p_two": 0.123098914763744,
+        "pB": null,
+        "outcome": "rank test not significant",
+        "note": "beta in rank units not shown",
+        "df": null,
+        "bound_recomputed_ppb": null,
+        "pB_frozen_bound": null
+      },
+      {
+        "sensitivity": "other engine",
+        "n": null,
+        "beta_ppb": null,
+        "se_hc3": null,
+        "p_two": null,
+        "pB": null,
+        "outcome": "not run",
+        "note": "no other-engine table supplied (A2 not approved or not run)",
+        "df": null,
+        "bound_recomputed_ppb": null,
+        "pB_frozen_bound": null
+      }
+    ],
+    "ses1_only": [
+      {
+        "sensitivity": "session-1-only first-usable (mandatory co-report)",
+        "n": 58,
+        "beta_ppb": 6.47782669304954,
+        "se_hc3": 4.73759424823587,
+        "p_two": 0.178168181996451,
+        "pB": 0.00520746135580391,
+        "outcome": "B",
+        "note": "",
+        "df": 46,
+        "bound_recomputed_ppb": -6.17737788683543,
+        "pB_frozen_bound": 0.0053377525587395
+      }
+    ],
+    "joint_nuisance": [
+      {
+        "sensitivity": "M1 + Dice + motion + CSF offset + ICV (joint; post hoc, validation_local B.1)",
+        "n": 80,
+        "beta_ppb": 4.16210855689691,
+        "se_hc3": 3.0343265187369,
+        "p_two": 0.174954467252932,
+        "pB": 0.000681521948297785,
+        "outcome": "B",
+        "note": "",
+        "df": 64,
+        "bound_recomputed_ppb": -5.99977922133836,
+        "pB_frozen_bound": 0.000596112697509553
+      }
+    ],
+    "threshold_psychosis_removed": 3,
+    "stimulant_endorsers_removed": 5
+  },
+  "PC2x": {
+    "chi_PUT": {
+      "roi": "chi_PUT",
+      "n": 80,
+      "slope_ppb_per_y": 0.382174639615927,
+      "t": 1.17132441846382,
+      "p_one_sided": 0.122517077768484,
+      "se": 0.326275653091178,
+      "p_two_sided": 0.245034155536968,
+      "ci95": [-0.267390287965266, 1.03173956719712]
+    },
+    "chi_GP": {
+      "roi": "chi_GP",
+      "n": 80,
+      "slope_ppb_per_y": 2.39657152824161,
+      "t": 3.62896024738669,
+      "p_one_sided": 0.000253188007615823,
+      "se": 0.660401703206159,
+      "p_two_sided": 0.000506376015231647,
+      "ci95": [1.08181273317538, 3.71133032330785]
+    },
+    "pass": false
+  },
+  "fig3A_regional": [
+    {
+      "test": "SN-VTA (primary)",
+      "outcome": "chi_SNVTA",
+      "n": 80,
+      "beta_PS": 4.96280154409223,
+      "se_hc3": 3.12508040430837,
+      "ci_lo": -1.27319931092534,
+      "ci_hi": 11.1988023991098,
+      "df": 68,
+      "p_two": 0.116913053059836,
+      "beta_per_sd_raw": 0.417753238499335,
+      "sd_raw": 11.879744037221,
+      "sigma_resid": 11.2559034014286,
+      "lo_sd": -0.107173968305733,
+      "hi_sd": 0.942680445304403
+    },
+    {
+      "test": "SN only (SNc+SNr)",
+      "outcome": "chi_SNonly",
+      "n": 80,
+      "beta_PS": 5.87448053935798,
+      "se_hc3": 3.31027869336663,
+      "ci_lo": -0.731077747629308,
+      "ci_hi": 12.4800388263453,
+      "df": 68,
+      "p_two": 0.0804368423692401,
+      "beta_per_sd_raw": 0.441640670957582,
+      "sd_raw": 13.3014935572413,
+      "sigma_resid": 12.3458889879544,
+      "lo_sd": -0.0549620795952882,
+      "hi_sd": 0.938243421510452
+    },
+    {
+      "test": "VTA + PBP",
+      "outcome": "chi_VTAPBP",
+      "n": 80,
+      "beta_PS": 1.27750877072995,
+      "se_hc3": 2.96181132185727,
+      "ci_lo": -4.63269370279338,
+      "ci_hi": 7.18771124425329,
+      "df": 68,
+      "p_two": 0.667595099908664,
+      "beta_per_sd_raw": 0.134290356725028,
+      "sd_raw": 9.51303430778557,
+      "sigma_resid": 9.89040420267788,
+      "lo_sd": -0.486983811148661,
+      "hi_sd": 0.755564524598717
+    },
+    {
+      "test": "globus pallidus",
+      "outcome": "chi_GP",
+      "n": 80,
+      "beta_PS": 2.27449458777109,
+      "se_hc3": 2.93663575962567,
+      "ci_lo": -3.58547083348781,
+      "ci_hi": 8.13446000902998,
+      "df": 68,
+      "p_two": 0.441305842110634,
+      "beta_per_sd_raw": 0.177414319445296,
+      "sd_raw": 12.8202424408725,
+      "sigma_resid": 11.9149546538235,
+      "lo_sd": -0.279672623199145,
+      "hi_sd": 0.634501262089736
+    },
+    {
+      "test": "putamen",
+      "outcome": "chi_PUT",
+      "n": 80,
+      "beta_PS": -1.32787526134494,
+      "se_hc3": 1.57594293901448,
+      "ci_lo": -4.47262043385458,
+      "ci_hi": 1.8168699111647,
+      "df": 68,
+      "p_two": 0.402411166425012,
+      "beta_per_sd_raw": -0.224685646625348,
+      "sd_raw": 5.90992473835725,
+      "sigma_resid": 5.78110602978251,
+      "lo_sd": -0.756798205030578,
+      "hi_sd": 0.307426911779882
+    },
+    {
+      "test": "caudate",
+      "outcome": "chi_CAU",
+      "n": 80,
+      "beta_PS": -2.36484716108586,
+      "se_hc3": 1.74353351468233,
+      "ci_lo": -5.84401412054113,
+      "ci_hi": 1.11431979836941,
+      "df": 68,
+      "p_two": 0.17947334903561,
+      "beta_per_sd_raw": -0.337780726667654,
+      "sd_raw": 7.00113113147707,
+      "sigma_resid": 6.80791323782449,
+      "lo_sd": -0.83472427680528,
+      "hi_sd": 0.159162823469971
+    },
+    {
+      "test": "striatum (CAU+PUT+NAcc)",
+      "outcome": "chi_STR",
+      "n": 80,
+      "beta_PS": -1.18537092612114,
+      "se_hc3": 1.48918343069529,
+      "ci_lo": -4.1569901952737,
+      "ci_hi": 1.78624834303143,
+      "df": 68,
+      "p_two": 0.428809552321641,
+      "beta_per_sd_raw": -0.200112013430591,
+      "sd_raw": 5.92353705207351,
+      "sigma_resid": 5.73086126862457,
+      "lo_sd": -0.701774996717301,
+      "hi_sd": 0.301550969856119
+    },
+    {
+      "test": "thalamus",
+      "outcome": "chi_THAL",
+      "n": 80,
+      "beta_PS": -0.44849363953567,
+      "se_hc3": 0.878617053708143,
+      "ci_lo": -2.20174667283469,
+      "ci_hi": 1.30475939376336,
+      "df": 68,
+      "p_two": 0.611386502821549,
+      "beta_per_sd_raw": -0.119712434761539,
+      "sd_raw": 3.74642484240711,
+      "sigma_resid": 3.33941837867262,
+      "lo_sd": -0.587692737863668,
+      "hi_sd": 0.34826786834059
+    },
+    {
+      "test": "red nucleus",
+      "outcome": "chi_RN",
+      "n": 80,
+      "beta_PS": 1.16676708835864,
+      "se_hc3": 3.11791743537411,
+      "ci_lo": -5.05494028469381,
+      "ci_hi": 7.38847446141108,
+      "df": 68,
+      "p_two": 0.709409786558193,
+      "beta_per_sd_raw": 0.111284118139115,
+      "sd_raw": 10.4845786431095,
+      "sigma_resid": 10.5256790940675,
+      "lo_sd": -0.482130990358487,
+      "hi_sd": 0.704699226636717
+    },
+    {
+      "test": "subthalamic nucleus",
+      "outcome": "chi_STN",
+      "n": 80,
+      "beta_PS": 2.47501690877022,
+      "se_hc3": 2.93953043717227,
+      "ci_lo": -3.39072475159943,
+      "ci_hi": 8.34075856913988,
+      "df": 68,
+      "p_two": 0.402752355628444,
+      "beta_per_sd_raw": 0.220676805798611,
+      "sd_raw": 11.2155733803258,
+      "sigma_resid": 10.5996453348838,
+      "lo_sd": -0.30232290731987,
+      "hi_sd": 0.743676518917091
+    },
+    {
+      "test": "right dentate",
+      "outcome": "chi_DN_R",
+      "n": 58,
+      "beta_PS": -2.13646199557258,
+      "se_hc3": 3.79510326723815,
+      "ci_lo": -9.775608659641,
+      "ci_hi": 5.50268466849584,
+      "df": 46,
+      "p_two": 0.576201121086074,
+      "beta_per_sd_raw": -0.159921359168355,
+      "sd_raw": 13.3594537132682,
+      "sigma_resid": 11.1725859043613,
+      "lo_sd": -0.731737155534446,
+      "hi_sd": 0.411894437197737
+    },
+    {
+      "test": "left dentate",
+      "outcome": "chi_DN_L",
+      "n": 58,
+      "beta_PS": 1.67561546129077,
+      "se_hc3": 3.75027313398179,
+      "ci_lo": -5.87329282484694,
+      "ci_hi": 9.22452374742848,
+      "df": 46,
+      "p_two": 0.657117298999497,
+      "beta_per_sd_raw": 0.128688677220104,
+      "sd_raw": 13.0206906892427,
+      "sigma_resid": 12.8491160929373,
+      "lo_sd": -0.4510738304919,
+      "hi_sd": 0.708451184932108
+    },
+    {
+      "test": "deep GM composite (CAU+GP)",
+      "outcome": "chi_DGM",
+      "n": 80,
+      "beta_PS": -1.4502250310003,
+      "se_hc3": 1.41378636744278,
+      "ci_lo": -4.27139180291143,
+      "ci_hi": 1.37094174091083,
+      "df": 68,
+      "p_two": 0.308633431293184,
+      "beta_per_sd_raw": -0.228458551210667,
+      "sd_raw": 6.34786933259946,
+      "sigma_resid": 5.80056020960861,
+      "lo_sd": -0.672885905350273,
+      "hi_sd": 0.215968802928939
+    }
+  ],
+  "fig3B_r2s": {
+    "raw": [
+      {
+        "variable": "r2s_SNVTA",
+        "cell": "TD",
+        "n": 22,
+        "mean": 22.7169966259091,
+        "sd": 2.02702650832728,
+        "median": 22.773473735,
+        "q1": 21.455461025,
+        "q3": 23.8085370025,
+        "min": 19.0195179,
+        "max": 26.17135429
+      },
+      {
+        "variable": "r2s_SNVTA",
+        "cell": "ADHD-only",
+        "n": 16,
+        "mean": 21.793941498125,
+        "sd": 1.85787588261987,
+        "median": 21.365966795,
+        "q1": 21.0047435775,
+        "q3": 22.6227960575,
+        "min": 17.76673889,
+        "max": 25.03758049
+      },
+      {
+        "variable": "r2s_SNVTA",
+        "cell": "PS-only",
+        "n": 17,
+        "mean": 24.6567597111765,
+        "sd": 2.46051661467574,
+        "median": 24.32543755,
+        "q1": 23.17262268,
+        "q3": 26.01002312,
+        "min": 20.34263802,
+        "max": 30.57065201
+      },
+      {
+        "variable": "r2s_SNVTA",
+        "cell": "PS+ADHD",
+        "n": 25,
+        "mean": 22.6415280148,
+        "sd": 2.5544901660441,
+        "median": 22.28028107,
+        "q1": 21.4214344,
+        "q3": 24.1070919,
+        "min": 17.41563797,
+        "max": 29.28105164
+      }
+    ],
+    "adjusted": [
+      {
+        "cell": "TD",
+        "n": 22,
+        "adj_mean": 22.8116662039363,
+        "se_hc3": 0.439557902665267,
+        "lo": 21.9345420656033,
+        "hi": 23.6887903422693
+      },
+      {
+        "cell": "ADHD-only",
+        "n": 16,
+        "adj_mean": 22.0248391033405,
+        "se_hc3": 0.438265660821082,
+        "lo": 21.1502935934595,
+        "hi": 22.8993846132216
+      },
+      {
+        "cell": "PS-only",
+        "n": 17,
+        "adj_mean": 24.5498161608783,
+        "se_hc3": 0.661305383134546,
+        "lo": 23.230201814646,
+        "hi": 25.8694305071105
+      },
+      {
+        "cell": "PS+ADHD",
+        "n": 25,
+        "adj_mean": 22.4831659330009,
+        "se_hc3": 0.513440776627924,
+        "lo": 21.4586108151107,
+        "hi": 23.5077210508911
+      }
+    ],
+    "beta_PS": 1.09823839330116,
+    "se": 0.510444553379967,
+    "ci95": [0.0796621458138584, 2.11681464078847],
+    "p_two": 0.0349890281690733,
+    "p_one_sided_lower": 0.982505485915463,
+    "n": 80
+  },
+  "fig_points": [
+    {
+      "sub": "sub-19861",
+      "session_id": "ses-1",
+      "cell": "ADHD-only",
+      "age": 15.26,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 76.95480347,
+      "r2s_SNVTA": 24.3585701
+    },
+    {
+      "sub": "sub-20139",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 14.32,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 71.77503204,
+      "r2s_SNVTA": 23.59985542
+    },
+    {
+      "sub": "sub-20141",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 14.8,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 38.93630981,
+      "r2s_SNVTA": 23.33659172
+    },
+    {
+      "sub": "sub-20149",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 11.63,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 50.53079224,
+      "r2s_SNVTA": 21.3114109
+    },
+    {
+      "sub": "sub-20188",
+      "session_id": "ses-2",
+      "cell": "ADHD-only",
+      "age": 15.32,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 53.20274734,
+      "r2s_SNVTA": 23.51099777
+    },
+    {
+      "sub": "sub-20212",
+      "session_id": "ses-1",
+      "cell": "PS+ADHD",
+      "age": 9.65,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 48.80741501,
+      "r2s_SNVTA": 23.59030914
+    },
+    {
+      "sub": "sub-20214",
+      "session_id": "ses-1",
+      "cell": "PS+ADHD",
+      "age": 14.2,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 37.61829758,
+      "r2s_SNVTA": 22.6406002
+    },
+    {
+      "sub": "sub-20236",
+      "session_id": "ses-1",
+      "cell": "ADHD-only",
+      "age": 9.34,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 51.51073456,
+      "r2s_SNVTA": 21.33907127
+    },
+    {
+      "sub": "sub-20238",
+      "session_id": "ses-1",
+      "cell": "PS+ADHD",
+      "age": 13.3,
+      "sex": "F",
+      "dx_psychosis": 1,
+      "chi_SNVTA": 52.09466171,
+      "r2s_SNVTA": 21.60691833
+    },
+    {
+      "sub": "sub-20252",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 15.36,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 29.02404213,
+      "r2s_SNVTA": 22.95182991
+    },
+    {
+      "sub": "sub-20253",
+      "session_id": "ses-3",
+      "cell": "TD",
+      "age": 14.5,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 58.7737236,
+      "r2s_SNVTA": 22.08643532
+    },
+    {
+      "sub": "sub-20258",
+      "session_id": "ses-1",
+      "cell": "PS-only",
+      "age": 15.21,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 69.91042328,
+      "r2s_SNVTA": 26.01002312
+    },
+    {
+      "sub": "sub-20259",
+      "session_id": "ses-2",
+      "cell": "TD",
+      "age": 11.25,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 48.68313599,
+      "r2s_SNVTA": 23.01995468
+    },
+    {
+      "sub": "sub-20302",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 12.3,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 58.11962509,
+      "r2s_SNVTA": 25.30734444
+    },
+    {
+      "sub": "sub-20303",
+      "session_id": "ses-2",
+      "cell": "TD",
+      "age": 17.8,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 77.0917511,
+      "r2s_SNVTA": 26.15022278
+    },
+    {
+      "sub": "sub-20310",
+      "session_id": "ses-1",
+      "cell": "ADHD-only",
+      "age": 9.06,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 38.66077042,
+      "r2s_SNVTA": 19.855896
+    },
+    {
+      "sub": "sub-20350",
+      "session_id": "ses-1",
+      "cell": "PS+ADHD",
+      "age": 14.55,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 48.69683838,
+      "r2s_SNVTA": 21.76907158
+    },
+    {
+      "sub": "sub-20352",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 8.8,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 29.71816444,
+      "r2s_SNVTA": 19.0195179
+    },
+    {
+      "sub": "sub-20399",
+      "session_id": "ses-2",
+      "cell": "PS+ADHD",
+      "age": 11.88,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 70.17530823,
+      "r2s_SNVTA": 25.42265129
+    },
+    {
+      "sub": "sub-20402",
+      "session_id": "ses-1",
+      "cell": "ADHD-only",
+      "age": 13.22,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 58.30289841,
+      "r2s_SNVTA": 25.03758049
+    },
+    {
+      "sub": "sub-20403",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 12.11,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 49.78004456,
+      "r2s_SNVTA": 22.8468399
+    },
+    {
+      "sub": "sub-20427",
+      "session_id": "ses-1",
+      "cell": "PS-only",
+      "age": 15.62,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 52.3207283,
+      "r2s_SNVTA": 23.12220001
+    },
+    {
+      "sub": "sub-20463",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 13.2,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 60.23332214,
+      "r2s_SNVTA": 26.17135429
+    },
+    {
+      "sub": "sub-20494",
+      "session_id": "ses-3",
+      "cell": "ADHD-only",
+      "age": 13.5,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 47.21434784,
+      "r2s_SNVTA": 21.32085037
+    },
+    {
+      "sub": "sub-20533",
+      "session_id": "ses-2",
+      "cell": "PS+ADHD",
+      "age": 15.07,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 48.99132919,
+      "r2s_SNVTA": 19.10393715
+    },
+    {
+      "sub": "sub-20572",
+      "session_id": "ses-2",
+      "cell": "ADHD-only",
+      "age": 13.77,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 55.18553925,
+      "r2s_SNVTA": 21.39286232
+    },
+    {
+      "sub": "sub-20626",
+      "session_id": "ses-1",
+      "cell": "PS-only",
+      "age": 14.81,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 55.61292267,
+      "r2s_SNVTA": 24.32543755
+    },
+    {
+      "sub": "sub-20712",
+      "session_id": "ses-1",
+      "cell": "PS+ADHD",
+      "age": 13.54,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 64.9797821,
+      "r2s_SNVTA": 23.89530182
+    },
+    {
+      "sub": "sub-20721",
+      "session_id": "ses-2",
+      "cell": "PS+ADHD",
+      "age": 12.96,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 35.14017868,
+      "r2s_SNVTA": 19.55755997
+    },
+    {
+      "sub": "sub-20794",
+      "session_id": "ses-1",
+      "cell": "PS+ADHD",
+      "age": 14.04,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 45.50238037,
+      "r2s_SNVTA": 22.28028107
+    },
+    {
+      "sub": "sub-20818",
+      "session_id": "ses-2",
+      "cell": "PS+ADHD",
+      "age": 15.46,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 40.09886169,
+      "r2s_SNVTA": 24.1070919
+    },
+    {
+      "sub": "sub-20823",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 10.03,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 53.51170731,
+      "r2s_SNVTA": 21.37510109
+    },
+    {
+      "sub": "sub-20836",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 12.2,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 47.83729553,
+      "r2s_SNVTA": 20.96012115
+    },
+    {
+      "sub": "sub-20846",
+      "session_id": "ses-1",
+      "cell": "PS-only",
+      "age": 11.62,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 66.82055664,
+      "r2s_SNVTA": 25.33259201
+    },
+    {
+      "sub": "sub-20855",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 15.92,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 44.38267517,
+      "r2s_SNVTA": 23.87809753
+    },
+    {
+      "sub": "sub-20866",
+      "session_id": "ses-1",
+      "cell": "PS+ADHD",
+      "age": 15.68,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 52.23309708,
+      "r2s_SNVTA": 24.36262321
+    },
+    {
+      "sub": "sub-20902",
+      "session_id": "ses-2",
+      "cell": "PS+ADHD",
+      "age": 17.04,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 60.95274734,
+      "r2s_SNVTA": 21.12247467
+    },
+    {
+      "sub": "sub-20916",
+      "session_id": "ses-3",
+      "cell": "PS+ADHD",
+      "age": 13.57,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 61.86722183,
+      "r2s_SNVTA": 21.10770607
+    },
+    {
+      "sub": "sub-20919",
+      "session_id": "ses-1",
+      "cell": "ADHD-only",
+      "age": 9.96,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 49.11520004,
+      "r2s_SNVTA": 22.32672882
+    },
+    {
+      "sub": "sub-20923",
+      "session_id": "ses-2",
+      "cell": "ADHD-only",
+      "age": 11.6,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 60.71354675,
+      "r2s_SNVTA": 22.25471878
+    },
+    {
+      "sub": "sub-20953",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 11.14,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 30.97932816,
+      "r2s_SNVTA": 19.80598259
+    },
+    {
+      "sub": "sub-20966",
+      "session_id": "ses-1",
+      "cell": "ADHD-only",
+      "age": 13.32,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 44.39196777,
+      "r2s_SNVTA": 21.95812607
+    },
+    {
+      "sub": "sub-20968",
+      "session_id": "ses-3",
+      "cell": "ADHD-only",
+      "age": 16.87,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 66.11076355,
+      "r2s_SNVTA": 21.17035103
+    },
+    {
+      "sub": "sub-20976",
+      "session_id": "ses-2",
+      "cell": "PS+ADHD",
+      "age": 14.29,
+      "sex": "M",
+      "dx_psychosis": 1,
+      "chi_SNVTA": 59.97375107,
+      "r2s_SNVTA": 25.16828346
+    },
+    {
+      "sub": "sub-20983",
+      "session_id": "ses-2",
+      "cell": "PS+ADHD",
+      "age": 12.75,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 50.28980637,
+      "r2s_SNVTA": 22.1893425
+    },
+    {
+      "sub": "sub-21023",
+      "session_id": "ses-1",
+      "cell": "PS-only",
+      "age": 13.59,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 53.8911705,
+      "r2s_SNVTA": 25.91275978
+    },
+    {
+      "sub": "sub-21035",
+      "session_id": "ses-2",
+      "cell": "PS+ADHD",
+      "age": 15.93,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 71.33045197,
+      "r2s_SNVTA": 26.2835598
+    },
+    {
+      "sub": "sub-21038",
+      "session_id": "ses-1",
+      "cell": "PS-only",
+      "age": 13.93,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 51.92875671,
+      "r2s_SNVTA": 23.54413414
+    },
+    {
+      "sub": "sub-21104",
+      "session_id": "ses-1",
+      "cell": "PS+ADHD",
+      "age": 16,
+      "sex": "F",
+      "dx_psychosis": 1,
+      "chi_SNVTA": 41.23103333,
+      "r2s_SNVTA": 22.6622448
+    },
+    {
+      "sub": "sub-21112",
+      "session_id": "ses-2",
+      "cell": "PS-only",
+      "age": 15.16,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 47.98068619,
+      "r2s_SNVTA": 23.17262268
+    },
+    {
+      "sub": "sub-21116",
+      "session_id": "ses-1",
+      "cell": "PS-only",
+      "age": 13.75,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 36.88633728,
+      "r2s_SNVTA": 23.21445274
+    },
+    {
+      "sub": "sub-21118",
+      "session_id": "ses-1",
+      "cell": "PS+ADHD",
+      "age": 11.51,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 49.52195358,
+      "r2s_SNVTA": 22.93464661
+    },
+    {
+      "sub": "sub-21131",
+      "session_id": "ses-1",
+      "cell": "ADHD-only",
+      "age": 10.8,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 46.17977142,
+      "r2s_SNVTA": 21.11488724
+    },
+    {
+      "sub": "sub-21139",
+      "session_id": "ses-2",
+      "cell": "PS+ADHD",
+      "age": 13.32,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 50.58205795,
+      "r2s_SNVTA": 19.10106277
+    },
+    {
+      "sub": "sub-21146",
+      "session_id": "ses-1",
+      "cell": "PS-only",
+      "age": 11.27,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 49.96344376,
+      "r2s_SNVTA": 20.34263802
+    },
+    {
+      "sub": "sub-21150",
+      "session_id": "ses-1",
+      "cell": "PS-only",
+      "age": 15.06,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 71.86811066,
+      "r2s_SNVTA": 28.43712616
+    },
+    {
+      "sub": "sub-21154",
+      "session_id": "ses-2",
+      "cell": "ADHD-only",
+      "age": 13.03,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 50.03275681,
+      "r2s_SNVTA": 20.67431259
+    },
+    {
+      "sub": "sub-21161",
+      "session_id": "ses-3",
+      "cell": "PS+ADHD",
+      "age": 12.75,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 77.07141876,
+      "r2s_SNVTA": 29.28105164
+    },
+    {
+      "sub": "sub-21193",
+      "session_id": "ses-1",
+      "cell": "ADHD-only",
+      "age": 10.74,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 55.38534546,
+      "r2s_SNVTA": 17.76673889
+    },
+    {
+      "sub": "sub-21345",
+      "session_id": "ses-1",
+      "cell": "PS-only",
+      "age": 16.04,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 58.18629074,
+      "r2s_SNVTA": 26.16422462
+    },
+    {
+      "sub": "sub-21432",
+      "session_id": "ses-1",
+      "cell": "PS+ADHD",
+      "age": 15.99,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 55.59302521,
+      "r2s_SNVTA": 17.41563797
+    },
+    {
+      "sub": "sub-21514",
+      "session_id": "ses-1",
+      "cell": "PS-only",
+      "age": 13.08,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 58.40777206,
+      "r2s_SNVTA": 24.92136192
+    },
+    {
+      "sub": "sub-21516",
+      "session_id": "ses-1",
+      "cell": "PS-only",
+      "age": 11.58,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 50.88535309,
+      "r2s_SNVTA": 21.82941628
+    },
+    {
+      "sub": "sub-21560",
+      "session_id": "ses-2",
+      "cell": "PS-only",
+      "age": 15.98,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 65.24395752,
+      "r2s_SNVTA": 26.05731773
+    },
+    {
+      "sub": "sub-21567",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 11.96,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 54.32788467,
+      "r2s_SNVTA": 19.02775383
+    },
+    {
+      "sub": "sub-21623",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 12.91,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 50.86317825,
+      "r2s_SNVTA": 22.2013588
+    },
+    {
+      "sub": "sub-21712",
+      "session_id": "ses-1",
+      "cell": "PS-only",
+      "age": 11.13,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 50.95643997,
+      "r2s_SNVTA": 23.00892258
+    },
+    {
+      "sub": "sub-21797",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 13.66,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 58.54364395,
+      "r2s_SNVTA": 21.69654083
+    },
+    {
+      "sub": "sub-21856",
+      "session_id": "ses-1",
+      "cell": "PS+ADHD",
+      "age": 12.85,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 65.51342773,
+      "r2s_SNVTA": 25.14590645
+    },
+    {
+      "sub": "sub-22064",
+      "session_id": "ses-1",
+      "cell": "PS+ADHD",
+      "age": 14.02,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 47.28696823,
+      "r2s_SNVTA": 21.4214344
+    },
+    {
+      "sub": "sub-22473",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 15.09,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 58.93276215,
+      "r2s_SNVTA": 24.70048714
+    },
+    {
+      "sub": "sub-22510",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 14.63,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 33.36923599,
+      "r2s_SNVTA": 22.69147873
+    },
+    {
+      "sub": "sub-22617",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 13.85,
+      "sex": "M",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 53.06380463,
+      "r2s_SNVTA": 22.70010757
+    },
+    {
+      "sub": "sub-22653",
+      "session_id": "ses-1",
+      "cell": "TD",
+      "age": 10.12,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 43.33699799,
+      "r2s_SNVTA": 24.93553925
+    },
+    {
+      "sub": "sub-22654",
+      "session_id": "ses-1",
+      "cell": "PS-only",
+      "age": 14.78,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 75.06801605,
+      "r2s_SNVTA": 30.57065201
+    },
+    {
+      "sub": "sub-22670",
+      "session_id": "ses-1",
+      "cell": "ADHD-only",
+      "age": 13.04,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 48.66693115,
+      "r2s_SNVTA": 24.3109417
+    },
+    {
+      "sub": "sub-22744",
+      "session_id": "ses-1",
+      "cell": "PS-only",
+      "age": 15.08,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 50.38311386,
+      "r2s_SNVTA": 23.19903374
+    },
+    {
+      "sub": "sub-23303",
+      "session_id": "ses-1",
+      "cell": "PS+ADHD",
+      "age": 15.29,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 59.22420502,
+      "r2s_SNVTA": 21.84262085
+    },
+    {
+      "sub": "sub-23676",
+      "session_id": "ses-1",
+      "cell": "PS+ADHD",
+      "age": 16.7,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 62.02595139,
+      "r2s_SNVTA": 22.02588272
+    },
+    {
+      "sub": "sub-23698",
+      "session_id": "ses-1",
+      "cell": "ADHD-only",
+      "age": 16.09,
+      "sex": "F",
+      "dx_psychosis": 0,
+      "chi_SNVTA": 12.15827656,
+      "r2s_SNVTA": 20.31043053
+    }
+  ],
+  "table1": {
+    "sessions_total": 181,
+    "sessions_usable": 107,
+    "sessions_not_usable": 74,
+    "youths_with_megre": {
+      "TD": 30,
+      "ADHD-only": 22,
+      "PS-only": 24,
+      "PS+ADHD": 37
+    },
+    "usable_sessions": {
+      "TD": 31,
+      "ADHD-only": 19,
+      "PS-only": 22,
+      "PS+ADHD": 35
+    },
+    "analysed_first_usable": {
+      "TD": 22,
+      "ADHD-only": 16,
+      "PS-only": 17,
+      "PS+ADHD": 25
+    },
+    "n_analysed": 80,
+    "earliest_megre_not_usable": {
+      "TD": 10,
+      "ADHD-only": 12,
+      "PS-only": 8,
+      "PS+ADHD": 19
+    },
+    "analysed_at_ses2_or_ses3": {
+      "TD": 3,
+      "ADHD-only": 6,
+      "PS-only": 2,
+      "PS+ADHD": 11
+    },
+    "analysed_session": {
+      "ses-1": 58,
+      "ses-2": 17,
+      "ses-3": 5
+    },
+    "age": [
+      {
+        "cell": "TD",
+        "n": 22,
+        "n_missing": 0,
+        "mean": 13.0718181818182,
+        "sd": 2.16733462897158,
+        "min": 8.8,
+        "max": 17.8
+      },
+      {
+        "cell": "ADHD-only",
+        "n": 16,
+        "n_missing": 0,
+        "mean": 12.8075,
+        "sd": 2.38728157814141,
+        "min": 9.06,
+        "max": 16.87
+      },
+      {
+        "cell": "PS-only",
+        "n": 17,
+        "n_missing": 0,
+        "mean": 13.9817647058824,
+        "sd": 1.68369844128231,
+        "min": 11.13,
+        "max": 16.04
+      },
+      {
+        "cell": "PS+ADHD",
+        "n": 25,
+        "n_missing": 0,
+        "mean": 14.0936,
+        "sd": 1.74026070843806,
+        "min": 9.65,
+        "max": 17.04
+      }
+    ],
+    "female": {
+      "TD": 9,
+      "ADHD-only": 9,
+      "PS-only": 9,
+      "PS+ADHD": 11
+    },
+    "male": {
+      "TD": 13,
+      "ADHD-only": 7,
+      "PS-only": 8,
+      "PS+ADHD": 14
+    },
+    "race_black": {
+      "TD": 9,
+      "ADHD-only": 10,
+      "PS-only": 11,
+      "PS+ADHD": 15
+    },
+    "race_white": {
+      "TD": 9,
+      "ADHD-only": 6,
+      "PS-only": 4,
+      "PS+ADHD": 7
+    },
+    "race_other": {
+      "TD": 4,
+      "ADHD-only": 0,
+      "PS-only": 2,
+      "PS+ADHD": 3
+    },
+    "threshold_psychotic_disorder": {
+      "TD": 0,
+      "ADHD-only": 0,
+      "PS-only": 0,
+      "PS+ADHD": 3
+    },
+    "PRIME_total": [
+      {
+        "cell": "TD",
+        "n": 20,
+        "n_missing": 2,
+        "mean": 10.45,
+        "sd": 14.4822032345329,
+        "min": 0,
+        "max": 63
+      },
+      {
+        "cell": "ADHD-only",
+        "n": 15,
+        "n_missing": 1,
+        "mean": 14.0666666666667,
+        "sd": 13.2204747411336,
+        "min": 0,
+        "max": 46
+      },
+      {
+        "cell": "PS-only",
+        "n": 17,
+        "n_missing": 0,
+        "mean": 17.8235294117647,
+        "sd": 14.625471334788,
+        "min": 0,
+        "max": 40
+      },
+      {
+        "cell": "PS+ADHD",
+        "n": 24,
+        "n_missing": 1,
+        "mean": 21.7083333333333,
+        "sd": 16.3214427289264,
+        "min": 0,
+        "max": 56
+      }
+    ],
+    "BDI_total": [
+      {
+        "cell": "TD",
+        "n": 19,
+        "n_missing": 3,
+        "mean": 4.47368421052632,
+        "sd": 2.98828120520869,
+        "min": 0,
+        "max": 12
+      },
+      {
+        "cell": "ADHD-only",
+        "n": 15,
+        "n_missing": 1,
+        "mean": 6.2,
+        "sd": 6.68901017661486,
+        "min": 0,
+        "max": 22
+      },
+      {
+        "cell": "PS-only",
+        "n": 17,
+        "n_missing": 0,
+        "mean": 3.88235294117647,
+        "sd": 3.23810038720961,
+        "min": 0,
+        "max": 11
+      },
+      {
+        "cell": "PS+ADHD",
+        "n": 24,
+        "n_missing": 1,
+        "mean": 10.5833333333333,
+        "sd": 10.8062649569054,
+        "min": 0,
+        "max": 42
+      }
+    ],
+    "ARI_total": [
+      {
+        "cell": "TD",
+        "n": 22,
+        "n_missing": 0,
+        "mean": 2.68181818181818,
+        "sd": 2.55205544865056,
+        "min": 0,
+        "max": 8
+      },
+      {
+        "cell": "ADHD-only",
+        "n": 16,
+        "n_missing": 0,
+        "mean": 3.875,
+        "sd": 2.72946881279124,
+        "min": 1,
+        "max": 9
+      },
+      {
+        "cell": "PS-only",
+        "n": 17,
+        "n_missing": 0,
+        "mean": 3.05882352941176,
+        "sd": 2.68026557068731,
+        "min": 0,
+        "max": 9
+      },
+      {
+        "cell": "PS+ADHD",
+        "n": 25,
+        "n_missing": 0,
+        "mean": 4.76,
+        "sd": 3.99249295553543,
+        "min": 0,
+        "max": 11
+      }
+    ],
+    "chi_SNVTA_raw": [
+      {
+        "variable": "chi_SNVTA",
+        "cell": "TD",
+        "n": 22,
+        "mean": 50.0824753154545,
+        "sd": 12.619682583165,
+        "median": 50.696985245,
+        "q1": 43.598417285,
+        "q3": 58.437639235,
+        "min": 29.02404213,
+        "max": 77.0917511
+      },
+      {
+        "variable": "chi_SNVTA",
+        "cell": "ADHD-only",
+        "n": 16,
+        "mean": 50.86165005,
+        "sd": 13.767905104605,
+        "median": 50.771745685,
+        "q1": 46.955703735,
+        "q3": 56.1147336975,
+        "min": 12.15827656,
+        "max": 76.95480347
+      },
+      {
+        "variable": "chi_SNVTA",
+        "cell": "PS-only",
+        "n": 17,
+        "mean": 56.8420046635294,
+        "sd": 9.98086618807991,
+        "median": 53.8911705,
+        "q1": 50.88535309,
+        "q3": 65.24395752,
+        "min": 36.88633728,
+        "max": 75.06801605
+      },
+      {
+        "variable": "chi_SNVTA",
+        "cell": "PS+ADHD",
+        "n": 25,
+        "mean": 54.272086792,
+        "sd": 10.8315640084614,
+        "median": 52.09466171,
+        "q1": 48.69683838,
+        "q3": 61.86722183,
+        "min": 35.14017868,
+        "max": 77.07141876
+      }
+    ],
+    "chi_SNVTA_adjusted": [
+      {
+        "cell": "TD",
+        "n": 22,
+        "adj_mean": 49.7123967665663,
+        "se_hc3": 2.80195715187804,
+        "lo": 44.121178322796,
+        "hi": 55.3036152103366
+      },
+      {
+        "cell": "ADHD-only",
+        "n": 16,
+        "adj_mean": 51.6354372586491,
+        "se_hc3": 4.08228779253649,
+        "lo": 43.4893587994872,
+        "hi": 59.781515717811
+      },
+      {
+        "cell": "PS-only",
+        "n": 17,
+        "adj_mean": 57.8698182522306,
+        "se_hc3": 2.80632391134438,
+        "lo": 52.2698860756142,
+        "hi": 63.4697504288469
+      },
+      {
+        "cell": "PS+ADHD",
+        "n": 25,
+        "adj_mean": 53.4036188611694,
+        "se_hc3": 2.24819270733232,
+        "lo": 48.9174201618206,
+        "hi": 57.8898175605182
+      }
+    ],
+    "r2s_SNVTA_raw": [
+      {
+        "variable": "r2s_SNVTA",
+        "cell": "TD",
+        "n": 22,
+        "mean": 22.7169966259091,
+        "sd": 2.02702650832728,
+        "median": 22.773473735,
+        "q1": 21.455461025,
+        "q3": 23.8085370025,
+        "min": 19.0195179,
+        "max": 26.17135429
+      },
+      {
+        "variable": "r2s_SNVTA",
+        "cell": "ADHD-only",
+        "n": 16,
+        "mean": 21.793941498125,
+        "sd": 1.85787588261987,
+        "median": 21.365966795,
+        "q1": 21.0047435775,
+        "q3": 22.6227960575,
+        "min": 17.76673889,
+        "max": 25.03758049
+      },
+      {
+        "variable": "r2s_SNVTA",
+        "cell": "PS-only",
+        "n": 17,
+        "mean": 24.6567597111765,
+        "sd": 2.46051661467574,
+        "median": 24.32543755,
+        "q1": 23.17262268,
+        "q3": 26.01002312,
+        "min": 20.34263802,
+        "max": 30.57065201
+      },
+      {
+        "variable": "r2s_SNVTA",
+        "cell": "PS+ADHD",
+        "n": 25,
+        "mean": 22.6415280148,
+        "sd": 2.5544901660441,
+        "median": 22.28028107,
+        "q1": 21.4214344,
+        "q3": 24.1070919,
+        "min": 17.41563797,
+        "max": 29.28105164
+      }
+    ],
+    "r2s_SNVTA_adjusted": [
+      {
+        "cell": "TD",
+        "n": 22,
+        "adj_mean": 22.8116662039363,
+        "se_hc3": 0.439557902665267,
+        "lo": 21.9345420656033,
+        "hi": 23.6887903422693
+      },
+      {
+        "cell": "ADHD-only",
+        "n": 16,
+        "adj_mean": 22.0248391033405,
+        "se_hc3": 0.438265660821082,
+        "lo": 21.1502935934595,
+        "hi": 22.8993846132216
+      },
+      {
+        "cell": "PS-only",
+        "n": 17,
+        "adj_mean": 24.5498161608783,
+        "se_hc3": 0.661305383134546,
+        "lo": 23.230201814646,
+        "hi": 25.8694305071105
+      },
+      {
+        "cell": "PS+ADHD",
+        "n": 25,
+        "adj_mean": 22.4831659330009,
+        "se_hc3": 0.513440776627924,
+        "lo": 21.4586108151107,
+        "hi": 23.5077210508911
+      }
+    ],
+    "exclusion_reason_component_counts": {
+      "b_t1w": 6,
+      "c_auto_grade2": 7,
+      "c_qc_grade": 62,
+      "cprime_plausibility": 8,
+      "d_placement": 1,
+      "e_g5": 45,
+      "e_not_registered": 1,
+      "no_qsm": 1
+    },
+    "exclusion_reason_combinations": {
+      "(usable)": 107,
+      "b_t1w": 2,
+      "b_t1w;c_qc_grade;c_auto_grade2;e_g5": 1,
+      "b_t1w;c_qc_grade;e_g5": 2,
+      "b_t1w;e_not_registered;no_qsm;c_qc_grade;c_auto_grade2;cprime_plausibility;d_placement;e_g5": 1,
+      "c_qc_grade": 21,
+      "c_qc_grade;c_auto_grade2": 5,
+      "c_qc_grade;cprime_plausibility": 1,
+      "c_qc_grade;cprime_plausibility;e_g5": 6,
+      "c_qc_grade;e_g5": 25,
+      "e_g5": 10
+    },
+    "qc_by_group_fisher_p_not_in_H1": 0.96695982117224,
+    "qc_by_group_fisher_p_earliest_failed": 0.243876306289024,
+    "qc_by_group_tables": {
+      "in_H1": [
+        {
+          "in H1": 22,
+          "not in H1": 8,
+          "_row": "TD"
+        },
+        {
+          "in H1": 16,
+          "not in H1": 6,
+          "_row": "ADHD-only"
+        },
+        {
+          "in H1": 17,
+          "not in H1": 7,
+          "_row": "PS-only"
+        },
+        {
+          "in H1": 25,
+          "not in H1": 12,
+          "_row": "PS+ADHD"
+        }
+      ],
+      "earliest": [
+        {
+          "earliest usable": 20,
+          "earliest failed": 10,
+          "_row": "TD"
+        },
+        {
+          "earliest usable": 10,
+          "earliest failed": 12,
+          "_row": "ADHD-only"
+        },
+        {
+          "earliest usable": 16,
+          "earliest failed": 8,
+          "_row": "PS-only"
+        },
+        {
+          "earliest usable": 18,
+          "earliest failed": 19,
+          "_row": "PS+ADHD"
+        }
+      ]
+    },
+    "age_PS_minus_nonPS_years": 1.08780701754386,
+    "age_PS_welch_p": 0.017616181728708,
+    "first_usable_keys": ["sub-19861_ses-1", "sub-20139_ses-1", "sub-20141_ses-1", "sub-20149_ses-1", "sub-20188_ses-2", "sub-20212_ses-1", "sub-20214_ses-1", "sub-20236_ses-1", "sub-20238_ses-1", "sub-20252_ses-1", "sub-20253_ses-3", "sub-20258_ses-1", "sub-20259_ses-2", "sub-20302_ses-1", "sub-20303_ses-2", "sub-20310_ses-1", "sub-20350_ses-1", "sub-20352_ses-1", "sub-20399_ses-2", "sub-20402_ses-1", "sub-20403_ses-1", "sub-20427_ses-1", "sub-20463_ses-1", "sub-20494_ses-3", "sub-20533_ses-2", "sub-20572_ses-2", "sub-20626_ses-1", "sub-20712_ses-1", "sub-20721_ses-2", "sub-20794_ses-1", "sub-20818_ses-2", "sub-20823_ses-1", "sub-20836_ses-1", "sub-20846_ses-1", "sub-20855_ses-1", "sub-20866_ses-1", "sub-20902_ses-2", "sub-20916_ses-3", "sub-20919_ses-1", "sub-20923_ses-2", "sub-20953_ses-1", "sub-20966_ses-1", "sub-20968_ses-3", "sub-20976_ses-2", "sub-20983_ses-2", "sub-21023_ses-1", "sub-21035_ses-2", "sub-21038_ses-1", "sub-21104_ses-1", "sub-21112_ses-2", "sub-21116_ses-1", "sub-21118_ses-1", "sub-21131_ses-1", "sub-21139_ses-2", "sub-21146_ses-1", "sub-21150_ses-1", "sub-21154_ses-2", "sub-21161_ses-3", "sub-21193_ses-1", "sub-21345_ses-1", "sub-21432_ses-1", "sub-21514_ses-1", "sub-21516_ses-1", "sub-21560_ses-2", "sub-21567_ses-1", "sub-21623_ses-1", "sub-21712_ses-1", "sub-21797_ses-1", "sub-21856_ses-1", "sub-22064_ses-1", "sub-22473_ses-1", "sub-22510_ses-1", "sub-22617_ses-1", "sub-22653_ses-1", "sub-22654_ses-1", "sub-22670_ses-1", "sub-22744_ses-1", "sub-23303_ses-1", "sub-23676_ses-1", "sub-23698_ses-1"]
+  },
+  "engine2": {
+    "note": "engine-2 'B' entries are a B pattern, not a registered outcome; the bound uses delta_B from the primary engine's split-echo reliability and engine 2's own sigma_B (as engine2_analysis.R)",
+    "n_first_usable": 80,
+    "rts": {
+      "n_finite": 79,
+      "n_valid": 63,
+      "n_fail_plausibility": 16,
+      "missing_status": {
+        "mask_mismatch": 1
+      },
+      "main": {
+        "label": "main: engine-2 plausibility failures missing (registered sec. 12.4 rule)",
+        "n": 63,
+        "cells": {
+          "TD": 14,
+          "ADHD-only": 12,
+          "PS-only": 15,
+          "PS+ADHD": 22,
+          "total": 63
+        },
+        "M1": {
+          "beta_ppb": 2.53494414274246,
+          "se_hc3": 2.72882485470832,
+          "p_two": 0.357290630988901,
+          "ci95_ppb": [-2.94340034760443, 8.01328863308935],
+          "sigma_resid": 8.12287347834595,
+          "sigma_B": 7.37213426125766,
+          "delta": 0.312074803270067,
+          "outcome": "B",
+          "disconfirming": false
+        },
+        "bound_ppb_registered_deltaB": -4.28460097405923,
+        "pB": 0.00785665325616754,
+        "huber_beta": 1.63013149128771,
+        "interaction": {
+          "est": 1.37075471218189,
+          "se": 4.82011452009652,
+          "p_two": 0.777269017979715,
+          "ci95": [-8.30602896942759, 11.0475383937914]
+        },
+        "strata": {
+          "PSonly_minus_TD": {
+            "est": 1.84956678665152,
+            "se": 3.39423696766189,
+            "p_two": 0.588187850686625,
+            "ci95": [-4.96464826223253, 8.66378183553556],
+            "lower95_one_sided": -3.83674732344833,
+            "pB": 0.0383132963749392
+          },
+          "PSADHD_minus_ADHD": {
+            "est": 3.2203214988334,
+            "se": 3.87154718118323,
+            "p_two": 0.409404261755001,
+            "ci95": [-4.55213378812207, 10.9927767857889],
+            "lower95_one_sided": -3.26562322866284,
+            "pB": 0.0290543203138686
+          }
+        }
+      },
+      "sensitivity_failures_kept": {
+        "label": "sensitivity: engine-2 SN-VTA plausibility failures kept",
+        "n": 79,
+        "cells": {
+          "TD": 22,
+          "ADHD-only": 16,
+          "PS-only": 17,
+          "PS+ADHD": 24,
+          "total": 79
+        },
+        "M1": {
+          "beta_ppb": 3.81489675706506,
+          "se_hc3": 2.16565480774671,
+          "p_two": 0.0827084434357427,
+          "ci95_ppb": [-0.507768331132426, 8.13756184526254],
+          "sigma_resid": 7.65065210179241,
+          "sigma_B": 6.74764174247058,
+          "delta": 0.498636809817989,
+          "outcome": "B",
+          "disconfirming": false
+        },
+        "bound_ppb_registered_deltaB": -3.92165299190577,
+        "pB": 0.000330449481374354,
+        "huber_beta": 2.96828037171152,
+        "interaction": {
+          "est": 0.505582723481613,
+          "se": 4.23623725469376,
+          "p_two": 0.905357487686634,
+          "ci95": [-7.94998222652032, 8.96114767348354]
+        },
+        "strata": {
+          "PSonly_minus_TD": {
+            "est": 3.56210539532425,
+            "se": 2.92716366138809,
+            "p_two": 0.227906332238947,
+            "ci95": [-2.28053772640564, 9.40474851705415],
+            "lower95_one_sided": -1.32015804413463,
+            "pB": 0.00642017069128222
+          },
+          "PSADHD_minus_ADHD": {
+            "est": 4.06768811880587,
+            "se": 3.12804850203919,
+            "p_two": 0.19792216537485,
+            "ci95": [-2.17592282306068, 10.3112990606724],
+            "lower95_one_sided": -1.1496343834549,
+            "pB": 0.00646327031903799
+          }
+        }
+      }
+    },
+    "tv": {
+      "n_finite": 79,
+      "n_valid": 63,
+      "n_fail_plausibility": 16,
+      "missing_status": {
+        "mask_mismatch": 1
+      },
+      "main": {
+        "label": "main: engine-2 plausibility failures missing (registered sec. 12.4 rule)",
+        "n": 63,
+        "cells": {
+          "TD": 14,
+          "ADHD-only": 12,
+          "PS-only": 15,
+          "PS+ADHD": 22,
+          "total": 63
+        },
+        "M1": {
+          "beta_ppb": 3.33997466370943,
+          "se_hc3": 2.84519926357962,
+          "p_two": 0.245888608016624,
+          "ci95_ppb": [-2.37200120116759, 9.05195052858645],
+          "sigma_resid": 8.81360179686422,
+          "sigma_B": 8.10389013282556,
+          "delta": 0.378956837475656,
+          "outcome": "B",
+          "disconfirming": false
+        },
+        "bound_ppb_registered_deltaB": -4.7098892025401,
+        "pB": 0.00332746313645082,
+        "huber_beta": 2.07109009635665,
+        "interaction": {
+          "est": 0.669668464541812,
+          "se": 5.13918052004142,
+          "p_two": 0.896836584402435,
+          "ci95": [-9.64766694021665, 10.9870038693003]
+        },
+        "strata": {
+          "PSonly_minus_TD": {
+            "est": 3.00514043143852,
+            "se": 3.52225676804667,
+            "p_two": 0.397545533055216,
+            "ci95": [-4.06608509097709, 10.0763659538541],
+            "lower95_one_sided": -2.89564332360235,
+            "pB": 0.0165474380227913
+          },
+          "PSADHD_minus_ADHD": {
+            "est": 3.67480889598034,
+            "se": 4.12184584472589,
+            "p_two": 0.376824226976956,
+            "ci95": [-4.60014192563512, 11.9497597175958],
+            "lower95_one_sided": -3.2304574156604,
+            "pB": 0.0235734818985511
+          }
+        }
+      },
+      "sensitivity_failures_kept": {
+        "label": "sensitivity: engine-2 SN-VTA plausibility failures kept",
+        "n": 79,
+        "cells": {
+          "TD": 22,
+          "ADHD-only": 16,
+          "PS-only": 17,
+          "PS+ADHD": 24,
+          "total": 79
+        },
+        "M1": {
+          "beta_ppb": 4.37128926890849,
+          "se_hc3": 2.3137094207598,
+          "p_two": 0.0631800833744619,
+          "ci95_ppb": [-0.246894063715099, 8.98947260153208],
+          "sigma_resid": 8.23413084142049,
+          "sigma_B": 7.7012033902189,
+          "delta": 0.530874399872226,
+          "outcome": "B",
+          "disconfirming": false
+        },
+        "bound_ppb_registered_deltaB": -4.47585222648007,
+        "pB": 0.00014537992916627,
+        "huber_beta": 3.33547248921508,
+        "interaction": {
+          "est": -0.299223582783378,
+          "se": 4.56900687125093,
+          "p_two": 0.947979005685587,
+          "ci95": [-9.41899946739921, 8.82055230183246]
+        },
+        "strata": {
+          "PSonly_minus_TD": {
+            "est": 4.52090106030018,
+            "se": 3.13841900329656,
+            "p_two": 0.154382142520926,
+            "ci95": [-1.74340948871149, 10.7852116093119],
+            "lower95_one_sided": -0.713718568119111,
+            "pB": 0.00276959874360605
+          },
+          "PSADHD_minus_ADHD": {
+            "est": 4.2216774775168,
+            "se": 3.36076488644199,
+            "p_two": 0.213418460212396,
+            "ci95": [-2.48643731173628, 10.9297922667699],
+            "lower95_one_sided": -1.3837964323062,
+            "pB": 0.00591400854151601
+          }
+        }
+      }
+    }
+  }
+}

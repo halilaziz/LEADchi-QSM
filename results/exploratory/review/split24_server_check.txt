@@ -1,0 +1,30 @@
+LEAD-chi: read-only server check of the {2,4} split-echo reconstructions (2026-10-05, server; no file written on the server)
+Scripts were piped via stdin (python from LEADchi/scripts/pipeline/env.sh); inputs under /path/to/Penn_LEAD/LEADchi/qsm/{primary,split13,split24}.
+Codes: c88dee = sub-20866 ses-1; 7eea0c = sub-20712 ses-1; 220f42 = sub-20823 ses-1; 910c84 = sub-21038 ses-1 (all four unsigned 12-bit phase, amendment 1 #14); 016a10 = signed-phase reference.
+
+1) Chi maps in the reconstruction mask (ppm): median, p1, p99, SD, share |chi| > 0.5, r with the primary map
+c88dee ses-1 (unsigned, implausible)
+  primary  nvox 380413 med -0.0007 p1 -0.044 p99 +0.072 sd 0.0217 |x|>0.5 0.0000 r 1.000
+  split13  nvox 380413 med -0.0006 p1 -0.080 p99 +0.100 sd 0.0315 |x|>0.5 0.0001 r 0.722
+  split24  nvox 380413 med +0.0000 p1 -0.823 p99 +0.844 sd 0.3291 |x|>0.5 0.1285 r -0.061
+7eea0c ses-1 (unsigned, implausible)
+  primary  nvox 372552 med -0.0001 p1 -0.046 p99 +0.071 sd 0.0223 |x|>0.5 0.0000 r 1.000
+  split13  nvox 372552 med +0.0000 p1 -0.077 p99 +0.102 sd 0.0328 |x|>0.5 0.0000 r 0.735
+  split24  nvox 372552 med +0.0000 p1 -0.865 p99 +0.866 sd 0.3390 |x|>0.5 0.1377 r -0.042
+220f42 ses-1 (unsigned, normal)
+  primary  sd 0.0209; split13 sd 0.0228 r 0.976; split24 sd 0.0206 r 0.959
+910c84 ses-1 (unsigned, normal)
+  primary  sd 0.0238; split13 sd 0.0253 r 0.961; split24 sd 0.0237 r 0.953
+016a10 ses-1 (signed)
+  primary  sd 0.0214; split13 sd 0.0226 r 0.979; split24 sd 0.0210 r 0.980
+
+2) Input phase (bids_all): all four unsigned sessions and 016a10 have echo phases in [-3.14, 3.14] rad; TE 7.5/15/22.5/30 ms.
+
+3) Workflow intermediates, split24 vs primary, within the common background-removal mask
+c88dee: total field r 0.804  diff med -0.168 ppm, diff IQR 0.212; local field r -0.062, sd ratio 11.23
+7eea0c: total field r 0.791  diff med -0.169 ppm, diff IQR 0.213; local field r -0.056, sd ratio 10.83
+220f42: total field r 1.000  diff med +0.001 ppm, diff IQR 0.003; local field r 0.967, sd ratio 1.00
+910c84: total field r 0.999  diff med -0.001 ppm, diff IQR 0.004; local field r 0.956, sd ratio 1.04
+
+Reading: the {2,4} total field (ROMEO unwrapping + combination of TE 15/30 ms) failed in c88dee and 7eea0c;
+the two other unsigned-phase sessions reconstruct normally, so the 12-bit phase conversion is not the cause.

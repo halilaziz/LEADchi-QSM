@@ -1,0 +1,9 @@
+{
+ "simulated": false,
+ "n_rated": 100,
+ "kappa_linear_sample": 0.05365020634694739,
+ "kappa_linear_design": 0.057092104072576366,
+ "intra_exact": 0.7,
+ "refit_ok": true,
+ "H_replace_beta": 6.29013622956428
+}

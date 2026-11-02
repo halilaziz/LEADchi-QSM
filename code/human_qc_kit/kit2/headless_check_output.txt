@@ -1,0 +1,7 @@
+Headless browser check of rate.html (kit 2), 2026-10-28T19:26:49Z
+- The zip LEADchi_visualQC_rater_kit2.zip (sha256 2ed0f8fefeea5d9bd2df2cf35b39fb43c6a6349adc504888e2bf7bf18b28b461) was unzipped into a fresh scratch folder.
+- rate.html was opened from file:// in headless Google Chrome (Google Chrome 156.0.8078.48 ), separate empty profile, --virtual-time-budget=15000, --dump-dom.
+- Rendered header: "Kit check: all 200 images found"
+- Items shown: 100; first item kit ID h6aa3ed (= kit2_key order 1)
+- Image sources are relative (images/gross/<id>.png, images/placement/<id>.png); the rendered DOM holds no http(s):// or file:// URL; verify_kit2.py finds no network reference in rate.html.
+- rate.html is byte-identical to kit-1 rate.html apart from the embedded item list and its storage tag (verify_kit2.py check 5), so the keyboard, export/import and CSV format tests done for kit 1 on 2026-10-07 apply unchanged.

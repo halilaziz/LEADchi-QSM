@@ -1,0 +1,96 @@
+column,type,required,unit,used_in,description
+data_origin,character,yes,,banner,'real' (unlock_merge.py output) or 'synthetic' (make_synthetic.R); a single value per table
+engine,character,yes,,branch check,QSM engine of the table: 'qsmxt' (G2 pass) or 'sepia' (G2 fail); must match gates
+pipeline,character,yes,,branch check,'primary' or 'fallback_PDF_iLSQR' (PC1/PC2w/PC3 failure path); must match gates
+roi_def,character,yes,,branch check,'SNVTA' (G3 pass) or 'SN_only' (G3 fail); must match gates
+participant_id,character,yes,,all,"real participant ID, sub-NNNNN (joined through the key at unlock)"
+session_id,character,yes,,all,"real session label, ses-k"
+ses_order,integer,yes,,samples,chronological index of the MEGRE session within subject (1 = earliest)
+code,character,optional,,audit,coded subject ID used before unlock
+study_group,character,yes,,design,"participants.tsv study_group: 'PRO/CHR', 'ADHD' or 'TD/NC'"
+dx_adhd,integer,yes,,design,participants.tsv dx_adhd (0/1); baseline diagnosis
+sex,character,yes,,design,'M' or 'F'
+race,character,yes,,design,participants.tsv race string (mapped to race3: Black / White / Other)
+ethnicity,character,optional,,sensitivity,participants.tsv ethnicity
+age,numeric,yes,years,all,age at this session (sub-*_sessions.tsv)
+age_ses1,numeric,optional,years,sensitivity,age at the subject's ses-1 (years-since-diagnosis sensitivity)
+usable,integer,yes,,samples,"1 if the session meets first-usable criteria (a)-(e) and (c') (QC grade <= 1, placement pass, G5 pass, QSM plausibility); frozen by code before unlock"
+fail_reason,character,optional,,QC-by-group,reason a session is not usable
+first_usable,integer,optional,,samples,frozen first-usable flag; if present it must equal the earliest usable session per subject
+chi_SNVTA,numeric,yes,ppb,"H1, Q1, Q3, S1, S2, T1","primary-ROI chi (CIT168 SN-VTA: SNc+SNr+VTA+PBP, clipped at 1, w >= 0.5; under the G3 fallback the SN-only value), probability-weighted mean on the support S, whole-brain reference = mean over S minus implausible voxels, implausible voxels excluded; must be non-missing in usable rows"
+chi_SNVTA_ref2,numeric,yes,ppb,Q3,same ROI referenced to lateral-ventricle CSF (eroded 2 voxels; 1-voxel erosion fallback); NA when no valid CSF reference (ref2_type 'none')
+ref2_type,character,yes,,Q3,"'CSF', 'CSF_erode1' or 'none' (no valid CSF reference; PLIC is not used)"
+r2s_SNVTA,numeric,yes,s^-1,Q2,"SN-VTA R2* (ARLO, clipped [0, 200] voxelwise), same weights as chi_SNVTA"
+roi_vol,numeric,yes,mm^3,"H1, S1, S2, T1","native sum of w_v over atlas voxels with w >= 0.5 of the warped CIT168 SN-VTA atlas, mm^3 (atlas only: no mask, no CSF buffer; T1-derived, chi-independent)"
+Q_phase,numeric,yes,log rad,"H1, S1, S2, S3, T1",log median absolute multi-echo phase-prediction residual inside Mask 3 (phase-noise/linearity index; not a motion index)
+chi_STR,numeric,yes,ppb,S1,"volume-weighted caudate + putamen + NAcc chi (SynthSeg, eroded 1 voxel, NAcc not eroded)"
+str_vol,numeric,yes,mm^3,S1,striatal volume used in chi_STR
+chi_GP,numeric,optional,ppb,"plausibility, PC2x",SynthSeg GP chi (eroded 1 voxel)
+chi_PUT,numeric,optional,ppb,"plausibility, PC2x",SynthSeg bilateral putamen chi
+chi_CAU,numeric,optional,ppb,plausibility,SynthSeg caudate chi
+chi_THAL,numeric,optional,ppb,plausibility,SynthSeg thalamus chi
+chi_RN,numeric,optional,ppb,plausibility,CIT168 red nucleus chi
+PRIME_total,numeric,yes,score,S2,prime.tsv prime_total_score at the same session
+BDI_total,numeric,yes,score,S2,bdi_1a_ms_child.tsv bdi_1a_ms_child_total_score at the same session
+ARI_total,numeric,yes,score,S2,ari.tsv ari_total_score at the same session
+s3_eligible,integer,yes,,S3,"1 if the session has a same-session DWI with PennLINC scalar pass, an SCP_R profile, coded bundle-QC pass and >= n_min retained pSCP_R nodes"
+twICVF_pSCP_R,numeric,s3,fraction,S3,"tissue-weighted ICVF (ICVF_mod / TF) averaged over the retained pSCP_R nodes (real-ID DWI side, frozen)"
+b0loc_pSCP_R,numeric,s3,ratio,S3,N4-corrected b0 over retained nodes / median ipsilateral cerebellar-WM b0
+tract_len,numeric,s3,mm,S3,SCP_R bundle length
+nSL,numeric,s3,count,S3,SCP_R streamline count (enters as log)
+FD,numeric,s3,mm,S3,DWI mean framewise displacement (PennLINC)
+NDC,numeric,s3,,S3,DWI neighbouring-DWI correlation (PennLINC)
+chi_DN_R,numeric,s3,ppb,S3,"right dentate chi (SUIT atl-Anatom label 30 probseg, p >= 0.5; D8), same referencing as chi_SNVTA"
+chi_DGM,numeric,s3,ppb,S3,volume-weighted caudate + GP chi (global-iron control)
+chi_PUT_R,numeric,s3,ppb,S3 NC1,"right putamen chi (SynthSeg, eroded 1 voxel)"
+DN_R_vol,numeric,s3,mm^3,S3,right dentate ROI volume (coded side)
+abs_pitch,numeric,s3,degrees,S3,absolute head pitch relative to B0 (rotation of the composed MEGRE->T1w->MNI152NLin2009cAsym affine; one frame for all sessions)
+twICVF_MCP_R_matched,numeric,s3,fraction,S3 NC2,right MCP tw-ICVF at nodes distance-matched (+/-1 mm) to the retained pSCP_R nodes
+r2s_pSCP_R,numeric,optional,s^-1,S3 sensitivity,node-wise R2* along the retained pSCP_R nodes (computed after unlock)
+twICVF_VTAuncross_R,numeric,optional,fraction,S3 sensitivity,VTAuncross_R nodes 0-30 tw-ICVF under the same node rules
+chi_DNIP_R,numeric,optional,ppb,S3 sensitivity,SUIT right dentate + interposed composite chi
+fimp_SNVTA,numeric,optional,fraction,plausibility,share of the ROI's in-support weight in implausible voxels (|chi - ref0| > 1 ppm on S); ROI fails if > 0.05
+inmask_SNVTA,numeric,optional,fraction,plausibility,share of the ROI weight inside the support S (Mask 3 AND the QSMxT inversion mask AND chi != 0); fails if < 0.95
+fimp_DN_R,numeric,optional,fraction,plausibility,as fimp_SNVTA for the right dentate
+inmask_DN_R,numeric,optional,fraction,plausibility,as inmask_SNVTA for the right dentate; fails if < 0.90
+chi_SNVTA_split13,numeric,optional,ppb,B co-report,"primary ROI from the {1,3} split-echo reconstruction (post-unlock residualised reliability co-report)"
+chi_SNVTA_split24,numeric,optional,ppb,B co-report,"primary ROI from the {2,4} split-echo reconstruction"
+chi_SNVTA_impkeep,numeric,optional,ppb,H1 sensitivity,primary ROI mean with implausible voxels retained
+chi_SNVTA_harm,numeric,optional,ppb,H1 sensitivity,primary ROI referenced to the coverage-harmonised whole-brain reference (MNI region covered in >= 95% of sessions)
+ref_frac_wm,numeric,optional,fraction,H1 sensitivity,SynthSeg white-matter fraction of the reference domain S
+ref_frac_gm,numeric,optional,fraction,H1 sensitivity,SynthSeg grey-matter fraction of the reference domain S
+ref_frac_csf,numeric,optional,fraction,H1 sensitivity,SynthSeg CSF fraction of the reference domain S
+fov_brain_frac,numeric,optional,fraction,H1 sensitivity,fraction of the T1w SynthSeg brain inside the MEGRE field of view
+motion_gsr,numeric,optional,ratio,H1 sensitivity,magnitude ghost-to-signal ratio (echo-1 RSS; air band along the phase-encode direction)
+dice_min,numeric,optional,,H1 sensitivity,minimum of the four G5 Dice values
+icv_seg_ml,numeric,optional,ml,H1 sensitivity,SynthSeg intracranial volume (coded side)
+qc_grade,integer,optional,,"spec curve, sensitivity",final visual QC grade 0/1/2
+dental_D,integer,optional,,H1 sensitivity,"rubric failure code D (dental/metal artefact) recorded, 0/1"
+t1_artifact,integer,optional,,H1 sensitivity,PennLINC T1w QC 'artifact'
+epoch,character,optional,,H1 sensitivity,'early' (QSM_SWI_1.5mm) or 'late' protocol epoch (from the encrypted key)
+f0_cluster,character,optional,,H1 sensitivity,ImagingFrequency cluster label 1/2/3 (from the encrypted key)
+sw_class,character,optional,,reported,software-version equality class
+dx_psychosis,integer,optional,,"sensitivity, spec curve",participants.tsv dx_psychosis (threshold psychosis)
+dx_mdd,integer,optional,,sensitivity,participants.tsv dx_mdd
+dx_moodnos,integer,optional,,sensitivity,participants.tsv dx_moodnos
+stim_prescribed,integer,optional,,sensitivity,"same-session substance_othr_010 in {1,2} and substance_othr_011 == 1"
+tanner_boy_1,numeric,optional,,sensitivity,"Tanner/PDS self-report items at the same session (boys 1-5; girls 1,2,3,5,6); code 5 = don't know"
+tanner_boy_2,numeric,optional,,sensitivity,
+tanner_boy_3,numeric,optional,,sensitivity,
+tanner_boy_4,numeric,optional,,sensitivity,
+tanner_boy_5,numeric,optional,,sensitivity,
+tanner_girl_1,numeric,optional,,sensitivity,
+tanner_girl_2,numeric,optional,,sensitivity,
+tanner_girl_3,numeric,optional,,sensitivity,menarche yes = 1 / no = 0
+tanner_girl_5,numeric,optional,,sensitivity,
+tanner_girl_6,numeric,optional,,sensitivity,
+PRIME_items12,numeric,optional,score,S2 sensitivity,"sum of prime_1 ... prime_12 (duration items excluded), same session"
+CPT_fp,numeric,optional,count,S2 sensitivity,"short_penn_continuous_performance_test cnb_cptnl_total_fp, same session"
+RSAS_total,numeric,optional,score,X6,"rsas_total_score, same session"
+dwi_FD,numeric,optional,mm,H1 sensitivity,PennLINC DWI mean FD of the same-session DWI
+chi_DN_L,numeric,optional,ppb,S3 sensitivity,left dentate chi (laterality control)
+twICVF_pSCP_R_peak,numeric,optional,fraction,S3 sensitivity,peak-aligned (shift <= 5 nodes) tw-ICVF over the retained nodes
+t1t2_pSCP_R,numeric,optional,ratio,S3 sensitivity,calibrated T1w/T2w ratio over the retained pSCP_R nodes (real-ID DWI side)
+afq_round1_list,integer,optional,,S3 sensitivity,1 if the subject is on the 20-subject round-1 AFQ-QC list (conservative sample drops them)
+chi_SNonly,numeric,optional,ppb,H1 descriptive,CIT168 SNc+SNr complex (the G3 fallback ROI; descriptive in the SN-VTA branch)
+chi_VTAPBP,numeric,optional,ppb,H1 descriptive,CIT168 VTA+PBP (descriptive)

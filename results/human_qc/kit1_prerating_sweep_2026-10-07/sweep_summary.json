@@ -1,0 +1,39 @@
+{
+ "label": "POST HOC pre-rating sweep (no human rating used); review item M3",
+ "n_random_scenarios": 300,
+ "label_counts_random": {
+  "B": 300
+ },
+ "A_any_random": false,
+ "n_range_random": [
+  69,
+  90
+ ],
+ "beta_range_random": [
+  3.29197316822756,
+  8.85267449235117
+ ],
+ "pB_fixed_max_random": 0.00201770294696649,
+ "extremes": [
+  {
+   "s": "all_kit_pass",
+   "n": 90,
+   "beta": 5.92761303356282,
+   "se": 3.09901753127382,
+   "pB_fixed": 0.000104300035121958,
+   "pB_rederived": 3.14578455269976e-05,
+   "A": false,
+   "label": "B"
+  },
+  {
+   "s": "all_kit_fail",
+   "n": 58,
+   "beta": 7.588860056306,
+   "se": 3.52239061948068,
+   "pB_fixed": 0.000157864275503091,
+   "pB_rederived": 0.000144057425266329,
+   "A": false,
+   "label": "B"
+  }
+ ]
+}

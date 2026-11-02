@@ -1,0 +1,20 @@
+{
+  "title": "LEAD-chi: analysis code, protocol and QC grades for a procedurally blinded QSM study of midbrain susceptibility in psychosis-spectrum youth",
+  "upload_type": "software",
+  "description": "Analysis code (processing, blinding, QC, registered analysis, exploratory and post hoc validation, human visual-QC kits, figure scripts), the internally SHA-256 time-stamped protocol with all amendments and the deviation log, compact result files, and the AI and human visual-QC grades for a secondary QSM analysis (QSMxT v9.22.0) of substantia nigra-ventral tegmental area susceptibility in psychosis-spectrum youth with ADHD modeled factorially (2 x 2), using OpenNeuro ds007116. Code was written with Claude Code (Anthropic) under the first author's direction.",
+  "creators": [
+    {"name": "Velioglu, Halil Aziz", "affiliation": "Istanbul Medipol University", "orcid": "0000-0002-2306-5937"},
+    {"name": "Altunc, Ali Tarik"},
+    {"name": "Celik, Murat Can"},
+    {"name": "Aslan, Dogukan"},
+    {"name": "Cicek, Yusuf"},
+    {"name": "Sakiroglu, Mehmet Akif"}
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": ["quantitative susceptibility mapping", "QSM", "substantia nigra", "ventral tegmental area", "psychosis spectrum", "ADHD", "blinded analysis", "OpenNeuro ds007116"],
+  "related_identifiers": [
+    {"identifier": "https://openneuro.org/datasets/ds007116", "relation": "isDerivedFrom", "resource_type": "dataset"}
+  ],
+  "notes": "Protocol, documentation and result files are licensed CC BY 4.0 (LICENSE-docs); code is MIT. Article: Velioglu HA, Altunc AT, Celik MC, Aslan D, Cicek Y, Sakiroglu MA. Midbrain susceptibility in psychosis-spectrum youth: a procedurally blinded quantitative susceptibility mapping study with ADHD modeled factorially. (submitted)"
+}

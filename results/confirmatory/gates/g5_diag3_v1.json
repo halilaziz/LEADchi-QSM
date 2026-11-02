@@ -1,0 +1,22 @@
+{
+ "n": 180,
+ "image_quality_gross": 20,
+ "registered_cwm080": {
+  "fail_total": 83,
+  "fail_share_total": 0.46111111111111114,
+  "fail_non_gross": 63,
+  "fail_share_non_gross": 0.39375
+ },
+ "cwm075": {
+  "fail_total": 49,
+  "fail_share_total": 0.2722222222222222,
+  "fail_non_gross": 29,
+  "fail_share_non_gross": 0.18125
+ },
+ "no_cwm": {
+  "fail_total": 44,
+  "fail_share_total": 0.24444444444444444,
+  "fail_non_gross": 24,
+  "fail_share_non_gross": 0.15
+ }
+}

@@ -1,0 +1,3 @@
+qsmxt qsmxt 9.22.0
+qsm-core: v0.38.0 (23cb68564be8)
+deep-learning models: enabled tarball_sha256 6593438c029749b5e3fb5c78ce485f6f5e282545b1892832cf30539b0326ca49

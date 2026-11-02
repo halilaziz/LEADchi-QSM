@@ -1,0 +1,34 @@
+PASS  rate.html item list (100) == kit2_key order (100)
+PASS  rating_sheet_blank.csv (100) == kit2_key order
+PASS  orders are 1..100
+PASS  image folders hold exactly the kit-2 IDs (gross 100, placement 100)
+PASS  forced-review flag identical in rate.html, sheet, key and rating_pass1_blank_template.csv (kit-1 source)
+PASS  kit-2 IDs unique, format h + 6 hex, none used in kit 1
+PASS  79 new items = the 119 AI grade-0/1 sessions minus the 40 in kit 1
+PASS  21 repeats, each of a distinct kit-1 primary item with the same QC ID
+PASS  repeat strata: 11 kit-1 AI-fail + 10 kit-1 AI-pass
+PASS  kit-2 new (79) + kit-1 primaries (101) = all 180 AI-graded sessions, disjoint
+PASS  key AI grade/placement equal grades_final.csv
+PASS  repeats spread: per block of 20 = [5, 3, 5, 3, 5]
+PASS  selection, kit IDs and order reproduce from seed 20261028
+PASS  no QC ID in rater-facing text files (3 files)
+PASS  no subject code in rater-facing text files
+PASS  no participant/session label in rater-facing text files
+PASS  no AI-grade, item-type or key field in rater-facing text files
+PASS  no kit-1 ID in rater-facing text files
+PASS  README_rater.md states no composition count (79 / 21 / 11 / 89)
+PASS  kit-2 PNGs carry no text metadata
+PASS  kit-2 PNGs equal their archive montages outside the title band (rows 0-35); 200 checked; last changed row 29
+PASS  every changed row lies inside the blanked title band recorded in build_log_kit2.json
+PASS  rate.html equals kit-1 rate.html apart from the item list and storage tag
+PASS  storage tag differs from kit 1 (df057f675756 vs 23881efbec27); no network reference in rate.html
+PASS  archive SHA256SUMS verifies (360 PNGs, 0 mismatches)
+PASS  all 200 kit-2 source montages equal build_log src_sha256 and the archive SHA256SUMS
+PASS  all 200 kit-2 images equal build_log dst_sha256
+PASS  kit2_key.csv SHA-256 96d6b6342afe79451483f58c8a6437f4595858cfb5b739410b41aac47994631a equals build log
+PASS  zip holds exactly rater_kit2/ (203 files), byte-identical
+PASS  zip holds no key, analysis, plan, hash, e-mail or coordinator file
+PASS  make_zip_kit2.py rebuilds the zip byte-identically
+INFO  zip SHA-256 2ed0f8fefeea5d9bd2df2cf35b39fb43c6a6349adc504888e2bf7bf18b28b461
+INFO  kit2_key.csv SHA-256 96d6b6342afe79451483f58c8a6437f4595858cfb5b739410b41aac47994631a
+ALL CHECKS PASSED

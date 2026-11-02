@@ -1,0 +1,11 @@
+2026-10-28T20:21:04Z  LEAD-chi run_all.R start; input mirror/unlocked/merged_qsmxt_primary_SNVTA.csv
+2026-10-28T20:21:04Z  branch: engine=qsmxt pipeline=primary roi=SNVTA
+2026-10-28T20:21:04Z  samples: first-usable 22 / 16 / 17 / 25 (total 80); S2 15 / 11 / 17 / 22 (total 65); S3 0 / 0 / 0 / 0 (total 0); T1 occ1 9 / 2 / 5 / 10 (total 26)
+2026-10-28T20:21:04Z  H1
+2026-10-28T20:21:14Z  S1-S3
+2026-10-28T20:21:14Z  T1
+2026-10-28T20:21:33Z  robustness: sensitivity battery
+2026-10-28T20:21:33Z  ERROR in sensitivity strict QC (visual grade 0 only): rank-deficient design: ADHD_e, ns(age, df = 3)3, sex_e, race31, race32, scale(roi_vol), scale(Q_phase), PS_e:ADHD_e
+2026-10-28T20:21:34Z  robustness: specification curve
+2026-10-28T20:21:46Z  robustness: pooled all-session and S2 all-session models
+2026-10-28T20:21:47Z  done: H1 final outcome B; runtime 0.72 min

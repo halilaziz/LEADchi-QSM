@@ -1,0 +1,9 @@
+2026-10-05T12:44:48Z  LEAD-chi run_all.R start; input /path/to/Penn_LEAD/LEADchi/mirror/unlocked/merged_qsmxt_primary_SNVTA.csv
+2026-10-05T12:44:48Z  branch: engine=qsmxt pipeline=primary roi=SNVTA
+2026-10-05T12:44:49Z  samples: first-usable 22 / 16 / 17 / 25 (total 80); S2 15 / 11 / 17 / 22 (total 65); S3 0 / 0 / 0 / 0 (total 0); T1 occ1 9 / 2 / 5 / 10 (total 26)
+2026-10-05T12:44:49Z  H1
+2026-10-05T12:44:58Z  S1-S3
+Error in quantile.default(x[!outside], knots, names = FALSE) : 
+  missing values and NaN's not allowed if 'na.rm' is FALSE
+Calls: run_s3 ... model.frame.default -> eval -> eval -> ns -> quantile -> quantile.default
+Execution halted

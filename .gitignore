@@ -1,0 +1,23 @@
+# OS / editor
+.DS_Store
+*.swp
+.vscode/
+.idea/
+# Python / R caches
+__pycache__/
+*.pyc
+.Rhistory
+.RData
+.Rproj.user/
+# Never commit imaging data, keys or encrypted files
+*.nii
+*.nii.gz
+*.mgz
+*.pem
+*.key
+*.enc
+*.zip
+# Local outputs of re-runs
+/work/
+/scratch/
+results/**/tmp/

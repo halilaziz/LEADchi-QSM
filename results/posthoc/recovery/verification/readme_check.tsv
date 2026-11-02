@@ -1,0 +1,81 @@
+label	printed	recomputed	rounded	status
+table k (FU) L=-5 mean	0.470	0.4698109960249999	0.470	OK
+table k (FU) L=-5 SD	0.088	0.08796548650263314	0.088	OK
+table k (FU) L=-5 median	0.474	0.473542213	0.474	OK
+table k (FU) L=-5 min	0.16	0.16090927200000066	0.16	OK
+table k (FU) L=-5 max	0.96	0.9597381580000004	0.96	OK
+table k (FU) L=-10 mean	0.467	0.4671466046500001	0.467	OK
+table k (FU) L=-10 SD	0.059	0.05934108487701091	0.059	OK
+table k (FU) L=-10 median	0.472	0.47216186500000035	0.472	OK
+table k (FU) L=-10 min	0.30	0.30187988200000004	0.30	OK
+table k (FU) L=-10 max	0.74	0.7446651460000006	0.74	OK
+table k (FU) L=-14.24 mean	0.473	0.4728257849016854	0.473	OK
+table k (FU) L=-14.24 SD	0.052	0.05155948954984628	0.052	OK
+table k (FU) L=-14.24 median	0.473	0.4733352180477528	0.473	OK
+table k (FU) L=-14.24 min	0.37	0.3651568061797757	0.37	OK
+table k (FU) L=-14.24 max	0.68	0.6827884845505616	0.68	OK
+table k (FU) L=-20 mean	0.469	0.46919192164374995	0.469	OK
+table k (FU) L=-20 SD	0.047	0.04679650337295623	0.047	OK
+table k (FU) L=-20 median	0.470	0.46954460125000014	0.470	OK
+table k (FU) L=-20 min	0.37	0.3685279845	0.37	OK
+table k (FU) L=-20 max	0.63	0.6319047925	0.63	OK
+table k (FU) L=+10 mean	0.477	0.47676044584999994	0.477	OK
+table k (FU) L=+10 SD	0.059	0.058496528087032415	0.058	MISMATCH
+table k (FU) L=+10 median	0.480	0.47953300500000007	0.480	OK
+table k (FU) L=+10 min	0.33	0.3307529449999997	0.33	OK
+table k (FU) L=+10 max	0.70	0.6970264440000001	0.70	OK
+n per level (all sessions)	180	180	180	OK
+pooled slope	0.474	0.4740501879425916	0.474	OK
+pooled intercept	−0.05	-0.04796552647098551	-0.05	OK
+pooled R2	0.96	0.9616407395485311	0.96	OK
+pooled n	900	900	900	OK
+k~group PS est	+0.0006	0.0006279350287484893	0.0006	OK
+k~group PS CI lo	−0.021	-0.021016802868061842	-0.021	OK
+k~group PS CI hi	0.022	0.02227267292555882	0.022	OK
+k~group PS p	.95	0.9540245423763292	.95	OK
+k~group ADHD est	+0.003	0.002898126832110881	0.003	OK
+k~group ADHD p	.79	0.7899999269172492	.79	OK
+cell means min	0.46	0.4624652854634832	0.46	OK
+cell means max	0.49	0.4854990981179775	0.49	OK
+Spearman rho dice_min	.02	0.02440225035161744	.02	OK
+Spearman rho motion_gsr	−.09	-0.09045944678856073	-.09	OK
+Spearman rho roi_vol	−.01	-0.0074777308954524155	-.01	OK
+Spearman rho Q_phase	.04	0.04032139914256531	.04	OK
+Spearman rho age	.26	0.25823087473497497	.26	OK
+Spearman p age	.02	0.02073857347731463	.02	OK
+ref shift (L=-14.24 mean)	+0.006	0.006468531111111102	0.006	OK
+THAL shift L=-14.24	−0.17	-0.1736834839444444	-0.17	OK
+GP shift (L=-14.24 mean)	+0.18	0.18202855866666645	0.18	OK
+GP SD (L=-14.24)	1.6	1.5646818440390156	1.6	OK
+k multiplier	0.47	0.4728257849016854	0.47	OK
+beta_PS observed	+4.96	4.962801544096132	4.96	OK
+SE observed	3.125	3.125080404308326	3.125	OK
+df observed	68	68	68	OK
+D=-5 expected shift	−2.36	-2.364128924508427	-2.36	OK
+D=-5 one-sided p	.011	0.010988601149731532	.011	OK
+D=-10 expected shift	−4.73	-4.728257849016854	-4.73	OK
+D=-10 one-sided p	.0014	0.0014030708993288499	.0014	OK
+D=-14.24 expected shift	−6.73	-6.733039177	-6.73	OK
+D=-14.24 one-sided p	.0002	0.00018836372620140602	.0002	OK
+D=-20 expected shift	−9.46	-9.456515698033709	-9.46	OK
+D=-20 one-sided p	9e-6	9.00453049802467e-06	9e-6	OK
+true-scale k	0.473	0.4728257849016854	0.473	OK
+B bound observed	−6.13	-6.131804643483686	-6.13	OK
+B bound true	−13.0	-12.968422703001849	-13.0	OK
+one-sided 95% lower observed	−0.25	-0.24849591338940158	-0.25	OK
+one-sided 95% lower true	−0.53	-0.52555491118377	-0.53	OK
+two-sided 95% lower observed	−1.27	-1.2731993109213464	-1.27	OK
+two-sided 95% lower true	−2.7	-2.6927450904270853	-2.7	OK
+counterfactual L=-5.0 beta	+2.61	2.614261134208549	2.61	OK
+counterfactual L=-5.0 outcome	B	B	B	OK
+counterfactual L=-10.0 beta	+0.22	0.22412651139658823	0.22	OK
+counterfactual L=-10.0 outcome	B	B	B	OK
+counterfactual L=-14.24 beta	−1.80	-1.7977552976907534	-1.80	OK
+counterfactual L=-14.24 outcome	C	C	C	OK
+counterfactual L=-20.0 beta	−4.46	-4.458400154921755	-4.46	OK
+counterfactual L=-20.0 outcome	C	C	C	OK
+counterfactual L=10.0 beta	+9.78	9.77923006604423	9.78	OK
+counterfactual L=10.0 outcome	B	B	B	OK
+counterfactual +10 p_two	.003	0.0026394940974218887	.003	OK
+counterfactual +10 disconfirming	yes	True	True	OK
+MEDI k (caveat)	0.47	0.4728257849016854	0.47	OK

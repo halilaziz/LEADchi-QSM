@@ -1,0 +1,37 @@
+{
+  "written_utc": "2026-10-28T20:21:47Z",
+  "inputs": {
+    "roi_table": {
+      "path": "/path/to/Penn_LEAD/LEADchi/mirror/unlocked/merged_qsmxt_primary_SNVTA.csv",
+      "sha256": "f669bc6f41ab4e489abbd0a7c41949d3e5ccaba3e7f3c219d1bbebc3118df215"
+    },
+    "gates": {
+      "path": "/path/to/Penn_LEAD/LEADchi/mirror/gates/gates_preunlock.json",
+      "sha256": "dcf281b8002909de58566e2af6f75c7fede7319966e2b3412932c5fb33377157"
+    },
+    "multiverse": {
+      "path": "/path/to/Penn_LEAD/LEADchi/mirror/unlocked/multiverse_qsmxt_SNVTA.csv",
+      "sha256": "2e5b64b0a9d7d4ccea91a0c123e0735679ac3c10fc42ce0cdd41d7307d7db492"
+    }
+  },
+  "code": {
+    "R/constants.R": "3ad9e18e3cc7b18094b941b887275ec31c5ce5bba821b93eba099574c3ec98e9",
+    "R/utils.R": "722bfec5b078702b094792c2198a38d9e8687948c13054b8e73ee3005df38636",
+    "R/design.R": "c312c4f52c574a0f1675a040a77ad012f675dd3aebf2a4bf26321b9db89b63d6",
+    "R/plausibility.R": "c2decfec7ee5b7be0e1f389b1a0d0b0672fec52fae931ae56e1dd2ad5f0ac6b4",
+    "R/m1.R": "75173d15662564a8a8a12ebecd989cfd90100742f6ce5cb2ca2fa2046c78257d",
+    "R/secondary.R": "086d5c2b840064915ec2094613c18566aec3d4d0bd93f496feb55e3a1ed4d8ac",
+    "R/t1.R": "015390065a6f1ca847a38c58419e55e3636ff1b8d3c03842477cfd923e2aa74f",
+    "R/sensitivity.R": "18bb7bf0764fd8be5d20ae03e12a3d057e1f79e31e13ca00ad3f171ab213c105",
+    "R/spec_curve.R": "ee00f202bcbfa262058061c269757eda21061964a90a0ab113287a35f33923a7",
+    "R/report.R": "a166be836e67622b083bb6c695e7dc52ad7db0efe94a57ebd1cca6c9fee53a0e",
+    "schema/roi_table_schema.csv": "c6ba352220d4adeab9ac315eef33eea3ced5cbd6e2b92227cd688ccd27a0b826",
+    "schema/multiverse_schema.csv": "6b98ed6e544a84fdbed2419d9d20b1e0edafb36cfcfd930008757fb210831853",
+    "run_all.R": "435b86b82d36dba653a1f9c440352843e1d539766501af1837e0e03b15bde184"
+  },
+  "outputs": {
+    "results.json": "151ce558047deb659a7344678052e244afe53aa8d4f4e9bb0e83efa5166ee11e",
+    "report.md": "2955c6b7362176f871cdf083ec6d316cb01254e8d59f6d6af51fb742c8a3a63d",
+    "sessionInfo.txt": "44fe3b69d0feac49eae5baefea94540d470a5c0cbf658ef0e7fdeca2a626ab76"
+  }
+}

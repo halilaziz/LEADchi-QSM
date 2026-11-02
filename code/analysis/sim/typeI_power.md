@@ -1,0 +1,145 @@
+# LEAD-chi analysis code: Monte Carlo operating characteristics (synthetic outcomes, real design)
+
+- Run 2026-09-29T06:40:32Z UTC, R version 4.4.1 (2024-06-14); runtime 9.3 min; seed base 20260924.
+- Design: first-usable pre-QC sample 30 / 21 / 24 / 37 (total 112); S2 n = 83; S3 n = 108; T1 165 rows / 53 returners.
+- Errors N(0, 1) unless stated; delta in residual-SD units; outcome-B bound uses r_L = 0.70 (delta_B = 0.502) and sigma_B = min(sigma, Huber proposal-2 scale).
+- Every quantity is computed by the registered functions in R/ (fit_ols_hc3, huber_fit, h1_decide, k1_labels, fl_perm, s1_fit, s2_rhs, s3_fit, t1_core).
+- mc_se = binomial Monte Carlo standard error. This file is the authoritative source of the Q21 power figures.
+
+| block | scenario | quantity | estimate | mc_se | n_sim | reference |
+|---|---|---|---|---|---|---|
+| M1 | delta 0 (null) | P(two-sided p < .05) | 0.038 | 0.003 | 5000 | P(B) E2 v1.2: 0.740 |
+| M1 | delta 0 (null) | P(outcome A or A+B) | 0.017 | 0.002 | 5000 |  |
+| M1 | delta 0 (null) | P(outcome B or A+B) | 0.740 | 0.006 | 5000 |  |
+| M1 | delta 0 (null) | P(outcome C) | 0.243 | 0.006 | 5000 |  |
+| M1 | delta 0 (null) | P(disconfirming) | 0.021 | 0.002 | 5000 |  |
+| K1 | delta 0 (null) | P('PS effect') | 0.017 | 0.002 | 5000 |  |
+| K1 | delta 0 (null) | P('PS-specific') | 0.008 | 0.001 | 5000 |  |
+| K1 | delta 0 (null) | P('comorbid-concentrated') | 0.003 | 0.001 | 5000 |  |
+| K1 | delta 0 (null) | P(ADHD TOST +/-0.5 sigma_B success) | 0.471 | 0.007 | 5000 |  |
+| M1 | delta 0, skewed + heteroscedastic errors | P(two-sided p < .05) | 0.043 | 0.004 | 3000 | HC3 type I (E2 0.039-0.042) |
+| M1 | delta 0, skewed + heteroscedastic errors | P(outcome A or A+B) | 0.019 | 0.003 | 3000 |  |
+| M1 | delta 0, skewed + heteroscedastic errors | P(outcome B or A+B) | 0.676 | 0.009 | 3000 |  |
+| M1 | delta 0, skewed + heteroscedastic errors | P(outcome C) | 0.305 | 0.008 | 3000 |  |
+| M1 | delta 0, skewed + heteroscedastic errors | P(disconfirming) | 0.024 | 0.003 | 3000 |  |
+| K1 | delta 0, skewed + heteroscedastic errors | P('PS effect') | 0.019 | 0.002 | 3000 |  |
+| K1 | delta 0, skewed + heteroscedastic errors | P('PS-specific') | 0.007 | 0.001 | 3000 |  |
+| K1 | delta 0, skewed + heteroscedastic errors | P('comorbid-concentrated') | 0.003 | 0.001 | 3000 |  |
+| K1 | delta 0, skewed + heteroscedastic errors | P(ADHD TOST +/-0.5 sigma_B success) | 0.358 | 0.009 | 3000 |  |
+| M1 | delta -0.3 | P(two-sided p < .05) | 0.261 | 0.006 | 5000 |  |
+| M1 | delta -0.3 | P(outcome A or A+B) | 0.261 | 0.006 | 5000 |  |
+| M1 | delta -0.3 | P(outcome B or A+B) | 0.218 | 0.006 | 5000 |  |
+| M1 | delta -0.3 | P(outcome C) | 0.521 | 0.007 | 5000 |  |
+| M1 | delta -0.3 | P(disconfirming) | 0.000 | 0.000 | 5000 |  |
+| K1 | delta -0.3 | P('PS effect') | 0.257 | 0.006 | 5000 |  |
+| K1 | delta -0.3 | P('PS-specific') | 0.112 | 0.004 | 5000 |  |
+| K1 | delta -0.3 | P('comorbid-concentrated') | 0.042 | 0.003 | 5000 |  |
+| K1 | delta -0.3 | P(ADHD TOST +/-0.5 sigma_B success) | 0.470 | 0.007 | 5000 |  |
+| M1 | delta -0.4 | P(two-sided p < .05) | 0.438 | 0.007 | 5000 |  |
+| M1 | delta -0.4 | P(outcome A or A+B) | 0.438 | 0.007 | 5000 |  |
+| M1 | delta -0.4 | P(outcome B or A+B) | 0.106 | 0.004 | 5000 |  |
+| M1 | delta -0.4 | P(outcome C) | 0.455 | 0.007 | 5000 |  |
+| M1 | delta -0.4 | P(disconfirming) | 0.000 | 0.000 | 5000 |  |
+| K1 | delta -0.4 | P('PS effect') | 0.435 | 0.007 | 5000 |  |
+| K1 | delta -0.4 | P('PS-specific') | 0.200 | 0.006 | 5000 |  |
+| K1 | delta -0.4 | P('comorbid-concentrated') | 0.075 | 0.004 | 5000 |  |
+| K1 | delta -0.4 | P(ADHD TOST +/-0.5 sigma_B success) | 0.476 | 0.007 | 5000 |  |
+| M1 | delta -0.502 (= outcome-B bound, r_L 0.70) | P(two-sided p < .05) | 0.631 | 0.007 | 5000 | P(B) must be <= .05 |
+| M1 | delta -0.502 (= outcome-B bound, r_L 0.70) | P(outcome A or A+B) | 0.631 | 0.007 | 5000 |  |
+| M1 | delta -0.502 (= outcome-B bound, r_L 0.70) | P(outcome B or A+B) | 0.038 | 0.003 | 5000 |  |
+| M1 | delta -0.502 (= outcome-B bound, r_L 0.70) | P(outcome C) | 0.331 | 0.007 | 5000 |  |
+| M1 | delta -0.502 (= outcome-B bound, r_L 0.70) | P(disconfirming) | 0.000 | 0.000 | 5000 |  |
+| K1 | delta -0.502 (= outcome-B bound, r_L 0.70) | P('PS effect') | 0.628 | 0.007 | 5000 |  |
+| K1 | delta -0.502 (= outcome-B bound, r_L 0.70) | P('PS-specific') | 0.300 | 0.006 | 5000 |  |
+| K1 | delta -0.502 (= outcome-B bound, r_L 0.70) | P('comorbid-concentrated') | 0.096 | 0.004 | 5000 |  |
+| K1 | delta -0.502 (= outcome-B bound, r_L 0.70) | P(ADHD TOST +/-0.5 sigma_B success) | 0.491 | 0.007 | 5000 |  |
+| M1 | delta -0.6 | P(two-sided p < .05) | 0.795 | 0.006 | 5000 |  |
+| M1 | delta -0.6 | P(outcome A or A+B) | 0.795 | 0.006 | 5000 |  |
+| M1 | delta -0.6 | P(outcome B or A+B) | 0.013 | 0.002 | 5000 |  |
+| M1 | delta -0.6 | P(outcome C) | 0.193 | 0.006 | 5000 |  |
+| M1 | delta -0.6 | P(disconfirming) | 0.000 | 0.000 | 5000 |  |
+| K1 | delta -0.6 | P('PS effect') | 0.791 | 0.006 | 5000 |  |
+| K1 | delta -0.6 | P('PS-specific') | 0.361 | 0.007 | 5000 |  |
+| K1 | delta -0.6 | P('comorbid-concentrated') | 0.095 | 0.004 | 5000 |  |
+| K1 | delta -0.6 | P(ADHD TOST +/-0.5 sigma_B success) | 0.469 | 0.007 | 5000 |  |
+| M1 | comorbid only (PS-only 0, PS+ADHD -0.8) | P(two-sided p < .05) | 0.448 | 0.007 | 5000 |  |
+| M1 | comorbid only (PS-only 0, PS+ADHD -0.8) | P(outcome A or A+B) | 0.448 | 0.007 | 5000 |  |
+| M1 | comorbid only (PS-only 0, PS+ADHD -0.8) | P(outcome B or A+B) | 0.105 | 0.004 | 5000 |  |
+| M1 | comorbid only (PS-only 0, PS+ADHD -0.8) | P(outcome C) | 0.447 | 0.007 | 5000 |  |
+| M1 | comorbid only (PS-only 0, PS+ADHD -0.8) | P(disconfirming) | 0.000 | 0.000 | 5000 |  |
+| K1 | comorbid only (PS-only 0, PS+ADHD -0.8) | P('PS effect') | 0.356 | 0.007 | 5000 |  |
+| K1 | comorbid only (PS-only 0, PS+ADHD -0.8) | P('PS-specific') | 0.026 | 0.002 | 5000 |  |
+| K1 | comorbid only (PS-only 0, PS+ADHD -0.8) | P('comorbid-concentrated') | 0.376 | 0.007 | 5000 |  |
+| K1 | comorbid only (PS-only 0, PS+ADHD -0.8) | P(ADHD TOST +/-0.5 sigma_B success) | 0.095 | 0.004 | 5000 |  |
+| M1 | delta 0, two +/-6 SD dominant scans | P(two-sided p < .05) | 0.034 | 0.003 | 3000 | robustness of sigma_B |
+| M1 | delta 0, two +/-6 SD dominant scans | P(outcome A or A+B) | 0.019 | 0.002 | 3000 |  |
+| M1 | delta 0, two +/-6 SD dominant scans | P(outcome B or A+B) | 0.604 | 0.009 | 3000 |  |
+| M1 | delta 0, two +/-6 SD dominant scans | P(outcome C) | 0.377 | 0.009 | 3000 |  |
+| M1 | delta 0, two +/-6 SD dominant scans | P(disconfirming) | 0.015 | 0.002 | 3000 |  |
+| K1 | delta 0, two +/-6 SD dominant scans | P('PS effect') | 0.019 | 0.002 | 3000 |  |
+| K1 | delta 0, two +/-6 SD dominant scans | P('PS-specific') | 0.005 | 0.001 | 3000 |  |
+| K1 | delta 0, two +/-6 SD dominant scans | P('comorbid-concentrated') | 0.002 | 0.001 | 3000 |  |
+| K1 | delta 0, two +/-6 SD dominant scans | P(ADHD TOST +/-0.5 sigma_B success) | 0.214 | 0.007 | 3000 |  |
+| M1 | delta -0.502, two +/-6 SD dominant scans | P(two-sided p < .05) | 0.433 | 0.009 | 3000 | false B must stay near .05 |
+| M1 | delta -0.502, two +/-6 SD dominant scans | P(outcome A or A+B) | 0.433 | 0.009 | 3000 |  |
+| M1 | delta -0.502, two +/-6 SD dominant scans | P(outcome B or A+B) | 0.052 | 0.004 | 3000 |  |
+| M1 | delta -0.502, two +/-6 SD dominant scans | P(outcome C) | 0.515 | 0.009 | 3000 |  |
+| M1 | delta -0.502, two +/-6 SD dominant scans | P(disconfirming) | 0.000 | 0.000 | 3000 |  |
+| K1 | delta -0.502, two +/-6 SD dominant scans | P('PS effect') | 0.430 | 0.009 | 3000 |  |
+| K1 | delta -0.502, two +/-6 SD dominant scans | P('PS-specific') | 0.091 | 0.005 | 3000 |  |
+| K1 | delta -0.502, two +/-6 SD dominant scans | P('comorbid-concentrated') | 0.066 | 0.005 | 3000 |  |
+| K1 | delta -0.502, two +/-6 SD dominant scans | P(ADHD TOST +/-0.5 sigma_B success) | 0.218 | 0.008 | 3000 |  |
+| K3 | delta -0.6, no true drift, SD(dref) = 0.2 residual SD | P(trigger) | 0.004 | 0.001 | 2000 |  |
+| K3 | delta -0.6, no true drift, SD(dref) = 0.2 residual SD | P(A) before -> after K3 | 0.784 | 0.009 | 2000 | before K3: 0.785 |
+| K3 | delta -0.6, no true drift, SD(dref) = 0.5 residual SD | P(trigger) | 0.070 | 0.006 | 2000 |  |
+| K3 | delta -0.6, no true drift, SD(dref) = 0.5 residual SD | P(A) before -> after K3 | 0.756 | 0.010 | 2000 | before K3: 0.777 |
+| K3 | delta 0, no true drift, SD(dref) = 0.2 residual SD | P(trigger) | 0.021 | 0.003 | 2000 |  |
+| K3 | delta 0, no true drift, SD(dref) = 0.2 residual SD | P(B) before -> after K3 | 0.732 | 0.010 | 2000 | before K3: 0.734 |
+| K3 | delta 0, no true drift, SD(dref) = 0.5 residual SD | P(trigger) | 0.083 | 0.006 | 2000 |  |
+| K3 | delta 0, no true drift, SD(dref) = 0.5 residual SD | P(B) before -> after K3 | 0.721 | 0.010 | 2000 | before K3: 0.742 |
+| Freedman-Lane | delta 0 | P(FL p < .05), 999 permutations | 0.054 | 0.010 | 500 | should be ~ .05 |
+| Freedman-Lane | delta -0.6 | P(FL p < .05), 999 permutations | 0.840 | 0.016 | 500 |  |
+| S1 | null (rho 0.5) | P(p_L < .0167) | 0.015 | 0.004 | 1000 |  |
+| S1 | null (rho 0.5) | P(p_L < .05) | 0.036 | 0.006 | 1000 |  |
+| S1 | null (rho 0.5) | P('dissociation' label at .0167) | 0.003 | 0.002 | 1000 |  |
+| S1 | L = -0.9 (rho 0.5) | P(p_L < .0167) | 0.563 | 0.016 | 1000 |  |
+| S1 | L = -0.9 (rho 0.5) | P(p_L < .05) | 0.742 | 0.014 | 1000 |  |
+| S1 | L = -0.9 (rho 0.5) | P('dissociation' label at .0167) | 0.418 | 0.016 | 1000 |  |
+| S2 | partial r = 0.00 (n = 83, real PRIME/BDI/ARI) | P(p < .0167) | 0.013 | 0.002 | 3000 |  |
+| S2 | partial r = 0.00 (n = 83, real PRIME/BDI/ARI) | P(p < .025) | 0.020 | 0.003 | 3000 |  |
+| S2 | partial r = 0.00 (n = 83, real PRIME/BDI/ARI) | P(p < .05) | 0.039 | 0.004 | 3000 |  |
+| S2 | partial r = 0.25 (n = 83, real PRIME/BDI/ARI) | P(p < .0167) | 0.381 | 0.009 | 3000 |  |
+| S2 | partial r = 0.25 (n = 83, real PRIME/BDI/ARI) | P(p < .025) | 0.448 | 0.009 | 3000 |  |
+| S2 | partial r = 0.25 (n = 83, real PRIME/BDI/ARI) | P(p < .05) | 0.560 | 0.009 | 3000 |  |
+| S2 | partial r = 0.30 (n = 83, real PRIME/BDI/ARI) | P(p < .0167) | 0.555 | 0.009 | 3000 |  |
+| S2 | partial r = 0.30 (n = 83, real PRIME/BDI/ARI) | P(p < .025) | 0.616 | 0.009 | 3000 |  |
+| S2 | partial r = 0.30 (n = 83, real PRIME/BDI/ARI) | P(p < .05) | 0.725 | 0.008 | 3000 |  |
+| S3 | latent rho 0.0 (observed r 0.000), R2_x 0.0 (n = 108) | P(p < .0167) | 0.009 | 0.002 | 3000 |  |
+| S3 | latent rho 0.0 (observed r 0.000), R2_x 0.0 (n = 108) | P(p < .025) | 0.017 | 0.002 | 3000 |  |
+| S3 | latent rho 0.0 (observed r 0.000), R2_x 0.0 (n = 108) | P(p < .05) | 0.035 | 0.003 | 3000 |  |
+| S3 | latent rho 0.4 (observed r 0.248), R2_x 0.0 (n = 108) | P(p < .0167) | 0.384 | 0.009 | 3000 |  |
+| S3 | latent rho 0.4 (observed r 0.248), R2_x 0.0 (n = 108) | P(p < .025) | 0.455 | 0.009 | 3000 |  |
+| S3 | latent rho 0.4 (observed r 0.248), R2_x 0.0 (n = 108) | P(p < .05) | 0.584 | 0.009 | 3000 |  |
+| S3 | latent rho 0.4 (observed r 0.248), R2_x 0.3 (n = 108) | P(p < .0167) | 0.268 | 0.008 | 3000 |  |
+| S3 | latent rho 0.4 (observed r 0.248), R2_x 0.3 (n = 108) | P(p < .025) | 0.319 | 0.009 | 3000 |  |
+| S3 | latent rho 0.4 (observed r 0.248), R2_x 0.3 (n = 108) | P(p < .05) | 0.435 | 0.009 | 3000 |  |
+| S3 | latent rho 0.4 (observed r 0.248), R2_x 0.5 (n = 108) | P(p < .0167) | 0.159 | 0.007 | 3000 |  |
+| S3 | latent rho 0.4 (observed r 0.248), R2_x 0.5 (n = 108) | P(p < .025) | 0.207 | 0.007 | 3000 |  |
+| S3 | latent rho 0.4 (observed r 0.248), R2_x 0.5 (n = 108) | P(p < .05) | 0.300 | 0.008 | 3000 |  |
+| S3 | latent rho 0.5 (observed r 0.310), R2_x 0.0 (n = 108) | P(p < .0167) | 0.634 | 0.009 | 3000 |  |
+| S3 | latent rho 0.5 (observed r 0.310), R2_x 0.0 (n = 108) | P(p < .025) | 0.698 | 0.008 | 3000 |  |
+| S3 | latent rho 0.5 (observed r 0.310), R2_x 0.0 (n = 108) | P(p < .05) | 0.797 | 0.007 | 3000 |  |
+| S3 | latent rho 0.5 (observed r 0.310), R2_x 0.3 (n = 108) | P(p < .0167) | 0.421 | 0.009 | 3000 |  |
+| S3 | latent rho 0.5 (observed r 0.310), R2_x 0.3 (n = 108) | P(p < .025) | 0.489 | 0.009 | 3000 |  |
+| S3 | latent rho 0.5 (observed r 0.310), R2_x 0.3 (n = 108) | P(p < .05) | 0.618 | 0.009 | 3000 |  |
+| S3 | latent rho 0.5 (observed r 0.310), R2_x 0.5 (n = 108) | P(p < .0167) | 0.283 | 0.008 | 3000 |  |
+| S3 | latent rho 0.5 (observed r 0.310), R2_x 0.5 (n = 108) | P(p < .025) | 0.343 | 0.009 | 3000 |  |
+| S3 | latent rho 0.5 (observed r 0.310), R2_x 0.5 (n = 108) | P(p < .05) | 0.465 | 0.009 | 3000 |  |
+| T1 | true beta(PS x occ) = 0.4, PS -0.5 total SD, ICC 0.7 | P(reject H0: beta >= 0.4), containment df (registered) | 0.056 | 0.007 | 1000 | should be <= .05 |
+| T1 | true beta(PS x occ) = 0.4, PS -0.5 total SD, ICC 0.7 | P(reject | outcome A at occasion 0) | 0.028 | 0.007 | 615 | P(A) = 0.615 |
+| T1 | true beta(PS x occ) = 0, PS -0.5 total SD, ICC 0.7 | P(reject H0: beta >= 0.4), containment df (registered) | 0.611 | 0.015 | 1000 |  |
+| T1 | true beta(PS x occ) = 0, PS -0.5 total SD, ICC 0.7 | P(reject | outcome A at occasion 0) | 0.560 | 0.020 | 632 | P(A) = 0.632 |
+| T1 | true beta(PS x occ) = 0, PS -0.5 total SD, ICC 0.5 | P(reject H0: beta >= 0.4), containment df (registered) | 0.460 | 0.022 | 500 |  |
+| T1 | true beta(PS x occ) = 0, PS -0.5 total SD, ICC 0.5 | P(reject | outcome A at occasion 0) | 0.362 | 0.027 | 307 | P(A) = 0.614 |
+| T1 | true beta(PS x occ) = 0, PS -0.5 total SD, ICC 0.8 | P(reject H0: beta >= 0.4), containment df (registered) | 0.702 | 0.020 | 500 |  |
+| T1 | true beta(PS x occ) = 0, PS -0.5 total SD, ICC 0.8 | P(reject | outcome A at occasion 0) | 0.688 | 0.025 | 337 | P(A) = 0.674 |

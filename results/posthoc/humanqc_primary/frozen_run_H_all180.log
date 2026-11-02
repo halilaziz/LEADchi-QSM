@@ -1,0 +1,13 @@
+2026-10-28T20:21:04Z  LEAD-chi run_all.R start; input results_posthoc/humanqc_primary/input/merged_H_all180.csv
+2026-10-28T20:21:04Z  branch: engine=qsmxt pipeline=primary roi=SNVTA
+2026-10-28T20:21:04Z  samples: first-usable 23 / 18 / 17 / 27 (total 85); S2 15 / 13 / 17 / 25 (total 70); S3 0 / 0 / 0 / 0 (total 0); T1 occ1 14 / 4 / 5 / 8 (total 31)
+2026-10-28T20:21:04Z  H1
+2026-10-28T20:21:14Z  S1-S3
+2026-10-28T20:21:14Z  T1
+2026-10-28T20:21:34Z  warning in lmer Nelder_Mead: unable to evaluate scaled gradient
+2026-10-28T20:21:34Z  warning in lmer Nelder_Mead: Model failed to converge: degenerate  Hessian with 1 negative eigenvalues
+  See ?lme4::convergence and ?lme4::troubleshooting.
+2026-10-28T20:21:34Z  robustness: sensitivity battery
+2026-10-28T20:21:34Z  robustness: specification curve
+2026-10-28T20:22:06Z  robustness: pooled all-session and S2 all-session models
+2026-10-28T20:22:07Z  done: H1 final outcome B; runtime 1.06 min

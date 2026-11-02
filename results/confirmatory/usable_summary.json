@@ -1,0 +1,69 @@
+{
+  "branches": {
+    "qsmxt_fallback_PDF_iLSQR_SNVTA": {
+      "fail_reason_counts": {
+        "b_t1w": 6,
+        "c_auto_grade2": 6,
+        "c_qc_grade": 62,
+        "cprime_plausibility": 2,
+        "d_placement": 1,
+        "e_g5": 45,
+        "e_not_registered": 1,
+        "no_qsm": 1
+      },
+      "returners_with_2_usable": 26,
+      "sessions": 181,
+      "subjects_first_usable": 80,
+      "usable": 107
+    },
+    "qsmxt_fallback_PDF_iLSQR_SN_only": {
+      "fail_reason_counts": {
+        "b_t1w": 6,
+        "c_auto_grade2": 6,
+        "c_qc_grade": 62,
+        "cprime_plausibility": 4,
+        "d_placement": 1,
+        "e_g5": 45,
+        "e_not_registered": 1,
+        "no_qsm": 1
+      },
+      "returners_with_2_usable": 26,
+      "sessions": 181,
+      "subjects_first_usable": 80,
+      "usable": 107
+    },
+    "qsmxt_primary_SNVTA": {
+      "fail_reason_counts": {
+        "b_t1w": 6,
+        "c_auto_grade2": 7,
+        "c_qc_grade": 62,
+        "cprime_plausibility": 8,
+        "d_placement": 1,
+        "e_g5": 45,
+        "e_not_registered": 1,
+        "no_qsm": 1
+      },
+      "returners_with_2_usable": 26,
+      "sessions": 181,
+      "subjects_first_usable": 80,
+      "usable": 107
+    },
+    "qsmxt_primary_SN_only": {
+      "fail_reason_counts": {
+        "b_t1w": 6,
+        "c_auto_grade2": 7,
+        "c_qc_grade": 62,
+        "cprime_plausibility": 7,
+        "d_placement": 1,
+        "e_g5": 45,
+        "e_not_registered": 1,
+        "no_qsm": 1
+      },
+      "returners_with_2_usable": 26,
+      "sessions": 181,
+      "subjects_first_usable": 80,
+      "usable": 107
+    }
+  },
+  "utc": "2026-10-05T07:00:22Z"
+}

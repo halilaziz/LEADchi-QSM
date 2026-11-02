@@ -1,0 +1,12 @@
+{
+  "engine": "qsmxt",
+  "n_pilot_ok": 10,
+  "pooled_medians_ppb": {
+    "chi_DN_R_raw": 32.947473525,
+    "chi_GP_raw": 92.244541165,
+    "chi_RN_raw": 34.863967895,
+    "chi_SNVTA_raw": 53.96607399
+  },
+  "sign_check": "pass",
+  "utc": "2026-10-02T09:46:05Z"
+}

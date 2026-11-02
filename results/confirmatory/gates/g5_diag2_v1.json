@@ -1,0 +1,19 @@
+{
+ "n": 180,
+ "gross_bs_lt_0.5": 20,
+ "marginal_bs_0.5_0.8": 17,
+ "cwm_lt_0.8_among_non_gross": 61,
+ "cwm_0.75_0.8_among_non_gross": 41,
+ "vdc_lt_0.8_among_non_gross": 12,
+ "fail_if_cwm_threshold_0.75": 46,
+ "fov_brain_frac_quantiles_gross": [
+  0.97617841,
+  0.9992776000000001,
+  1.0
+ ],
+ "fov_brain_frac_quantiles_nongross": [
+  0.9957346045000001,
+  0.999908535,
+  1.0
+ ]
+}

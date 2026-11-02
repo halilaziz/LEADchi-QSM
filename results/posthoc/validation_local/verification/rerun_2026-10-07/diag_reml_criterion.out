@@ -1,0 +1,3 @@
+chi_GP_csfref ~ age + sex_e              theta nlme 1.7250462837 verifier 1.7250828018 R-optimize 1.7250821518 | nll nlme 269.831886548720 verifier 269.831886547457
+chi_GP ~ age + sex_e                     theta nlme 1.5689770343 verifier 1.5690100633 R-optimize 1.5690107317 | nll nlme 264.551290211833 verifier 264.551290210574
+chi_PUT ~ age + sex_e + PS_e * ADHD_e    theta nlme 0.1313868393 verifier 0.1313868474 R-optimize 0.1313868543 | nll nlme 207.712278007774 verifier 207.712278007774

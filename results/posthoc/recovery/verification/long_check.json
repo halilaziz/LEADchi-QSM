@@ -1,0 +1,15 @@
+{
+ "rows_file": 900,
+ "rows_mine": 900,
+ "rows_matched": 900,
+ "maxabs_d": 2.4868995751603507e-14,
+ "maxabs_k": 1.5543122344752192e-15,
+ "maxabs_d_ref": 2.220446049250313e-16,
+ "maxabs_d_GP": 1.865174681370263e-14,
+ "maxabs_d_THAL": 4.884981308350689e-15,
+ "maxabs_first_usable": 0.0,
+ "maxabs_PS_e": 0.0,
+ "maxabs_ADHD_e": 0.0,
+ "maxabs_age": 0.0,
+ "cell_equal": true
+}

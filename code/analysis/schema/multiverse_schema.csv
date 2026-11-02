@@ -1,0 +1,11 @@
+column,type,required,unit,used_in,description
+participant_id,character,yes,,spec curve,real participant ID
+session_id,character,yes,,spec curve,real session label
+bf,character,yes,,spec curve,background removal: vsharp / pdf / lbv
+inv,character,yes,,spec curve,inversion: medi / ilsqr / rts
+chi_wb_mean,numeric,yes,ppb,spec curve,"primary ROI weighted mean, whole-brain reference, on the 9-node common support; NA if this variant failed plausibility"
+chi_wb_median,numeric,yes,ppb,spec curve,"primary ROI median (w >= 0.5), whole-brain reference"
+chi_other_wb_mean,numeric,yes,ppb,spec curve,"other CIT168 ROI (SN-only, or SN-VTA under the G3 fallback) weighted mean, whole-brain reference"
+chi_csf_mean,numeric,yes,ppb,spec curve,"as chi_wb_mean, CSF reference (NA if no valid CSF)"
+chi_csf_median,numeric,yes,ppb,spec curve,"as chi_wb_median, CSF reference"
+chi_other_csf_mean,numeric,yes,ppb,spec curve,"as chi_other_wb_mean, CSF reference"

@@ -1,0 +1,104 @@
+{
+  "n_auto_grade2": 10,
+  "n_forced_review": 15,
+  "n_ok": 177,
+  "n_sessions": 181,
+  "n_snonly_fail": 64,
+  "n_snvta_fail": 60,
+  "ref2_type_counts": {
+    "CSF": 93,
+    "CSF_erode1": 84,
+    "none": 0
+  },
+  "review_thresholds_q3_plus_3iqr": {
+    "f_imp": 0.0,
+    "pf_streak": 1.97772944,
+    "q_phase": -1.4450192975,
+    "resid_bg": 0.00720496,
+    "vent_sd": 45.25928307999999,
+    "wm_sd": 30.27632046
+  },
+  "robust_z": {
+    "CAU": {
+      "n": 170,
+      "n_absz_gt5": 0,
+      "sd_over_robust_sd": 1.0380414337674526
+    },
+    "DGM": {
+      "n": 173,
+      "n_absz_gt5": 0,
+      "sd_over_robust_sd": 1.1441022390920383
+    },
+    "DNIP_R": {
+      "n": 175,
+      "n_absz_gt5": 0,
+      "sd_over_robust_sd": 1.1744511408694056
+    },
+    "DN_R": {
+      "n": 175,
+      "n_absz_gt5": 0,
+      "sd_over_robust_sd": 1.0997730566336381
+    },
+    "GP": {
+      "n": 173,
+      "n_absz_gt5": 1,
+      "sd_over_robust_sd": 1.2796771373739266
+    },
+    "PUT": {
+      "n": 165,
+      "n_absz_gt5": 0,
+      "sd_over_robust_sd": 0.9877820943140222
+    },
+    "PUT_R": {
+      "n": 168,
+      "n_absz_gt5": 1,
+      "sd_over_robust_sd": 1.132774331734411
+    },
+    "RN": {
+      "n": 175,
+      "n_absz_gt5": 1,
+      "sd_over_robust_sd": 1.1392672473067396
+    },
+    "SNVTA": {
+      "n": 121,
+      "n_absz_gt5": 0,
+      "sd_over_robust_sd": 1.1426977080879197
+    },
+    "SNonly": {
+      "n": 117,
+      "n_absz_gt5": 0,
+      "sd_over_robust_sd": 1.1824904465980688
+    },
+    "STR": {
+      "n": 156,
+      "n_absz_gt5": 0,
+      "sd_over_robust_sd": 0.9742632642730711
+    },
+    "THAL": {
+      "n": 145,
+      "n_absz_gt5": 2,
+      "sd_over_robust_sd": 1.3499757285883593
+    }
+  },
+  "roi_fail_counts": {
+    "CAU": 7,
+    "DGM": 4,
+    "DNIP_R": 2,
+    "DN_R": 2,
+    "GP": 4,
+    "PUT": 12,
+    "PUT_R": 9,
+    "RN": 2,
+    "SNVTA": 56,
+    "SNonly": 60,
+    "STR": 21,
+    "THAL": 32
+  },
+  "status_counts": {
+    "mask_mismatch": 3,
+    "not_registered": 1,
+    "ok": 177
+  },
+  "utc": "2026-10-07T19:33:18Z",
+  "variant": "qsmxt_e2_lap_vsharp_rts"
+}

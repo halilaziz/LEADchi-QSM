@@ -1,0 +1,84 @@
+{
+ "n_checks": 11,
+ "all_pass": true,
+ "checks": [
+  {
+   "quantity": "M1 beta_PS",
+   "python": 4.962801544092231,
+   "R": 4.96280154409223,
+   "rel_diff": 1.7896714422470146e-16,
+   "pass": true
+  },
+  {
+   "quantity": "M1 SE_HC3",
+   "python": 3.1250804043083846,
+   "R": 3.12508040430837,
+   "rel_diff": 4.6894613990885265e-15,
+   "pass": true
+  },
+  {
+   "quantity": "M1 p_two",
+   "python": 0.11691305305983753,
+   "R": 0.116913053059836,
+   "rel_diff": 1.5265566588595902e-15,
+   "pass": true
+  },
+  {
+   "quantity": "K1 simple_PSonly_minus_TD",
+   "python": 8.157421485664203,
+   "R": 8.15742148566421,
+   "rel_diff": 8.710383998286744e-16,
+   "pass": true
+  },
+  {
+   "quantity": "K1 simple_PSADHD_minus_ADHDonly",
+   "python": 1.768181602520258,
+   "R": 1.76818160252024,
+   "rel_diff": 1.0171813219463501e-14,
+   "pass": true
+  },
+  {
+   "quantity": "S1 L",
+   "python": 0.6535501886833142,
+   "R": 0.653550188683316,
+   "rel_diff": 1.887379141862766e-15,
+   "pass": true
+  },
+  {
+   "quantity": "S1 SE(L)",
+   "python": 0.4726159993676924,
+   "R": 0.472615999367688,
+   "rel_diff": 4.385380947269368e-15,
+   "pass": true
+  },
+  {
+   "quantity": "S2 beta_PRIME",
+   "python": 3.9681861125705,
+   "R": 3.9681861125705,
+   "rel_diff": 0.0,
+   "pass": true
+  },
+  {
+   "quantity": "S2 SE",
+   "python": 2.3681945500567667,
+   "R": 2.3681945500567,
+   "rel_diff": 2.8128339994665774e-14,
+   "pass": true
+  },
+  {
+   "quantity": "T1 beta(PS x occ)",
+   "python": 0.1830788218217196,
+   "R": 0.183078786820779,
+   "rel_diff": 3.500094061803516e-08,
+   "pass": true
+  },
+  {
+   "quantity": "T1 SE",
+   "python": 0.35809147306465006,
+   "R": 0.358091490460109,
+   "rel_diff": 1.73954589621772e-08,
+   "pass": true
+  }
+ ],
+ "note": "same-AI re-implementation; resampling p values not re-computed; tolerance 1e-6 (OLS) / 1e-4 (mixed)"
+}

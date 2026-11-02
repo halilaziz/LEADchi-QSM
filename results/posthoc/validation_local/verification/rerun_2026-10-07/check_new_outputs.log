@@ -1,0 +1,5 @@
+checks: 144; outside tolerance: 0
+shortfall OLS rows: max rel diff 6.03e-12
+shortfall lme rows: max rel diff 6.01e-07; max abs diff 4.10e-08
+BH q values: max abs diff 7.85e-15
+smallest q: X2-6 0.0965; X2+regX-11 0.1768; X2-18 0.1370; X2+regX-23 0.1750

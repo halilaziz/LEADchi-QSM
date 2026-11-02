@@ -1,0 +1,1360 @@
+where,what,printed,recomputed,status
+L5,frozen restatement,4.963,4.962801544092231,ok
+L5,frozen restatement,3.125,3.125080404308372,ok
+L5,frozen restatement,.1169,0.1169130530598361,ok
+L5,frozen restatement,-6.1318,-6.131804643483676,ok
+L5,frozen restatement,3.550,3.5501826360308675,ok
+L5,frozen restatement,.0004,0.0003519184309817,ok
+L5,frozen restatement,80,80.0,ok
+L5,frozen restatement,22,22.0,ok
+L5,frozen restatement,16,16.0,ok
+L5,frozen restatement,17,17.0,ok
+L5,frozen restatement,25,25.0,ok
+L27,,4.9628,4.962801544092231,ok
+L27,,3.1251,3.125080404308372,ok
+L27,,4.9628,4.96280154409223,ok
+L27,,3.1251,3.12508040430837,ok
+L28,,-6.1318,-6.131804643483676,ok
+L28,,3.5502,3.5501826360308675,ok
+L28,,-6.1318,-6.13180464348368,ok
+L28,,3.550,3.55018263603087,ok
+L29,,3.7494,3.7494040722986752,ok
+L29,,4.2268,4.226813220955809,ok
+L29,,5.3368,5.336818130623765,ok
+L29,,3.749,3.74940407229867,ok
+L29,,4.227,4.22681322095581,ok
+L29,,5.337,5.33681813062376,ok
+L30,,.0019,0.0019274944678334,ok
+L30,,.0004,0.0004355580814158,ok
+L30,,.0003,0.0003313445355274,ok
+L30,,.0019,0.00192749446783345,ok
+L30,,.0004,0.000435558081415862,ok
+L30,,.0003,0.000331344535527426,ok
+L31,,1.0982,1.0982383933011586,ok
+L31,,1.098,1.09823839330116,ok
+L32,,0.3822,0.3821746396159274,ok
+L32,,2.3966,2.39657152824162,ok
+L32,,0.382,0.382174639615927,ok
+L32,,2.397,2.39657152824161,ok
+L65,SN-VTA total chi (input),4.96,4.962801544092231,ok
+L65,SN-VTA total chi (input),-1.27,-1.2731993109253406,ok
+L65,SN-VTA total chi (input),11.20,11.198802399109802,ok
+L65,SN-VTA total chi (input),3.13,3.125080404308372,ok
+L65,SN-VTA total chi (input),.1169,0.1169130530598361,ok
+L65,SN-VTA total chi (input),8.16,8.157421485664205,ok
+L65,SN-VTA total chi (input),0.21,0.2147326367130908,ok
+L65,SN-VTA total chi (input),16.10,16.10011033461532,ok
+L65,SN-VTA total chi (input),.0443,0.0442814831318877,ok
+L65,SN-VTA total chi (input),1.77,1.768181602520257,ok
+L65,SN-VTA total chi (input),-7.78,-7.781109875622662,ok
+L65,SN-VTA total chi (input),11.32,11.317473080663175,ok
+L65,SN-VTA total chi (input),.7129,0.7129119456090689,ok
+L66,SN-VTA R2* (input; s^-1),1.10,1.0982383933011586,ok
+L66,SN-VTA R2* (input; s^-1),0.08,0.0796621458138548,ok
+L66,SN-VTA R2* (input; s^-1),2.12,2.116814640788462,ok
+L66,SN-VTA R2* (input; s^-1),0.51,0.5104445533799656,ok
+L66,SN-VTA R2* (input; s^-1),.0350,0.0349890281690738,ok
+L66,SN-VTA R2* (input; s^-1),1.74,1.7381499569419625,ok
+L66,SN-VTA R2* (input; s^-1),0.13,0.1312255707407981,ok
+L66,SN-VTA R2* (input; s^-1),3.35,3.3450743431431267,ok
+L66,SN-VTA R2* (input; s^-1),.0344,0.034428238278341,ok
+L66,SN-VTA R2* (input; s^-1),0.46,0.4583268296603545,ok
+L66,SN-VTA R2* (input; s^-1),-0.94,-0.940490146770235,ok
+L66,SN-VTA R2* (input; s^-1),1.86,1.857143806090944,ok
+L66,SN-VTA R2* (input; s^-1),.5154,0.5154316698640713,ok
+L67,SN-VTA **chi_para**,4.49,4.485485431354802,ok
+L67,SN-VTA **chi_para**,0.23,0.2276863410515028,ok
+L67,SN-VTA **chi_para**,8.74,8.7432845216581,ok
+L67,SN-VTA **chi_para**,2.13,2.133733591759003,ok
+L67,SN-VTA **chi_para**,.0392,0.0392437157287078,ok
+L67,SN-VTA **chi_para**,.118,0.1177311471861234,ok
+L67,SN-VTA **chi_para**,7.25,7.250517233602109,ok
+L67,SN-VTA **chi_para**,1.04,1.0387338009618254,ok
+L67,SN-VTA **chi_para**,13.46,13.462300666242394,ok
+L67,SN-VTA **chi_para**,.0228,0.0228296757728315,ok
+L67,SN-VTA **chi_para**,1.72,1.720453629107495,ok
+L67,SN-VTA **chi_para**,-4.49,-4.494139317936705,ok
+L67,SN-VTA **chi_para**,7.94,7.935046576151695,ok
+L67,SN-VTA **chi_para**,.5825,0.582466850449729,ok
+L68,SN-VTA **chi_dia**,0.48,0.4773161127374259,ok
+L68,SN-VTA **chi_dia**,-2.39,-2.390548762180173,ok
+L68,SN-VTA **chi_dia**,3.35,3.3451809876550254,ok
+L68,SN-VTA **chi_dia**,1.44,1.437188437137252,ok
+L68,SN-VTA **chi_dia**,.7408,0.7408217477788732,ok
+L68,SN-VTA **chi_dia**,.889,0.888986097334648,ok
+L68,SN-VTA **chi_dia**,0.91,0.9069042520620936,ok
+L68,SN-VTA **chi_dia**,-2.28,-2.2796581022124,ok
+L68,SN-VTA **chi_dia**,4.09,4.093466606336587,ok
+L68,SN-VTA **chi_dia**,.5720,0.5719626089458805,ok
+L68,SN-VTA **chi_dia**,0.05,0.0477279734127584,ok
+L68,SN-VTA **chi_dia**,-4.42,-4.424934110912824,ok
+L68,SN-VTA **chi_dia**,4.52,4.520390057738341,ok
+L68,SN-VTA **chi_dia**,.9831,0.983073700416122,ok
+L69,SN-only total chi (input),5.87,5.874480539357985,ok
+L69,SN-only total chi (input),-0.73,-0.7310777476292563,ok
+L69,SN-only total chi (input),12.48,12.480038826345226,ok
+L69,SN-only total chi (input),3.31,3.310278693366606,ok
+L69,SN-only total chi (input),.0804,0.0804368423692378,ok
+L69,SN-only total chi (input),9.16,9.15900446881393,ok
+L69,SN-only total chi (input),0.60,0.6047895789542661,ok
+L69,SN-only total chi (input),17.71,17.71321935867359,ok
+L69,SN-only total chi (input),.0362,0.0362359472968518,ok
+L69,SN-only total chi (input),2.59,2.589956609902041,ok
+L69,SN-only total chi (input),-7.63,-7.631310085261592,ok
+L69,SN-only total chi (input),12.81,12.811223305065674,ok
+L69,SN-only total chi (input),.6148,0.6147516325092136,ok
+L70,SN-only R2* (input; s^-1),1.52,1.5184507571769916,ok
+L70,SN-only R2* (input; s^-1),0.38,0.3821792336838674,ok
+L70,SN-only R2* (input; s^-1),2.65,2.654722280670116,ok
+L70,SN-only R2* (input; s^-1),0.57,0.5694258154542824,ok
+L70,SN-only R2* (input; s^-1),.0096,0.0095656364549198,ok
+L70,SN-only R2* (input; s^-1),2.19,2.186205984483716,ok
+L70,SN-only R2* (input; s^-1),0.35,0.3466967579660831,ok
+L70,SN-only R2* (input; s^-1),4.03,4.025715211001349,ok
+L70,SN-only R2* (input; s^-1),.0206,0.0205511753117399,ok
+L70,SN-only R2* (input; s^-1),0.85,0.8506955298702672,ok
+L70,SN-only R2* (input; s^-1),-0.71,-0.7143223256513167,ok
+L70,SN-only R2* (input; s^-1),2.42,2.415713385391851,ok
+L70,SN-only R2* (input; s^-1),.2819,0.2818960921875011,ok
+L71,SN-only chi_para,5.71,5.7081358119727685,ok
+L71,SN-only chi_para,1.09,1.0943003335813568,ok
+L71,SN-only chi_para,10.32,10.32197129036418,ok
+L71,SN-only chi_para,2.31,2.312156007904062,ok
+L71,SN-only chi_para,.0161,0.0160769204460828,ok
+L71,SN-only chi_para,.096,0.0964615226764969,ok
+L71,SN-only chi_para,8.57,8.568929213391844,ok
+L71,SN-only chi_para,1.59,1.588876035448182,ok
+L71,SN-only chi_para,15.55,15.548982391335503,ok
+L71,SN-only chi_para,.0169,0.0168780059872527,ok
+L71,SN-only chi_para,2.85,2.8473424105536926,ok
+L71,SN-only chi_para,-3.87,-3.8683814567912016,ok
+L71,SN-only chi_para,9.56,9.563066277898589,ok
+L71,SN-only chi_para,.4005,0.4004968376907982,ok
+L72,SN-only chi_dia,0.17,0.166344727385213,ok
+L72,SN-only chi_dia,-2.85,-2.854901505188552,ok
+L72,SN-only chi_dia,3.19,3.187590959958978,ok
+L72,SN-only chi_dia,1.51,1.514053255847439,ok
+L72,SN-only chi_dia,.9128,0.9128383294803744,ok
+L72,SN-only chi_dia,.913,0.9128383294803744,ok
+L72,SN-only chi_dia,0.59,0.5900752554220818,ok
+L72,SN-only chi_dia,-2.64,-2.635129469563148,ok
+L72,SN-only chi_dia,3.82,3.815279980407312,ok
+L72,SN-only chi_dia,.7162,0.7161803503222579,ok
+L72,SN-only chi_dia,-0.26,-0.2573858006516557,ok
+L72,SN-only chi_dia,-5.10,-5.099720889758993,ok
+L72,SN-only chi_dia,4.58,4.584949288455682,ok
+L72,SN-only chi_dia,.9158,0.9158425511680888,ok
+L73,GP total chi (input),2.27,2.2744945877710974,ok
+L73,GP total chi (input),-3.59,-3.5854708334877268,ok
+L73,GP total chi (input),8.13,8.134460009029922,ok
+L73,GP total chi (input),2.94,2.9366357596256307,ok
+L73,GP total chi (input),.4413,0.441305842110627,ok
+L73,GP total chi (input),3.45,3.4462248228784205,ok
+L73,GP total chi (input),-5.19,-5.187475147302365,ok
+L73,GP total chi (input),12.08,12.079924793059206,ok
+L73,GP total chi (input),.4285,0.4285073924502595,ok
+L73,GP total chi (input),1.10,1.1027643526637745,ok
+L73,GP total chi (input),-6.95,-6.952251724941009,ok
+L73,GP total chi (input),9.16,9.157780430268556,ok
+L73,GP total chi (input),.7855,0.7855368618818394,ok
+L74,GP R2* (input; s^-1),0.24,0.2401043438814756,ok
+L74,GP R2* (input; s^-1),-1.09,-1.0865098601485184,ok
+L74,GP R2* (input; s^-1),1.57,1.5667185479114696,ok
+L74,GP R2* (input; s^-1),0.66,0.6648132592469956,ok
+L74,GP R2* (input; s^-1),.7191,0.7190990859158297,ok
+L74,GP R2* (input; s^-1),0.79,0.78607776044999,ok
+L74,GP R2* (input; s^-1),-1.10,-1.0975693133262736,ok
+L74,GP R2* (input; s^-1),2.67,2.669724834226254,ok
+L74,GP R2* (input; s^-1),.4079,0.4079049957865445,ok
+L74,GP R2* (input; s^-1),-0.31,-0.3058690726870387,ok
+L74,GP R2* (input; s^-1),-2.15,-2.1482129411289064,ok
+L74,GP R2* (input; s^-1),1.54,1.5364747957548288,ok
+L74,GP R2* (input; s^-1),.7414,0.7414433737063877,ok
+L75,GP chi_para,1.58,1.5753939068079554,ok
+L75,GP chi_para,-3.09,-3.091256013557047,ok
+L75,GP chi_para,6.24,6.242043827172958,ok
+L75,GP chi_para,2.34,2.3386231912020485,ok
+L75,GP chi_para,.5028,0.502822549119545,ok
+L75,GP chi_para,.889,0.888986097334648,ok
+L75,GP chi_para,3.16,3.157560879413653,ok
+L75,GP chi_para,-3.79,-3.792873414648419,ok
+L75,GP chi_para,10.11,10.107995173475723,ok
+L75,GP chi_para,.3679,0.367853733267515,ok
+L75,GP chi_para,-0.01,-0.006773065797742,ok
+L75,GP chi_para,-6.44,-6.435953667251583,ok
+L75,GP chi_para,6.42,6.422407535656098,ok
+L75,GP chi_para,.9983,0.9983288410355994,ok
+L76,GP chi_dia,0.70,0.6991006809631471,ok
+L76,GP chi_dia,-1.97,-1.967882714178084,ok
+L76,GP chi_dia,3.37,3.366084076104378,ok
+L76,GP chi_dia,1.34,1.336519628611916,ok
+L76,GP chi_dia,.6026,0.6026220508910557,ok
+L76,GP chi_dia,.889,0.888986097334648,ok
+L76,GP chi_dia,0.29,0.2886639434647811,ok
+L76,GP chi_dia,-3.26,-3.2598682510288106,ok
+L76,GP chi_dia,3.84,3.8371961379583728,ok
+L76,GP chi_dia,.8715,0.8715303418272212,ok
+L76,GP chi_dia,1.11,1.1095374184615132,ok
+L76,GP chi_dia,-2.59,-2.5935124452149525,ok
+L76,GP chi_dia,4.81,4.812587282137979,ok
+L76,GP chi_dia,.5519,0.5518938818560399,ok
+L81,cell means SNVTA chi_para,66.50,66.49561106267086,ok
+L81,cell means SNVTA chi_para,65.20,65.20079126245437,ok
+L81,cell means SNVTA chi_para,73.42,73.41508939595533,ok
+L81,cell means SNVTA chi_para,68.45,68.45270035731386,ok
+L82,cell means SNVTA chi_dia,-16.41,-16.413135747216323,ok
+L82,cell means SNVTA chi_dia,-14.34,-14.33914121245438,ok
+L82,cell means SNVTA chi_dia,-16.57,-16.573084732425936,ok
+L82,cell means SNVTA chi_dia,-14.18,-14.18061356531387,ok
+L83,cell means SNonly chi_para,71.63,71.63042220526377,ok
+L83,cell means SNonly chi_para,70.19,70.1946064534854,ok
+L83,cell means SNonly chi_para,79.86,79.86225996074924,ok
+L83,cell means SNonly chi_para,74.79,74.7860791643489,ok
+L84,cell means SNonly chi_dia,-13.90,-13.89939911026377,ok
+L84,cell means SNonly chi_dia,-11.68,-11.679905088485402,ok
+L84,cell means SNonly chi_dia,-14.30,-14.304950642513951,ok
+L84,cell means SNonly chi_dia,-11.75,-11.750144257548907,ok
+L85,cell means GP chi_para,100.54,100.54144498553086,ok
+L85,cell means GP chi_para,99.58,99.57866211636406,ok
+L85,cell means GP chi_para,106.71,106.7128591998218,ok
+L85,cell means GP chi_para,102.02,102.02156740980438,ok
+L86,cell means GP chi_dia,-10.30,-10.301728715530857,ok
+L86,cell means GP chi_dia,-9.09,-9.08889122761405,ok
+L86,cell means GP chi_dia,-9.62,-9.621130540410048,ok
+L86,cell means GP chi_dia,-8.30,-8.303046902604379,ok
+L78,The smallest q is .096 (SN-only chi_para); SN-VTA chi_para has q .118,.096,0.0964615226764969,ok
+L78,The smallest q is .096 (SN-only chi_para); SN-VTA chi_para has q .118,.118,0.1177311471861234,ok
+L78,An extended family of 18 tests (the same 6 beta_PS plus their 12 simple effects) gives a smallest q of .137,18,18.0,ok
+L78,An extended family of 18 tests (the same 6 beta_PS plus their 12 simple effects) gives a smallest q of .137,6,6.0,ok
+L78,An extended family of 18 tests (the same 6 beta_PS plus their 12 simple effects) gives a smallest q of .137,12,12.0,ok
+L78,An extended family of 18 tests (the same 6 beta_PS plus their 12 simple effects) gives a smallest q of .137,.137,0.1369780546369893,ok
+L56,X2 identity max error (floating-point noise),3.4e-14,1.4654943925052066e-14,ok (noise; both < 1e-13)
+L57,R2 cancellation ranges of beta / SE (floating-point noise),1.1e-14 / 3.6e-15,5.33e-15 / 1.69e-14,ok (noise; both < 1e-13)
+L57,"At R2 = 10 s^-1, 61 of 80 SN-VTA sessions (76%)",10,10.0,ok
+L57,"At R2 = 10 s^-1, 61 of 80 SN-VTA sessions (76%)",61,61.0,ok
+L57,"At R2 = 10 s^-1, 61 of 80 SN-VTA sessions (76%)",80,80.0,ok
+L57,"At R2 = 10 s^-1, 61 of 80 SN-VTA sessions (76%)",76,76.25,ok
+L58,"SN-VTA chi_para 4.485 [0.214, 8.757], p .0399; chi_dia 0.477 [-2.373, 3.328], p .7394",4.485,4.485302602279703,ok
+L58,"SN-VTA chi_para 4.485 [0.214, 8.757], p .0399; chi_dia 0.477 [-2.373, 3.328], p .7394",0.214,0.2136711032205624,ok
+L58,"SN-VTA chi_para 4.485 [0.214, 8.757], p .0399; chi_dia 0.477 [-2.373, 3.328], p .7394",8.757,8.756934101338844,ok
+L58,"SN-VTA chi_para 4.485 [0.214, 8.757], p .0399; chi_dia 0.477 [-2.373, 3.328], p .7394",.0399,0.039872273202935,ok
+L58,"SN-VTA chi_para 4.485 [0.214, 8.757], p .0399; chi_dia 0.477 [-2.373, 3.328], p .7394",0.477,0.4771332836623284,ok
+L58,"SN-VTA chi_para 4.485 [0.214, 8.757], p .0399; chi_dia 0.477 [-2.373, 3.328], p .7394",-2.373,-2.37343716799721,ok
+L58,"SN-VTA chi_para 4.485 [0.214, 8.757], p .0399; chi_dia 0.477 [-2.373, 3.328], p .7394",3.328,3.327703735321867,ok
+L58,"SN-VTA chi_para 4.485 [0.214, 8.757], p .0399; chi_dia 0.477 [-2.373, 3.328], p .7394",.7394,0.7394037113104532,ok
+L58,SN-only 5.708 / 0.166; GP 1.575 / 0.699,5.708,5.707952982897674,ok
+L58,SN-only 5.708 / 0.166; GP 1.575 / 0.699,0.166,0.1661618983101111,ok
+L58,SN-only 5.708 / 0.166; GP 1.575 / 0.699,1.575,1.5752110777328538,ok
+L58,SN-only 5.708 / 0.166; GP 1.575 / 0.699,0.699,0.6989178518880474,ok
+L59,At Dr = 274 they are met by every SN-VTA and SN-only session and by 78 of 80 GP sessions,274,274.0,ok
+L59,At Dr = 274 they are met by every SN-VTA and SN-only session and by 78 of 80 GP sessions,78,78.0,ok
+L59,At Dr = 274 they are met by every SN-VTA and SN-only session and by 78 of 80 GP sessions,80,80.0,ok
+L59,positivity met by every SN-VTA / SN-only session at Dr 274,all,"SNVTA viol 0, SNonly viol 0",ok
+L92,SNVTA Dr 137,6.49,6.4895700906634834,ok
+L92,SNVTA Dr 137,0.71,0.706367844233398,ok
+L92,SNVTA Dr 137,12.27,12.272772337093569,ok
+L92,SNVTA Dr 137,.0284,0.028417872796403,ok
+L92,SNVTA Dr 137,-1.53,-1.526768546571266,ok
+L92,SNVTA Dr 137,-5.22,-5.219602135823749,ok
+L92,SNVTA Dr 137,2.17,2.166065042681217,ok
+L92,SNVTA Dr 137,.4123,0.4122515673828761,ok
+L92,SNVTA Dr 137,10.42,10.42232372437211,ok
+L92,SNVTA Dr 137,.0219,0.0219061166721439,ok
+L92,SNVTA Dr 137,-2.26,-2.2649022387079154,ok
+L92,SNVTA Dr 137,.3358,0.3357579577792812,ok
+L92,SNVTA Dr 137,0,0.0,ok
+L92,SNVTA Dr 137,80,80.0,ok
+L93,SNVTA Dr 274,4.49,4.485485431354802,ok
+L93,SNVTA Dr 274,0.23,0.2276863410515028,ok
+L93,SNVTA Dr 274,8.74,8.7432845216581,ok
+L93,SNVTA Dr 274,.0392,0.0392437157287078,ok
+L93,SNVTA Dr 274,0.48,0.4773161127374259,ok
+L93,SNVTA Dr 274,-2.39,-2.390548762180173,ok
+L93,SNVTA Dr 274,3.35,3.3451809876550254,ok
+L93,SNVTA Dr 274,.7408,0.7408217477788732,ok
+L93,SNVTA Dr 274,7.25,7.250517233602109,ok
+L93,SNVTA Dr 274,.0228,0.0228296757728315,ok
+L93,SNVTA Dr 274,0.91,0.9069042520620936,ok
+L93,SNVTA Dr 274,.5720,0.5719626089458805,ok
+L93,SNVTA Dr 274,0,0.0,ok
+L93,SNVTA Dr 274,80,80.0,ok
+L94,SNVTA Dr 321,4.19,4.192052475007417,ok
+L94,SNVTA Dr 321,0.13,0.1342019841710078,ok
+L94,SNVTA Dr 321,8.25,8.249902965843827,ok
+L94,SNVTA Dr 321,.0431,0.0430845119713399,ok
+L94,SNVTA Dr 321,0.77,0.7707490690848051,ok
+L94,SNVTA Dr 321,-2.06,-2.0598153136743136,ok
+L94,SNVTA Dr 321,3.60,3.6013134518439243,ok
+L94,SNVTA Dr 321,.5887,0.588661167262988,ok
+L94,SNVTA Dr 321,6.79,6.78610942965758,ok
+L94,SNVTA Dr 321,.0236,0.0235503322892917,ok
+L94,SNVTA Dr 321,1.37,1.3713120560066103,ok
+L94,SNVTA Dr 321,.3876,0.3875782536168676,ok
+L94,SNVTA Dr 321,4,4.0,ok
+L94,SNVTA Dr 321,80,80.0,ok
+L95,SNVTA Dr 548,3.48,3.483443101700457,ok
+L95,SNVTA Dr 548,-0.13,-0.1306520536434976,ok
+L95,SNVTA Dr 548,7.10,7.097538257044411,ok
+L95,SNVTA Dr 548,.0586,0.058626481380534,ok
+L95,SNVTA Dr 548,1.48,1.479358442391771,ok
+L95,SNVTA Dr 548,-1.37,-1.3683742900780522,ok
+L95,SNVTA Dr 548,4.33,4.327091174861594,ok
+L95,SNVTA Dr 548,.3036,0.3035857665795449,ok
+L95,SNVTA Dr 548,5.66,5.664613988217102,ok
+L95,SNVTA Dr 548,.0271,0.0270679483556522,ok
+L95,SNVTA Dr 548,2.49,2.492807497447097,ok
+L95,SNVTA Dr 548,.1350,0.1349868412279512,ok
+L95,SNVTA Dr 548,68,68.0,ok
+L95,SNVTA Dr 548,80,80.0,ok
+L96,SNonly Dr 137,8.48,8.479031354266551,ok
+L96,SNonly Dr 137,2.13,2.133535940136839,ok
+L96,SNonly Dr 137,14.82,14.824526768396264,ok
+L96,SNonly Dr 137,.0096,0.0095716187643023,ok
+L96,SNonly Dr 137,-2.60,-2.604550814908566,ok
+L96,SNonly Dr 137,-6.60,-6.597821905518052,ok
+L96,SNonly Dr 137,1.39,1.38872027570092,ok
+L96,SNonly Dr 137,.1975,0.1974746802732735,ok
+L96,SNonly Dr 137,12.56,12.558356192376726,ok
+L96,SNonly Dr 137,.0154,0.0154153266928455,ok
+L96,SNonly Dr 137,-3.40,-3.3993517235627984,ok
+L96,SNonly Dr 137,.1798,0.1797711510234651,ok
+L96,SNonly Dr 137,0,0.0,ok
+L96,SNonly Dr 137,80,80.0,ok
+L97,SNonly Dr 274,5.71,5.7081358119727685,ok
+L97,SNonly Dr 274,1.09,1.0943003335813568,ok
+L97,SNonly Dr 274,10.32,10.32197129036418,ok
+L97,SNonly Dr 274,.0161,0.0160769204460828,ok
+L97,SNonly Dr 274,0.17,0.166344727385213,ok
+L97,SNonly Dr 274,-2.85,-2.854901505188552,ok
+L97,SNonly Dr 274,3.19,3.187590959958978,ok
+L97,SNonly Dr 274,.9128,0.9128383294803744,ok
+L97,SNonly Dr 274,8.57,8.568929213391844,ok
+L97,SNonly Dr 274,.0169,0.0168780059872527,ok
+L97,SNonly Dr 274,0.59,0.5900752554220818,ok
+L97,SNonly Dr 274,.7162,0.7161803503222579,ok
+L97,SNonly Dr 274,0,0.0,ok
+L97,SNonly Dr 274,80,80.0,ok
+L98,SNonly Dr 321,5.30,5.302428364970252,ok
+L98,SNonly Dr 321,0.92,0.9171733028217028,ok
+L98,SNonly Dr 321,9.69,9.687683427118802,ok
+L98,SNonly Dr 321,.0185,0.0185312018398812,ok
+L98,SNonly Dr 321,0.57,0.5720521743877278,ok
+L98,SNonly Dr 321,-2.40,-2.4030584189464497,ok
+L98,SNonly Dr 321,3.55,3.5471627677219058,ok
+L98,SNonly Dr 321,.7024,0.7024072305288158,ok
+L98,SNonly Dr 321,7.98,7.98480750618845,ok
+L98,SNonly Dr 321,.0176,0.0175713581173445,ok
+L98,SNonly Dr 321,1.17,1.1741969626254742,ok
+L98,SNonly Dr 321,.4646,0.4645767893386862,ok
+L98,SNonly Dr 321,7,7.0,ok
+L98,SNonly Dr 321,80,80.0,ok
+L99,SNonly Dr 548,4.32,4.322688040825881,ok
+L99,SNonly Dr 548,0.45,0.446726787611877,ok
+L99,SNonly Dr 548,8.20,8.198649294039885,ok
+L99,SNonly Dr 548,.0294,0.0293699873454631,ok
+L99,SNonly Dr 548,1.55,1.551792498532102,ok
+L99,SNonly Dr 548,-1.44,-1.4387427586593389,ok
+L99,SNonly Dr 548,4.54,4.542327755723543,ok
+L99,SNonly Dr 548,.3041,0.3041265168268049,ok
+L99,SNonly Dr 548,6.57,6.5742157238994,ok
+L99,SNonly Dr 548,.0207,0.0207326954234277,ok
+L99,SNonly Dr 548,2.58,2.5847887449145217,ok
+L99,SNonly Dr 548,.1334,0.1334143069635865,ok
+L99,SNonly Dr 548,75,75.0,ok
+L99,SNonly Dr 548,80,80.0,ok
+L100,GP Dr 137,2.01,2.0135405197303533,ok
+L100,GP Dr 137,-4.82,-4.81956044644339,ok
+L100,GP Dr 137,8.85,8.846641485904097,ok
+L100,GP Dr 137,.5585,0.5584708994657672,ok
+L100,GP Dr 137,0.26,0.2609540680407479,ok
+L100,GP Dr 137,-3.91,-3.905774470676131,ok
+L100,GP Dr 137,4.43,4.427682606757627,ok
+L100,GP Dr 137,.9009,0.9009141877292526,ok
+L100,GP Dr 137,4.59,4.5920093473880765,ok
+L100,GP Dr 137,.3665,0.3665484951239982,ok
+L100,GP Dr 137,-1.15,-1.1457845245096514,ok
+L100,GP Dr 137,.6786,0.678579943541417,ok
+L100,GP Dr 137,0,0.0,ok
+L100,GP Dr 137,80,80.0,ok
+L101,GP Dr 274,1.58,1.5753939068079554,ok
+L101,GP Dr 274,-3.09,-3.091256013557047,ok
+L101,GP Dr 274,6.24,6.242043827172958,ok
+L101,GP Dr 274,.5028,0.502822549119545,ok
+L101,GP Dr 274,0.70,0.6991006809631471,ok
+L101,GP Dr 274,-1.97,-1.967882714178084,ok
+L101,GP Dr 274,3.37,3.366084076104378,ok
+L101,GP Dr 274,.6026,0.6026220508910557,ok
+L101,GP Dr 274,3.16,3.157560879413653,ok
+L101,GP Dr 274,.3679,0.367853733267515,ok
+L101,GP Dr 274,0.29,0.2886639434647811,ok
+L101,GP Dr 274,.8715,0.8715303418272212,ok
+L101,GP Dr 274,2,2.0,ok
+L101,GP Dr 274,80,80.0,ok
+L102,GP Dr 321,1.51,1.5112415989968857,ok
+L102,GP Dr 321,-2.86,-2.860660892098329,ok
+L102,GP Dr 321,5.88,5.883144090092101,ok
+L102,GP Dr 321,.4927,0.4926820988266467,ok
+L102,GP Dr 321,0.76,0.7632529887742159,ok
+L102,GP Dr 321,-1.80,-1.804994658720155,ok
+L102,GP Dr 321,3.33,3.331500636268587,ok
+L102,GP Dr 321,.5551,0.5551284088873818,ok
+L102,GP Dr 321,2.95,2.947532599056025,ok
+L102,GP Dr 321,.3701,0.37005672980277,ok
+L102,GP Dr 321,0.50,0.498692223822409,ok
+L102,GP Dr 321,.7748,0.7747831760156539,ok
+L102,GP Dr 321,31,31.0,ok
+L102,GP Dr 321,80,80.0,ok
+L103,GP Dr 548,1.36,1.3563206003467556,ok
+L103,GP Dr 548,-2.35,-2.3472056942016915,ok
+L103,GP Dr 548,5.06,5.059846894895203,ok
+L103,GP Dr 548,.4674,0.4674187322029769,ok
+L103,GP Dr 548,0.92,0.9181739874243484,ok
+L103,GP Dr 548,-1.61,-1.6084238218381288,ok
+L103,GP Dr 548,3.44,3.4447717966868256,ok
+L103,GP Dr 548,.4708,0.4708420298696506,ok
+L103,GP Dr 548,2.44,2.440336645426437,ok
+L103,GP Dr 548,.3812,0.3811593270676655,ok
+L103,GP Dr 548,1.01,1.005888177451999,ok
+L103,GP Dr 548,.5745,0.5745207351223427,ok
+L103,GP Dr 548,80,80.0,ok
+L103,GP Dr 548,80,80.0,ok
+L105,"Mean R2* is 22.92 s^-1 for SN-VTA, 23.82 for SN-only and 30.53 for GP",22.92,22.921001315,ok
+L105,"Mean R2* is 22.92 s^-1 for SN-VTA, 23.82 for SN-only and 30.53 for GP",23.82,23.8239452365,ok
+L105,"Mean R2* is 22.92 s^-1 for SN-VTA, 23.82 for SN-only and 30.53 for GP",30.53,30.527106714749998,ok
+L106,"At Dr = 274: SN-VTA chi_para 68.32 (9.13), chi_dia -15.33 (5.14); SN-only 74.08 (10.52) and -12.87 (5.37); GP 102.12 (10.77) and -9.29 (4.81)",274,274.0,ok
+L106,"At Dr = 274: SN-VTA chi_para 68.32 (9.13), chi_dia -15.33 (5.14); SN-only 74.08 (10.52) and -12.87 (5.37); GP 102.12 (10.77) and -9.29 (4.81)",68.32,68.31862665302646,ok
+L106,"At Dr = 274: SN-VTA chi_para 68.32 (9.13), chi_dia -15.33 (5.14); SN-only 74.08 (10.52) and -12.87 (5.37); GP 102.12 (10.77) and -9.29 (4.81)",9.13,9.132596339919868,ok
+L106,"At Dr = 274: SN-VTA chi_para 68.32 (9.13), chi_dia -15.33 (5.14); SN-only 74.08 (10.52) and -12.87 (5.37); GP 102.12 (10.77) and -9.29 (4.81)",-15.33,-15.334662817776458,ok
+L106,"At Dr = 274: SN-VTA chi_para 68.32 (9.13), chi_dia -15.33 (5.14); SN-only 74.08 (10.52) and -12.87 (5.37); GP 102.12 (10.77) and -9.29 (4.81)",5.14,5.142041008749631,ok
+L106,"At Dr = 274: SN-VTA chi_para 68.32 (9.13), chi_dia -15.33 (5.14); SN-only 74.08 (10.52) and -12.87 (5.37); GP 102.12 (10.77) and -9.29 (4.81)",74.08,74.07866737766287,ok
+L106,"At Dr = 274: SN-VTA chi_para 68.32 (9.13), chi_dia -15.33 (5.14); SN-only 74.08 (10.52) and -12.87 (5.37); GP 102.12 (10.77) and -9.29 (4.81)",10.52,10.516115863912344,ok
+L106,"At Dr = 274: SN-VTA chi_para 68.32 (9.13), chi_dia -15.33 (5.14); SN-only 74.08 (10.52) and -12.87 (5.37); GP 102.12 (10.77) and -9.29 (4.81)",-12.87,-12.870037865037869,ok
+L106,"At Dr = 274: SN-VTA chi_para 68.32 (9.13), chi_dia -15.33 (5.14); SN-only 74.08 (10.52) and -12.87 (5.37); GP 102.12 (10.77) and -9.29 (4.81)",5.37,5.374143369421693,ok
+L106,"At Dr = 274: SN-VTA chi_para 68.32 (9.13), chi_dia -15.33 (5.14); SN-only 74.08 (10.52) and -12.87 (5.37); GP 102.12 (10.77) and -9.29 (4.81)",102.12,102.1228521898198,ok
+L106,"At Dr = 274: SN-VTA chi_para 68.32 (9.13), chi_dia -15.33 (5.14); SN-only 74.08 (10.52) and -12.87 (5.37); GP 102.12 (10.77) and -9.29 (4.81)",10.77,10.765665583587944,ok
+L106,"At Dr = 274: SN-VTA chi_para 68.32 (9.13), chi_dia -15.33 (5.14); SN-only 74.08 (10.52) and -12.87 (5.37); GP 102.12 (10.77) and -9.29 (4.81)",-9.29,-9.2899460391948,ok
+L106,"At Dr = 274: SN-VTA chi_para 68.32 (9.13), chi_dia -15.33 (5.14); SN-only 74.08 (10.52) and -12.87 (5.37); GP 102.12 (10.77) and -9.29 (4.81)",4.81,4.808223043231917,ok
+L107,"At Dr = 548, chi_dia is positive in most sessions (SN-VTA 68/80, GP 80/80)",548,548.0,ok
+L107,"At Dr = 548, chi_dia is positive in most sessions (SN-VTA 68/80, GP 80/80)",68,68.0,ok
+L107,"At Dr = 548, chi_dia is positive in most sessions (SN-VTA 68/80, GP 80/80)",80,80.0,ok
+L107,"At Dr = 548, chi_dia is positive in most sessions (SN-VTA 68/80, GP 80/80)",80,80.0,ok
+L107,"At Dr = 548, chi_dia is positive in most sessions (SN-VTA 68/80, GP 80/80)",80,80.0,ok
+L108,"At Dr = 137, chi_para and chi_dia are negatively correlated (SN-VTA r = -0.44). At 274 the correlation is +0.33",137,137.0,ok
+L108,"At Dr = 137, chi_para and chi_dia are negatively correlated (SN-VTA r = -0.44). At 274 the correlation is +0.33",-0.44,-0.4390853185396447,ok
+L108,"At Dr = 137, chi_para and chi_dia are negatively correlated (SN-VTA r = -0.44). At 274 the correlation is +0.33",274,274.0,ok
+L108,"At Dr = 137, chi_para and chi_dia are negatively correlated (SN-VTA r = -0.44). At 274 the correlation is +0.33",0.33,0.333084471616101,ok
+L112,"chi_para +4.49 ppb [0.23, 8.74] and chi_dia +0.48 [-2.39, 3.35]",4.49,4.485485431354802,ok
+L112,"chi_para +4.49 ppb [0.23, 8.74] and chi_dia +0.48 [-2.39, 3.35]",0.23,0.2276863410515028,ok
+L112,"chi_para +4.49 ppb [0.23, 8.74] and chi_dia +0.48 [-2.39, 3.35]",8.74,8.7432845216581,ok
+L112,"chi_para +4.49 ppb [0.23, 8.74] and chi_dia +0.48 [-2.39, 3.35]",0.48,0.4773161127374259,ok
+L112,"chi_para +4.49 ppb [0.23, 8.74] and chi_dia +0.48 [-2.39, 3.35]",-2.39,-2.390548762180173,ok
+L112,"chi_para +4.49 ppb [0.23, 8.74] and chi_dia +0.48 [-2.39, 3.35]",3.35,3.3451809876550254,ok
+L112,(+5.71 vs +0.17),5.71,5.7081358119727685,ok
+L112,(+5.71 vs +0.17),0.17,0.166344727385213,ok
+L112,smallest q .096,.096,0.0964615226764969,ok
+L122,M1 (frozen primary),80,80.0,ok
+L122,M1 (frozen primary),4.963,4.962801544092231,ok
+L122,M1 (frozen primary),-1.273,-1.2731993109253406,ok
+L122,M1 (frozen primary),11.199,11.198802399109802,ok
+L122,M1 (frozen primary),3.125,3.125080404308372,ok
+L122,M1 (frozen primary),1.588,1.5880556344247323,ok
+L122,M1 (frozen primary),68,68.0,ok
+L122,M1 (frozen primary),.1169,0.1169130530598361,ok
+L122,M1 (frozen primary),8.16,8.157421485664205,ok
+L122,M1 (frozen primary),.0443,0.0442814831318877,ok
+L122,M1 (frozen primary),1.77,1.768181602520257,ok
+L122,M1 (frozen primary),.7129,0.7129119456090689,ok
+L122,M1 (frozen primary),3.550,3.5501826360308675,ok
+L122,M1 (frozen primary),.0004,0.0003519184309817,ok
+L122,M1 (frozen primary),.0004,0.0003519184309817,ok
+L123,M1 + dice_min (alone),80,80.0,ok
+L123,M1 + dice_min (alone),3.749,3.7494040722986752,ok
+L123,M1 + dice_min (alone),-2.450,-2.450200304768656,ok
+L123,M1 + dice_min (alone),9.949,9.949008449366008,ok
+L123,M1 + dice_min (alone),3.106,3.10600121716162,ok
+L123,M1 + dice_min (alone),1.207,1.2071482945924346,ok
+L123,M1 + dice_min (alone),67,67.0,ok
+L123,M1 + dice_min (alone),.2316,0.2316195628329397,ok
+L123,M1 + dice_min (alone),5.15,5.1482886941332495,ok
+L123,M1 + dice_min (alone),.1709,0.1709103420391733,ok
+L123,M1 + dice_min (alone),2.35,2.350519450464101,ok
+L123,M1 + dice_min (alone),.6293,0.6293005879059901,ok
+L123,M1 + dice_min (alone),3.181,3.181328024337405,ok
+L123,M1 + dice_min (alone),.0011,0.0011110547939359,ok
+L123,M1 + dice_min (alone),.0019,0.0019274944678334,ok
+L124,M1 + motion_gsr (alone),80,80.0,ok
+L124,M1 + motion_gsr (alone),4.227,4.226813220955809,ok
+L124,M1 + motion_gsr (alone),-1.717,-1.717132163266622,ok
+L124,M1 + motion_gsr (alone),10.171,10.17075860517824,ok
+L124,M1 + motion_gsr (alone),2.978,2.9779160854890394,ok
+L124,M1 + motion_gsr (alone),1.419,1.4193862753730595,ok
+L124,M1 + motion_gsr (alone),67,67.0,ok
+L124,M1 + motion_gsr (alone),.1604,0.1604223421106469,ok
+L124,M1 + motion_gsr (alone),7.53,7.532924455255538,ok
+L124,M1 + motion_gsr (alone),.0632,0.0632353146453582,ok
+L124,M1 + motion_gsr (alone),0.92,0.9207019866560802,ok
+L124,M1 + motion_gsr (alone),.8375,0.8374947987048237,ok
+L124,M1 + motion_gsr (alone),3.478,3.4784787640308443,ok
+L124,M1 + motion_gsr (alone),.0004,0.0004454374604668,ok
+L124,M1 + motion_gsr (alone),.0004,0.0004355580814158,ok
+L125,M1 + ref2_minus_wb_ppb (alone),80,80.0,ok
+L125,M1 + ref2_minus_wb_ppb (alone),5.461,5.460569151602526,ok
+L125,M1 + ref2_minus_wb_ppb (alone),-0.855,-0.8545183170090418,ok
+L125,M1 + ref2_minus_wb_ppb (alone),11.776,11.775656620214091,ok
+L125,M1 + ref2_minus_wb_ppb (alone),3.164,3.163858235300519,ok
+L125,M1 + ref2_minus_wb_ppb (alone),1.726,1.7259209311835215,ok
+L125,M1 + ref2_minus_wb_ppb (alone),67,67.0,ok
+L125,M1 + ref2_minus_wb_ppb (alone),.0890,0.0889709295604756,ok
+L125,M1 + ref2_minus_wb_ppb (alone),8.76,8.757708851731175,ok
+L125,M1 + ref2_minus_wb_ppb (alone),.0310,0.0310432428579058,ok
+L125,M1 + ref2_minus_wb_ppb (alone),2.16,2.1634294514738763,ok
+L125,M1 + ref2_minus_wb_ppb (alone),.6527,0.6527103235403835,ok
+L125,M1 + ref2_minus_wb_ppb (alone),3.664,3.663999121624709,ok
+L125,M1 + ref2_minus_wb_ppb (alone),.0002,0.0002458741041936,ok
+L125,M1 + ref2_minus_wb_ppb (alone),.0002,0.0002167544341971,ok
+L126,M1 + icv_seg_ml (alone),80,80.0,ok
+L126,M1 + icv_seg_ml (alone),5.337,5.336818130623765,ok
+L126,M1 + icv_seg_ml (alone),-1.156,-1.1560040276826529,ok
+L126,M1 + icv_seg_ml (alone),11.830,11.829640288930182,ok
+L126,M1 + icv_seg_ml (alone),3.253,3.252903298331652,ok
+L126,M1 + icv_seg_ml (alone),1.641,1.6406322725181872,ok
+L126,M1 + icv_seg_ml (alone),67,67.0,ok
+L126,M1 + icv_seg_ml (alone),.1056,0.1055605828748196,ok
+L126,M1 + icv_seg_ml (alone),9.05,9.0455965620995,ok
+L126,M1 + icv_seg_ml (alone),.0321,0.0321352042559162,ok
+L126,M1 + icv_seg_ml (alone),1.63,1.6280396991480286,ok
+L126,M1 + icv_seg_ml (alone),.7287,0.7287305545354373,ok
+L126,M1 + icv_seg_ml (alone),3.526,3.5256574580589173,ok
+L126,M1 + icv_seg_ml (alone),.0004,0.0003836008966455,ok
+L126,M1 + icv_seg_ml (alone),.0003,0.0003313445355274,ok
+L127,M1 + Dice + motion + CSF offset + ICV (joint),80,80.0,ok
+L127,M1 + Dice + motion + CSF offset + ICV (joint),4.162,4.162108556896914,ok
+L127,M1 + Dice + motion + CSF offset + ICV (joint),-1.900,-1.8996555104663475,ok
+L127,M1 + Dice + motion + CSF offset + ICV (joint),10.224,10.223872624260176,ok
+L127,M1 + Dice + motion + CSF offset + ICV (joint),3.034,3.034326518736893,ok
+L127,M1 + Dice + motion + CSF offset + ICV (joint),1.372,1.3716745812278257,ok
+L127,M1 + Dice + motion + CSF offset + ICV (joint),64,64.0,ok
+L127,M1 + Dice + motion + CSF offset + ICV (joint),.1750,0.1749544672529304,ok
+L127,M1 + Dice + motion + CSF offset + ICV (joint),6.32,6.323208403771809,ok
+L127,M1 + Dice + motion + CSF offset + ICV (joint),.1234,0.1233557161197208,ok
+L127,M1 + Dice + motion + CSF offset + ICV (joint),2.00,2.0010087100220195,ok
+L127,M1 + Dice + motion + CSF offset + ICV (joint),.6421,0.642118803538422,ok
+L127,M1 + Dice + motion + CSF offset + ICV (joint),3.392,3.3924869775272777,ok
+L127,M1 + Dice + motion + CSF offset + ICV (joint),.0006,0.0005961126975095,ok
+L127,M1 + Dice + motion + CSF offset + ICV (joint),.0007,0.0006815219482977,ok
+L133,scale(dice_min),4.29,4.292033085134653,ok
+L133,scale(dice_min),1.65,1.6512641965328323,ok
+L133,scale(dice_min),6.93,6.932801973736474,ok
+L133,scale(dice_min),1.32,1.3218850122659629,ok
+L133,scale(dice_min),.0019,0.0018587431396128,ok
+L134,scale(motion_gsr),-1.50,-1.5004837873558696,ok
+L134,scale(motion_gsr),-6.04,-6.039443620670779,ok
+L134,scale(motion_gsr),3.04,3.0384760459590403,ok
+L134,scale(motion_gsr),2.27,2.2720590964372267,ok
+L134,scale(motion_gsr),.5114,0.5113627065043718,ok
+L135,scale(ref2_minus_wb_ppb),-1.40,-1.399417881520505,ok
+L135,scale(ref2_minus_wb_ppb),-4.50,-4.504147193379081,ok
+L135,scale(ref2_minus_wb_ppb),1.71,1.7053114303380716,ok
+L135,scale(ref2_minus_wb_ppb),1.55,1.5541288608037258,ok
+L135,scale(ref2_minus_wb_ppb),.3713,0.3712558440248068,ok
+L136,scale(icv_seg_ml),4.19,4.193866601286028,ok
+L136,scale(icv_seg_ml),-1.38,-1.378924158064737,ok
+L136,scale(icv_seg_ml),9.77,9.766657360636792,ok
+L136,scale(icv_seg_ml),2.79,2.7895620147131988,ok
+L136,scale(icv_seg_ml),.1377,0.1376511681506137,ok
+L137,ADHD_e,0.41,0.4070337970592564,ok
+L137,ADHD_e,-5.20,-5.200903968595489,ok
+L137,ADHD_e,6.01,6.014971562714002,ok
+L137,ADHD_e,2.81,2.807155489499949,ok
+L137,ADHD_e,.8852,0.8851676031429702,ok
+L139,The variance inflation of PS_e is 1.18 in M1 and 1.27 in the joint model,1.18,1.1828547518942927,ok
+L139,The variance inflation of PS_e is 1.18 in M1 and 1.27 in the joint model,1.27,1.2677157329483635,ok
+L139,Spearman rho = .358 (p .0011),.358,0.3580168776371308,ok
+L139,Spearman rho = .358 (p .0011),.0011,0.0011117689867264483,ok
+L145,R2* M1,1.098,1.0982383933011586,ok
+L145,R2* M1,0.080,0.0796621458138548,ok
+L145,R2* M1,2.117,2.116814640788462,ok
+L145,R2* M1,0.510,0.5104445533799656,ok
+L145,R2* M1,.0350,0.0349890281690738,ok
+L145,R2* M1,1.738,1.7381499569419625,ok
+L145,R2* M1,.0344,0.034428238278341,ok
+L145,R2* M1,0.458,0.4583268296603545,ok
+L145,R2* M1,.5154,0.5154316698640713,ok
+L146,R2* M1 + Dice,1.011,1.0111876434726446,ok
+L146,R2* M1 + Dice,-0.079,-0.0785189702221678,ok
+L146,R2* M1 + Dice,2.101,2.100894257167457,ok
+L146,R2* M1 + Dice,0.546,0.5459429122614795,ok
+L146,R2* M1 + Dice,.0684,0.06840514899443,ok
+L146,R2* M1 + Dice,1.522,1.522270764900179,ok
+L146,R2* M1 + Dice,.0733,0.0732802508557167,ok
+L146,R2* M1 + Dice,0.500,0.50010452204511,ok
+L146,R2* M1 + Dice,.4937,0.4937376166338638,ok
+L147,R2* M1 + joint nuisance,1.026,1.026173930075433,ok
+L147,R2* M1 + joint nuisance,-0.098,-0.0983955252674957,ok
+L147,R2* M1 + joint nuisance,2.151,2.150743385418361,ok
+L147,R2* M1 + joint nuisance,0.563,0.5629237434166313,ok
+L147,R2* M1 + joint nuisance,.0730,0.0729843262876841,ok
+L147,R2* M1 + joint nuisance,1.598,1.5982446636559202,ok
+L147,R2* M1 + joint nuisance,.0627,0.0626512003449765,ok
+L147,R2* M1 + joint nuisance,0.454,0.454103196494945,ok
+L147,R2* M1 + joint nuisance,.5422,0.5421517861544488,ok
+L149,"Dice is not related to R2* (+0.272 s^-1 per SD, p .3624)",0.272,0.2720176397541711,ok
+L149,"Dice is not related to R2* (+0.272 s^-1 per SD, p .3624)",.3624,0.3624047155305003,ok
+L149,The R2* estimate barely moves (1.10 to 1.01),1.10,1.0982383933011586,ok
+L149,The R2* estimate barely moves (1.10 to 1.01),1.01,1.0111876434726446,ok
+L149,one-sided for *lower* R2* (p .9825),.9825,0.982505485915463,ok
+L151,label-free cut points 0.8054 and 0.8233 over the 80,0.8054,0.8054013233333334,ok
+L151,label-free cut points 0.8054 and 0.8233 over the 80,0.8233,0.8233032,ok
+L151,label-free cut points 0.8054 and 0.8233 over the 80,80,80.0,ok
+L155,T1_low,0.7371,0.7371,ok
+L155,T1_low,0.8052,0.8052,ok
+L155,T1_low,27,27.0,ok
+L155,T1_low,11,11.0,ok
+L155,T1_low,5,5.0,ok
+L155,T1_low,2,2.0,ok
+L155,T1_low,9,9.0,ok
+L155,T1_low,50.29,50.29400733555557,ok
+L156,T2_mid,0.8058,0.8058,ok
+L156,T2_mid,0.8227,0.8227,ok
+L156,T2_mid,26,26.0,ok
+L156,T2_mid,5,5.0,ok
+L156,T2_mid,6,6.0,ok
+L156,T2_mid,8,8.0,ok
+L156,T2_mid,7,7.0,ok
+L156,T2_mid,50.04,50.03797960346154,ok
+L157,T3_high,0.8236,0.8236,ok
+L157,T3_high,0.8667,0.8667,ok
+L157,T3_high,27,27.0,ok
+L157,T3_high,6,6.0,ok
+L157,T3_high,5,5.0,ok
+L157,T3_high,7,7.0,ok
+L157,T3_high,9,9.0,ok
+L157,T3_high,58.51,58.51079403962963,ok
+L159,Tertile by cell: Fisher p = .32. Tertile by PS: Fisher p = .36,.32,0.32061548695653114,ok
+L159,Tertile by cell: Fisher p = .32. Tertile by PS: Fisher p = .36,.36,0.36123998188987194,ok
+L163,within T1_low : full M1,27,27.0,ok
+L163,within T1_low : full M1,11,11.0,ok
+L163,within T1_low : full M1,5,5.0,ok
+L163,within T1_low : full M1,2,2.0,ok
+L163,within T1_low : full M1,9,9.0,ok
+L163,within T1_low : full M1,-0.95,-0.9535753905828392,ok
+L163,within T1_low : full M1,-14.60,-14.603332711257366,ok
+L163,within T1_low : full M1,12.70,12.696181930091686,ok
+L163,within T1_low : full M1,6.40,6.403978620611746,ok
+L163,within T1_low : full M1,15,15.0,ok
+L163,within T1_low : full M1,.8836,0.8836131560335377,ok
+L163,within T1_low : full M1,5.06,5.061144170281629,ok
+L163,within T1_low : full M1,.6043,0.6043107674215762,ok
+L163,within T1_low : full M1,-6.97,-6.968294951447307,ok
+L163,within T1_low : full M1,.4167,0.4166846590939527,ok
+L163,within T1_low : full M1,.2157,0.2156931655882572,ok
+L164,within T1_low : reduced (PS*ADHD + age + sex),27,27.0,ok
+L164,within T1_low : reduced (PS*ADHD + age + sex),-3.31,-3.3114675890727705,ok
+L164,within T1_low : reduced (PS*ADHD + age + sex),-14.29,-14.285900656476285,ok
+L164,within T1_low : reduced (PS*ADHD + age + sex),7.66,7.662965478330741,ok
+L164,within T1_low : reduced (PS*ADHD + age + sex),5.28,5.277149455042544,ok
+L164,within T1_low : reduced (PS*ADHD + age + sex),21,21.0,ok
+L164,within T1_low : reduced (PS*ADHD + age + sex),.5371,0.5370887251178245,ok
+L164,within T1_low : reduced (PS*ADHD + age + sex),1.10,1.0998983747456448,ok
+L164,within T1_low : reduced (PS*ADHD + age + sex),.8987,0.8987287338378331,ok
+L164,within T1_low : reduced (PS*ADHD + age + sex),-7.72,-7.722833552891186,ok
+L164,within T1_low : reduced (PS*ADHD + age + sex),.2770,0.2770117717103712,ok
+L164,within T1_low : reduced (PS*ADHD + age + sex),.2993,0.2993240947463831,ok
+L165,within T2_mid : full M1,26,26.0,ok
+L165,within T2_mid : full M1,5,5.0,ok
+L165,within T2_mid : full M1,6,6.0,ok
+L165,within T2_mid : full M1,8,8.0,ok
+L165,within T2_mid : full M1,7,7.0,ok
+L165,within T2_mid : full M1,14.22,14.224637491241907,ok
+L165,within T2_mid : full M1,-6.71,-6.710280740542615,ok
+L165,within T2_mid : full M1,35.16,35.15955572302643,ok
+L165,within T2_mid : full M1,9.76,9.760839317833076,ok
+L165,within T2_mid : full M1,14,14.0,ok
+L165,within T2_mid : full M1,.1671,0.1670924263356046,ok
+L165,within T2_mid : full M1,19.59,19.592139740666376,ok
+L165,within T2_mid : full M1,.1230,0.122972250319433,ok
+L165,within T2_mid : full M1,8.86,8.857135241817438,ok
+L165,within T2_mid : full M1,.4965,0.4965097218959586,ok
+L165,within T2_mid : full M1,.0279,0.0279033226639434,ok
+L166,within T2_mid : reduced (PS*ADHD + age + sex),26,26.0,ok
+L166,within T2_mid : reduced (PS*ADHD + age + sex),13.20,13.201413693363474,ok
+L166,within T2_mid : reduced (PS*ADHD + age + sex),-3.16,-3.1624453814474838,ok
+L166,within T2_mid : reduced (PS*ADHD + age + sex),29.57,29.56527276817443,ok
+L166,within T2_mid : reduced (PS*ADHD + age + sex),7.84,7.844748716119539,ok
+L166,within T2_mid : reduced (PS*ADHD + age + sex),20,20.0,ok
+L166,within T2_mid : reduced (PS*ADHD + age + sex),.1080,0.1079540643960832,ok
+L166,within T2_mid : reduced (PS*ADHD + age + sex),14.89,14.89010401357084,ok
+L166,within T2_mid : reduced (PS*ADHD + age + sex),.0421,0.0420708959422739,ok
+L166,within T2_mid : reduced (PS*ADHD + age + sex),11.51,11.512723373156108,ok
+L166,within T2_mid : reduced (PS*ADHD + age + sex),.3624,0.3624408623412782,ok
+L166,within T2_mid : reduced (PS*ADHD + age + sex),.0115,0.0114512316223452,ok
+L167,within T3_high : full M1,27,27.0,ok
+L167,within T3_high : full M1,6,6.0,ok
+L167,within T3_high : full M1,5,5.0,ok
+L167,within T3_high : full M1,7,7.0,ok
+L167,within T3_high : full M1,9,9.0,ok
+L167,within T3_high : full M1,7.37,7.366642994175354,ok
+L167,within T3_high : full M1,-5.37,-5.368010421965931,ok
+L167,within T3_high : full M1,20.10,20.10129641031664,ok
+L167,within T3_high : full M1,5.97,5.974644552423374,ok
+L167,within T3_high : full M1,15,15.0,ok
+L167,within T3_high : full M1,.2366,0.2365562500070308,ok
+L167,within T3_high : full M1,8.95,8.948046381387215,ok
+L167,within T3_high : full M1,.1613,0.1613451863413469,ok
+L167,within T3_high : full M1,5.79,5.7852396069634935,ok
+L167,within T3_high : full M1,.5032,0.5032071736775735,ok
+L167,within T3_high : full M1,.0196,0.0195910880206727,ok
+L168,within T3_high : reduced (PS*ADHD + age + sex),27,27.0,ok
+L168,within T3_high : reduced (PS*ADHD + age + sex),2.23,2.2270737162697896,ok
+L168,within T3_high : reduced (PS*ADHD + age + sex),-10.70,-10.695780818216797,ok
+L168,within T3_high : reduced (PS*ADHD + age + sex),15.15,15.149928250756371,ok
+L168,within T3_high : reduced (PS*ADHD + age + sex),6.21,6.214064484735583,ok
+L168,within T3_high : reduced (PS*ADHD + age + sex),21,21.0,ok
+L168,within T3_high : reduced (PS*ADHD + age + sex),.7236,0.7236272945287348,ok
+L168,within T3_high : reduced (PS*ADHD + age + sex),2.27,2.2726245825498474,ok
+L168,within T3_high : reduced (PS*ADHD + age + sex),.7323,0.7322726017298277,ok
+L168,within T3_high : reduced (PS*ADHD + age + sex),2.18,2.181522849989732,ok
+L168,within T3_high : reduced (PS*ADHD + age + sex),.7964,0.7963837225097307,ok
+L168,within T3_high : reduced (PS*ADHD + age + sex),.0965,0.0964613622307459,ok
+L169,pooled M1 + Dice-tertile fixed effects,80,80.0,ok
+L169,pooled M1 + Dice-tertile fixed effects,4.05,4.051720316105661,ok
+L169,pooled M1 + Dice-tertile fixed effects,-2.05,-2.0509314826055185,ok
+L169,pooled M1 + Dice-tertile fixed effects,10.15,10.15437211481684,ok
+L169,pooled M1 + Dice-tertile fixed effects,3.06,3.056576457429568,ok
+L169,pooled M1 + Dice-tertile fixed effects,66,66.0,ok
+L169,pooled M1 + Dice-tertile fixed effects,.1896,0.1895507603871617,ok
+L169,pooled M1 + Dice-tertile fixed effects,7.13,7.128050652650806,ok
+L169,pooled M1 + Dice-tertile fixed effects,.0619,0.0619112809524246,ok
+L169,pooled M1 + Dice-tertile fixed effects,0.98,0.9753899795605157,ok
+L169,pooled M1 + Dice-tertile fixed effects,.8329,0.8329307861403836,ok
+L169,pooled M1 + Dice-tertile fixed effects,.0007,0.0007086138109134,ok
+L170,pooled M1 + Dice tertile FE + linear Dice,80,80.0,ok
+L170,pooled M1 + Dice tertile FE + linear Dice,4.10,4.096659737336056,ok
+L170,pooled M1 + Dice tertile FE + linear Dice,-1.97,-1.970962911589972,ok
+L170,pooled M1 + Dice tertile FE + linear Dice,10.16,10.164282386262084,ok
+L170,pooled M1 + Dice tertile FE + linear Dice,3.04,3.038159069250945,ok
+L170,pooled M1 + Dice tertile FE + linear Dice,65,65.0,ok
+L170,pooled M1 + Dice tertile FE + linear Dice,.1822,0.1822089837932759,ok
+L170,pooled M1 + Dice tertile FE + linear Dice,5.85,5.854759826046747,ok
+L170,pooled M1 + Dice tertile FE + linear Dice,.1260,0.1259773924923626,ok
+L170,pooled M1 + Dice tertile FE + linear Dice,2.34,2.338559648625365,ok
+L170,pooled M1 + Dice tertile FE + linear Dice,.6102,0.6101677414042368,ok
+L170,pooled M1 + Dice tertile FE + linear Dice,.0006,0.000640773990334,ok
+L171,quality-matched: drop lowest Dice tertile (M1),53,53.0,ok
+L171,quality-matched: drop lowest Dice tertile (M1),11,11.0,ok
+L171,quality-matched: drop lowest Dice tertile (M1),11,11.0,ok
+L171,quality-matched: drop lowest Dice tertile (M1),15,15.0,ok
+L171,quality-matched: drop lowest Dice tertile (M1),16,16.0,ok
+L171,quality-matched: drop lowest Dice tertile (M1),10.36,10.35988460586404,ok
+L171,quality-matched: drop lowest Dice tertile (M1),0.40,0.3965519796054373,ok
+L171,quality-matched: drop lowest Dice tertile (M1),20.32,20.323217232122644,ok
+L171,quality-matched: drop lowest Dice tertile (M1),4.93,4.933463976262433,ok
+L171,quality-matched: drop lowest Dice tertile (M1),41,41.0,ok
+L171,quality-matched: drop lowest Dice tertile (M1),.0419,0.0419320420242654,ok
+L171,quality-matched: drop lowest Dice tertile (M1),11.76,11.755729541805906,ok
+L171,quality-matched: drop lowest Dice tertile (M1),.0292,0.0292155355677733,ok
+L171,quality-matched: drop lowest Dice tertile (M1),8.96,8.964039669922176,ok
+L171,quality-matched: drop lowest Dice tertile (M1),.2324,0.2323832091726301,ok
+L171,quality-matched: drop lowest Dice tertile (M1),.0009,0.0008895647409189,ok
+L172,quality-matched: drop lowest Dice tertile (M1 + Dice),53,53.0,ok
+L172,quality-matched: drop lowest Dice tertile (M1 + Dice),9.17,9.172062402535069,ok
+L172,quality-matched: drop lowest Dice tertile (M1 + Dice),-0.07,-0.0735687899373651,ok
+L172,quality-matched: drop lowest Dice tertile (M1 + Dice),18.42,18.417693595007503,ok
+L172,quality-matched: drop lowest Dice tertile (M1 + Dice),4.57,4.5746097532123,ok
+L172,quality-matched: drop lowest Dice tertile (M1 + Dice),40,40.0,ok
+L172,quality-matched: drop lowest Dice tertile (M1 + Dice),.0518,0.0517638054852085,ok
+L172,quality-matched: drop lowest Dice tertile (M1 + Dice),10.50,10.501293751241493,ok
+L172,quality-matched: drop lowest Dice tertile (M1 + Dice),.0468,0.0467867552415119,ok
+L172,quality-matched: drop lowest Dice tertile (M1 + Dice),7.84,7.842831053828645,ok
+L172,quality-matched: drop lowest Dice tertile (M1 + Dice),.2554,0.2553595426438771,ok
+L172,quality-matched: drop lowest Dice tertile (M1 + Dice),.0009,0.000897664388168,ok
+L174,"F(2, 64) = 2.44, p = .095",2,2.0,ok
+L174,"F(2, 64) = 2.44, p = .095",64,64.0,ok
+L174,"F(2, 64) = 2.44, p = .095",2.44,2.4443809000976175,ok
+L174,"F(2, 64) = 2.44, p = .095",.095,0.09484425818430954,ok
+L174,With 26-27 sessions per tertile and 12 M1 parameters,26,26.0,ok
+L174,With 26-27 sessions per tertile and 12 M1 parameters,27,27.0,ok
+L174,With 26-27 sessions per tertile and 12 M1 parameters,12,12.0,ok
+L178,lowers beta_PS from 4.96 to 4.16 ppb (p .175). The outcome-B bound is still excluded (p_B .0006),4.96,4.962801544092231,ok
+L178,lowers beta_PS from 4.96 to 4.16 ppb (p .175). The outcome-B bound is still excluded (p_B .0006),4.16,4.162108556896914,ok
+L178,lowers beta_PS from 4.96 to 4.16 ppb (p .175). The outcome-B bound is still excluded (p_B .0006),.175,0.1749544672529304,ok
+L178,lowers beta_PS from 4.96 to 4.16 ppb (p .175). The outcome-B bound is still excluded (p_B .0006),.0006,0.0005961126975095,ok
+L178,(+4.3 ppb per SD),4.3,4.292033085134653,ok
+L178,holds half of the TD sessions (11/22) but only 2 of the 17 PS-only sessions,11,11.0,ok
+L178,holds half of the TD sessions (11/22) but only 2 of the 17 PS-only sessions,22,22.0,ok
+L178,holds half of the TD sessions (11/22) but only 2 of the 17 PS-only sessions,2,2.0,ok
+L178,holds half of the TD sessions (11/22) but only 2 of the 17 PS-only sessions,17,17.0,ok
+L178,(Fisher p .32),.32,0.32061548695653114,ok
+L178,"(+10.4, p .042)",10.4,10.35988460586404,ok
+L178,"(+10.4, p .042)",.042,0.0419320420242654,ok
+L178,(-0.95),-0.95,-0.9535753905828392,ok
+L178,(p .095),.095,0.09484425818430954,ok
+L178,between +3.7 and +5.5 ppb,3.7,3.7494040722986752,ok
+L178,between +3.7 and +5.5 ppb,5.5,5.460569151602526,ok
+L178,"'Dice accounts for about 1 ppb of the estimate, alone or jointly'",about 1,alone 1.213; joint model total drop 0.801,ok
+L188,2c7b34,29.02,29.02404213,ok
+L188,2c7b34,1,1.0,ok
+L188,2c7b34,0.7589,0.75886115,ok
+L188,2c7b34,0,0.0,ok
+L188,2c7b34,0.0062,0.00619296,ok
+L188,2c7b34,89,88.88888888888889,ok
+L188,2c7b34,0,0.0,ok
+L188,2c7b34,1.0000,1.0,ok
+L188,2c7b34,-2.869,-2.86897058,ok
+L188,2c7b34,22.95,22.95182991,ok
+L188,2c7b34,50,50.0,ok
+L188,2c7b34,-1.96,-1.9642718808755424,ok
+L189,a38f14,29.72,29.71816444,ok
+L189,a38f14,1,1.0,ok
+L189,a38f14,0.7751,0.77511729,ok
+L189,a38f14,0,0.0,ok
+L189,a38f14,0.0080,0.00798007,ok
+L189,a38f14,89,88.88888888888889,ok
+L189,a38f14,0,0.0,ok
+L189,a38f14,0.9962,0.9962221,ok
+L189,a38f14,-3.184,-3.18405228,ok
+L189,a38f14,19.02,19.0195179,ok
+L189,a38f14,0,0.0,ok
+L189,a38f14,-1.02,-1.0192942654147894,ok
+L190,10a248,30.98,30.97932816,ok
+L190,10a248,1,1.0,ok
+L190,10a248,0.8143,0.81433512,ok
+L190,10a248,50,50.0,ok
+L190,10a248,-0.0010,-0.00096397,ok
+L190,10a248,28,27.77777777777778,ok
+L190,10a248,0,0.0,ok
+L190,10a248,1.0000,1.0,ok
+L190,10a248,-3.046,-3.04590306,ok
+L190,10a248,19.81,19.80598259,ok
+L190,10a248,6,5.555555555555555,ok
+L190,10a248,-1.86,-1.8560685396202636,ok
+L191,a516f3,33.37,33.36923599,ok
+L191,a516f3,1,1.0,ok
+L191,a516f3,0.7371,0.73705496,ok
+L191,a516f3,0,0.0,ok
+L191,a516f3,80,80.0,ok
+L191,a516f3,0.0129,0.01293502,ok
+L191,a516f3,100,100.0,ok
+L191,a516f3,0,0.0,ok
+L191,a516f3,1.0000,1.0,ok
+L191,a516f3,-2.842,-2.84230273,ok
+L191,a516f3,22.69,22.69147873,ok
+L191,a516f3,39,38.88888888888889,ok
+L191,a516f3,-1.03,-1.0266027253326642,ok
+L197,dice_min,0.7713,0.77134213,ok
+L197,dice_min,0.7371,0.73705496,ok
+L197,dice_min,0.8143,0.81433512,ok
+L197,dice_min,0.8107,0.810671015,ok
+L197,dice_min,0.7990,0.7990207149999999,ok
+L197,dice_min,0.8268,0.8268232175,ok
+L197,dice_min,0.7759,0.77586899,ok
+L197,dice_min,0.8349,0.83492299,ok
+L197,dice_min,0.8137,0.813693515,ok
+L197,dice_min,.0194,0.0194121667805878,ok
+L198,motion_gsr,0.0065,0.00653602,ok
+L198,motion_gsr,-0.0010,-0.00096397,ok
+L198,motion_gsr,0.0129,0.01293502,ok
+L198,motion_gsr,0.0028,0.002779825,ok
+L198,motion_gsr,-0.0009,-0.0008739925,ok
+L198,motion_gsr,0.0042,0.004165665,ok
+L198,motion_gsr,-0.0036,-0.00360705,ok
+L198,motion_gsr,0.0123,0.01234747,ok
+L198,motion_gsr,0.0026,0.00257805,ok
+L198,motion_gsr,.1178,0.1178400546821599,ok
+L200,inmask_SNVTA,0.9991,0.999055525,ok
+L200,inmask_SNVTA,0.9962,0.9962221,ok
+L200,inmask_SNVTA,1.0000,1.0,ok
+L200,inmask_SNVTA,1.0000,1.0,ok
+L200,inmask_SNVTA,1.0000,1.0,ok
+L200,inmask_SNVTA,1.0000,1.0,ok
+L200,inmask_SNVTA,0.9690,0.9690275,ok
+L200,inmask_SNVTA,1.0000,1.0,ok
+L200,inmask_SNVTA,1.0000,1.0,ok
+L200,inmask_SNVTA,.3061,0.3060560794913767,ok
+L201,Q_phase,-2.99,-2.9853071625000003,ok
+L201,Q_phase,-3.18,-3.18405228,ok
+L201,Q_phase,-2.84,-2.84230273,ok
+L201,Q_phase,-3.06,-3.062294515,ok
+L201,Q_phase,-3.15,-3.1476907775,ok
+L201,Q_phase,-2.94,-2.939253165,ok
+L201,Q_phase,-3.26,-3.26101044,ok
+L201,Q_phase,-2.57,-2.56786559,ok
+L201,Q_phase,-3.08,-3.07868888,ok
+L201,Q_phase,.5936,0.5935748462064252,ok
+L202,roi_vol,627.1,627.1277008025,ok
+L202,roi_vol,551.0,550.95739746,ok
+L202,roi_vol,713.0,712.97589111,ok
+L202,roi_vol,629.3,629.3306884799999,ok
+L202,roi_vol,595.3,595.305984495,ok
+L202,roi_vol,691.2,691.1579284649999,ok
+L202,roi_vol,557.3,557.32476807,ok
+L202,roi_vol,753.6,753.5826416,ok
+L202,roi_vol,624.3,624.31808472,ok
+L202,roi_vol,.5936,0.5935748462064252,ok
+L203,r2s_SNVTA,21.12,21.1172022825,ok
+L203,r2s_SNVTA,19.02,19.0195179,ok
+L203,r2s_SNVTA,22.95,22.95182991,ok
+L203,r2s_SNVTA,22.93,22.93339729,ok
+L203,r2s_SNVTA,21.79,21.7940144525,ok
+L203,r2s_SNVTA,24.49,24.4948897375,ok
+L203,r2s_SNVTA,19.03,19.02775383,ok
+L203,r2s_SNVTA,26.17,26.17135429,ok
+L203,r2s_SNVTA,22.77,22.773473735,ok
+L203,r2s_SNVTA,.1178,0.1178400546821599,ok
+L204,ref2_minus_wb_ppb,14.34,14.3447389625,ok
+L204,ref2_minus_wb_ppb,8.94,8.93685532,ok
+L204,ref2_minus_wb_ppb,18.85,18.8544445,ok
+L204,ref2_minus_wb_ppb,19.87,19.87491512,ok
+L204,ref2_minus_wb_ppb,15.16,15.164873835,ok
+L204,ref2_minus_wb_ppb,22.98,22.9797210725,ok
+L204,ref2_minus_wb_ppb,6.60,6.60061693,ok
+L204,ref2_minus_wb_ppb,38.13,38.12682343,ok
+L204,ref2_minus_wb_ppb,21.59,21.59091854,ok
+L204,ref2_minus_wb_ppb,.1408,0.1408065618591934,ok
+L205,icv_seg_ml,1552,1552.20775,ok
+L205,icv_seg_ml,1317,1317.303,ok
+L205,icv_seg_ml,1730,1729.742,ok
+L205,icv_seg_ml,1583,1583.17,ok
+L205,icv_seg_ml,1535,1534.54775,ok
+L205,icv_seg_ml,1660,1659.9365,ok
+L205,icv_seg_ml,1412,1411.99,ok
+L205,icv_seg_ml,1742,1742.254,ok
+L205,icv_seg_ml,1525,1524.929,ok
+L205,icv_seg_ml,.9023,0.9022556390977444,ok
+L206,age,12.48,12.4825,ok
+L206,age,8.80,8.8,ok
+L206,age,15.36,15.36,ok
+L206,age,13.05,13.055,ok
+L206,age,12.00,11.9975,ok
+L206,age,14.46,14.455,ok
+L206,age,10.03,10.03,ok
+L206,age,17.80,17.8,ok
+L206,age,13.62,13.625,ok
+L206,age,.7743,0.7742993848257006,ok
+L208,all 4 tail sessions are grade 1,4,4.0,ok
+L208,all 4 tail sessions are grade 1,1,1.0,ok
+L208,The other 18 TD sessions are 2 grade 0 and 16 grade 1; all 80 are 4 grade 0 and 76 grade 1,18,18.0,ok
+L208,The other 18 TD sessions are 2 grade 0 and 16 grade 1; all 80 are 4 grade 0 and 76 grade 1,2,2.0,ok
+L208,The other 18 TD sessions are 2 grade 0 and 16 grade 1; all 80 are 4 grade 0 and 76 grade 1,0,0.0,ok
+L208,The other 18 TD sessions are 2 grade 0 and 16 grade 1; all 80 are 4 grade 0 and 76 grade 1,16,16.0,ok
+L208,The other 18 TD sessions are 2 grade 0 and 16 grade 1; all 80 are 4 grade 0 and 76 grade 1,1,1.0,ok
+L208,The other 18 TD sessions are 2 grade 0 and 16 grade 1; all 80 are 4 grade 0 and 76 grade 1,80,80.0,ok
+L208,The other 18 TD sessions are 2 grade 0 and 16 grade 1; all 80 are 4 grade 0 and 76 grade 1,4,4.0,ok
+L208,The other 18 TD sessions are 2 grade 0 and 16 grade 1; all 80 are 4 grade 0 and 76 grade 1,0,0.0,ok
+L208,The other 18 TD sessions are 2 grade 0 and 16 grade 1; all 80 are 4 grade 0 and 76 grade 1,76,76.0,ok
+L208,The other 18 TD sessions are 2 grade 0 and 16 grade 1; all 80 are 4 grade 0 and 76 grade 1,1,1.0,ok
+L212,M1 (all 80),80,80.0,ok
+L212,M1 (all 80),80,80.0,ok
+L212,M1 (all 80),22,22.0,ok
+L212,M1 (all 80),16,16.0,ok
+L212,M1 (all 80),17,17.0,ok
+L212,M1 (all 80),25,25.0,ok
+L212,M1 (all 80),4.96,4.962801544092231,ok
+L212,M1 (all 80),-1.27,-1.2731993109253406,ok
+L212,M1 (all 80),11.20,11.198802399109802,ok
+L212,M1 (all 80),3.13,3.125080404308372,ok
+L212,M1 (all 80),.1169,0.1169130530598361,ok
+L212,M1 (all 80),8.16,8.157421485664205,ok
+L212,M1 (all 80),.0443,0.0442814831318877,ok
+L212,M1 (all 80),1.77,1.768181602520257,ok
+L212,M1 (all 80),.7129,0.7129119456090689,ok
+L212,M1 (all 80),3.550,3.5501826360308675,ok
+L212,M1 (all 80),.0004,0.0003519184309817,ok
+L212,M1 (all 80),3.94,3.935501378973957,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,4,4.0,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,76,76.0,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,18,18.0,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,16,16.0,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,17,17.0,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,25,25.0,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,3.33,3.327348886608367,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,-3.09,-3.087053262523816,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,9.74,9.741751035740547,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,3.21,3.210845939673938,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,.3040,0.3039692692805236,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,4.36,4.357310758358252,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,.2763,0.2763248490871687,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,2.30,2.297387014858482,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,.6393,0.6392588431319167,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,2.946,2.946000433472252,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,.0022,0.0022426316044962,ok
+L213,M1 without the 4 TD sessions with chi < 35 ppb,2.32,2.3187804219235204,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),35,35.0,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),4,4.0,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),1,1.0,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),12.16,12.15827656,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),80,80.0,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),75,75.0,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),18,18.0,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),15,15.0,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),17,17.0,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),25,25.0,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),1.45,1.4512106721163442,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),-3.63,-3.630832470195372,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),6.53,6.533253814428061,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),2.54,2.5431316805999145,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),.5703,0.5702740517573268,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),4.04,4.042606055536645,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),.2847,0.2846773643349317,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),-1.14,-1.1401847113039565,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),.7468,0.7468271110121745,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),2.982,2.981762750803064,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),.0020,0.0020354312518742,ok
+L214,M1 without every first-usable session with chi < 35 ppb (label-free; 5 sessions),1.47,1.4723326392263665,ok
+L216,(|studentised residual| ≤ 1.96),1.96,1.9642718808755424,ok
+L216,0.811 = mean (0.8112) and also median (0.8107) of the other 18 TD sessions,0.771,0.77134213,ok
+L216,0.811 = mean (0.8112) and also median (0.8107) of the other 18 TD sessions,0.811,0.810671015,ok
+L216,0.811 = mean (0.8112) and also median (0.8107) of the other 18 TD sessions,.019,0.0194121667805878,ok
+L216,(89th-100th TD percentile),89,88.88888888888889,ok
+L216,(89th-100th TD percentile),100,100.0,ok
+L216,(0th and 6th TD percentile),0,0.0,ok
+L216,(0th and 6th TD percentile),6,5.555555555555555,ok
+L216,"lowers beta_PS from 4.96 to 3.33 ppb, and PS-only - TD from 8.16 (p .044) to 4.36 (p .276). The label-free cut lowers beta_PS to 1.45",4.96,4.962801544092231,ok
+L216,"lowers beta_PS from 4.96 to 3.33 ppb, and PS-only - TD from 8.16 (p .044) to 4.36 (p .276). The label-free cut lowers beta_PS to 1.45",3.33,3.327348886608367,ok
+L216,"lowers beta_PS from 4.96 to 3.33 ppb, and PS-only - TD from 8.16 (p .044) to 4.36 (p .276). The label-free cut lowers beta_PS to 1.45",8.16,8.157421485664205,ok
+L216,"lowers beta_PS from 4.96 to 3.33 ppb, and PS-only - TD from 8.16 (p .044) to 4.36 (p .276). The label-free cut lowers beta_PS to 1.45",.044,0.0442814831318877,ok
+L216,"lowers beta_PS from 4.96 to 3.33 ppb, and PS-only - TD from 8.16 (p .044) to 4.36 (p .276). The label-free cut lowers beta_PS to 1.45",4.36,4.357310758358252,ok
+L216,"lowers beta_PS from 4.96 to 3.33 ppb, and PS-only - TD from 8.16 (p .044) to 4.36 (p .276). The label-free cut lowers beta_PS to 1.45",.276,0.2763248490871687,ok
+L216,"lowers beta_PS from 4.96 to 3.33 ppb, and PS-only - TD from 8.16 (p .044) to 4.36 (p .276). The label-free cut lowers beta_PS to 1.45",1.45,1.4512106721163442,ok
+L216,(p_B ≤ .0022),.0022,0.0022426316044962,ok
+L216,'about a third ... (two-thirds with the label-free cut)',1/3 ; 2/3,0.330 ; 0.708,ok (2/3 is a slight understatement of 0.71)
+L233,r2s_PUT | first-usable | age only,0.301,0.3009416478186997,ok
+L233,r2s_PUT | first-usable | age only,0.189,0.1885398886633465,ok
+L233,r2s_PUT | first-usable | age only,0.413,0.4133434069740528,ok
+L233,r2s_PUT | first-usable | age only,9.3e-07,9.258854848632716e-07,ok
+L233,r2s_PUT | first-usable | age only,0.245,0.2445084179996168,ok
+L234,r2s_PUT | first-usable | + sex,0.309,0.3089011830017175,ok
+L234,r2s_PUT | first-usable | + sex,0.195,0.1954024758025457,ok
+L234,r2s_PUT | first-usable | + sex,0.422,0.4223998902008893,ok
+L234,r2s_PUT | first-usable | + sex,6.6e-07,6.616394103166955e-07,ok
+L234,r2s_PUT | first-usable | + sex,0.251,0.2509753638999876,ok
+L235,r2s_PUT | first-usable | + sex + cell,0.327,0.3265660362422668,ok
+L235,r2s_PUT | first-usable | + sex + cell,0.211,0.2109189612339832,ok
+L235,r2s_PUT | first-usable | + sex + cell,0.442,0.4422131112505504,ok
+L235,r2s_PUT | first-usable | + sex + cell,3.1e-07,3.106096623651216e-07,ok
+L235,r2s_PUT | first-usable | + sex + cell,0.265,0.2653276655882012,ok
+L236,"r2s_PUT | all usable, lme | age only",0.299,0.2987778587360489,ok
+L236,"r2s_PUT | all usable, lme | age only",0.203,0.2034716698089196,ok
+L236,"r2s_PUT | all usable, lme | age only",0.394,0.3940840476631783,ok
+L236,"r2s_PUT | all usable, lme | age only",7.9e-07,7.911845860953686e-07,ok
+L236,"r2s_PUT | all usable, lme | age only",0.243,0.2427503873338097,ok
+L237,"r2s_PUT | all usable, lme | + sex",0.305,0.3047562610476635,ok
+L237,"r2s_PUT | all usable, lme | + sex",0.210,0.2100062930520673,ok
+L237,"r2s_PUT | all usable, lme | + sex",0.400,0.3995062290432598,ok
+L237,"r2s_PUT | all usable, lme | + sex",5.2e-07,5.182356183150863e-07,ok
+L237,"r2s_PUT | all usable, lme | + sex",0.248,0.247607706691145,ok
+L238,"r2s_PUT | all usable, lme | + sex + cell",0.314,0.3141171430904555,ok
+L238,"r2s_PUT | all usable, lme | + sex + cell",0.218,0.2177276197935409,ok
+L238,"r2s_PUT | all usable, lme | + sex + cell",0.411,0.4105066663873701,ok
+L238,"r2s_PUT | all usable, lme | + sex + cell",4.2e-07,4.163462132439187e-07,ok
+L238,"r2s_PUT | all usable, lme | + sex + cell",0.255,0.2552132158519873,ok
+L239,"r2s_PUT | lme, within-person | + sex + cell",0.297,0.2965783026185894,ok
+L239,"r2s_PUT | lme, within-person | + sex + cell",0.087,0.0873673216988905,ok
+L239,"r2s_PUT | lme, within-person | + sex + cell",0.506,0.5057892835382883,ok
+L239,"r2s_PUT | lme, within-person | + sex + cell",.0072,0.0072456922804559,ok
+L239,"r2s_PUT | lme, within-person | + sex + cell",0.241,0.2409632967450541,ok
+L240,"r2s_PUT | lme, between-person | + sex + cell",0.319,0.3189831659289842,ok
+L240,"r2s_PUT | lme, between-person | + sex + cell",0.213,0.2131528689060403,ok
+L240,"r2s_PUT | lme, between-person | + sex + cell",0.425,0.4248134629519282,ok
+L240,"r2s_PUT | lme, between-person | + sex + cell",6.6e-08,6.562784593418454e-08,ok
+L240,"r2s_PUT | lme, between-person | + sex + cell",0.259,0.2591667515451109,ok
+L241,chi_PUT | first-usable | age only,0.382,0.3821746396159274,ok
+L241,chi_PUT | first-usable | age only,-0.262,-0.261621801143278,ok
+L241,chi_PUT | first-usable | age only,1.026,1.0259710803751327,ok
+L241,chi_PUT | first-usable | age only,.2409,0.2408678211785268,ok
+L241,chi_PUT | first-usable | age only,0.065,0.0646665831690706,ok
+L241,chi_PUT | first-usable | age only | CI excludes registered range,yes,yes,ok
+L242,chi_PUT | first-usable | + sex,0.424,0.4238070000464347,ok
+L242,chi_PUT | first-usable | + sex,-0.203,-0.2027784925104842,ok
+L242,chi_PUT | first-usable | + sex,1.050,1.0503924926033537,ok
+L242,chi_PUT | first-usable | + sex,.1820,0.1819840083152717,ok
+L242,chi_PUT | first-usable | + sex,0.072,0.0717110655057576,ok
+L242,chi_PUT | first-usable | + sex | CI excludes registered range,yes,yes,ok
+L243,chi_PUT | first-usable | + sex + cell,0.501,0.5005170020223433,ok
+L243,chi_PUT | first-usable | + sex + cell,-0.168,-0.1683384463576595,ok
+L243,chi_PUT | first-usable | + sex + cell,1.169,1.1693724504023462,ok
+L243,chi_PUT | first-usable | + sex + cell,.1402,0.1401970526105929,ok
+L243,chi_PUT | first-usable | + sex + cell,0.085,0.0846909265652457,ok
+L243,chi_PUT | first-usable | + sex + cell | CI excludes registered range,yes,yes,ok
+L244,"chi_PUT | all usable, lme | age only",0.080,0.0796730671059419,ok
+L244,"chi_PUT | all usable, lme | age only",-0.562,-0.5618641194534765,ok
+L244,"chi_PUT | all usable, lme | age only",0.721,0.7212102536653605,ok
+L244,"chi_PUT | all usable, lme | age only",.8005,0.8005169909592965,ok
+L244,"chi_PUT | all usable, lme | age only",0.013,0.0134812321024731,ok
+L244,"chi_PUT | all usable, lme | age only | CI excludes registered range",yes,yes,ok
+L245,"chi_PUT | all usable, lme | + sex",0.145,0.144961696129147,ok
+L245,"chi_PUT | all usable, lme | + sex",-0.488,-0.488222884451956,ok
+L245,"chi_PUT | all usable, lme | + sex",0.778,0.77814627671025,ok
+L245,"chi_PUT | all usable, lme | + sex",.6418,0.6418545605548107,MISMATCH
+L245,"chi_PUT | all usable, lme | + sex",0.025,0.0245285181363309,ok
+L245,"chi_PUT | all usable, lme | + sex | CI excludes registered range",yes,yes,ok
+L246,"chi_PUT | all usable, lme | + sex + cell",0.120,0.1194014365337177,MISMATCH
+L246,"chi_PUT | all usable, lme | + sex + cell",-0.531,-0.531504166077736,MISMATCH
+L246,"chi_PUT | all usable, lme | + sex + cell",0.771,0.7703070391451714,MISMATCH
+L246,"chi_PUT | all usable, lme | + sex + cell",.7087,0.7091860968229013,MISMATCH
+L246,"chi_PUT | all usable, lme | + sex + cell",0.020,0.0202035460382033,ok
+L246,"chi_PUT | all usable, lme | + sex + cell | CI excludes registered range",yes,yes,ok
+L247,"chi_PUT | lme, within-person | + sex + cell",-0.095,-0.0946389035660071,ok
+L247,"chi_PUT | lme, within-person | + sex + cell",-1.917,-1.916958240379432,ok
+L247,"chi_PUT | lme, within-person | + sex + cell",1.728,1.7276804332474176,ok
+L247,"chi_PUT | lme, within-person | + sex + cell",.9158,0.9158065474263256,ok
+L247,"chi_PUT | lme, within-person | + sex + cell",-0.016,-0.0160135547838318,ok
+L247,"chi_PUT | lme, within-person | + sex + cell | CI excludes registered range",no,no,ok
+L248,"chi_PUT | lme, between-person | + sex + cell",0.148,0.1482857698354977,ok
+L248,"chi_PUT | lme, between-person | + sex + cell",-0.530,-0.5297509566216865,ok
+L248,"chi_PUT | lme, between-person | + sex + cell",0.826,0.8263224962926821,ok
+L248,"chi_PUT | lme, between-person | + sex + cell",.6643,0.6642745277521411,ok
+L248,"chi_PUT | lme, between-person | + sex + cell",0.025,0.0250909743186874,ok
+L248,"chi_PUT | lme, between-person | + sex + cell | CI excludes registered range",yes,yes,ok
+L249,r2s_GP | first-usable | age only,0.687,0.687317018501407,ok
+L249,r2s_GP | first-usable | age only,0.414,0.414051864678619,ok
+L249,r2s_GP | first-usable | age only,0.961,0.9605821723241952,ok
+L249,r2s_GP | first-usable | age only,3.4e-06,3.348354493448187e-06,MISMATCH
+L249,r2s_GP | first-usable | age only,0.235,0.2352704287451427,ok
+L250,r2s_GP | first-usable | + sex,0.707,0.7074244898453272,ok
+L250,r2s_GP | first-usable | + sex,0.421,0.4214920145506608,ok
+L250,r2s_GP | first-usable | + sex,0.993,0.9933569651399936,ok
+L250,r2s_GP | first-usable | + sex,4.7e-06,4.679648516143287e-06,ok
+L250,r2s_GP | first-usable | + sex,0.242,0.242153269234644,ok
+L251,r2s_GP | first-usable | + sex + cell,0.708,0.7079477342849828,ok
+L251,r2s_GP | first-usable | + sex + cell,0.403,0.4031884525560718,ok
+L251,r2s_GP | first-usable | + sex + cell,1.013,1.0127070160138938,ok
+L251,r2s_GP | first-usable | + sex + cell,1.5e-05,1.5364670391456585e-05,ok
+L251,r2s_GP | first-usable | + sex + cell,0.242,0.2423323771867862,ok
+L252,"r2s_GP | all usable, lme | age only",0.588,0.5884831017626105,ok
+L252,"r2s_GP | all usable, lme | age only",0.366,0.3660897697843882,ok
+L252,"r2s_GP | all usable, lme | age only",0.811,0.8108764337408328,ok
+L252,"r2s_GP | all usable, lme | age only",1.1e-05,1.058437816216262e-05,ok
+L252,"r2s_GP | all usable, lme | age only",0.201,0.2014393182971613,ok
+L253,"r2s_GP | all usable, lme | + sex",0.603,0.6032837428250897,ok
+L253,"r2s_GP | all usable, lme | + sex",0.383,0.3827453720116833,ok
+L253,"r2s_GP | all usable, lme | + sex",0.824,0.823822113638496,ok
+L253,"r2s_GP | all usable, lme | + sex",6.6e-06,6.547730248540628e-06,MISMATCH
+L253,"r2s_GP | all usable, lme | + sex",0.207,0.2065056167805959,ok
+L254,"r2s_GP | all usable, lme | + sex + cell",0.612,0.6120636893804076,ok
+L254,"r2s_GP | all usable, lme | + sex + cell",0.390,0.3904683177073165,ok
+L254,"r2s_GP | all usable, lme | + sex + cell",0.834,0.8336590610534986,ok
+L254,"r2s_GP | all usable, lme | + sex + cell",5.7e-06,5.678851030989241e-06,ok
+L254,"r2s_GP | all usable, lme | + sex + cell",0.210,0.2095110156501495,ok
+L255,"r2s_GP | lme, within-person | + sex + cell",0.444,0.4439288447800603,ok
+L255,"r2s_GP | lme, within-person | + sex + cell",0.051,0.0506455859208112,ok
+L255,"r2s_GP | lme, within-person | + sex + cell",0.837,0.8372121036393094,ok
+L255,"r2s_GP | lme, within-person | + sex + cell",.0284,0.0284413017857998,ok
+L255,"r2s_GP | lme, within-person | + sex + cell",0.152,0.1519580147621892,ok
+L256,"r2s_GP | lme, between-person | + sex + cell",0.690,0.6904462418934751,ok
+L256,"r2s_GP | lme, between-person | + sex + cell",0.431,0.4306580570569688,ok
+L256,"r2s_GP | lme, between-person | + sex + cell",0.950,0.9502344267299814,ok
+L256,"r2s_GP | lme, between-person | + sex + cell",1.2e-06,1.1717228528625712e-06,ok
+L256,"r2s_GP | lme, between-person | + sex + cell",0.236,0.2363415701679121,ok
+L257,chi_GP | first-usable | age only,2.397,2.39657152824162,ok
+L257,chi_GP | first-usable | age only,1.155,1.1548914144587548,ok
+L257,chi_GP | first-usable | age only,3.638,3.6382516420244855,ok
+L257,chi_GP | first-usable | age only,.0002,0.0002466991062059,ok
+L257,chi_GP | first-usable | age only,0.187,0.1869365216215463,ok
+L257,chi_GP | first-usable | age only | CI excludes registered range,no,no,ok
+L258,chi_GP | first-usable | + sex,2.473,2.47340330414202,ok
+L258,chi_GP | first-usable | + sex,1.188,1.1883705962879691,ok
+L258,chi_GP | first-usable | + sex,3.758,3.7584360119960714,ok
+L258,chi_GP | first-usable | + sex,.0003,0.0002572035518846,ok
+L258,chi_GP | first-usable | + sex,0.193,0.1929295265319255,ok
+L258,chi_GP | first-usable | + sex | CI excludes registered range,no,no,ok
+L259,chi_GP | first-usable | + sex + cell,2.337,2.3374736812341683,ok
+L259,chi_GP | first-usable | + sex + cell,0.896,0.896110246886596,ok
+L259,chi_GP | first-usable | + sex + cell,3.779,3.778837115581741,ok
+L259,chi_GP | first-usable | + sex + cell,.0018,0.0018401906625613,ok
+L259,chi_GP | first-usable | + sex + cell,0.182,0.1823267923375633,ok
+L259,chi_GP | first-usable | + sex + cell | CI excludes registered range,no,no,ok
+L260,"chi_GP | all usable, lme | age only",1.914,1.914206487173516,ok
+L260,"chi_GP | all usable, lme | age only",0.789,0.7887564745241495,ok
+L260,"chi_GP | all usable, lme | age only",3.040,3.0396564998228817,ok
+L260,"chi_GP | all usable, lme | age only",.0017,0.0017130134317983,ok
+L260,"chi_GP | all usable, lme | age only",0.149,0.1493112549159599,ok
+L260,"chi_GP | all usable, lme | age only | CI excludes registered range",no,no,ok
+L261,"chi_GP | all usable, lme | + sex",1.993,1.992533838754832,ok
+L261,"chi_GP | all usable, lme | + sex",0.876,0.8762982683918934,ok
+L261,"chi_GP | all usable, lme | + sex",3.109,3.108769409117771,ok
+L261,"chi_GP | all usable, lme | + sex",.0011,0.0011008937829845,ok
+L261,"chi_GP | all usable, lme | + sex",0.155,0.1554209171897091,ok
+L261,"chi_GP | all usable, lme | + sex | CI excludes registered range",no,no,ok
+L262,"chi_GP | all usable, lme | + sex + cell",1.852,1.851740386074185,ok
+L262,"chi_GP | all usable, lme | + sex + cell",0.707,0.7069582144933422,ok
+L262,"chi_GP | all usable, lme | + sex + cell",2.997,2.996522557655028,ok
+L262,"chi_GP | all usable, lme | + sex + cell",.0026,0.0026387136365383,ok
+L262,"chi_GP | all usable, lme | + sex + cell",0.144,0.14443879627195,ok
+L262,"chi_GP | all usable, lme | + sex + cell | CI excludes registered range",no,no,ok
+L263,"chi_GP | lme, within-person | + sex + cell",0.843,0.8431571500363937,ok
+L263,"chi_GP | lme, within-person | + sex + cell",-1.318,-1.3175344405548235,ok
+L263,"chi_GP | lme, within-person | + sex + cell",3.004,3.003848740627611,ok
+L263,"chi_GP | lme, within-person | + sex + cell",.4298,0.4297543729780233,ok
+L263,"chi_GP | lme, within-person | + sex + cell",0.066,0.0657676447169445,ok
+L263,"chi_GP | lme, within-person | + sex + cell | CI excludes registered range",no,no,ok
+L264,"chi_GP | lme, between-person | + sex + cell",2.243,2.2427177301001304,ok
+L264,"chi_GP | lme, between-person | + sex + cell",0.937,0.9367831605103945,ok
+L264,"chi_GP | lme, between-person | + sex + cell",3.549,3.5486522996898664,ok
+L264,"chi_GP | lme, between-person | + sex + cell",.0010,0.0010161989250713,ok
+L264,"chi_GP | lme, between-person | + sex + cell",0.175,0.1749356722732543,ok
+L264,"chi_GP | lme, between-person | + sex + cell | CI excludes registered range",no,no,ok
+L226,putamen chi **1.33-1.74 ppb/y**; GP chi **2.26-3.54 ppb/y**,1.33,1.3333333333333335,ok
+L226,putamen chi **1.33-1.74 ppb/y**; GP chi **2.26-3.54 ppb/y**,1.74,1.7435897435897436,ok
+L226,putamen chi **1.33-1.74 ppb/y**; GP chi **2.26-3.54 ppb/y**,2.26,2.256410256410257,ok
+L226,putamen chi **1.33-1.74 ppb/y**; GP chi **2.26-3.54 ppb/y**,3.54,3.5384615384615388,ok
+L226,2.6-3.4 ppb putamen and 4.4-6.9 ppb GP over 1.95 y,2.6,2.6,ok
+L226,2.6-3.4 ppb putamen and 4.4-6.9 ppb GP over 1.95 y,3.4,3.4,ok
+L226,2.6-3.4 ppb putamen and 4.4-6.9 ppb GP over 1.95 y,4.4,4.4,ok
+L226,2.6-3.4 ppb putamen and 4.4-6.9 ppb GP over 1.95 y,6.9,6.9,ok
+L226,2.6-3.4 ppb putamen and 4.4-6.9 ppb GP over 1.95 y,1.95,1.95,ok
+L224,26 (107 - 80 - 1),26,26.0,ok
+L224,26 (107 - 80 - 1),107,107.0,ok
+L224,26 (107 - 80 - 1),80,80.0,ok
+L224,26 (107 - 80 - 1),1,1.0,ok
+L224,age 8.8-19.5 y,8.8,8.8,ok
+L224,age 8.8-19.5 y,19.5,19.5,ok
+L224,"(n = 107, 80 subjects",107,107.0,ok
+L224,"(n = 107, 80 subjects",80,80.0,ok
+L223,(n = 80; age 8.8-17.8 y),80,80.0,ok
+L223,(n = 80; age 8.8-17.8 y),8.8,8.8,ok
+L223,(n = 80; age 8.8-17.8 y),17.8,17.8,ok
+L16,26 subjects have 2 or more usable sessions,26,26.0,ok
+L16,26 subjects have 2 or more usable sessions,2,2.0,ok
+L270,"PUT first-usable (OLS, HC3) age only",0.301,0.3009416478186997,ok
+L270,"PUT first-usable (OLS, HC3) age only",0.189,0.1885398886633465,ok
+L270,"PUT first-usable (OLS, HC3) age only",0.413,0.4133434069740528,ok
+L270,"PUT first-usable (OLS, HC3) age only",1.10,1.098327181820072,ok
+L270,"PUT first-usable (OLS, HC3) age only",0.69,0.6881017834428707,ok
+L270,"PUT first-usable (OLS, HC3) age only",1.51,1.5085525801972732,ok
+L270,"PUT first-usable (OLS, HC3) age only",0.38,0.3821746396159274,ok
+L270,"PUT first-usable (OLS, HC3) age only",-0.26,-0.261621801143278,ok
+L270,"PUT first-usable (OLS, HC3) age only",1.03,1.0259710803751327,ok
+L271,"PUT all usable sessions (lme REML, random intercept) + sex + cell",0.314,0.3141171430904555,ok
+L271,"PUT all usable sessions (lme REML, random intercept) + sex + cell",0.218,0.2177276197935409,ok
+L271,"PUT all usable sessions (lme REML, random intercept) + sex + cell",0.411,0.4105066663873701,ok
+L271,"PUT all usable sessions (lme REML, random intercept) + sex + cell",1.15,1.146412930987064,ok
+L271,"PUT all usable sessions (lme REML, random intercept) + sex + cell",0.79,0.7946263496114633,ok
+L271,"PUT all usable sessions (lme REML, random intercept) + sex + cell",1.50,1.4981995123626646,ok
+L271,"PUT all usable sessions (lme REML, random intercept) + sex + cell",0.12,0.1194014365337177,ok
+L271,"PUT all usable sessions (lme REML, random intercept) + sex + cell",-0.53,-0.531504166077736,ok
+L271,"PUT all usable sessions (lme REML, random intercept) + sex + cell",0.77,0.7703070391451714,ok
+L272,"PUT all usable (lme REML), WITHIN-person age + sex + cell",0.297,0.2965783026185894,ok
+L272,"PUT all usable (lme REML), WITHIN-person age + sex + cell",0.087,0.0873673216988905,ok
+L272,"PUT all usable (lme REML), WITHIN-person age + sex + cell",0.506,0.5057892835382883,ok
+L272,"PUT all usable (lme REML), WITHIN-person age + sex + cell",1.08,1.0824025643014212,ok
+L272,"PUT all usable (lme REML), WITHIN-person age + sex + cell",0.32,0.3188588383171187,ok
+L272,"PUT all usable (lme REML), WITHIN-person age + sex + cell",1.85,1.845946290285724,ok
+L272,"PUT all usable (lme REML), WITHIN-person age + sex + cell",-0.09,-0.0946389035660071,ok
+L272,"PUT all usable (lme REML), WITHIN-person age + sex + cell",-1.92,-1.916958240379432,ok
+L272,"PUT all usable (lme REML), WITHIN-person age + sex + cell",1.73,1.7276804332474176,ok
+L273,"GP first-usable (OLS, HC3) age only",0.687,0.687317018501407,ok
+L273,"GP first-usable (OLS, HC3) age only",0.414,0.414051864678619,ok
+L273,"GP first-usable (OLS, HC3) age only",0.961,0.9605821723241952,ok
+L273,"GP first-usable (OLS, HC3) age only",2.51,2.5084562719029453,ok
+L273,"GP first-usable (OLS, HC3) age only",1.51,1.5111381922577336,ok
+L273,"GP first-usable (OLS, HC3) age only",3.51,3.5057743515481574,ok
+L273,"GP first-usable (OLS, HC3) age only",2.40,2.39657152824162,ok
+L273,"GP first-usable (OLS, HC3) age only",1.15,1.1548914144587548,ok
+L273,"GP first-usable (OLS, HC3) age only",3.64,3.6382516420244855,ok
+L274,"GP all usable sessions (lme REML, random intercept) + sex + cell",0.612,0.6120636893804076,ok
+L274,"GP all usable sessions (lme REML, random intercept) + sex + cell",0.390,0.3904683177073165,ok
+L274,"GP all usable sessions (lme REML, random intercept) + sex + cell",0.834,0.8336590610534986,ok
+L274,"GP all usable sessions (lme REML, random intercept) + sex + cell",2.23,2.2338090853299546,ok
+L274,"GP all usable sessions (lme REML, random intercept) + sex + cell",1.43,1.4250668529464108,ok
+L274,"GP all usable sessions (lme REML, random intercept) + sex + cell",3.04,3.042551317713498,ok
+L274,"GP all usable sessions (lme REML, random intercept) + sex + cell",1.85,1.851740386074185,ok
+L274,"GP all usable sessions (lme REML, random intercept) + sex + cell",0.71,0.7069582144933422,ok
+L274,"GP all usable sessions (lme REML, random intercept) + sex + cell",3.00,2.996522557655028,ok
+L275,"GP all usable (lme REML), WITHIN-person age + sex + cell",0.444,0.4439288447800603,ok
+L275,"GP all usable (lme REML), WITHIN-person age + sex + cell",0.051,0.0506455859208112,ok
+L275,"GP all usable (lme REML), WITHIN-person age + sex + cell",0.837,0.8372121036393094,ok
+L275,"GP all usable (lme REML), WITHIN-person age + sex + cell",1.62,1.620178265620658,ok
+L275,"GP all usable (lme REML), WITHIN-person age + sex + cell",0.18,0.1848379048204788,ok
+L275,"GP all usable (lme REML), WITHIN-person age + sex + cell",3.06,3.0555186264208376,ok
+L275,"GP all usable (lme REML), WITHIN-person age + sex + cell",0.84,0.8431571500363937,ok
+L275,"GP all usable (lme REML), WITHIN-person age + sex + cell",-1.32,-1.3175344405548235,ok
+L275,"GP all usable (lme REML), WITHIN-person age + sex + cell",3.00,3.003848740627611,ok
+L278,chi_dia_PUT (the lme value is the AGE-ONLY lme; the D.2 table above uses the '+ sex + cell' lme),-0.358,-0.3580762711020724,ok
+L278,chi_dia_PUT (the lme value is the AGE-ONLY lme; the D.2 table above uses the '+ sex + cell' lme),-0.715,-0.7148597521253697,ok
+L278,chi_dia_PUT (the lme value is the AGE-ONLY lme; the D.2 table above uses the '+ sex + cell' lme),-0.001,-0.0012927900787751,ok
+L278,chi_dia_PUT (the lme value is the AGE-ONLY lme; the D.2 table above uses the '+ sex + cell' lme),.0492,0.0491956653244267,ok
+L278,chi_dia_PUT (the lme value is the AGE-ONLY lme; the D.2 table above uses the '+ sex + cell' lme),-0.501,-0.5005222457748317,ok
+L278,chi_dia_PUT (the lme value is the AGE-ONLY lme; the D.2 table above uses the '+ sex + cell' lme),-0.840,-0.8401373213288873,ok
+L278,chi_dia_PUT (the lme value is the AGE-ONLY lme; the D.2 table above uses the '+ sex + cell' lme),-0.161,-0.1609071702207761,ok
+L278,chi_dia_PUT (the lme value is the AGE-ONLY lme; the D.2 table above uses the '+ sex + cell' lme),.0055,0.0054790395476735,ok
+L279,"-0.056 [-0.561, 0.449], p .83 (first-usable); -0.111 [-0.555, 0.333], p .61",-0.056,-0.0559423718306624,ok
+L279,"-0.056 [-0.561, 0.449], p .83 (first-usable); -0.111 [-0.555, 0.333], p .61",-0.561,-0.5612693766727924,ok
+L279,"-0.056 [-0.561, 0.449], p .83 (first-usable); -0.111 [-0.555, 0.333], p .61",0.449,0.4493846330114676,ok
+L279,"-0.056 [-0.561, 0.449], p .83 (first-usable); -0.111 [-0.555, 0.333], p .61",.83,0.8261376008588059,ok
+L279,"-0.056 [-0.561, 0.449], p .83 (first-usable); -0.111 [-0.555, 0.333], p .61",-0.111,-0.1109873180650016,ok
+L279,"-0.056 [-0.561, 0.449], p .83 (first-usable); -0.111 [-0.555, 0.333], p .61",-0.555,-0.5549618406529803,ok
+L279,"-0.056 [-0.561, 0.449], p .83 (first-usable); -0.111 [-0.555, 0.333], p .61",0.333,0.332987204522977,ok
+L279,"-0.056 [-0.561, 0.449], p .83 (first-usable); -0.111 [-0.555, 0.333], p .61",.61,0.6116944494386757,ok
+L280,"+0.740 [0.335, 1.145], p .0005",0.740,0.7402509107179998,ok
+L280,"+0.740 [0.335, 1.145], p .0005",0.335,0.3351769483693232,ok
+L280,"+0.740 [0.335, 1.145], p .0005",1.145,1.1453248730666763,ok
+L280,"+0.740 [0.335, 1.145], p .0005",.0005,0.0004911690099511,ok
+L280,"+2.453 [1.446, 3.459], p < .0001",2.453,2.4525139000722818,ok
+L280,"+2.453 [1.446, 3.459], p < .0001",1.446,1.4461088888304086,ok
+L280,"+2.453 [1.446, 3.459], p < .0001",3.459,3.458918911314155,ok
+L280,GP chi_para p < .0001,<.0001,6.148923717703678e-06,ok
+L283,putamen r = .21 (age-partialled .16); GP r = .68,.21,0.20548920309085977,ok
+L283,putamen r = .21 (age-partialled .16); GP r = .68,.16,0.16291401452463092,ok
+L283,putamen r = .21 (age-partialled .16); GP r = .68,.68,0.6787682162251518,ok
+L289,ref_ppb,0.042,0.0423755607907549,ok
+L289,ref_ppb,-0.100,-0.099573304888295,ok
+L289,ref_ppb,0.184,0.1843244264698049,ok
+L289,ref_ppb,.554,0.5540170802321484,ok
+L290,ref2_minus_wb_ppb,-0.003,-0.0026386647136339,ok
+L290,ref2_minus_wb_ppb,-0.738,-0.7376555334044793,ok
+L290,ref2_minus_wb_ppb,0.732,0.7323782039772114,ok
+L290,ref2_minus_wb_ppb,.994,0.9943158021165568,ok
+L291,chi_PUT_unref,0.425,0.4245502004066824,ok
+L291,chi_PUT_unref,-0.315,-0.3150138585726385,ok
+L291,chi_PUT_unref,1.164,1.1641142593860034,ok
+L291,chi_PUT_unref,.257,0.2565945736297994,ok
+L292,chi_PUT_csfref,0.385,0.3848133043295618,ok
+L292,chi_PUT_csfref,-0.410,-0.4096582228584739,ok
+L292,chi_PUT_csfref,1.179,1.1792848315175974,ok
+L292,chi_PUT_csfref,.338,0.3378785256690139,ok
+L293,chi_GP_unref / chi_GP_csfref,2.439,2.438947089032376,ok
+L293,chi_GP_unref / chi_GP_csfref,1.129,1.1294968057911952,ok
+L293,chi_GP_unref / chi_GP_csfref,3.748,3.7483973722735566,ok
+L293,chi_GP_unref / chi_GP_csfref,2.399,2.399210192955253,ok
+L293,chi_GP_unref / chi_GP_csfref,1.071,1.070815102258238,ok
+L293,chi_GP_unref / chi_GP_csfref,3.728,3.727605283652269,ok
+L293,chi_GP_unref / chi_GP_csfref,.0004,0.0003890316329327,ok
+L293,chi_GP_unref / chi_GP_csfref,.0006,0.0005651996708133,ok
+L294,chi_SNVTA / r2s_SNVTA,1.312,1.312222721342519,ok
+L294,chi_SNVTA / r2s_SNVTA,-0.070,-0.0704449695920823,ok
+L294,chi_SNVTA / r2s_SNVTA,2.695,2.6948904122771205,ok
+L294,chi_SNVTA / r2s_SNVTA,0.311,0.3114083718137894,ok
+L294,chi_SNVTA / r2s_SNVTA,0.052,0.0517889990417303,ok
+L294,chi_SNVTA / r2s_SNVTA,0.571,0.5710277445858485,ok
+L294,chi_SNVTA / r2s_SNVTA,.063,0.0625521502435912,ok
+L294,chi_SNVTA / r2s_SNVTA,.019,0.0193601901041137,ok
+L302,Our putamen R2* rise of 0.30 s^-1/y (0.25 SD/y) over 8.8-17.8 y,0.30,0.3009416478186997,ok
+L302,Our putamen R2* rise of 0.30 s^-1/y (0.25 SD/y) over 8.8-17.8 y,0.25,0.2445084179996168,MISMATCH
+L302,Our putamen R2* rise of 0.30 s^-1/y (0.25 SD/y) over 8.8-17.8 y,8.8,8.8,ok
+L302,Our putamen R2* rise of 0.30 s^-1/y (0.25 SD/y) over 8.8-17.8 y,17.8,17.8,ok
+L306,"Putamen R2* rises by 0.30 s^-1/y (p ≈ 1e-6), including within persons (0.30, p .007)",0.30,0.3009416478186997,ok
+L306,"Putamen R2* rises by 0.30 s^-1/y (p ≈ 1e-6), including within persons (0.30, p .007)",1e-6,9.258854848632716e-07,ok
+L306,"Putamen R2* rises by 0.30 s^-1/y (p ≈ 1e-6), including within persons (0.30, p .007)",0.30,0.2965783026185894,ok
+L306,"Putamen R2* rises by 0.30 s^-1/y (p ≈ 1e-6), including within persons (0.30, p .007)",.007,0.0072456922804559,ok
+L306,Its standardised rate (0.25 SD/y) matches GP R2* (0.24 SD/y),0.25,0.2445084179996168,MISMATCH
+L306,Its standardised rate (0.25 SD/y) matches GP R2* (0.24 SD/y),0.24,0.2352704287451427,ok
+L306,(8.8-17.8 / 19.5 y),8.8,8.8,ok
+L306,(8.8-17.8 / 19.5 y),17.8,17.8,ok
+L306,(8.8-17.8 / 19.5 y),19.5,19.5,ok
+L307,Its slope is 0.38 ppb/y (first-usable) and 0.08-0.15 ppb/y (all usable),0.38,0.3821746396159274,ok
+L307,Its slope is 0.38 ppb/y (first-usable) and 0.08-0.15 ppb/y (all usable),0.08,0.0796730671059419,ok
+L307,Its slope is 0.38 ppb/y (first-usable) and 0.08-0.15 ppb/y (all usable),0.15,0.144961696129147,MISMATCH
+L307,"below the 1.10 ppb/y implied by its own R2* slope (shortfall test p .049 first-usable, p .0055 all usable)",1.10,1.098327181820072,ok
+L307,"below the 1.10 ppb/y implied by its own R2* slope (shortfall test p .049 first-usable, p .0055 all usable)",.049,0.0491956653244267,ok
+L307,"below the 1.10 ppb/y implied by its own R2* slope (shortfall test p .049 first-usable, p .0055 all usable)",.0055,0.0054790395476735,ok
+L308,observed 2.40 vs implied 2.51 ppb/y,2.40,2.39657152824162,ok
+L308,observed 2.40 vs implied 2.51 ppb/y,2.51,2.5084562719029453,ok
+L308,(r = .68 vs .21 in putamen),.68,0.6787682162251518,ok
+L308,(r = .68 vs .21 in putamen),.21,0.20548920309085977,ok
+L312,"(chi_para up 0.74, chi_dia down 0.36 ppb/y)",0.74,0.7402509107179998,ok
+L312,"(chi_para up 0.74, chi_dia down 0.36 ppb/y)",0.36,0.3580762711020724,ok
+L313,age-related R2* (0.31-0.50 s^-1/y) and chi (about 1.2-1.3 ppb/y),0.31,0.3114083718137894,ok
+L313,age-related R2* (0.31-0.50 s^-1/y) and chi (about 1.2-1.3 ppb/y),0.50,0.4985973660791308,ok
+L313,age-related R2* (0.31-0.50 s^-1/y) and chi (about 1.2-1.3 ppb/y),1.2,1.242579681216743,ok
+L313,age-related R2* (0.31-0.50 s^-1/y) and chi (about 1.2-1.3 ppb/y),1.3,1.312222721342519,ok

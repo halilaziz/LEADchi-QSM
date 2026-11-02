@@ -1,0 +1,104 @@
+{
+  "n_auto_grade2": 10,
+  "n_forced_review": 17,
+  "n_ok": 177,
+  "n_sessions": 181,
+  "n_snonly_fail": 64,
+  "n_snvta_fail": 60,
+  "ref2_type_counts": {
+    "CSF": 93,
+    "CSF_erode1": 84,
+    "none": 0
+  },
+  "review_thresholds_q3_plus_3iqr": {
+    "f_imp": 0.0,
+    "pf_streak": 2.7530545899999996,
+    "q_phase": -1.4450192975,
+    "resid_bg": 0.00720496,
+    "vent_sd": 39.117816930000004,
+    "wm_sd": 24.405973439999997
+  },
+  "robust_z": {
+    "CAU": {
+      "n": 170,
+      "n_absz_gt5": 0,
+      "sd_over_robust_sd": 1.0253340006902618
+    },
+    "DGM": {
+      "n": 173,
+      "n_absz_gt5": 0,
+      "sd_over_robust_sd": 1.0985487409115622
+    },
+    "DNIP_R": {
+      "n": 175,
+      "n_absz_gt5": 0,
+      "sd_over_robust_sd": 1.2528130487584548
+    },
+    "DN_R": {
+      "n": 175,
+      "n_absz_gt5": 0,
+      "sd_over_robust_sd": 1.1829869855505095
+    },
+    "GP": {
+      "n": 173,
+      "n_absz_gt5": 1,
+      "sd_over_robust_sd": 1.2910459886096435
+    },
+    "PUT": {
+      "n": 165,
+      "n_absz_gt5": 0,
+      "sd_over_robust_sd": 1.0699110965007492
+    },
+    "PUT_R": {
+      "n": 168,
+      "n_absz_gt5": 1,
+      "sd_over_robust_sd": 1.2466529247980327
+    },
+    "RN": {
+      "n": 175,
+      "n_absz_gt5": 2,
+      "sd_over_robust_sd": 1.3105493706750202
+    },
+    "SNVTA": {
+      "n": 121,
+      "n_absz_gt5": 0,
+      "sd_over_robust_sd": 1.0896358635434276
+    },
+    "SNonly": {
+      "n": 117,
+      "n_absz_gt5": 0,
+      "sd_over_robust_sd": 0.9430625895507956
+    },
+    "STR": {
+      "n": 156,
+      "n_absz_gt5": 0,
+      "sd_over_robust_sd": 0.9710131083307503
+    },
+    "THAL": {
+      "n": 145,
+      "n_absz_gt5": 4,
+      "sd_over_robust_sd": 1.7563991814243447
+    }
+  },
+  "roi_fail_counts": {
+    "CAU": 7,
+    "DGM": 4,
+    "DNIP_R": 2,
+    "DN_R": 2,
+    "GP": 4,
+    "PUT": 12,
+    "PUT_R": 9,
+    "RN": 2,
+    "SNVTA": 56,
+    "SNonly": 60,
+    "STR": 21,
+    "THAL": 32
+  },
+  "status_counts": {
+    "mask_mismatch": 3,
+    "not_registered": 1,
+    "ok": 177
+  },
+  "utc": "2026-10-07T19:34:00Z",
+  "variant": "qsmxt_e2_lap_vsharp_tv"
+}

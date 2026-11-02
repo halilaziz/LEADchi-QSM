@@ -1,0 +1,1709 @@
+{
+ "SIMULATED": false,
+ "label": "POST HOC / EXPLORATORY human visual-QC validation",
+ "meta": {
+  "simulated": false,
+  "ratings": "/path/to/Penn_LEAD/LEADchi/human_qc_kit/returned/LEADchi_humanQC_rater_20261028T1724Z.csv",
+  "ratings_sha256": "1975118e501066fd87cb7e18a096f537a034caf3b38897590a927649cc2118c3",
+  "key_sha256": "a4bb713258897af408097bfc4523d8d7deadbf68c081b51e9bb15c5e8ea1d97b",
+  "utc": "2026-10-28T17:30:05Z",
+  "nboot": 2000,
+  "seed": 20261008,
+  "issues": {
+   "file_encoding": "utf-8-sig",
+   "file_delimiter": "comma",
+   "unknown_kit_ids": 0,
+   "duplicated_rows": 0,
+   "invalid_failure_codes": 0,
+   "missing_or_invalid_grade": 0,
+   "missing_or_invalid_placement": 0,
+   "excluded_from_part_A": 0
+  },
+  "nextrap": 1000,
+  "extrap_seed": 20261009,
+  "exclude_from_part_A": [],
+  "script_sha256": "dd571364efb2abb6d623a83a275431ff5e1877b60ef9c08824c9df383085b081",
+  "refit_script_sha256": "7c182ae202cbb8963f594a4460c8c6cfdbeead48ae4a26582512a5d5ef27e0e5"
+ },
+ "input_issues": {
+  "file_encoding": "utf-8-sig",
+  "file_delimiter": "comma",
+  "unknown_kit_ids": [],
+  "duplicated_rows": [],
+  "invalid_failure_codes": {},
+  "missing_or_invalid_grade": [],
+  "missing_or_invalid_placement": [],
+  "excluded_from_part_A": []
+ },
+ "agreement": {
+  "n_rated_primary_items": 101,
+  "n_by_stratum": {
+   "AI_fail_all": 61,
+   "AI_pass_sample": 40
+  },
+  "confusion_rows_human_cols_AI": {
+   "human_0": {
+    "AI_0": 1,
+    "AI_1": 38,
+    "AI_2": 45
+   },
+   "human_1": {
+    "AI_0": 0,
+    "AI_1": 1,
+    "AI_2": 7
+   },
+   "human_2": {
+    "AI_0": 0,
+    "AI_1": 0,
+    "AI_2": 9
+   }
+  },
+  "sample_unweighted": {
+   "kappa_linear": 0.05240113975953853,
+   "kappa_quadratic": 0.07828026769417973,
+   "kappa_binary_fail_vs_pass": 0.12056262558606834,
+   "exact_agreement": 0.10891089108910891,
+   "kappa_linear_boot": {
+    "ci95": [
+     0.02295016345319911,
+     0.08874507725784776
+    ],
+    "n_valid": 2000
+   },
+   "kappa_binary_boot": {
+    "ci95": [
+     0.05265756129669252,
+     0.20526855969893942
+    ],
+    "n_valid": 2000
+   }
+  },
+  "design_weighted_to_180": {
+   "kappa_linear": 0.05628261800889922,
+   "kappa_quadratic": 0.09627276518986061,
+   "kappa_binary_fail_vs_pass": 0.1862284820031298,
+   "exact_agreement": 0.08305555555555555,
+   "kappa_linear_boot": {
+    "ci95": [
+     0.024718216702561358,
+     0.09436864178493658
+    ],
+    "n_valid": 2000
+   },
+   "kappa_binary_boot": {
+    "ci95": [
+     0.0849090260435249,
+     0.30126582278481007
+    ],
+    "n_valid": 2000
+   },
+   "PPV_P(human2|AI2)": 0.14754098360655737,
+   "NPV_P(human<2|AI<2)": 1.0,
+   "sensitivity_P(AI2|human2)": 1.0,
+   "specificity_P(AI<2|human<2)": 0.695906432748538,
+   "est_human_fail_n_of_180": 9.0,
+   "sensitivity_P(AI2|human2)_boot": {
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "n_valid": 2000
+   },
+   "specificity_P(AI<2|human<2)_boot": {
+    "ci95": [
+     0.6761363636363635,
+     0.7212121212121212
+    ],
+    "n_valid": 2000
+   }
+  },
+  "AI_fail_stratum": {
+   "n": 61,
+   "kappa": "undefined (AI grade constant = 2 in this stratum)",
+   "human_grade_counts": {
+    "0": 45,
+    "1": 7,
+    "2": 9
+   },
+   "confirmation_rate_P(human=2)": 0.14754098360655737,
+   "confirmation_rate_wilson95": [
+    0.07961168469377139,
+    0.2572323539525635
+   ],
+   "linear_weighted_agreement": 0.20491803278688525
+  },
+  "AI_pass_stratum": {
+   "n": 40,
+   "kappa_linear": 0.0013140604467805073,
+   "kappa_linear_boot": {
+    "ci95": [
+     null,
+     null
+    ],
+    "n_valid": 828
+   },
+   "exact_agreement": 0.05,
+   "human_grade_counts": {
+    "0": 39,
+    "1": 1,
+    "2": 0
+   },
+   "missed_fail_rate_P(human=2)": 0.0,
+   "missed_fail_wilson95": [
+    0.0,
+    0.08762160245846368
+   ],
+   "implied_human_fails_among_119_AI_pass": [
+    0.0,
+    0.0,
+    10.426970692557177
+   ]
+  },
+  "by_forced_review_flag": {
+   "0": {
+    "n": 79,
+    "n_AI_grade2": 40,
+    "human_grade_counts": {
+     "0": 67,
+     "1": 5,
+     "2": 7
+    },
+    "exact_agreement": 0.11392405063291139,
+    "kappa_linear_sample": 0.06792992491955685,
+    "kappa_linear_design_weighted": 0.0597958734092523,
+    "kappa_binary_design_weighted": 0.23982105880919946,
+    "exact_agreement_design_weighted": 0.08299951930780325,
+    "kappa_linear_sample_boot": {
+     "ci95": [
+      0.026455624646693265,
+      0.12287194670614365
+     ],
+     "n_valid": 2000
+    },
+    "kappa_linear_design_weighted_boot": {
+     "ci95": [
+      0.023919062243226374,
+      0.10209346563493127
+     ],
+     "n_valid": 2000
+    }
+   },
+   "1": {
+    "n": 22,
+    "n_AI_grade2": 21,
+    "human_grade_counts": {
+     "0": 17,
+     "1": 3,
+     "2": 2
+    },
+    "exact_agreement": 0.09090909090909091,
+    "kappa": "not reported (pre-specified 2026-10-07): the flag is a cue for the AI grade",
+    "P(human=2)": 0.09090909090909091,
+    "P(human=2)_wilson95": [
+     0.025295428762322658,
+     0.278149470278251
+    ],
+    "confirmation_rate_P(human=2|AI=2)": 0.09523809523809523,
+    "confirmation_rate_wilson95": [
+     0.026518767198269788,
+     0.2891413926484656
+    ],
+    "AI_pass_items_human_grades": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    }
+   }
+  },
+  "failure_codes_presence": {
+   "M": {
+    "both": 14,
+    "human_only": 2,
+    "AI_only": 27,
+    "kappa": 0.3410573678290213
+   },
+   "W": {
+    "both": 0,
+    "human_only": 0,
+    "AI_only": 22,
+    "kappa": null
+   },
+   "S": {
+    "both": 0,
+    "human_only": 0,
+    "AI_only": 8,
+    "kappa": null
+   },
+   "B": {
+    "both": 0,
+    "human_only": 0,
+    "AI_only": 25,
+    "kappa": null
+   },
+   "K": {
+    "both": 0,
+    "human_only": 1,
+    "AI_only": 5,
+    "kappa": -0.016778523489932917
+   },
+   "F": {
+    "both": 0,
+    "human_only": 0,
+    "AI_only": 0,
+    "kappa": null
+   },
+   "A": {
+    "both": 0,
+    "human_only": 0,
+    "AI_only": 4,
+    "kappa": null
+   },
+   "C": {
+    "both": 0,
+    "human_only": 0,
+    "AI_only": 0,
+    "kappa": null
+   },
+   "D": {
+    "both": 0,
+    "human_only": 0,
+    "AI_only": 11,
+    "kappa": null
+   }
+  },
+  "placement": {
+   "n": 101,
+   "human_fail": 4,
+   "AI_fail": 0,
+   "agreement": 0.9603960396039604,
+   "kappa": null,
+   "note": "kappa is reported as NA when either rater is constant (the AI failed placement in none of 180)",
+   "human_fail_kit_ids": [
+    "h5be087",
+    "h01f554",
+    "h08d5ce",
+    "hd34957"
+   ]
+  },
+  "intra_rater_duplicates": {
+   "n_pairs": 10,
+   "n_pairs_with_both_grades": 10,
+   "kappa_linear": 0.3181818181818181,
+   "exact_agreement": 0.7,
+   "placement_agreement": 0.9,
+   "codes_identical": 0.8,
+   "pairs": [
+    {
+     "original": "h2ed232",
+     "duplicate": "hefced3",
+     "g1": 0.0,
+     "g2": 0.0,
+     "p1": "pass",
+     "p2": "pass",
+     "c1": "",
+     "c2": ""
+    },
+    {
+     "original": "hed3b00",
+     "duplicate": "h55e0cc",
+     "g1": 1.0,
+     "g2": 2.0,
+     "p1": "pass",
+     "p2": "pass",
+     "c1": "M",
+     "c2": "M"
+    },
+    {
+     "original": "h721ca9",
+     "duplicate": "h31c5fc",
+     "g1": 0.0,
+     "g2": 0.0,
+     "p1": "pass",
+     "p2": "pass",
+     "c1": "",
+     "c2": ""
+    },
+    {
+     "original": "h93e2bb",
+     "duplicate": "h8dcc07",
+     "g1": 0.0,
+     "g2": 0.0,
+     "p1": "pass",
+     "p2": "pass",
+     "c1": "",
+     "c2": ""
+    },
+    {
+     "original": "hf4e33b",
+     "duplicate": "hec3292",
+     "g1": 1.0,
+     "g2": 0.0,
+     "p1": "pass",
+     "p2": "pass",
+     "c1": "M",
+     "c2": ""
+    },
+    {
+     "original": "ha11c2f",
+     "duplicate": "hd030e1",
+     "g1": 0.0,
+     "g2": 0.0,
+     "p1": "pass",
+     "p2": "fail",
+     "c1": "",
+     "c2": ""
+    },
+    {
+     "original": "hbdeb2a",
+     "duplicate": "h56624e",
+     "g1": 0.0,
+     "g2": 0.0,
+     "p1": "pass",
+     "p2": "pass",
+     "c1": "",
+     "c2": ""
+    },
+    {
+     "original": "h904b4e",
+     "duplicate": "hd6f56a",
+     "g1": 0.0,
+     "g2": 0.0,
+     "p1": "pass",
+     "p2": "pass",
+     "c1": "",
+     "c2": ""
+    },
+    {
+     "original": "hced076",
+     "duplicate": "h303dc7",
+     "g1": 1.0,
+     "g2": 0.0,
+     "p1": "pass",
+     "p2": "pass",
+     "c1": "M",
+     "c2": ""
+    },
+    {
+     "original": "h5196c2",
+     "duplicate": "h64687a",
+     "g1": 0.0,
+     "g2": 0.0,
+     "p1": "pass",
+     "p2": "pass",
+     "c1": "",
+     "c2": ""
+    }
+   ],
+   "note": "10 pairs: kappa is imprecise; exact agreement is the main intra-rater figure"
+  },
+  "vs_AI_pass1_grade": {
+   "n": 101,
+   "AI_pass1_grade_counts": {
+    "0": 1,
+    "1": 41,
+    "2": 59
+   },
+   "kappa_linear_sample": 0.05554383744638969,
+   "kappa_linear_design_weighted": 0.057647381547029086,
+   "exact_agreement": 0.10891089108910891,
+   "kappa_linear_design_weighted_boot": {
+    "ci95": [
+     0.026104043920774832,
+     0.0961520393969315
+    ],
+    "n_valid": 2000
+   },
+   "note": "secondary comparator (review L5); design weights still refer to the final-grade strata"
+  },
+  "AI_repeatability_pass1_vs_pass2": {
+   "n_sessions_rated_twice": 36,
+   "identical": 31,
+   "exact_agreement": 0.8611111111111112,
+   "kappa_linear": 0.6641791044776119,
+   "crosstab_pass1_rows_pass2_cols": {
+    "pass1_0": {
+     "pass2_0": 0,
+     "pass2_1": 0,
+     "pass2_2": 0
+    },
+    "pass1_1": {
+     "pass2_0": 0,
+     "pass2_1": 23,
+     "pass2_2": 2
+    },
+    "pass1_2": {
+     "pass2_0": 0,
+     "pass2_1": 3,
+     "pass2_2": 8
+    }
+   }
+  },
+  "excluded_from_part_A": []
+ },
+ "sensitivity": {
+  "label": "POST HOC sensitivity: not part of the registered confirmatory analysis",
+  "reconstruction_check_AI_frozen": {
+   "usable_equal": true,
+   "first_usable_equal": true,
+   "fail_reason_equal": true
+  },
+  "n_sessions_in_kit": 101,
+  "n_sessions_with_human_grade": 101,
+  "n_sessions_with_human_placement": 101,
+  "unrated_kit_sessions_keep_AI": 0,
+  "coverage": {
+   "frozen_first_usable_sessions": 80,
+   "frozen_first_usable_not_in_kit": 52,
+   "AI_pass_sessions": 119,
+   "AI_pass_sessions_not_in_kit": 79,
+   "note": "sessions outside the kit keep the AI grade in every scenario; the claim supported is robustness to replacing the AI grade by the human grade for the re-rated sessions only (review item M3)"
+  },
+  "sample_changes_vs_frozen": {
+   "AI_frozen": {
+    "n_usable_sessions": 107,
+    "n_first_usable": 80,
+    "subjects_added": [],
+    "subjects_removed": [],
+    "subjects_with_changed_first_session": [],
+    "posthoc_plausibility_recheck_excluded": []
+   },
+   "H_replace": {
+    "n_usable_sessions": 126,
+    "n_first_usable": 89,
+    "subjects_added": [
+     "sub-20860",
+     "sub-21141",
+     "sub-21493",
+     "sub-21568",
+     "sub-21580",
+     "sub-21713",
+     "sub-21827",
+     "sub-21855",
+     "sub-22045"
+    ],
+    "subjects_removed": [],
+    "subjects_with_changed_first_session": [
+     "sub-20253",
+     "sub-20976"
+    ],
+    "posthoc_plausibility_recheck_excluded": []
+   },
+   "H_grade_only": {
+    "n_usable_sessions": 127,
+    "n_first_usable": 89,
+    "subjects_added": [
+     "sub-20860",
+     "sub-21141",
+     "sub-21493",
+     "sub-21568",
+     "sub-21580",
+     "sub-21713",
+     "sub-21827",
+     "sub-21855",
+     "sub-22045"
+    ],
+    "subjects_removed": [],
+    "subjects_with_changed_first_session": [
+     "sub-20253",
+     "sub-20976"
+    ],
+    "posthoc_plausibility_recheck_excluded": []
+   },
+   "Strict_union": {
+    "n_usable_sessions": 107,
+    "n_first_usable": 80,
+    "subjects_added": [],
+    "subjects_removed": [],
+    "subjects_with_changed_first_session": [],
+    "posthoc_plausibility_recheck_excluded": []
+   },
+   "Lenient": {
+    "n_usable_sessions": 127,
+    "n_first_usable": 89,
+    "subjects_added": [
+     "sub-20860",
+     "sub-21141",
+     "sub-21493",
+     "sub-21568",
+     "sub-21580",
+     "sub-21713",
+     "sub-21827",
+     "sub-21855",
+     "sub-22045"
+    ],
+    "subjects_removed": [],
+    "subjects_with_changed_first_session": [
+     "sub-20253",
+     "sub-20976"
+    ],
+    "posthoc_plausibility_recheck_excluded": []
+   }
+  },
+  "rscript_returncode": 0,
+  "refit_reproduces_frozen": true,
+  "extrapolation_unrated_AI_pass": {
+   "label": "POST HOC extrapolation (review item M3): human fails imputed among unrated AI-pass sessions",
+   "n_draws": 1000,
+   "seed": 20261009,
+   "observed_missed_fails_m": 0,
+   "rated_AI_pass_sessions_n": 40,
+   "unrated_AI_pass_sessions": 79,
+   "rscript_returncode": 0,
+   "n_draws_fitted": 1000,
+   "n_draws_error": 0,
+   "label_counts": {
+    "B": 1000
+   },
+   "share_label_B": 1.0,
+   "share_A": 0.0,
+   "share_pB_fixed_below_05": 1.0,
+   "n_imputed_fails_min_q025_median_q975_max": [
+    0.0,
+    0.0,
+    0.0,
+    6.0,
+    11.0
+   ],
+   "n_min_q025_median_q975_max": [
+    84.0,
+    86.0,
+    89.0,
+    89.0,
+    89.0
+   ],
+   "beta_min_q025_median_q975_max": [
+    4.52941806640762,
+    5.79723276388028,
+    6.29013622956428,
+    6.821085023059016,
+    8.24743190959712
+   ],
+   "pB_fixed_min_q025_median_q975_max": [
+    1.55252000623252e-05,
+    4.4333701045678096e-05,
+    6.15839712316753e-05,
+    0.00015488962870880785,
+    0.000454356774423764
+   ]
+  }
+ },
+ "m1_refit": {
+  "AI_frozen": {
+   "scenario": "AI_frozen",
+   "n": 80,
+   "df": 68,
+   "cells": {
+    "TD": 22,
+    "ADHD-only": 16,
+    "PS-only": 17,
+    "PS+ADHD": 25,
+    "total": 80
+   },
+   "n_usable_sessions": 107,
+   "first_usable_keys": [
+    "sub-19861_ses-1",
+    "sub-20139_ses-1",
+    "sub-20141_ses-1",
+    "sub-20149_ses-1",
+    "sub-20188_ses-2",
+    "sub-20212_ses-1",
+    "sub-20214_ses-1",
+    "sub-20236_ses-1",
+    "sub-20238_ses-1",
+    "sub-20252_ses-1",
+    "sub-20253_ses-3",
+    "sub-20258_ses-1",
+    "sub-20259_ses-2",
+    "sub-20302_ses-1",
+    "sub-20303_ses-2",
+    "sub-20310_ses-1",
+    "sub-20350_ses-1",
+    "sub-20352_ses-1",
+    "sub-20399_ses-2",
+    "sub-20402_ses-1",
+    "sub-20403_ses-1",
+    "sub-20427_ses-1",
+    "sub-20463_ses-1",
+    "sub-20494_ses-3",
+    "sub-20533_ses-2",
+    "sub-20572_ses-2",
+    "sub-20626_ses-1",
+    "sub-20712_ses-1",
+    "sub-20721_ses-2",
+    "sub-20794_ses-1",
+    "sub-20818_ses-2",
+    "sub-20823_ses-1",
+    "sub-20836_ses-1",
+    "sub-20846_ses-1",
+    "sub-20855_ses-1",
+    "sub-20866_ses-1",
+    "sub-20902_ses-2",
+    "sub-20916_ses-3",
+    "sub-20919_ses-1",
+    "sub-20923_ses-2",
+    "sub-20953_ses-1",
+    "sub-20966_ses-1",
+    "sub-20968_ses-3",
+    "sub-20976_ses-2",
+    "sub-20983_ses-2",
+    "sub-21023_ses-1",
+    "sub-21035_ses-2",
+    "sub-21038_ses-1",
+    "sub-21104_ses-1",
+    "sub-21112_ses-2",
+    "sub-21116_ses-1",
+    "sub-21118_ses-1",
+    "sub-21131_ses-1",
+    "sub-21139_ses-2",
+    "sub-21146_ses-1",
+    "sub-21150_ses-1",
+    "sub-21154_ses-2",
+    "sub-21161_ses-3",
+    "sub-21193_ses-1",
+    "sub-21345_ses-1",
+    "sub-21432_ses-1",
+    "sub-21514_ses-1",
+    "sub-21516_ses-1",
+    "sub-21560_ses-2",
+    "sub-21567_ses-1",
+    "sub-21623_ses-1",
+    "sub-21712_ses-1",
+    "sub-21797_ses-1",
+    "sub-21856_ses-1",
+    "sub-22064_ses-1",
+    "sub-22473_ses-1",
+    "sub-22510_ses-1",
+    "sub-22617_ses-1",
+    "sub-22653_ses-1",
+    "sub-22654_ses-1",
+    "sub-22670_ses-1",
+    "sub-22744_ses-1",
+    "sub-23303_ses-1",
+    "sub-23676_ses-1",
+    "sub-23698_ses-1"
+   ],
+   "beta_PS_ppb": 4.96280154409223,
+   "se_hc3": 3.12508040430837,
+   "t": 1.58805563442473,
+   "p_two": 0.116913053059836,
+   "ci95_ppb": [
+    -1.27319931092534,
+    11.1988023991098
+   ],
+   "ci90_ppb": [
+    -0.248495913393383,
+    10.1740990015778
+   ],
+   "sigma_resid": 11.2559034014286,
+   "sigma_rob": 10.5504543758571,
+   "huber_converged": true,
+   "sigma_B": 10.5504543758571,
+   "delta": 0.440906550731622,
+   "bound_fixed": {
+    "bound_ppb": -6.13180464348368,
+    "note": "registered bound frozen at the confirmatory run (-6.1318 ppb)",
+    "tB": 3.55018263603087,
+    "df": 68,
+    "pB_one_sided": 0.00035191843098177,
+    "reject_at_05": true
+   },
+   "bound_rederived": {
+    "delta_B": 0.581188679182884,
+    "bound_ppb": -6.13180464348368,
+    "tB": 3.55018263603087,
+    "pB": 0.000351918430981771,
+    "note": "delta_B = 0.6*sqrt(rL_primary) times sigma_B recomputed in this sample"
+   },
+   "A_beta_negative_p05": false,
+   "B_rederived": true,
+   "outcome_label_descriptive": "B",
+   "disconfirming": false,
+   "formula": "chi_SNVTA ~ PS_e * ADHD_e + ns(age, df = 3) + sex_e + race3 +      scale(roi_vol) + scale(Q_phase)",
+   "coefficients": [
+    {
+     "term": "(Intercept)",
+     "est": 43.1977847659845,
+     "se_hc3": 5.66897985868881,
+     "t": 7.62002791380102,
+     "p_two": 1.07286803737775e-10
+    },
+    {
+     "term": "PS_e",
+     "est": 4.96280154409223,
+     "se_hc3": 3.12508040430837,
+     "t": 1.58805563442473,
+     "p_two": 0.116913053059836
+    },
+    {
+     "term": "ADHD_e",
+     "est": -1.27157944948918,
+     "se_hc3": 3.10638546650445,
+     "t": -0.409343741528659,
+     "p_two": 0.683573960487499
+    },
+    {
+     "term": "ns(age, df = 3)1",
+     "est": -1.04481683406568,
+     "se_hc3": 6.01950240015798,
+     "t": -0.173571960705301,
+     "p_two": 0.862717536166033
+    },
+    {
+     "term": "ns(age, df = 3)2",
+     "est": 30.5378842940041,
+     "se_hc3": 15.0865298404933,
+     "t": 2.02418214240615,
+     "p_two": 0.0468821331477233
+    },
+    {
+     "term": "ns(age, df = 3)3",
+     "est": 14.6090325025517,
+     "se_hc3": 9.50201427899121,
+     "t": 1.53746690686963,
+     "p_two": 0.128819459388736
+    },
+    {
+     "term": "sex_e",
+     "est": 1.46630681893267,
+     "se_hc3": 2.98545827031948,
+     "t": 0.491149661514363,
+     "p_two": 0.624902070912955
+    },
+    {
+     "term": "race31",
+     "est": -0.87896055458524,
+     "se_hc3": 2.38550579337842,
+     "t": -0.3684587801149,
+     "p_two": 0.713675798484874
+    },
+    {
+     "term": "race32",
+     "est": 0.334705068223379,
+     "se_hc3": 2.51869750619226,
+     "t": 0.132888156438199,
+     "p_two": 0.894674299438406
+    },
+    {
+     "term": "scale(roi_vol)",
+     "est": 1.78099997866769,
+     "se_hc3": 1.44577687218569,
+     "t": 1.23186365263626,
+     "p_two": 0.222242911377641
+    },
+    {
+     "term": "scale(Q_phase)",
+     "est": -2.46387578711352,
+     "se_hc3": 1.6403999481603,
+     "t": -1.50199699157315,
+     "p_two": 0.137727647252349
+    },
+    {
+     "term": "PS_e:ADHD_e",
+     "est": -6.38923988314397,
+     "se_hc3": 6.19869616049867,
+     "t": -1.03073932286915,
+     "p_two": 0.306315335235147
+    }
+   ]
+  },
+  "H_replace": {
+   "scenario": "H_replace",
+   "n": 89,
+   "df": 77,
+   "cells": {
+    "TD": 25,
+    "ADHD-only": 18,
+    "PS-only": 19,
+    "PS+ADHD": 27,
+    "total": 89
+   },
+   "n_usable_sessions": 126,
+   "first_usable_keys": [
+    "sub-19861_ses-1",
+    "sub-20139_ses-1",
+    "sub-20141_ses-1",
+    "sub-20149_ses-1",
+    "sub-20188_ses-2",
+    "sub-20212_ses-1",
+    "sub-20214_ses-1",
+    "sub-20236_ses-1",
+    "sub-20238_ses-1",
+    "sub-20252_ses-1",
+    "sub-20253_ses-2",
+    "sub-20258_ses-1",
+    "sub-20259_ses-2",
+    "sub-20302_ses-1",
+    "sub-20303_ses-2",
+    "sub-20310_ses-1",
+    "sub-20350_ses-1",
+    "sub-20352_ses-1",
+    "sub-20399_ses-2",
+    "sub-20402_ses-1",
+    "sub-20403_ses-1",
+    "sub-20427_ses-1",
+    "sub-20463_ses-1",
+    "sub-20494_ses-3",
+    "sub-20533_ses-2",
+    "sub-20572_ses-2",
+    "sub-20626_ses-1",
+    "sub-20712_ses-1",
+    "sub-20721_ses-2",
+    "sub-20794_ses-1",
+    "sub-20818_ses-2",
+    "sub-20823_ses-1",
+    "sub-20836_ses-1",
+    "sub-20846_ses-1",
+    "sub-20855_ses-1",
+    "sub-20860_ses-1",
+    "sub-20866_ses-1",
+    "sub-20902_ses-2",
+    "sub-20916_ses-3",
+    "sub-20919_ses-1",
+    "sub-20923_ses-2",
+    "sub-20953_ses-1",
+    "sub-20966_ses-1",
+    "sub-20968_ses-3",
+    "sub-20976_ses-1",
+    "sub-20983_ses-2",
+    "sub-21023_ses-1",
+    "sub-21035_ses-2",
+    "sub-21038_ses-1",
+    "sub-21104_ses-1",
+    "sub-21112_ses-2",
+    "sub-21116_ses-1",
+    "sub-21118_ses-1",
+    "sub-21131_ses-1",
+    "sub-21139_ses-2",
+    "sub-21141_ses-2",
+    "sub-21146_ses-1",
+    "sub-21150_ses-1",
+    "sub-21154_ses-2",
+    "sub-21161_ses-3",
+    "sub-21193_ses-1",
+    "sub-21345_ses-1",
+    "sub-21432_ses-1",
+    "sub-21493_ses-1",
+    "sub-21514_ses-1",
+    "sub-21516_ses-1",
+    "sub-21560_ses-2",
+    "sub-21567_ses-1",
+    "sub-21568_ses-1",
+    "sub-21580_ses-2",
+    "sub-21623_ses-1",
+    "sub-21712_ses-1",
+    "sub-21713_ses-1",
+    "sub-21797_ses-1",
+    "sub-21827_ses-1",
+    "sub-21855_ses-2",
+    "sub-21856_ses-1",
+    "sub-22045_ses-1",
+    "sub-22064_ses-1",
+    "sub-22473_ses-1",
+    "sub-22510_ses-1",
+    "sub-22617_ses-1",
+    "sub-22653_ses-1",
+    "sub-22654_ses-1",
+    "sub-22670_ses-1",
+    "sub-22744_ses-1",
+    "sub-23303_ses-1",
+    "sub-23676_ses-1",
+    "sub-23698_ses-1"
+   ],
+   "beta_PS_ppb": 6.29013622956428,
+   "se_hc3": 3.07073918362878,
+   "t": 2.0484111002,
+   "p_two": 0.0439280350191711,
+   "ci95_ppb": [
+    0.175513333072132,
+    12.4047591260564
+   ],
+   "ci90_ppb": [
+    1.17771004478784,
+    11.4025624143407
+   ],
+   "sigma_resid": 12.9539720822064,
+   "sigma_rob": 11.6302864618379,
+   "huber_converged": true,
+   "sigma_B": 11.6302864618379,
+   "delta": 0.485575867359204,
+   "bound_fixed": {
+    "bound_ppb": -6.13180464348368,
+    "note": "registered bound frozen at the confirmatory run (-6.1318 ppb)",
+    "tB": 4.04526080862674,
+    "df": 77,
+    "pB_one_sided": 6.15839712316753e-05,
+    "reject_at_05": true
+   },
+   "bound_rederived": {
+    "delta_B": 0.581188679182884,
+    "bound_ppb": -6.75939082727416,
+    "tB": 4.24963706667443,
+    "pB": 2.9718735859493e-05,
+    "note": "delta_B = 0.6*sqrt(rL_primary) times sigma_B recomputed in this sample"
+   },
+   "A_beta_negative_p05": false,
+   "B_rederived": true,
+   "outcome_label_descriptive": "B",
+   "disconfirming": true,
+   "formula": "chi_SNVTA ~ PS_e * ADHD_e + ns(age, df = 3) + sex_e + race3 +      scale(roi_vol) + scale(Q_phase)",
+   "coefficients": [
+    {
+     "term": "(Intercept)",
+     "est": 42.7154695605862,
+     "se_hc3": 7.2992671928483,
+     "t": 5.85202163888973,
+     "p_two": 1.1205670510233e-07
+    },
+    {
+     "term": "PS_e",
+     "est": 6.29013622956428,
+     "se_hc3": 3.07073918362878,
+     "t": 2.0484111002,
+     "p_two": 0.0439280350191711
+    },
+    {
+     "term": "ADHD_e",
+     "est": 2.16302074979744,
+     "se_hc3": 3.10466080609343,
+     "t": 0.696701148657573,
+     "p_two": 0.488087821499355
+    },
+    {
+     "term": "ns(age, df = 3)1",
+     "est": -2.03918729558654,
+     "se_hc3": 6.8218202960204,
+     "t": -0.298921285976433,
+     "p_two": 0.765805383269333
+    },
+    {
+     "term": "ns(age, df = 3)2",
+     "est": 27.9315019740056,
+     "se_hc3": 17.890200258822,
+     "t": 1.56127385774969,
+     "p_two": 0.122560026725922
+    },
+    {
+     "term": "ns(age, df = 3)3",
+     "est": 14.4673183955804,
+     "se_hc3": 9.86620347226868,
+     "t": 1.46635110822965,
+     "p_two": 0.146624858919042
+    },
+    {
+     "term": "sex_e",
+     "est": 5.21529302124237,
+     "se_hc3": 3.10534759883178,
+     "t": 1.67945547326307,
+     "p_two": 0.0971168553042261
+    },
+    {
+     "term": "race31",
+     "est": -0.712396216757944,
+     "se_hc3": 2.37631687152823,
+     "t": -0.299790076522831,
+     "p_two": 0.765145078436616
+    },
+    {
+     "term": "race32",
+     "est": 0.965160311116193,
+     "se_hc3": 2.86037079865961,
+     "t": 0.337424893153179,
+     "p_two": 0.736714720862921
+    },
+    {
+     "term": "scale(roi_vol)",
+     "est": 1.29196200842258,
+     "se_hc3": 1.4823536917457,
+     "t": 0.871561231045406,
+     "p_two": 0.386157220590464
+    },
+    {
+     "term": "scale(Q_phase)",
+     "est": -3.41213974254807,
+     "se_hc3": 1.69156865844204,
+     "t": -2.01714528436032,
+     "p_two": 0.0471658811804743
+    },
+    {
+     "term": "PS_e:ADHD_e",
+     "est": -8.96096061633872,
+     "se_hc3": 6.1890232134803,
+     "t": -1.44787962611303,
+     "p_two": 0.151710320088995
+    }
+   ]
+  },
+  "H_grade_only": {
+   "scenario": "H_grade_only",
+   "n": 89,
+   "df": 77,
+   "cells": {
+    "TD": 25,
+    "ADHD-only": 18,
+    "PS-only": 19,
+    "PS+ADHD": 27,
+    "total": 89
+   },
+   "n_usable_sessions": 127,
+   "first_usable_keys": [
+    "sub-19861_ses-1",
+    "sub-20139_ses-1",
+    "sub-20141_ses-1",
+    "sub-20149_ses-1",
+    "sub-20188_ses-2",
+    "sub-20212_ses-1",
+    "sub-20214_ses-1",
+    "sub-20236_ses-1",
+    "sub-20238_ses-1",
+    "sub-20252_ses-1",
+    "sub-20253_ses-2",
+    "sub-20258_ses-1",
+    "sub-20259_ses-2",
+    "sub-20302_ses-1",
+    "sub-20303_ses-2",
+    "sub-20310_ses-1",
+    "sub-20350_ses-1",
+    "sub-20352_ses-1",
+    "sub-20399_ses-2",
+    "sub-20402_ses-1",
+    "sub-20403_ses-1",
+    "sub-20427_ses-1",
+    "sub-20463_ses-1",
+    "sub-20494_ses-3",
+    "sub-20533_ses-2",
+    "sub-20572_ses-2",
+    "sub-20626_ses-1",
+    "sub-20712_ses-1",
+    "sub-20721_ses-2",
+    "sub-20794_ses-1",
+    "sub-20818_ses-2",
+    "sub-20823_ses-1",
+    "sub-20836_ses-1",
+    "sub-20846_ses-1",
+    "sub-20855_ses-1",
+    "sub-20860_ses-1",
+    "sub-20866_ses-1",
+    "sub-20902_ses-2",
+    "sub-20916_ses-3",
+    "sub-20919_ses-1",
+    "sub-20923_ses-2",
+    "sub-20953_ses-1",
+    "sub-20966_ses-1",
+    "sub-20968_ses-3",
+    "sub-20976_ses-1",
+    "sub-20983_ses-2",
+    "sub-21023_ses-1",
+    "sub-21035_ses-2",
+    "sub-21038_ses-1",
+    "sub-21104_ses-1",
+    "sub-21112_ses-2",
+    "sub-21116_ses-1",
+    "sub-21118_ses-1",
+    "sub-21131_ses-1",
+    "sub-21139_ses-2",
+    "sub-21141_ses-2",
+    "sub-21146_ses-1",
+    "sub-21150_ses-1",
+    "sub-21154_ses-2",
+    "sub-21161_ses-3",
+    "sub-21193_ses-1",
+    "sub-21345_ses-1",
+    "sub-21432_ses-1",
+    "sub-21493_ses-1",
+    "sub-21514_ses-1",
+    "sub-21516_ses-1",
+    "sub-21560_ses-2",
+    "sub-21567_ses-1",
+    "sub-21568_ses-1",
+    "sub-21580_ses-2",
+    "sub-21623_ses-1",
+    "sub-21712_ses-1",
+    "sub-21713_ses-1",
+    "sub-21797_ses-1",
+    "sub-21827_ses-1",
+    "sub-21855_ses-2",
+    "sub-21856_ses-1",
+    "sub-22045_ses-1",
+    "sub-22064_ses-1",
+    "sub-22473_ses-1",
+    "sub-22510_ses-1",
+    "sub-22617_ses-1",
+    "sub-22653_ses-1",
+    "sub-22654_ses-1",
+    "sub-22670_ses-1",
+    "sub-22744_ses-1",
+    "sub-23303_ses-1",
+    "sub-23676_ses-1",
+    "sub-23698_ses-1"
+   ],
+   "beta_PS_ppb": 6.29013622956428,
+   "se_hc3": 3.07073918362878,
+   "t": 2.0484111002,
+   "p_two": 0.0439280350191711,
+   "ci95_ppb": [
+    0.175513333072132,
+    12.4047591260564
+   ],
+   "ci90_ppb": [
+    1.17771004478784,
+    11.4025624143407
+   ],
+   "sigma_resid": 12.9539720822064,
+   "sigma_rob": 11.6302864618379,
+   "huber_converged": true,
+   "sigma_B": 11.6302864618379,
+   "delta": 0.485575867359204,
+   "bound_fixed": {
+    "bound_ppb": -6.13180464348368,
+    "note": "registered bound frozen at the confirmatory run (-6.1318 ppb)",
+    "tB": 4.04526080862674,
+    "df": 77,
+    "pB_one_sided": 6.15839712316753e-05,
+    "reject_at_05": true
+   },
+   "bound_rederived": {
+    "delta_B": 0.581188679182884,
+    "bound_ppb": -6.75939082727416,
+    "tB": 4.24963706667443,
+    "pB": 2.9718735859493e-05,
+    "note": "delta_B = 0.6*sqrt(rL_primary) times sigma_B recomputed in this sample"
+   },
+   "A_beta_negative_p05": false,
+   "B_rederived": true,
+   "outcome_label_descriptive": "B",
+   "disconfirming": true,
+   "formula": "chi_SNVTA ~ PS_e * ADHD_e + ns(age, df = 3) + sex_e + race3 +      scale(roi_vol) + scale(Q_phase)",
+   "coefficients": [
+    {
+     "term": "(Intercept)",
+     "est": 42.7154695605862,
+     "se_hc3": 7.2992671928483,
+     "t": 5.85202163888973,
+     "p_two": 1.1205670510233e-07
+    },
+    {
+     "term": "PS_e",
+     "est": 6.29013622956428,
+     "se_hc3": 3.07073918362878,
+     "t": 2.0484111002,
+     "p_two": 0.0439280350191711
+    },
+    {
+     "term": "ADHD_e",
+     "est": 2.16302074979744,
+     "se_hc3": 3.10466080609343,
+     "t": 0.696701148657573,
+     "p_two": 0.488087821499355
+    },
+    {
+     "term": "ns(age, df = 3)1",
+     "est": -2.03918729558654,
+     "se_hc3": 6.8218202960204,
+     "t": -0.298921285976433,
+     "p_two": 0.765805383269333
+    },
+    {
+     "term": "ns(age, df = 3)2",
+     "est": 27.9315019740056,
+     "se_hc3": 17.890200258822,
+     "t": 1.56127385774969,
+     "p_two": 0.122560026725922
+    },
+    {
+     "term": "ns(age, df = 3)3",
+     "est": 14.4673183955804,
+     "se_hc3": 9.86620347226868,
+     "t": 1.46635110822965,
+     "p_two": 0.146624858919042
+    },
+    {
+     "term": "sex_e",
+     "est": 5.21529302124237,
+     "se_hc3": 3.10534759883178,
+     "t": 1.67945547326307,
+     "p_two": 0.0971168553042261
+    },
+    {
+     "term": "race31",
+     "est": -0.712396216757944,
+     "se_hc3": 2.37631687152823,
+     "t": -0.299790076522831,
+     "p_two": 0.765145078436616
+    },
+    {
+     "term": "race32",
+     "est": 0.965160311116193,
+     "se_hc3": 2.86037079865961,
+     "t": 0.337424893153179,
+     "p_two": 0.736714720862921
+    },
+    {
+     "term": "scale(roi_vol)",
+     "est": 1.29196200842258,
+     "se_hc3": 1.4823536917457,
+     "t": 0.871561231045406,
+     "p_two": 0.386157220590464
+    },
+    {
+     "term": "scale(Q_phase)",
+     "est": -3.41213974254807,
+     "se_hc3": 1.69156865844204,
+     "t": -2.01714528436032,
+     "p_two": 0.0471658811804743
+    },
+    {
+     "term": "PS_e:ADHD_e",
+     "est": -8.96096061633872,
+     "se_hc3": 6.1890232134803,
+     "t": -1.44787962611303,
+     "p_two": 0.151710320088995
+    }
+   ]
+  },
+  "Strict_union": {
+   "scenario": "Strict_union",
+   "n": 80,
+   "df": 68,
+   "cells": {
+    "TD": 22,
+    "ADHD-only": 16,
+    "PS-only": 17,
+    "PS+ADHD": 25,
+    "total": 80
+   },
+   "n_usable_sessions": 107,
+   "first_usable_keys": [
+    "sub-19861_ses-1",
+    "sub-20139_ses-1",
+    "sub-20141_ses-1",
+    "sub-20149_ses-1",
+    "sub-20188_ses-2",
+    "sub-20212_ses-1",
+    "sub-20214_ses-1",
+    "sub-20236_ses-1",
+    "sub-20238_ses-1",
+    "sub-20252_ses-1",
+    "sub-20253_ses-3",
+    "sub-20258_ses-1",
+    "sub-20259_ses-2",
+    "sub-20302_ses-1",
+    "sub-20303_ses-2",
+    "sub-20310_ses-1",
+    "sub-20350_ses-1",
+    "sub-20352_ses-1",
+    "sub-20399_ses-2",
+    "sub-20402_ses-1",
+    "sub-20403_ses-1",
+    "sub-20427_ses-1",
+    "sub-20463_ses-1",
+    "sub-20494_ses-3",
+    "sub-20533_ses-2",
+    "sub-20572_ses-2",
+    "sub-20626_ses-1",
+    "sub-20712_ses-1",
+    "sub-20721_ses-2",
+    "sub-20794_ses-1",
+    "sub-20818_ses-2",
+    "sub-20823_ses-1",
+    "sub-20836_ses-1",
+    "sub-20846_ses-1",
+    "sub-20855_ses-1",
+    "sub-20866_ses-1",
+    "sub-20902_ses-2",
+    "sub-20916_ses-3",
+    "sub-20919_ses-1",
+    "sub-20923_ses-2",
+    "sub-20953_ses-1",
+    "sub-20966_ses-1",
+    "sub-20968_ses-3",
+    "sub-20976_ses-2",
+    "sub-20983_ses-2",
+    "sub-21023_ses-1",
+    "sub-21035_ses-2",
+    "sub-21038_ses-1",
+    "sub-21104_ses-1",
+    "sub-21112_ses-2",
+    "sub-21116_ses-1",
+    "sub-21118_ses-1",
+    "sub-21131_ses-1",
+    "sub-21139_ses-2",
+    "sub-21146_ses-1",
+    "sub-21150_ses-1",
+    "sub-21154_ses-2",
+    "sub-21161_ses-3",
+    "sub-21193_ses-1",
+    "sub-21345_ses-1",
+    "sub-21432_ses-1",
+    "sub-21514_ses-1",
+    "sub-21516_ses-1",
+    "sub-21560_ses-2",
+    "sub-21567_ses-1",
+    "sub-21623_ses-1",
+    "sub-21712_ses-1",
+    "sub-21797_ses-1",
+    "sub-21856_ses-1",
+    "sub-22064_ses-1",
+    "sub-22473_ses-1",
+    "sub-22510_ses-1",
+    "sub-22617_ses-1",
+    "sub-22653_ses-1",
+    "sub-22654_ses-1",
+    "sub-22670_ses-1",
+    "sub-22744_ses-1",
+    "sub-23303_ses-1",
+    "sub-23676_ses-1",
+    "sub-23698_ses-1"
+   ],
+   "beta_PS_ppb": 4.96280154409223,
+   "se_hc3": 3.12508040430837,
+   "t": 1.58805563442473,
+   "p_two": 0.116913053059836,
+   "ci95_ppb": [
+    -1.27319931092534,
+    11.1988023991098
+   ],
+   "ci90_ppb": [
+    -0.248495913393383,
+    10.1740990015778
+   ],
+   "sigma_resid": 11.2559034014286,
+   "sigma_rob": 10.5504543758571,
+   "huber_converged": true,
+   "sigma_B": 10.5504543758571,
+   "delta": 0.440906550731622,
+   "bound_fixed": {
+    "bound_ppb": -6.13180464348368,
+    "note": "registered bound frozen at the confirmatory run (-6.1318 ppb)",
+    "tB": 3.55018263603087,
+    "df": 68,
+    "pB_one_sided": 0.00035191843098177,
+    "reject_at_05": true
+   },
+   "bound_rederived": {
+    "delta_B": 0.581188679182884,
+    "bound_ppb": -6.13180464348368,
+    "tB": 3.55018263603087,
+    "pB": 0.000351918430981771,
+    "note": "delta_B = 0.6*sqrt(rL_primary) times sigma_B recomputed in this sample"
+   },
+   "A_beta_negative_p05": false,
+   "B_rederived": true,
+   "outcome_label_descriptive": "B",
+   "disconfirming": false,
+   "formula": "chi_SNVTA ~ PS_e * ADHD_e + ns(age, df = 3) + sex_e + race3 +      scale(roi_vol) + scale(Q_phase)",
+   "coefficients": [
+    {
+     "term": "(Intercept)",
+     "est": 43.1977847659845,
+     "se_hc3": 5.66897985868881,
+     "t": 7.62002791380102,
+     "p_two": 1.07286803737775e-10
+    },
+    {
+     "term": "PS_e",
+     "est": 4.96280154409223,
+     "se_hc3": 3.12508040430837,
+     "t": 1.58805563442473,
+     "p_two": 0.116913053059836
+    },
+    {
+     "term": "ADHD_e",
+     "est": -1.27157944948918,
+     "se_hc3": 3.10638546650445,
+     "t": -0.409343741528659,
+     "p_two": 0.683573960487499
+    },
+    {
+     "term": "ns(age, df = 3)1",
+     "est": -1.04481683406568,
+     "se_hc3": 6.01950240015798,
+     "t": -0.173571960705301,
+     "p_two": 0.862717536166033
+    },
+    {
+     "term": "ns(age, df = 3)2",
+     "est": 30.5378842940041,
+     "se_hc3": 15.0865298404933,
+     "t": 2.02418214240615,
+     "p_two": 0.0468821331477233
+    },
+    {
+     "term": "ns(age, df = 3)3",
+     "est": 14.6090325025517,
+     "se_hc3": 9.50201427899121,
+     "t": 1.53746690686963,
+     "p_two": 0.128819459388736
+    },
+    {
+     "term": "sex_e",
+     "est": 1.46630681893267,
+     "se_hc3": 2.98545827031948,
+     "t": 0.491149661514363,
+     "p_two": 0.624902070912955
+    },
+    {
+     "term": "race31",
+     "est": -0.87896055458524,
+     "se_hc3": 2.38550579337842,
+     "t": -0.3684587801149,
+     "p_two": 0.713675798484874
+    },
+    {
+     "term": "race32",
+     "est": 0.334705068223379,
+     "se_hc3": 2.51869750619226,
+     "t": 0.132888156438199,
+     "p_two": 0.894674299438406
+    },
+    {
+     "term": "scale(roi_vol)",
+     "est": 1.78099997866769,
+     "se_hc3": 1.44577687218569,
+     "t": 1.23186365263626,
+     "p_two": 0.222242911377641
+    },
+    {
+     "term": "scale(Q_phase)",
+     "est": -2.46387578711352,
+     "se_hc3": 1.6403999481603,
+     "t": -1.50199699157315,
+     "p_two": 0.137727647252349
+    },
+    {
+     "term": "PS_e:ADHD_e",
+     "est": -6.38923988314397,
+     "se_hc3": 6.19869616049867,
+     "t": -1.03073932286915,
+     "p_two": 0.306315335235147
+    }
+   ]
+  },
+  "Lenient": {
+   "scenario": "Lenient",
+   "n": 89,
+   "df": 77,
+   "cells": {
+    "TD": 25,
+    "ADHD-only": 18,
+    "PS-only": 19,
+    "PS+ADHD": 27,
+    "total": 89
+   },
+   "n_usable_sessions": 127,
+   "first_usable_keys": [
+    "sub-19861_ses-1",
+    "sub-20139_ses-1",
+    "sub-20141_ses-1",
+    "sub-20149_ses-1",
+    "sub-20188_ses-2",
+    "sub-20212_ses-1",
+    "sub-20214_ses-1",
+    "sub-20236_ses-1",
+    "sub-20238_ses-1",
+    "sub-20252_ses-1",
+    "sub-20253_ses-2",
+    "sub-20258_ses-1",
+    "sub-20259_ses-2",
+    "sub-20302_ses-1",
+    "sub-20303_ses-2",
+    "sub-20310_ses-1",
+    "sub-20350_ses-1",
+    "sub-20352_ses-1",
+    "sub-20399_ses-2",
+    "sub-20402_ses-1",
+    "sub-20403_ses-1",
+    "sub-20427_ses-1",
+    "sub-20463_ses-1",
+    "sub-20494_ses-3",
+    "sub-20533_ses-2",
+    "sub-20572_ses-2",
+    "sub-20626_ses-1",
+    "sub-20712_ses-1",
+    "sub-20721_ses-2",
+    "sub-20794_ses-1",
+    "sub-20818_ses-2",
+    "sub-20823_ses-1",
+    "sub-20836_ses-1",
+    "sub-20846_ses-1",
+    "sub-20855_ses-1",
+    "sub-20860_ses-1",
+    "sub-20866_ses-1",
+    "sub-20902_ses-2",
+    "sub-20916_ses-3",
+    "sub-20919_ses-1",
+    "sub-20923_ses-2",
+    "sub-20953_ses-1",
+    "sub-20966_ses-1",
+    "sub-20968_ses-3",
+    "sub-20976_ses-1",
+    "sub-20983_ses-2",
+    "sub-21023_ses-1",
+    "sub-21035_ses-2",
+    "sub-21038_ses-1",
+    "sub-21104_ses-1",
+    "sub-21112_ses-2",
+    "sub-21116_ses-1",
+    "sub-21118_ses-1",
+    "sub-21131_ses-1",
+    "sub-21139_ses-2",
+    "sub-21141_ses-2",
+    "sub-21146_ses-1",
+    "sub-21150_ses-1",
+    "sub-21154_ses-2",
+    "sub-21161_ses-3",
+    "sub-21193_ses-1",
+    "sub-21345_ses-1",
+    "sub-21432_ses-1",
+    "sub-21493_ses-1",
+    "sub-21514_ses-1",
+    "sub-21516_ses-1",
+    "sub-21560_ses-2",
+    "sub-21567_ses-1",
+    "sub-21568_ses-1",
+    "sub-21580_ses-2",
+    "sub-21623_ses-1",
+    "sub-21712_ses-1",
+    "sub-21713_ses-1",
+    "sub-21797_ses-1",
+    "sub-21827_ses-1",
+    "sub-21855_ses-2",
+    "sub-21856_ses-1",
+    "sub-22045_ses-1",
+    "sub-22064_ses-1",
+    "sub-22473_ses-1",
+    "sub-22510_ses-1",
+    "sub-22617_ses-1",
+    "sub-22653_ses-1",
+    "sub-22654_ses-1",
+    "sub-22670_ses-1",
+    "sub-22744_ses-1",
+    "sub-23303_ses-1",
+    "sub-23676_ses-1",
+    "sub-23698_ses-1"
+   ],
+   "beta_PS_ppb": 6.29013622956428,
+   "se_hc3": 3.07073918362878,
+   "t": 2.0484111002,
+   "p_two": 0.0439280350191711,
+   "ci95_ppb": [
+    0.175513333072132,
+    12.4047591260564
+   ],
+   "ci90_ppb": [
+    1.17771004478784,
+    11.4025624143407
+   ],
+   "sigma_resid": 12.9539720822064,
+   "sigma_rob": 11.6302864618379,
+   "huber_converged": true,
+   "sigma_B": 11.6302864618379,
+   "delta": 0.485575867359204,
+   "bound_fixed": {
+    "bound_ppb": -6.13180464348368,
+    "note": "registered bound frozen at the confirmatory run (-6.1318 ppb)",
+    "tB": 4.04526080862674,
+    "df": 77,
+    "pB_one_sided": 6.15839712316753e-05,
+    "reject_at_05": true
+   },
+   "bound_rederived": {
+    "delta_B": 0.581188679182884,
+    "bound_ppb": -6.75939082727416,
+    "tB": 4.24963706667443,
+    "pB": 2.9718735859493e-05,
+    "note": "delta_B = 0.6*sqrt(rL_primary) times sigma_B recomputed in this sample"
+   },
+   "A_beta_negative_p05": false,
+   "B_rederived": true,
+   "outcome_label_descriptive": "B",
+   "disconfirming": true,
+   "formula": "chi_SNVTA ~ PS_e * ADHD_e + ns(age, df = 3) + sex_e + race3 +      scale(roi_vol) + scale(Q_phase)",
+   "coefficients": [
+    {
+     "term": "(Intercept)",
+     "est": 42.7154695605862,
+     "se_hc3": 7.2992671928483,
+     "t": 5.85202163888973,
+     "p_two": 1.1205670510233e-07
+    },
+    {
+     "term": "PS_e",
+     "est": 6.29013622956428,
+     "se_hc3": 3.07073918362878,
+     "t": 2.0484111002,
+     "p_two": 0.0439280350191711
+    },
+    {
+     "term": "ADHD_e",
+     "est": 2.16302074979744,
+     "se_hc3": 3.10466080609343,
+     "t": 0.696701148657573,
+     "p_two": 0.488087821499355
+    },
+    {
+     "term": "ns(age, df = 3)1",
+     "est": -2.03918729558654,
+     "se_hc3": 6.8218202960204,
+     "t": -0.298921285976433,
+     "p_two": 0.765805383269333
+    },
+    {
+     "term": "ns(age, df = 3)2",
+     "est": 27.9315019740056,
+     "se_hc3": 17.890200258822,
+     "t": 1.56127385774969,
+     "p_two": 0.122560026725922
+    },
+    {
+     "term": "ns(age, df = 3)3",
+     "est": 14.4673183955804,
+     "se_hc3": 9.86620347226868,
+     "t": 1.46635110822965,
+     "p_two": 0.146624858919042
+    },
+    {
+     "term": "sex_e",
+     "est": 5.21529302124237,
+     "se_hc3": 3.10534759883178,
+     "t": 1.67945547326307,
+     "p_two": 0.0971168553042261
+    },
+    {
+     "term": "race31",
+     "est": -0.712396216757944,
+     "se_hc3": 2.37631687152823,
+     "t": -0.299790076522831,
+     "p_two": 0.765145078436616
+    },
+    {
+     "term": "race32",
+     "est": 0.965160311116193,
+     "se_hc3": 2.86037079865961,
+     "t": 0.337424893153179,
+     "p_two": 0.736714720862921
+    },
+    {
+     "term": "scale(roi_vol)",
+     "est": 1.29196200842258,
+     "se_hc3": 1.4823536917457,
+     "t": 0.871561231045406,
+     "p_two": 0.386157220590464
+    },
+    {
+     "term": "scale(Q_phase)",
+     "est": -3.41213974254807,
+     "se_hc3": 1.69156865844204,
+     "t": -2.01714528436032,
+     "p_two": 0.0471658811804743
+    },
+    {
+     "term": "PS_e:ADHD_e",
+     "est": -8.96096061633872,
+     "se_hc3": 6.1890232134803,
+     "t": -1.44787962611303,
+     "p_two": 0.151710320088995
+    }
+   ]
+  }
+ }
+}

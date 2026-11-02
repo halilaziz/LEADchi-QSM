@@ -1,0 +1,56 @@
+[
+  {
+    "event": "unlock",
+    "utc_unlock": "2026-10-05T09:01:10Z",
+    "utc_end": "2026-10-05T09:01:23Z",
+    "host": "<local-host>",
+    "user": "<user>",
+    "script_sha256": "7453913955e5474c8529d8e8f372b8bcf81cb5cd8a3446a801b0d05d0d667d76",
+    "lx_common_sha256": "ebad4364ee9ae071b2d929b12aa40eb4177c16d9bf16e6bd25fdbef326147689",
+    "amendment2": "internal freeze LEADchi_amendment_2_FROZEN.md sha256 b49d55939fa9b35dbcaa20066aa73ce4815cdd77ea33daf7fc949e3e9a4a6a57",
+    "amendment2_utc": "2026-10-05T07:03:11Z",
+    "freeze_utc": "2026-10-05T07:01:52Z",
+    "inputs_sha256": {
+      "key": "e33f641bd61e6bb906e03c95d2a1f40931dfc5258f8d7a0534cff50eb9dc2f51",
+      "keyk": "6825cef1b9a7486e7dff5fefc22bd299a7bdc83b2eb0dab0d7b2d5b2c8957a0f",
+      "lab": "6f0af84684146fd498168e39f36b6ddaa25ceef77d6fdaf59ba43b19e5e7ce74",
+      "labk": "ca9bf0e0e1cf42b7ab1f29c337824eabd2ac2a7be24f2bc253294c6361e17fe2",
+      "labm": "fbca18644120446dca359f41918a59141e746e7995a58100594928f75c2c889c",
+      "freeze": "efc4b909a394e94a6aed5d4c23fa18506a91ddb560bab31e08b8dc6a7614445f"
+    },
+    "dwi_table_sha256": null,
+    "branches": [
+      [
+        "qsmxt",
+        "fallback_PDF_iLSQR",
+        "SNVTA"
+      ],
+      [
+        "qsmxt",
+        "fallback_PDF_iLSQR",
+        "SN_only"
+      ],
+      [
+        "qsmxt",
+        "primary",
+        "SNVTA"
+      ],
+      [
+        "qsmxt",
+        "primary",
+        "SN_only"
+      ]
+    ],
+    "outputs_sha256": {
+      "/path/to/Penn_LEAD/LEADchi/mirror/unlocked/merged_qsmxt_fallback_PDF_iLSQR_SNVTA.csv": "2b5243d4e75969672d1461ed2cafe6f0f9c546eae9111083505a4f9ca166fec0",
+      "/path/to/Penn_LEAD/LEADchi/mirror/unlocked/merged_qsmxt_fallback_PDF_iLSQR_SN_only.csv": "4b2af2885d65a1725a3c80a055fd7cf2841c222897b507a5464684e97242499b",
+      "/path/to/Penn_LEAD/LEADchi/mirror/unlocked/merged_qsmxt_primary_SNVTA.csv": "f669bc6f41ab4e489abbd0a7c41949d3e5ccaba3e7f3c219d1bbebc3118df215",
+      "/path/to/Penn_LEAD/LEADchi/mirror/unlocked/merged_qsmxt_primary_SN_only.csv": "08269becceca8bf902a142fc20ddfa333c12375b227057ede4335f21dea9443e",
+      "/path/to/Penn_LEAD/LEADchi/mirror/unlocked/multiverse_qsmxt_SNVTA.csv": "2e5b64b0a9d7d4ccea91a0c123e0735679ac3c10fc42ce0cdd41d7307d7db492",
+      "/path/to/Penn_LEAD/LEADchi/mirror/unlocked/multiverse_qsmxt_SN_only.csv": "3e0203744f5abe6e06e5cff06581aa98aee86cc9c9458de32fa964730ef1e099",
+      "/path/to/Penn_LEAD/LEADchi/mirror/unlocked/key_plain.csv": "ac990a21620f02bce49f757f38335ed18b2ead52d38cdb5d34c3c4d1576619bf"
+    },
+    "warnings": [],
+    "confirmation": "interactive"
+  }
+]

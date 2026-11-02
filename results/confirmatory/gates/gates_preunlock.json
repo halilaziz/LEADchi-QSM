@@ -1,0 +1,144 @@
+{
+  "A2_approved": false,
+  "D10_dR2s": null,
+  "G2": true,
+  "G2_DN": true,
+  "G3": true,
+  "G3_detail": {
+    "ICC2_1": {
+      "hi": 0.7937183695913742,
+      "icc": 0.6829529298081538,
+      "k": 9,
+      "lo": 0.5215860559212239,
+      "n": 80
+    },
+    "ICC3_1": {
+      "hi": 0.8686565411282738,
+      "icc": 0.8216457924426546,
+      "k": 9,
+      "lo": 0.7698929207563152,
+      "n": 80
+    },
+    "n": 80
+  },
+  "G4": true,
+  "G5": true,
+  "G5_detail": {
+    "fail_share_all": 0.24444444444444446,
+    "fail_share_nonIQ": 0.11688311688311692,
+    "g5_dn_pass": 97,
+    "g5_pass": 136,
+    "n_iq_fail": 26,
+    "revised_once": true,
+    "rule": "per-session exclusion only (amendment 1b); chain trigger removed; registered rule would have read fail",
+    "vdc_threshold": 0.8
+  },
+  "PC1": true,
+  "PC2w": "INDETERMINATE",
+  "PC3": true,
+  "PC4": true,
+  "PC4_DN": true,
+  "PC4_DN_detail": {
+    "R_SB": 0.8260575765497806,
+    "label": "split-echo (noise) reliability, an upper bound on measurement reliability",
+    "n": 58,
+    "pass": true,
+    "r": 0.7036610655248284,
+    "rL": 0.7049079551044999,
+    "r_lower": 0.5442917805594106
+  },
+  "PC4_detail": {
+    "R_SB": 0.9607482079581321,
+    "label": "split-echo (noise) reliability, an upper bound on measurement reliability",
+    "n": 78,
+    "pass": true,
+    "r": 0.92446143977342,
+    "rL": 0.9382785578065155,
+    "r_lower": 0.8837332661079729
+  },
+  "PC5": false,
+  "PC_detail": {
+    "PC1": {
+      "gp_median_highest": true,
+      "n": 107,
+      "pass": true,
+      "share_gp_pos_and_gt_thal": 1.0
+    },
+    "PC2w": {
+      "mean_dGP": 3.105895995769232,
+      "mean_dPUT": 1.0268538192307695,
+      "mean_dTHAL": -0.5349220753846156,
+      "mean_dbar_minus_dTHAL": 2.6012969828846164,
+      "mean_dbar_ppb": 2.066374907500001,
+      "n_pairs": 26,
+      "p_one_sided": 0.1558359936251006,
+      "share_pairs_software_class_differs": 0.0,
+      "state": "INDETERMINATE"
+    },
+    "PC3": {
+      "n": 80,
+      "pass": true,
+      "r": 0.6787682162251518
+    }
+  },
+  "boundary_distance_mm": {
+    "median": 0.80536998,
+    "n": 80,
+    "note": "brainstem + ventral-DC symmetric mean surface distance, echo-1 SynthSeg vs T1w SynthSeg",
+    "p95": 0.9715421489999999
+  },
+  "constants_roi": "SNVTA",
+  "counts": {
+    "n_first_usable": 80,
+    "n_returner_pairs": 26
+  },
+  "cross_detail": {
+    "ICC3_1": {
+      "hi": 0.8330318872214383,
+      "icc": 0.6622964098708686,
+      "k": 2,
+      "lo": 0.37637088737731367,
+      "n": 26
+    },
+    "T1_informative": true,
+    "n_pairs": 26,
+    "note": "not age-adjusted; heterogeneous developmental change lowers it (a lower bound)",
+    "pearson": {
+      "hi": 0.8354351007831331,
+      "lo": 0.3700701943868815,
+      "n": 26,
+      "r": 0.6624601835255183
+    }
+  },
+  "data_origin": "real",
+  "engine": "qsmxt",
+  "engine_analysed": "qsmxt",
+  "icc_cross_session": 0.6622964098708686,
+  "n_min": null,
+  "pipeline": "primary",
+  "pooled": {
+    "mean_SNVTA": 52.98396383525001,
+    "mean_STR": 16.585488176375,
+    "n_first_usable": 80,
+    "roi": "SNVTA",
+    "sd_SNVTA": 11.879744037220984,
+    "sd_STR": 5.923537052073515,
+    "sd_total_SNVTA": 11.879744037220984
+  },
+  "rL_DN": 0.7049079551044999,
+  "rL_cross": 0.5402207797863834,
+  "rL_primary": 0.9382785578065155,
+  "r_DN_R_DGM": 0.13141609516938496,
+  "r_cross": 0.6624601835255183,
+  "r_point_DN": 0.8260575765497806,
+  "r_point_primary": 0.9607482079581321,
+  "ref2_type_counts_first_usable": {
+    "CSF": 46,
+    "CSF_erode1": 34,
+    "none": 0
+  },
+  "rho_SNVTA_STR": 0.18604944373728174,
+  "sd_dref_over_sd_primary": 0.5149143020510851,
+  "sd_dref_ppb": 6.117050109471183,
+  "utc": "2026-10-05T07:01:52Z"
+}

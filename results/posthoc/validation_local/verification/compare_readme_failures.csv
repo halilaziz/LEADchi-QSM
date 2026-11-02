@@ -1,0 +1,11 @@
+where,what,printed,recomputed,status
+L245,"chi_PUT | all usable, lme | + sex",.6418,0.6418545605548107,MISMATCH
+L246,"chi_PUT | all usable, lme | + sex + cell",0.120,0.1194014365337177,MISMATCH
+L246,"chi_PUT | all usable, lme | + sex + cell",-0.531,-0.531504166077736,MISMATCH
+L246,"chi_PUT | all usable, lme | + sex + cell",0.771,0.7703070391451714,MISMATCH
+L246,"chi_PUT | all usable, lme | + sex + cell",.7087,0.7091860968229013,MISMATCH
+L249,r2s_GP | first-usable | age only,3.4e-06,3.348354493448187e-06,MISMATCH
+L253,"r2s_GP | all usable, lme | + sex",6.6e-06,6.547730248540628e-06,MISMATCH
+L302,Our putamen R2* rise of 0.30 s^-1/y (0.25 SD/y) over 8.8-17.8 y,0.25,0.2445084179996168,MISMATCH
+L306,Its standardised rate (0.25 SD/y) matches GP R2* (0.24 SD/y),0.25,0.2445084179996168,MISMATCH
+L307,Its slope is 0.38 ppb/y (first-usable) and 0.08-0.15 ppb/y (all usable),0.15,0.144961696129147,MISMATCH

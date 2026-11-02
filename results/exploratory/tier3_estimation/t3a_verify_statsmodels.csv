@@ -1,0 +1,12 @@
+check,max_rel_diff,pass
+E-int: beta_PS vs frozen,8.59042292278567e-15,True
+E-int: interaction vs frozen,5.8384869420569056e-15,True
+E-int: interaction HC3 SE vs frozen,8.453798251355448e-15,True
+E-int: adjusted cell means (4),1.9645272986015288e-15,True
+E-int: adjusted cell-mean HC3 SEs (4),9.106208959453632e-14,True
+E-z: mu_TD (80; TD LOSO),5.832803838437276e-14,True
+E-z: sigma_TD (80),4.978116413257159e-15,True
+E-z: z (80),1.4639517936751977e-13,True
+E-z: centile (80),5.572066631912041e-14,True
+E-z: mean z per cell,1.4260952573598437e-14,True
+E-z: share z <= -1 per cell,9.159339953157534e-16,True

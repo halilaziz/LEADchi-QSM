@@ -1,0 +1,39 @@
+{
+  "G4_pass": true,
+  "decision_weight": "linear",
+  "grade_table_rows_pass_ref": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      23,
+      2
+    ],
+    [
+      0,
+      3,
+      8
+    ]
+  ],
+  "kappa_linear": 0.664179104477612,
+  "kappa_placement": null,
+  "kappa_quadratic": 0.664179104477612,
+  "n": 36,
+  "placement_table": [
+    [
+      36,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "reference_pass": "rating_pass1.csv",
+  "refined": false,
+  "rerating_pass": "rating_pass2.csv",
+  "utc": "2026-10-05T07:00:01Z"
+}

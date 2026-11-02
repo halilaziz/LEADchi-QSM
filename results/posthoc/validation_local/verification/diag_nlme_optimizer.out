@@ -1,0 +1,8 @@
+chi_PUT ~ age + sex_e + PS_e * ADHD_e 
+  optim           age 0.11962178 SE 0.31670417 p 0.708713 REML logLik -351.0250869321
+  nlminb_default  age 0.11940144 SE 0.31666080 p 0.709186 REML logLik -351.0250698614
+  nlminb_tight    age 0.11940147 SE 0.31666081 p 0.709186 REML logLik -351.0250698614
+chi_PUT ~ age + sex_e 
+  optim           age 0.14497366 SE 0.30804197 p 0.641830 REML logLik -356.6427958855
+  nlminb_default  age 0.14496170 SE 0.30803966 p 0.641855 REML logLik -356.6427958079
+  nlminb_tight    age 0.14496176 SE 0.30803967 p 0.641854 REML logLik -356.6427958079

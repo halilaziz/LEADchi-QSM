@@ -1,0 +1,33 @@
+{
+  "data_origin": "synthetic",
+  "scenario": "delta-0.6",
+  "note": "SYNTHETIC: gate outcomes are assumed values; pooled constants are computed label-free from the synthetic first-usable sessions, as gates_preunlock.py would",
+  "A2_approved": true,
+  "PC1": true,
+  "PC2w": "PASS",
+  "PC3": true,
+  "PC4": true,
+  "r_point_primary": 0.8,
+  "rL_primary": 0.7,
+  "rL_cross": 0.55,
+  "r_cross": 0.68,
+  "icc_cross_session": 0.66,
+  "PC4_DN": true,
+  "r_point_DN": 0.78,
+  "rL_DN": 0.72,
+  "PC5": true,
+  "G2": true,
+  "G2_DN": true,
+  "G3": true,
+  "G4": true,
+  "G5": true,
+  "n_min": 10,
+  "constants_roi": "SNVTA",
+  "pooled": {
+    "mean_SNVTA": 54.0056192068714,
+    "sd_SNVTA": 20.3557385531695,
+    "mean_STR": 17.2426488503843,
+    "sd_STR": 13.9171321667156,
+    "sd_total_SNVTA": 20.3557385531695
+  }
+}

@@ -1,0 +1,151 @@
+{
+ "all_within_1e-6": true,
+ "n_checks": 24,
+ "checks": [
+  {
+   "quantity": "M1 beta_PS",
+   "python": 4.962801544092231,
+   "R_frozen": 4.96280154409223,
+   "rel_diff": 1.7896714422470146e-16
+  },
+  {
+   "quantity": "M1 SE_HC3",
+   "python": 3.1250804043083846,
+   "R_frozen": 3.12508040430837,
+   "rel_diff": 4.6894613990885265e-15
+  },
+  {
+   "quantity": "M1 p_two",
+   "python": 0.11691305305983753,
+   "R_frozen": 0.116913053059836,
+   "rel_diff": 1.3057196086379677e-14
+  },
+  {
+   "quantity": "M1 df",
+   "python": 68.0,
+   "R_frozen": 68.0,
+   "rel_diff": 0.0
+  },
+  {
+   "quantity": "M1 sigma_resid",
+   "python": 11.255903401428624,
+   "R_frozen": 11.2559034014286,
+   "rel_diff": 2.051602442614454e-15
+  },
+  {
+   "quantity": "K1 PS-only - TD est",
+   "python": 8.157421485664203,
+   "R_frozen": 8.15742148566421,
+   "rel_diff": 8.710383998286744e-16
+  },
+  {
+   "quantity": "K1 PS-only - TD SE",
+   "python": 3.9803620712149375,
+   "R_frozen": 3.98036207121492,
+   "rel_diff": 4.351232092528216e-15
+  },
+  {
+   "quantity": "K1 PS-only - TD p",
+   "python": 0.04428148313188879,
+   "R_frozen": 0.0442814831318877,
+   "rel_diff": 2.4601848580110872e-14
+  },
+  {
+   "quantity": "K1 PS+ADHD - ADHD-only est",
+   "python": 1.768181602520258,
+   "R_frozen": 1.76818160252024,
+   "rel_diff": 1.0171813219463501e-14
+  },
+  {
+   "quantity": "K1 PS+ADHD - ADHD-only SE",
+   "python": 4.785487424903411,
+   "R_frozen": 4.78548742490339,
+   "rel_diff": 4.454359646182404e-15
+  },
+  {
+   "quantity": "K1 PS+ADHD - ADHD-only p",
+   "python": 0.71291194560907,
+   "R_frozen": 0.712911945609071,
+   "rel_diff": 1.401576629928653e-15
+  },
+  {
+   "quantity": "M1 p_B (frozen sigma_B)",
+   "python": 0.000351918430981789,
+   "R_frozen": 0.000351918430981771,
+   "rel_diff": 5.1141839923103196e-14
+  },
+  {
+   "quantity": "K2 R2* beta_PS",
+   "python": 1.098238393301161,
+   "R_frozen": 1.09823839330116,
+   "rel_diff": 1.0109125954775378e-15
+  },
+  {
+   "quantity": "K3 beta_dref",
+   "python": 1.4859460651059537,
+   "R_frozen": 1.48594606510593,
+   "rel_diff": 1.598898727544639e-14
+  },
+  {
+   "quantity": "K3 p",
+   "python": 0.27417524393059917,
+   "R_frozen": 0.274175243930604,
+   "rel_diff": 1.761453765075088e-14
+  },
+  {
+   "quantity": "S1 L",
+   "python": 0.6535501886833142,
+   "R_frozen": 0.653550188683316,
+   "rel_diff": 2.887887073623528e-15
+  },
+  {
+   "quantity": "S1 SE(L)",
+   "python": 0.4726159993676924,
+   "R_frozen": 0.472615999367688,
+   "rel_diff": 9.278951523301287e-15
+  },
+  {
+   "quantity": "S1 p",
+   "python": 0.1713068829157794,
+   "R_frozen": 0.171306882915774,
+   "rel_diff": 3.1432371996865017e-14
+  },
+  {
+   "quantity": "S2 n",
+   "python": 65.0,
+   "R_frozen": 65.0,
+   "rel_diff": 0.0
+  },
+  {
+   "quantity": "S2 beta_PRIME",
+   "python": 3.9681861125704936,
+   "R_frozen": 3.9681861125705,
+   "rel_diff": 1.5667735236020686e-15
+  },
+  {
+   "quantity": "S2 SE",
+   "python": 2.3681945500566344,
+   "R_frozen": 2.3681945500567,
+   "rel_diff": 2.7753295461403562e-14
+  },
+  {
+   "quantity": "S2 p",
+   "python": 0.09981708114595396,
+   "R_frozen": 0.0998170811459622,
+   "rel_diff": 8.258512333963643e-14
+  },
+  {
+   "quantity": "Holm p S1",
+   "python": 0.1996341622919244,
+   "R_frozen": 0.199634162291924,
+   "rel_diff": 2.0854829126170863e-15
+  },
+  {
+   "quantity": "Holm p S2",
+   "python": 0.1996341622919244,
+   "R_frozen": 0.199634162291924,
+   "rel_diff": 2.0854829126170863e-15
+  }
+ ],
+ "note": "second-engine check written for the adversarial review; sample membership and spline basis re-derived independently"
+}
